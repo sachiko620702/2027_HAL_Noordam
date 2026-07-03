@@ -131,6 +131,20 @@
     .focus-card.warn { border-top: 5px solid var(--coral); }
     .focus-card.info { border-top: 5px solid var(--gold); }
     .focus-card.alt { border-top: 5px solid var(--blue); }
+    .basic-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+    .basic-card {
+      background: linear-gradient(180deg, #ffffff, #f6faf5);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+      padding: 18px;
+      min-height: 150px;
+      display: grid;
+      align-content: space-between;
+    }
+    .basic-card h3 { margin: 6px 0 8px; font-size: 15px; line-height: 1.25; color: var(--muted); }
+    .basic-card strong { display: block; color: var(--teal-dark); font-size: 21px; line-height: 1.2; }
+    .basic-card p { margin: 8px 0 0; color: var(--muted); font-size: 13px; }
     .metrics { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
     .metric, .panel, .day, .decision {
       background: var(--panel);
@@ -204,7 +218,7 @@
     }
     footer { margin-top: 40px; color: var(--muted); font-size: 13px; text-align: center; }
     @media (max-width: 980px) {
-      .metrics, .budget-grid, .cards, .maintenance, .focus-grid { grid-template-columns: 1fr; }
+      .metrics, .budget-grid, .cards, .maintenance, .focus-grid, .basic-grid { grid-template-columns: 1fr; }
       .section-head { display: block; }
       .section-head p { margin-top: 8px; }
     }
@@ -222,10 +236,9 @@
     <div>
       <a href="#overview">總覽</a>
       <a href="#focus">重點</a>
-    <a href="#budget">預算</a>
-    <a href="#backup">備案</a>
-    <a href="#payments">付款</a>
-    <a href="#cashflow">現金流</a>
+      <a href="#basic">基本資料</a>
+      <a href="#budget">預算</a>
+      <a href="#cashflow">現金流</a>
     <a href="#todos">待辦</a>
       <a href="#flights">航班住宿</a>
       <a href="#cruise-schedule">航程時間</a>
@@ -323,80 +336,19 @@
       </div>
     </section>
 
-    <section id="facts">
+    <section id="basic">
       <div class="section-head">
-        <div><span class="kicker">Facts</span><h2>核心事實資料表</h2></div>
-        <p>原本散在總控 Markdown 的專案基本資料，已整理進 SQLite。</p>
+        <div><span class="kicker">Basic info</span><h2>基本資料</h2></div>
+        <p>只保留你最在意的專案基本資料，避免長表格撐開版面。</p>
       </div>
-      <div class="table-wrap"><table class="facts-table">
-<thead><tr><th>區塊</th><th>項目</th><th>內容</th><th>備註</th></tr></thead>
-<tbody>
-<tr><td>下船日</td><td>高優先 HIA 備案</td><td>Disembarkation Tour: Singapore Highlights with Airport Transfer</td><td>僅適合 16:30 或更晚起飛回程；雙人 US$199.90 幾乎可用滿 HIA US$200，但以 HAL 結帳畫面為準</td></tr>
-<tr><td>下船日</td><td>16:30 之前回程</td><td>直接 Taxi / Grab 前往 Changi Airport</td><td>若班機早於 16:30，不建議安排下船日市區觀光</td></tr>
-<tr><td>交通</td><td>新加坡交通</td><td>S$170</td><td>含機場、飯店、市區晚餐、碼頭與下船日機場交通</td></tr>
-<tr><td>住宿</td><td>前泊飯店</td><td>InterContinental Singapore Robertson Quay</td><td>1 King Classic Club Lounge Access</td></tr>
-<tr><td>住宿</td><td>飯店日期</td><td>2027/11/26-2027/11/27</td><td>2026 截圖日期僅為錯誤參考</td></tr>
-<tr><td>住宿</td><td>飯店價格</td><td>53,000 IHG 點 + US$139</td><td>若另收 service charge 或預授權，以入住當天刷卡為準</td></tr>
-<tr><td>基本資料</td><td>專案</td><td>2027 HAL Noordam Malaysia Discovery</td><td></td></tr>
-<tr><td>基本資料</td><td>旅行日期</td><td>2027/11/26-2027/12/05</td><td></td></tr>
-<tr><td>基本資料</td><td>郵輪日期</td><td>2027/11/27-2027/12/05</td><td></td></tr>
-<tr><td>基本資料</td><td>郵輪公司</td><td>Holland America Line</td><td></td></tr>
-<tr><td>基本資料</td><td>船名</td><td>Noordam</td><td></td></tr>
-<tr><td>基本資料</td><td>航程</td><td>8-Day Malaysia Discovery</td><td></td></tr>
-<tr><td>基本資料</td><td>起訖港</td><td>新加坡往返</td><td></td></tr>
-<tr><td>基本資料</td><td>人數</td><td>2 人</td><td></td></tr>
-<tr><td>岸上行程</td><td>開放規則</td><td>未確認官方固定 6 個月開放規則</td><td>社群經驗多落在出發前約 6-9 個月陸續開放；正式可訂行程、價格、名額與 HIA 抵用方式以 Manage My Cruise / Navigator App 為準</td></tr>
-<tr><td>岸上行程</td><td>追蹤節點</td><td>2027/02/27、2027/03/27、2027/05/27、2027/08/27、登船前 3 天</td><td>2027/08/27 若 HAL 行程仍不理想，開始定稿 KKday / 自由行備案</td></tr>
-<tr><td>岸上行程</td><td>HIA 岸上額度</td><td>US$100 per person，雙人 US$200</td><td>不可換現金；正式可用項目以 HAL 結帳畫面為準</td></tr>
-<tr><td>機票</td><td>狀態</td><td>三家航空並列備選，暫不決定最終承運航空</td><td></td></tr>
-<tr><td>機票</td><td>去程備選</td><td>星宇 JX771／中華 CI753／長榮 BR225</td><td>2027/11/26 TPE → SIN，前往新加坡前泊</td></tr>
-<tr><td>機票</td><td>回程備選</td><td>星宇 JX772／中華 CI754／長榮 BR216</td><td>2027/12/05 SIN → TPE，郵輪下船後返台</td></tr>
-<tr><td>機票</td><td>預算</td><td>查詢區間 NT$23,000-25,000，主估 NT$26,000，保守上限 NT$28,000</td><td>3% 回饋僅作額外緩衝，不下修主預算</td></tr>
-<tr><td>機票</td><td>選擇標準</td><td>價格、時間帶、行李規則、退改票條件、下船日 buffer</td><td>3% 回饋不列入核心判斷</td></tr>
-<tr><td>版本</td><td>目前總結論</td><td>可行版</td><td>旅遊專戶管理，旅程結束後關帳；2027/11 月底餘額接近零可接受</td></tr>
-<tr><td>版本</td><td>核心風險</td><td>郵輪尾款、機票、岸上行程、船上紀念品＋預備金</td><td>每個付款節點可支付且不超支，比月底餘額更重要</td></tr>
-<tr><td>登船日</td><td>2027/11/27</td><td>13:30 左右離開飯店，14:00 左右抵達碼頭</td><td>船中午才靠港，需保留清關、下船與整理 buffer；實際以 assigned check-in time 為準</td></tr>
-<tr><td>郵輪</td><td>艙等</td><td>Verandah 陽台艙</td><td>保留陽台房，不改 Ocean View 海景房</td></tr>
-<tr><td>郵輪</td><td>方案</td><td>Have It All - Early Booking Bonus</td><td></td></tr>
-<tr><td>郵輪</td><td>郵輪總價</td><td>USD 3,958</td><td>訂金 US$198 另行處理；現金流仍以 2027/08 NT$119,944 尾款表示</td></tr>
-<tr><td>餐飲</td><td>前泊晚餐</td><td>松發肉骨茶 + 老巴剎 Satay Street</td><td>晚餐預算改抓 S$200，Club Lounge 不列正式晚餐</td></tr>
-<tr><td>餐飲</td><td>Day 2 晚餐</td><td>船上免費主餐廳正式晚餐</td><td>Morimoto By Sea 僅備案，不列主預算</td></tr>
-</tbody></table></div>
-    </section>
-
-    <section id="backup">
-      <div class="section-head">
-        <div><span class="kicker">Alternatives</span><h2>備案與不可誤列主預算項目</h2></div>
-        <p>這些項目保留為決策脈絡，但不得計入主預算。</p>
-      </div>
-      <div class="table-wrap"><table>
-<thead><tr><th>分類</th><th>項目</th><th>原幣</th><th>約台幣</th><th>狀態</th><th>付款日</th><th>付款方式</th><th>備註</th></tr></thead>
-<tbody>
-<tr><td>船上餐飲</td><td>Morimoto By Sea Day 2 自費晚餐</td><td>NT$4,500</td><td>NT$4,500</td><td><span class="pill">備案</span></td><td></td><td>船上帳戶結算</td><td>已移出主預算，Day 2 改免費主餐廳</td></tr>
-<tr><td>機票備案</td><td>長榮豪經艙 + Bid Upgrade</td><td>NT$57,000</td><td>NT$57,000</td><td><span class="pill">備案</span></td><td></td><td>信用卡</td><td>放棄整合，不列主預算</td></tr>
-<tr><td>房型備案</td><td>海景房降級方案</td><td>NT$-7,656</td><td>NT$-7,656</td><td><span class="pill">備案</span></td><td></td><td></td><td>目前不採用，保留陽台房</td></tr>
-</tbody></table></div>
-    </section>
-
-    <section id="payments">
-      <div class="section-head">
-        <div><span class="kicker">Payment schedule</span><h2>付款日程</h2></div>
-        <p>依日期排序，方便直接看現金流與刷卡時間。</p>
-      </div>
-      <div class="table-wrap"><table>
-<thead><tr><th>時間</th><th>項目</th><th>原幣</th><th>台幣</th><th>方式</th><th>狀態</th><th>備註</th></tr></thead>
-<tbody>
-<tr><td>2026-12-15</td><td>TPE ↔ SIN 雙人機票（三家航空備選）</td><td>NT$26,000</td><td>NT$26,000</td><td>信用卡</td><td><span class="pill">主預算</span></td><td>查詢區間 NT$23,000-25,000；主估 NT$26,000；3% 回饋僅作額外緩衝</td></tr>
-<tr><td>2027-05-27</td><td>HAL 官方岸上行程實付</td><td>USD 235.90</td><td>NT$7,525</td><td>信用卡</td><td><span class="pill">主預算</span></td><td>待 Manage My Cruise 確認；HIA 抵用後實付估算</td></tr>
-<tr><td>2027-07-11</td><td>Unlimited Laundry Package 8 Days</td><td>USD 80</td><td>NT$2,552</td><td>信用卡</td><td><span class="pill">待付款</span></td><td>已預定，尚未付款</td></tr>
-<tr><td>2027-08-30</td><td>郵輪尾款：Verandah + HIA Early Booking Bonus</td><td>USD 3,760</td><td>NT$119,944</td><td>信用卡</td><td><span class="pill">主預算</span></td><td>2027/07 刷卡、2027/08 繳銀行</td></tr>
-<tr><td>2027-11-05</td><td>旅平險／不便險雙人</td><td>NT$6,000</td><td>NT$6,000</td><td>信用卡</td><td><span class="pill">主預算</span></td><td>出發前購買</td></tr>
-<tr><td>2027-11-26</td><td>InterContinental Robertson Quay Club 房補差額</td><td>USD 139</td><td>NT$4,434</td><td>入住當天刷卡</td><td><span class="pill">主預算</span></td><td>另扣 53,000 IHG 點</td></tr>
-<tr><td>2027-11-26</td><td>Taxi / Grab 交通</td><td>SGD 170</td><td>NT$4,187</td><td>現場支付</td><td><span class="pill">主預算</span></td><td>機場、飯店、市區晚餐、碼頭、機場</td></tr>
-<tr><td>2027-11-26</td><td>松發肉骨茶 + 老巴剎晚餐</td><td>SGD 200</td><td>NT$4,926</td><td>現場支付</td><td><span class="pill">主預算</span></td><td>晚餐預算調高到 S$200</td></tr>
-<tr><td>2027-11-26</td><td>船上紀念品＋預備金</td><td>USD 450</td><td>NT$14,355</td><td>船上帳戶</td><td><span class="pill">主預算</span></td><td>旅行內部緩衝與上限控制</td></tr>
-<tr><td>2027-12-05</td><td>台灣大哥大雙人漫遊 15 天</td><td>NT$499</td><td>NT$499</td><td>電信帳單</td><td><span class="pill">主預算</span></td><td>2027/12/5 列帳</td></tr>
-</tbody></table></div>
+      <div class="basic-grid"><article class="basic-card"><span class="kicker">基本資料</span><h3>專案</h3><strong>2027 HAL Noordam Malaysia Discovery</strong></article>
+<article class="basic-card"><span class="kicker">基本資料</span><h3>旅行日期</h3><strong>2027/11/26-2027/12/05</strong></article>
+<article class="basic-card"><span class="kicker">基本資料</span><h3>郵輪日期</h3><strong>2027/11/27-2027/12/05</strong></article>
+<article class="basic-card"><span class="kicker">基本資料</span><h3>郵輪公司</h3><strong>Holland America Line</strong></article>
+<article class="basic-card"><span class="kicker">基本資料</span><h3>船名</h3><strong>Noordam</strong></article>
+<article class="basic-card"><span class="kicker">基本資料</span><h3>航程</h3><strong>8-Day Malaysia Discovery</strong></article>
+<article class="basic-card"><span class="kicker">基本資料</span><h3>起訖港</h3><strong>新加坡往返</strong></article>
+<article class="basic-card"><span class="kicker">基本資料</span><h3>人數</h3><strong>2 人</strong></article></div>
     </section>
 
     <section id="cashflow">
