@@ -291,7 +291,7 @@
             <span class="kicker">Cash floor</span>
             <h3>最低餘額</h3>
           </div>
-          <strong>2027/11 約 NT$286</strong>
+          <strong>2027/11 約 NT$277</strong>
           <p>這不是問題，只要每個付款節點都能順利過關即可。</p>
         </article>
       </div>
@@ -346,7 +346,7 @@
     <section id="cashflow">
       <div class="section-head">
         <div><span class="kicker">Cash flow</span><h2>每月現金流試算</h2></div>
-        <p>月存款會先讀 `data/cash_flow_actual.csv` 的統計日快照與已過月份，再接續未來月份的試算；年利率 1.5%，利息滾入本金。CSV 內的過去月份可以直接改成實際值，網站會重算後續餘額。</p>
+        <p>先讀 `data/cash_flow_actual.csv` 的存款流水，第一列是統計日快照，後面每列是你實際存下來的日期 / 金額 / 備註；Python 會把這些紀錄彙總後，再接續未來月份的試算。年利率 1.5%，利息滾入本金。</p>
       </div>
       <div class="table-wrap"><table>
 <thead><tr><th>月份</th><th>存入</th><th>支出</th><th>年利率</th><th>月底餘額</th><th>備註</th></tr></thead>
@@ -356,19 +356,19 @@
 <tr><td>2026-09</td><td>NT$10,000</td><td>NT$0</td><td>1.5% / 月利率 0.125%</td><td>NT$36,198</td><td>一般月份存款</td></tr>
 <tr><td>2026-10</td><td>NT$10,000</td><td>NT$0</td><td>1.5% / 月利率 0.125%</td><td>NT$46,256</td><td>一般月份存款</td></tr>
 <tr><td>2026-11</td><td>NT$10,000</td><td>NT$0</td><td>1.5% / 月利率 0.125%</td><td>NT$56,326</td><td>一般月份存款</td></tr>
-<tr><td>2026-12</td><td>NT$10,000</td><td>NT$26,000</td><td>1.5% / 月利率 0.125%</td><td>NT$40,376</td><td>機票 NT$26</td></tr>
+<tr><td>2026-12</td><td>NT$10,000</td><td>NT$26,000</td><td>1.5% / 月利率 0.125%</td><td>NT$40,376</td><td>機票 NT$26,000</td></tr>
 <tr><td>2027-01</td><td>NT$10,000</td><td>NT$0</td><td>1.5% / 月利率 0.125%</td><td>NT$50,439</td><td>一般月份存款</td></tr>
-<tr><td>2027-02</td><td>NT$23,000</td><td>NT$0</td><td>1.5% / 月利率 0.125%</td><td>NT$73,531</td><td>加碼存款 NT$23</td></tr>
+<tr><td>2027-02</td><td>NT$23,000</td><td>NT$0</td><td>1.5% / 月利率 0.125%</td><td>NT$73,531</td><td>加碼存款 NT$23,000</td></tr>
 <tr><td>2027-03</td><td>NT$10,000</td><td>NT$0</td><td>1.5% / 月利率 0.125%</td><td>NT$83,635</td><td>一般月份存款</td></tr>
 <tr><td>2027-04</td><td>NT$10,000</td><td>NT$0</td><td>1.5% / 月利率 0.125%</td><td>NT$93,752</td><td>一般月份存款</td></tr>
-<tr><td>2027-05</td><td>NT$10,000</td><td>NT$7,525</td><td>1.5% / 月利率 0.125%</td><td>NT$96,347</td><td>岸上行程暫估 NT$7</td></tr>
+<tr><td>2027-05</td><td>NT$10,000</td><td>NT$7,525</td><td>1.5% / 月利率 0.125%</td><td>NT$96,347</td><td>岸上行程暫估 NT$7,525，待 Manage My Cruise 確認</td></tr>
 <tr><td>2027-06</td><td>NT$10,000</td><td>NT$0</td><td>1.5% / 月利率 0.125%</td><td>NT$106,480</td><td>一般月份存款</td></tr>
-<tr><td>2027-07</td><td>NT$10,000</td><td>NT$0</td><td>1.5% / 月利率 0.125%</td><td>NT$116,626</td><td>郵輪尾款先刷卡，不列入此月現金支出</td></tr>
-<tr><td>2027-08</td><td>NT$10,000</td><td>NT$119,944</td><td>1.5% / 月利率 0.125%</td><td>NT$6,690</td><td>郵輪尾款 NT$119</td></tr>
-<tr><td>2027-09</td><td>NT$10,000</td><td>NT$2,552</td><td>1.5% / 月利率 0.125%</td><td>NT$14,156</td><td>Unlimited Laundry NT$2</td></tr>
-<tr><td>2027-10</td><td>NT$10,000</td><td>NT$0</td><td>1.5% / 月利率 0.125%</td><td>NT$24,186</td><td>一般月份存款</td></tr>
-<tr><td>2027-11</td><td>NT$10,000</td><td>NT$33,902</td><td>1.5% / 月利率 0.125%</td><td>NT$284</td><td>出發前集中支出 NT$33</td></tr>
-<tr><td>2027-12</td><td>NT$10,000</td><td>NT$499</td><td>1.5% / 月利率 0.125%</td><td>NT$9,797</td><td>台灣大哥大漫遊 NT$499；專案結束後關帳</td></tr>
+<tr><td>2027-07</td><td>NT$10,000</td><td>NT$2,552</td><td>1.5% / 月利率 0.125%</td><td>NT$114,070</td><td>郵輪尾款先刷卡，不列入此月現金支出</td></tr>
+<tr><td>2027-08</td><td>NT$10,000</td><td>NT$119,944</td><td>1.5% / 月利率 0.125%</td><td>NT$4,131</td><td>郵輪尾款 NT$119,944</td></tr>
+<tr><td>2027-09</td><td>NT$10,000</td><td>NT$0</td><td>1.5% / 月利率 0.125%</td><td>NT$14,149</td><td>Unlimited Laundry NT$2,552</td></tr>
+<tr><td>2027-10</td><td>NT$10,000</td><td>NT$0</td><td>1.5% / 月利率 0.125%</td><td>NT$24,179</td><td>一般月份存款</td></tr>
+<tr><td>2027-11</td><td>NT$10,000</td><td>NT$33,902</td><td>1.5% / 月利率 0.125%</td><td>NT$277</td><td>出發前集中支出 NT$33,902；船上紀念品＋預備金已內含緩衝</td></tr>
+<tr><td>2027-12</td><td>NT$10,000</td><td>NT$499</td><td>1.5% / 月利率 0.125%</td><td>NT$9,790</td><td>台灣大哥大漫遊 NT$499；專案結束後關帳</td></tr>
 </tbody></table></div>
     </section>
 
