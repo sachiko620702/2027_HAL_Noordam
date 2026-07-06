@@ -21,5 +21,5 @@ Fixed assumptions:
 - InterContinental Osaka
 - Luxury Slow Travel
 - USJ one day
-- Three-star Michelin planning
+- Non-Michelin-focused dining
 - Luxury shopping
