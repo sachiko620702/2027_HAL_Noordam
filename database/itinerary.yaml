@@ -1,0 +1,21 @@
+itinerary:
+  status: planning
+  dates:
+    - date: 2027-11-17
+      day: day1
+      status: draft
+    - date: 2027-11-18
+      day: day2
+      status: draft
+    - date: 2027-11-19
+      day: day3
+      status: draft
+    - date: 2027-11-20
+      day: day4
+      status: draft
+    - date: 2027-11-21
+      day: day5
+      status: draft
+  fixed:
+    hotel: InterContinental Osaka
+    usj_days: 1
