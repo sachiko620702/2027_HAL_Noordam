@@ -1,6 +1,6 @@
 project:
   name: 2027 Osaka Trip
-  version: V5.7.0
+  version: V5.8.0
   source_of_truth: GitHub main
   repository: sachiko620702/2027_OSAKA
   dates:
@@ -11,7 +11,25 @@ project:
   positioning: Luxury Slow Travel
   fixed_items:
     - USJ one day
-    - Non-Michelin-focused dining
+    - Taste-first dining; Michelin status neutral
     - Luxury shopping
+    - Phone roaming for two people
+    - KKday airport transfer both ways
+  user_confirmed_inputs:
+    insurance_total_twd: 6900
+    internet:
+      type: phone_roaming
+      total_for_two_people_twd: 499
+    airport_transfer:
+      platform: KKday
+      service_type: private_airport_transfer
+      routes:
+        - KIX to InterContinental Osaka
+        - InterContinental Osaka to KIX
+      booking_status: product_pending_confirmation
+    dining:
+      principle: taste_first
+      michelin_status: neutral
+      note: Good food matters; Michelin status does not matter either way.
   status: active
   last_updated: 2026-07-06
