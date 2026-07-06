@@ -1,5 +1,25 @@
 # CHANGELOG
 
+## V5.11.0 - 2026-07-06
+
+### Changed
+
+- Added KKday product #536220 as the selected candidate product for InterContinental Osaka and USJ round-trip transfer.
+- Recorded visible starting price TWD 600, 4.8 rating, 400+ sold, e-voucher, 05:00-22:00 service time, Osaka city / Kansai Airport / USJ service area, 30-minute waiting time, JPY 3,000/30-minute overtime fee, JPY 300/km extra mileage fee, and 20 km point-to-point limit.
+- Recommended luxury 7-seater for two travelers; added comfort 10-seater as backup.
+- Updated project, transportation, reservations, budget, ticket-platform database, ticket-platform docs, README, AI context, watchlist, reservation schedule, risk register, and version record.
+- Added `docs/13_版本與更新/2026-07-06_V5.11.0_KKday飯店USJ接送商品536220.md`.
+
+### Reason
+
+The user provided the exact KKday product URL for the hotel-USJ transfer and asked to update the project.
+
+### Follow-up required
+
+- Confirm whether 2027/11/18 is selectable on KKday product #536220.
+- Confirm actual route prices for InterContinental Osaka to USJ and USJ to InterContinental Osaka after selecting date, route, and vehicle type.
+- Confirm USJ return pickup point after 2027 USJ opening hours and Express Pass plan are known.
+
 ## V5.10.0 - 2026-07-06
 
 ### Changed
