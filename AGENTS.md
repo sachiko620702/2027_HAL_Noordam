@@ -29,7 +29,8 @@ Fixed assumptions:
 
 Current logistics and budget inputs:
 
-- Flights: EVA Air BR178 outbound and BR129 return; official 2027-11 schedule and fare need confirmation.
+- Flights: EVA Air BR178 outbound and BR129 return.
+- Flight timing baseline: use current timetable directly for hourly planning: BR178 06:30 TPE to 10:10 KIX; BR129 18:30 KIX to 20:30 TPE. Official 2027-11 schedule, fare, aircraft, terminal, baggage, and booking status still need confirmation before ticketing.
 - Insurance: TWD 6,900, payment status needs confirmation.
 - Internet: phone roaming for two people, total TWD 499.
 - Airport transfer: KKday transfer for both KIX to hotel and hotel to KIX.
