@@ -1,7 +1,7 @@
 metadata:
   id: hotel_lounge
   title: "InterContinental Osaka 行政酒廊規劃"
-  version: "V5.19.0"
+  version: "V5.20.0"
   status: "active_planning_baseline"
   last_updated: "2026-07-06"
   maintained_by: "ChatGPT"
@@ -14,7 +14,7 @@ hotel:
 
 lounge_policy:
   breakfast_principle: "平常早餐以飯店行政酒廊為主；Day 3 木津市場日例外，不吃飯店早餐。"
-  afternoon_tea_principle: "Day 1 抵達後希望使用行政酒廊下午茶；Day 4 也已正式安排行政酒廊下午茶。"
+  afternoon_tea_principle: "Day 1 抵達後希望使用行政酒廊下午茶；Day 4 也已正式安排行政酒廊下午茶，且 Day 4 午餐後會回飯店並在飯店附近活動。"
   confirmation_status: "PENDING_OFFICIAL_ANNOUNCEMENT"
   caveat: "2027 行政酒廊開放時段、入住日是否可於正式入住前使用、房型禮遇、同行者資格與餐飲內容仍需向飯店再次確認。"
 
@@ -30,7 +30,7 @@ planned_lounge_uses:
     purpose: "行政酒廊下午茶"
     planning_time: "15:00–16:30"
     status: "fixed_pending_hotel_policy"
-    note: "已正式排入 Day 4；需確認 2027 實際時段、資格與內容。"
+    note: "已正式排入 Day 4；Day 4 上午以心齋橋／Pokémon Center OSAKA DX 為主，午餐後回 InterContinental Osaka，下午茶後只安排飯店附近活動，晚餐固定在飯店內餐廳。需確認 2027 實際時段、資格與內容。"
 
 day1_sequence:
   - "BR178 抵達 KIX"
@@ -42,12 +42,26 @@ day1_sequence:
   - "Pokémon Center 附近晚餐"
   - "回 InterContinental Osaka 休息"
 
+day4_sequence:
+  - "InterContinental Osaka 行政酒廊早餐"
+  - "心齋橋／大丸心齋橋／Pokémon Center OSAKA DX"
+  - "心齋橋周邊午餐"
+  - "午餐後回 InterContinental Osaka"
+  - "飯店休息／整理購物品"
+  - "InterContinental Osaka Executive Lounge 下午茶"
+  - "飯店附近活動／Grand Front Osaka 周邊"
+  - "InterContinental Osaka 飯店內餐廳晚餐"
+  - "整理戰利品與行李"
+
 fallbacks:
   day1_if_not_available:
     - "若抵達飯店時尚未能使用行政酒廊，先寄放行李並在飯店休息。"
     - "若下午茶時段錯過，Day 1 保留梅田輕食／咖啡作備案。"
     - "若抵達日太累，可縮短 Pokémon Center 停留時間，晚餐仍以附近簡單用餐為主。"
     - "Day 4 行政酒廊下午茶仍保留為正式安排。"
+  day4_if_lounge_not_available:
+    - "若 Day 4 行政酒廊下午茶不可用，改以飯店內 3-60 或附近 Grand Front Osaka 咖啡休息作備案。"
+    - "晚餐仍維持飯店內餐廳方向，避免下午回飯店後再外出。"
 
 watch_items:
   - "InterContinental Osaka 2027 Executive Lounge afternoon tea hours."
@@ -57,3 +71,5 @@ watch_items:
   - "Afternoon tea food and beverage offering."
   - "Whether Day 1 arrival time can realistically connect to afternoon tea after KIX transfer."
   - "Dinner candidates near Pokémon Center OSAKA in Umeda."
+  - "Day 4 Executive Lounge afternoon tea hours and eligibility after returning from Shinsaibashi."
+  - "Day 4 hotel dinner candidates: PIERRE / NOKA Roast & Grill reservation availability, menu, price, service charge and cancellation policy."
