@@ -1,12 +1,20 @@
 itinerary:
+  version: V5.9.0
   status: planning
   dates:
     - date: 2027-11-17
       day: day1
       status: draft
+      fixed_transport:
+        flight: BR178
+        airport_transfer: KKday KIX to InterContinental Osaka
     - date: 2027-11-18
       day: day2
       status: draft
+      focus: USJ one day
+      fixed_transport:
+        outbound: KKday InterContinental Osaka to USJ
+        return: KKday USJ to InterContinental Osaka
     - date: 2027-11-19
       day: day3
       status: draft
@@ -16,6 +24,13 @@ itinerary:
     - date: 2027-11-21
       day: day5
       status: draft
+      fixed_transport:
+        hotel_to_airport: KKday InterContinental Osaka to KIX
+        flight: BR129
   fixed:
     hotel: InterContinental Osaka
     usj_days: 1
+    outbound_flight: BR178
+    return_flight: BR129
+    airport_transfer: KKday round trip
+    usj_transfer: KKday round trip
