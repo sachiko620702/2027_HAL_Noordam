@@ -1,7 +1,7 @@
 metadata:
   id: ticket_platforms_kkday_klook
   title: "KKday / Klook 票券平台候補與已選方案資料"
-  version: "V5.10.0"
+  version: "V5.11.0"
   status: "mixed_selected_and_candidate"
   last_updated: "2026-07-06"
   maintained_by: "ChatGPT"
@@ -19,9 +19,7 @@ selected_kkday_products:
     sold_count: "20K+"
     cancellation: "3天前可免費取消"
     voucher: "電子憑證"
-    booking_deadline: "最快可於出發日期前24小時預訂"
     price_status: "dynamic_price_not_visible_in_public_extract"
-    base_price_note: "需進入 KKday 商品頁選日期、上下車地點、車型後再次確認。"
     routes_for_project:
       - date: "2027-11-17"
         route: "KIX to InterContinental Osaka"
@@ -31,23 +29,50 @@ selected_kkday_products:
       vehicle: "豪華7座 / Toyota Alphard 2代同等級"
       capacity: "5人"
       luggage: "3件28-30吋托運行李"
-      reason: "2人旅行且行李3件內時最符合 Luxury Slow Travel 與舒適度。"
     backup_choice:
       vehicle: "舒適10座 / HiAce同等級"
       capacity: "9人"
       luggage: "9件28-30吋托運行李"
-      reason: "若行李超過3件，或想要更寬敞空間，改選10座。"
+  hotel_usj_transfer_536220:
+    product_id: 536220
+    title: "大阪市內/關西機場 ⇔ 大阪環球影城單程私人接送"
+    url: "https://www.kkday.com/zh-tw/product/536220"
+    query_date: "2026-07-06"
+    status: "selected_candidate_price_pending"
+    rating: 4.8
+    sold_count: "400+"
+    visible_starting_price_twd: 600
+    cancellation: "非急單用車時間24小時前可免費取消"
+    voucher: "電子憑證"
+    service_area: "大阪市區/關西機場/日本環球影城"
+    service_time: "05:00-22:00"
+    price_status: "visible_from_price_dynamic_route_price_pending"
+    routes_for_project:
+      - date: "2027-11-18"
+        route: "InterContinental Osaka to Universal Studios Japan"
+      - date: "2027-11-18"
+        route: "Universal Studios Japan to InterContinental Osaka"
+    recommended_choice:
+      vehicle: "豪華7座 / Toyota Alphard同等級"
+      capacity: "5人"
+      luggage: "4件24吋行李"
+      reason: "2人往返USJ最符合 Luxury Slow Travel。"
+    backup_choice:
+      vehicle: "舒適10座 / Toyota Hiace同等級"
+      capacity: "9人"
+      luggage: "9件24吋行李"
+      reason: "若想更寬敞或行李較多，改選10座。"
     extra_fees:
-      child_seat_second_jpy: 2000
-      night_surcharge_jpy: 2000
-      night_surcharge_time: "22:00-06:00"
-      overtime_7_to_14_seater_jpy_per_hour: 5000
+      child_seat_jpy: 2000
+      out_of_osaka_city_surcharge_jpy_from: 10000
+      night_service_fee_jpy_from: 2000
+      overtime_fee_jpy_per_30_minutes: 3000
+      extra_mileage_fee_jpy_per_km: 300
     waiting_time:
-      arrival: "90分鐘"
-      departure: "30分鐘"
+      point_to_point: "30分鐘"
     driver_languages:
-      - "日文"
       - "中文"
+      - "日文"
 
 trip_context:
   dates: "2027-11-17 to 2027-11-21"
@@ -60,7 +85,7 @@ trip_context:
     - "Luxury shopping"
     - "Phone roaming selected for internet"
     - "KKday product 129909 selected candidate for KIX-hotel transfer"
-    - "KKday hotel-USJ transfer selected both ways"
+    - "KKday product 536220 selected candidate for hotel-USJ transfer"
 
 platforms:
   kkday:
@@ -68,7 +93,7 @@ platforms:
     role: "機場接送與飯店-USJ接送已選平台；其他票券仍作候補採購平台"
     selected_for:
       - "KIX to InterContinental Osaka transfer both ways via product 129909"
-      - "InterContinental Osaka to USJ transfer both ways"
+      - "InterContinental Osaka to USJ transfer both ways via product 536220"
     source_status: "NEEDS_RECONFIRMATION_FOR_2027"
     source_url: "https://www.kkday.com/"
   klook:
@@ -77,25 +102,11 @@ platforms:
     source_status: "NEEDS_RECONFIRMATION"
     source_url: "https://www.klook.com/"
 
-candidate_use_cases:
-  - id: "USJ_TICKET_BACKUP"
-    category: "USJ"
-    item: "Studio Pass / Express Pass / VIP related products"
-    recommendation: "官方 USJ 為主；KKday/Klook 僅作價格、信用卡優惠、庫存備援比較。"
-    purchase_timing: "2027 官方票券與 Express Pass 開賣後立即比較；2027-11 目前 PENDING_OFFICIAL_ANNOUNCEMENT。"
-    decision_status: "candidate"
-    project_fit: "high"
-  - id: "OSAKA_AMAZING_PASS"
-    category: "Sightseeing pass"
-    item: "Osaka Amazing Pass"
-    recommendation: "只在同一天安排 2-3 個以上免費入場設施與大阪市內移動時才考慮；目前不納入正式行程。"
-    decision_status: "candidate"
-    project_fit: "medium-low for Luxury Slow Travel"
-
 watchlist_items:
   - "KKday product 129909 2027/11/17 KIX to InterContinental Osaka price"
   - "KKday product 129909 2027/11/21 InterContinental Osaka to KIX price"
-  - "KKday product 129909 7-seater versus 10-seater price comparison"
-  - "KKday InterContinental Osaka to USJ transfer availability, price, pickup time, pickup point, and booking rules"
+  - "KKday product 536220 2027/11/18 InterContinental Osaka to USJ price"
+  - "KKday product 536220 2027/11/18 USJ to InterContinental Osaka price"
+  - "KKday product 536220 7-seater versus 10-seater price comparison"
   - "2027/11 USJ Studio Pass official release"
   - "Phone roaming activation, billing, hotspot, and fair-use policy"
