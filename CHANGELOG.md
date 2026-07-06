@@ -1,5 +1,30 @@
 # CHANGELOG
 
+## V5.17.0 - 2026-07-06
+
+### Changed
+
+- Added Day 1 formal stop: Pokémon Center OSAKA in Umeda.
+- Added Day 3 formal lunch: 京 鰻和 本店 / 京 うな和 本店.
+- Added Day 3 formal dinner: 天ぷら 京星 / Tempura Kyoboshi.
+- Recorded 天ぷら 京星 primary reservation route as TABLEALL Reservation Request.
+- Recorded current TABLEALL reference: dinner 18:00-19:30, Kyoboshi omakase course, JPY 25,500, including TABLEALL booking fee JPY 8,000.
+- Added Day 4 formal stop: Pokémon Center OSAKA DX.
+- Added Day 4 formal plan: InterContinental Osaka Executive Lounge afternoon tea.
+- Updated database, customer-facing three tables, GitHub Pages root page, docs homepage, Day 3 formal itinerary, README, AI_CONTEXT, PROJECT_RULE, AGENTS, DECISIONS, and WATCHLIST.
+
+### Reason
+
+The user provided new formal itinerary details and the TABLEALL reservation URL for 天ぷら 京星.
+
+### Follow-up required
+
+- Confirm Pokémon Center OSAKA 2027-11-17 hours, event rules, and limited goods.
+- Confirm 京 鰻和 本店 2027-11-19 lunch reservation, price, fee, menu, and cancellation policy.
+- Confirm 天ぷら 京星 2027-11-19 TABLEALL availability, final price, booking fee, cancellation policy, and actual dinner time.
+- Confirm Pokémon Center OSAKA DX 2027-11-20 hours, event rules, and limited goods.
+- Confirm InterContinental Osaka Executive Lounge 2027 afternoon tea access and hours.
+
 ## V5.16.1 - 2026-07-06
 
 ### Changed
