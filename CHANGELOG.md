@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## V5.16.1 - 2026-07-06
+
+### Changed
+
+- Synced AGENTS and ROADMAP with the already-confirmed Day 3 formal itinerary.
+- Reaffirmed that Day 3 is formal, not candidate: Kizu Market brunch + Kyoto sweets souvenirs + Pokemon / anime.
+- Reaffirmed that Day 3 primary transportation is public rail plus short taxi, with KKday #133661 retained only as backup.
+
+### Reason
+
+The user reiterated that the former candidate route is now formally confirmed. The main V5.16.0 decision was already recorded, and this patch keeps collaboration and roadmap files consistent for future AI maintenance.
+
 ## V5.16.0 - 2026-07-06
 
 ### Changed
