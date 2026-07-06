@@ -1,7 +1,7 @@
 # AI_CONTEXT
 
 Project: 2027 Osaka Trip
-Version: V5.11.0
+Version: V5.12.0
 Repository: sachiko620702/2027_OSAKA
 Source of truth: GitHub main branch
 
@@ -29,6 +29,7 @@ Source of truth: GitHub main branch
 10. KKday airport transfer product 129909 details and price confirmation
 11. KKday hotel-USJ transfer product 536220 details and price confirmation
 12. Mobile roaming setup and payment confirmation
+13. Customer-facing travel planning tables: itinerary, pre-trip TODO list, and budget summary
 
 ## User-Provided Confirmed Planning Inputs
 
@@ -38,6 +39,15 @@ Source of truth: GitHub main branch
 - Airport transfer: use KKday product 129909 both ways between KIX and InterContinental Osaka.
 - USJ transfer: use KKday product 536220 both ways between InterContinental Osaka and Universal Studios Japan.
 - Dining: choose restaurants because they are good; Michelin status does not matter either way.
+- Customer-facing output: always maintain the three simple tables requested by the user: 行程表, 行前提醒／TODO LIST, 預算表.
+
+## Customer-Facing Output Rules
+
+- Use Traditional Chinese.
+- Audience is travelers/customers, not internal project maintainers.
+- Keep tables simple and use the fixed columns recorded in `database/customer_facing_travel_plan.yml`.
+- Mark uncertain items as 待確認, 待官方公布, or 參考價格.
+- Update existing customer-facing content instead of creating parallel versions.
 
 ## Maintenance Rule
 
