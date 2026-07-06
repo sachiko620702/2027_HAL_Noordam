@@ -1,5 +1,34 @@
 # CHANGELOG
 
+## V5.23.0 - 2026-07-06
+
+### Changed
+
+- Updated Day 4 dinner direction from V5.22.0 sushi preference to PIERRE Anniversary Dinner at InterContinental Osaka.
+- Updated `database/day4_shinsaibashi_hotel_dinner.yml` with the PIERRE anniversary dinner plan, window / Osaka night-view seat request, and reservation note draft.
+- Added decision D031 for Day 4 Anniversary Dinner at PIERRE.
+- Updated DECISIONS, README, AI_CONTEXT, PROJECT_RULE, AGENTS, ROADMAP, WATCHLIST, customer-facing tables, hourly itinerary database, homepage files, and daily sync status.
+- Added `docs/01_行程規劃/2027大阪自由行_小時制時間表_V5.23.0.md`.
+- Added `docs/13_版本與更新/V5.23.0_Day4_PIERRE_Anniversary_Dinner更新.md`.
+- Kept V5.22.0 sushi dinner preference as fallback-only if the user changes back.
+
+### Reason
+
+The user explicitly stated: “Anniversary Dinner Pierre的靠窗座位，盡享大阪夜景美景。”
+
+### Impact
+
+- Day 4 dinner is now PIERRE Anniversary Dinner, not sushi.
+- Reservation notes must request an anniversary dinner, a window seat / Osaka night-view table, and optionally anniversary dessert message or photo support.
+- Window / night-view seating is a request only and must be confirmed by the restaurant.
+- Day 4 remains aligned with Luxury Slow Travel because dinner stays inside InterContinental Osaka after the afternoon hotel rest / lounge block.
+
+### Follow-up required
+
+- Confirm PIERRE 2027/11/20 dinner booking window, operating hours, menu, price, service charge, dress code, cancellation policy, and seat request rules.
+- Confirm whether PIERRE can arrange anniversary dessert message, small celebration support, and photo assistance.
+- Keep Day 4 sushi candidates only as fallback if the user changes back.
+
 ## V5.22.0 - 2026-07-06
 
 ### Changed
