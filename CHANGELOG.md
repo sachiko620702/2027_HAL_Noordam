@@ -1,5 +1,29 @@
 # CHANGELOG
 
+## V5.16.0 - 2026-07-06
+
+### Changed
+
+- Promoted Day 3 from candidate to formal itinerary.
+- Confirmed Day 3 theme: Kizu Market brunch + Kyoto sweets souvenirs + Pokemon / anime.
+- Confirmed Day 3 primary transportation as public rail plus short taxi.
+- Kept KKday #133661 10-hour charter as backup only for rain, fatigue, heavy shopping, or door-to-door comfort.
+- Added `docs/01_行程規劃/2027-11-19_Day3_木津市場京都甜點寶可夢動漫正式行程_V5.16.0.md`.
+- Marked the V5.14.0 Day 3 candidate document as historical and superseded.
+- Updated customer-facing three tables, GitHub Pages root page, docs homepage, README, AI_CONTEXT, PROJECT_RULE, DECISIONS, WATCHLIST, daily status, and version record.
+
+### Reason
+
+The user explicitly confirmed that the previous candidate route, 木津市場早午餐＋京都甜點伴手禮＋寶可夢／動漫, is now the formal itinerary.
+
+### Follow-up required
+
+- Reconfirm Kizu Market 2027-11-19 market calendar and brunch options.
+- Reconfirm Tsuruya Yoshinobu IRODORI, Suetomi, and MALEBRANCHE Cacao 365 Gion 2027-11-19 hours, closures, and product availability.
+- Reconfirm Pokemon Center KYOTO and Kyoto International Manga Museum 2027 hours, closures, events, and product availability.
+- Estimate Day 3 rail plus short taxi timing and cost closer to departure.
+- Decide closer to departure whether KKday #133661 backup should be retained.
+
 ## V5.15.0 - 2026-07-06
 
 ### Changed
