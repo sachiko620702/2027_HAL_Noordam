@@ -11,7 +11,7 @@ Do not change these without an explicit user request:
 - One USJ day
 - Taste-first dining; Michelin status neutral
 - Luxury shopping
-- Day 1 formal sequence: arrival at InterContinental Osaka, target Executive Lounge afternoon tea, rest at the hotel, Pokemon Center OSAKA in Umeda, dinner near Pokemon Center, then return to the hotel
+- Day 1 formal sequence: arrival at InterContinental Osaka, target Executive Lounge afternoon tea, rest at the hotel, Pokemon Center OSAKA in Umeda, dinner at 千房 梅田周邊店 / Chibo Umeda-area branch, then return to the hotel
 - Day 3 formal itinerary: Kizu Market + Kyoto sweets souvenirs + Pokemon / anime + 京 鰻和 本店 lunch + 天ぷら 京星 dinner
 - Day 4 formal route: Shinsaibashi-centered activity range until lunch, including Pokemon Center OSAKA DX; return to InterContinental Osaka after lunch; afternoon at / near the hotel; Executive Lounge afternoon tea; dinner cuisine preference is sushi
 
@@ -19,7 +19,7 @@ Current user-confirmed planning inputs:
 
 - Flights: EVA Air BR178 outbound and BR129 return.
 - Flight timing baseline: use the current timetable directly for hourly planning: BR178 06:30 TPE to 10:10 KIX; BR129 18:30 KIX to 20:30 TPE. Official 2027-11 schedule, fare, aircraft, terminal, baggage, and booking status still require confirmation before ticketing.
-- Day 1 arrival sequence: use afternoon tea at the hotel, rest a bit, go to Umeda Pokémon Center, eat dinner near the Pokémon Center, and return to the hotel.
+- Day 1 arrival sequence: use afternoon tea at the hotel, rest a bit, go to Umeda Pokémon Center, eat dinner at 千房 梅田周邊店 / Chibo Umeda-area branch, and return to the hotel. Exact Chibo branch still needs confirmation.
 - Day 4 sequence: Shinsaibashi / Daimaru Shinsaibashi / Pokémon Center OSAKA DX before and around lunch; after lunch return to InterContinental Osaka; afternoon at or near the hotel; dinner preference is sushi.
 - Day 4 location caveat: InterContinental Osaka official FAQ currently says there is no Japanese restaurant in the hotel, so sushi dinner likely requires a nearby / Umeda / Osaka Station sushi candidate. If the user later prioritizes in-hotel dining over sushi, PIERRE / NOKA can be fallback-only.
 - Travel insurance budget amount: TWD 6,900; payment status needs confirmation.
