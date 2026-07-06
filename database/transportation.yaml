@@ -1,5 +1,5 @@
 transportation:
-  version: V5.9.0
+  version: V5.10.0
   last_updated: 2026-07-06
   flights:
     airline: EVA Air
@@ -19,10 +19,31 @@ transportation:
       - departure and arrival times
       - fare, baggage allowance, seat selection, and cancellation rules
   airport_transfer:
-    status: selected_pending_product_confirmation
+    status: selected_product_price_pending
     platform: KKday
+    selected_product:
+      product_id: 129909
+      title: Kansai Airport KIX private transfer to Osaka Kyoto Nara Kobe
+      url: https://www.kkday.com/zh-tw/product/129909-japan-kansai-international-airport-private-transfer-to-osaka-kyoto-nara-kobe-nagoya
+      rating: 4.9
+      sold_count: 20000_plus
+      query_date: 2026-07-06
+      price_status: dynamic_price_needs_manual_confirmation
+      note: Public page text did not expose base fare. Need enter KKday date, destination, pickup/drop-off, and vehicle type to confirm price.
     service_type: airport_charter_transfer
     travelers: 2
+    recommended_option:
+      vehicle: luxury_7_seater
+      reason: best fit for two travelers if checked luggage is 3 pieces or fewer
+      capacity_people: 5
+      luggage_allowance: 3 checked bags 28-30 inch
+      status: recommended_candidate
+    fallback_option:
+      vehicle: comfort_10_seater
+      reason: choose if luggage is more than 3 checked bags or more space is preferred
+      capacity_people: 9
+      luggage_allowance: 9 checked bags 28-30 inch
+      status: backup_candidate
     routes:
       outbound:
         date: 2027-11-17
@@ -34,13 +55,26 @@ transportation:
         from: InterContinental Osaka
         to: Kansai International Airport KIX
         status: selected_pending_booking
+    rules_from_product_page:
+      cancellation: free_cancellation_3_days_before_experience_date
+      voucher: e_voucher
+      booking_deadline: up_to_24_hours_before_departure
+      arrival_waiting_time: 90_minutes_free
+      departure_waiting_time: 30_minutes_free
+      night_surcharge_jpy: 2000
+      night_surcharge_time: 22:00-06:00
+      second_child_seat_jpy: 2000
+      overtime_7_to_14_seater_jpy_per_hour: 5000
+      driver_languages:
+        - Japanese
+        - Chinese
     required_checks:
-      - exact KKday product page and availability for 2027-11 dates
-      - total round-trip price and currency
-      - vehicle type and luggage capacity
-      - waiting time
-      - flight delay rules
-      - cancellation and refund policy
+      - select 2027-11-17 and 2027-11-21 when available
+      - confirm route price for Osaka city and InterContinental Osaka
+      - confirm if 7-seater allows actual luggage count
+      - confirm flight number BR178 pickup handling
+      - confirm BR129 hotel pickup time
+      - confirm refund and booking rules on checkout page
   usj_transfer:
     status: selected_pending_product_confirmation
     platform: KKday
@@ -65,8 +99,8 @@ transportation:
       - vehicle type and luggage or stroller capacity if needed
       - cancellation and refund policy
   local:
-    airport_to_hotel: KKday airport transfer selected
-    hotel_to_airport: KKday airport transfer selected
+    airport_to_hotel: KKday product 129909 selected
+    hotel_to_airport: KKday product 129909 selected
     hotel_to_usj: KKday transfer selected
     usj_to_hotel: KKday transfer selected
     shopping_routes: pending
