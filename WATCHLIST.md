@@ -30,10 +30,12 @@ Track items that may change before departure.
 
 ## Dining
 
-- Michelin guide updates
-- booking windows
-- TableCheck availability
-- cancellation policies
+- Non-Michelin Osaka restaurant candidates
+- Restaurant opening days and hours
+- Booking windows
+- TableCheck availability where relevant
+- Cancellation policies
+- Location fit with InterContinental Osaka, USJ day, shopping day, and slow-travel pacing
 
 ## Shopping
 
