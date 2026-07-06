@@ -32,7 +32,7 @@
 ## Quick access
 
 - [顧客版旅遊規劃三表](docs/15_顧客版資料/旅遊規劃三表.md)
-- [小時制時間表](docs/01_行程規劃/2027大阪自由行_小時制時間表_V5.20.0.md)
+- [小時制時間表](docs/01_行程規劃/2027大阪自由行_小時制時間表_V5.21.0.md)
 - [Day 1 梅田 Pokémon Center 附近晚餐候選](docs/02_餐廳美食/Day1_梅田PokemonCenter附近晚餐候選_V5.20.0.md)
 - [Day 3 正式行程](docs/01_行程規劃/2027-11-19_Day3_木津市場京都甜點寶可夢動漫正式行程_V5.16.0.md)
 - [Day 4 心齋橋與飯店內晚餐資料庫](database/day4_shinsaibashi_hotel_dinner.yml)
