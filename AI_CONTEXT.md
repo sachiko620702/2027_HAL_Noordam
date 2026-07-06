@@ -1,8 +1,8 @@
 # AI_CONTEXT
 
-Project: 2027 Osaka Trip
-Version: V5.23.0
-Repository: sachiko620702/2027_OSAKA
+Project: 2027 Osaka Trip  
+Version: V5.24.0  
+Repository: sachiko620702/2027_OSAKA  
 Source of truth: GitHub main branch
 
 ## Fixed Travel Plan
@@ -21,6 +21,7 @@ Source of truth: GitHub main branch
 - Day 4 dinner request: reserve PIERRE as an anniversary dinner and request a window table / Osaka night-view table. Seating cannot be treated as guaranteed until confirmed by the restaurant.
 - Day 4 sushi note: V5.22.0 recorded sushi as a preferred dinner cuisine, but V5.23.0 supersedes it. Keep sushi only as fallback if the user changes back.
 - Flight timing baseline: use the current BR178 / BR129 timetable for hourly planning: BR178 TPE 06:30 to KIX 10:10; BR129 KIX 18:30 to TPE 20:30. Official 2027-11 schedule, fare, aircraft, terminal, baggage, and booking status still require reconfirmation.
+- Budget baseline V5.24.0: recommended total TWD 327,664 for two travelers; safety ceiling TWD 380,000 for two travelers; luxury handbags, jewelry, and watches are excluded and should be budgeted separately.
 
 ## Current Priorities
 
@@ -32,7 +33,7 @@ Source of truth: GitHub main branch
 6. Luxury shopping plan
 7. Osaka Amazing Pass candidate plan
 8. YouTube source database cleanup
-9. Budget tracking
+9. Budget tracking and recalculation against `database/budget_model.yml`
 10. KKday airport transfer product 129909 details and price confirmation
 11. KKday hotel-USJ transfer product 536220 details and price confirmation
 12. KKday Day 3 charter product 133661 as backup only
@@ -50,13 +51,15 @@ Source of truth: GitHub main branch
 ## User-Provided Confirmed Planning Inputs
 
 - Flights: EVA Air BR178 outbound and BR129 return.
-- Flight timing baseline: per user instruction, use the current schedule directly for planning: BR178 06:30 TPE to 10:10 KIX; BR129 KIX 18:30 KIX to 20:30 TPE. Official 2027-11 schedule, fare, aircraft, terminal, baggage, and booking status need reconfirmation.
+- Flight timing baseline: per user instruction, use the current schedule directly for planning: BR178 06:30 TPE to 10:10 KIX; BR129 KIX 18:30 to TPE 20:30. Official 2027-11 schedule, fare, aircraft, terminal, baggage, and booking status need reconfirmation.
+- Flight budget reference: TWD 35,000 for two travelers round trip, user-provided; reconfirm before ticketing.
+- Airport transfer: use KKday product 129909 both ways between KIX and InterContinental Osaka. User-provided V5.24.0 reference is TWD 2,600 each way, TWD 5,200 round trip.
+- USJ transfer: use KKday product 536220 both ways between InterContinental Osaka and Universal Studios Japan. User-provided screenshot V5.24.0 reference is TWD 1,732 each way, TWD 3,464 round trip.
+- Recommended budget baseline: TWD 327,664 for two travelers; safety ceiling TWD 380,000; luxury shopping is separate.
 - Day 1 sequence: after arrival at the hotel, the user wants to use afternoon tea, rest a bit, then go to Umeda Pokémon Center, eat dinner near the Pokémon Center, and return to the hotel.
 - Day 1 dinner: user selected 千房 梅田周邊店 / Chibo Umeda-area branch as the formal dinner direction; exact branch still requires confirmation.
 - Travel insurance budget amount: TWD 6,900; payment status needs confirmation.
 - Internet: phone roaming for two people, total TWD 499; eSIM / SIM / Pocket Wi-Fi are backup only.
-- Airport transfer: use KKday product 129909 both ways between KIX and InterContinental Osaka.
-- USJ transfer: use KKday product 536220 both ways between InterContinental Osaka and Universal Studios Japan.
 - Dining: choose restaurants because they are good; Michelin status does not matter either way.
 - Customer-facing output: always maintain the three simple tables requested by the user: 行程表, 行前提醒／TODO LIST, 預算表.
 - Day 3 formal itinerary: 木津市場＋京都甜點伴手禮＋寶可夢／動漫＋京 鰻和 本店午餐＋天ぷら 京星晚餐.
@@ -72,6 +75,10 @@ Source of truth: GitHub main branch
 ## Day 4 Formal Plan
 
 2027-11-20 is formally Shinsaibashi-centered until lunch: Pokémon Center OSAKA DX / Daimaru Shinsaibashi and nearby shopping. After lunch, the route returns to InterContinental Osaka. Afternoon activities should stay at the hotel or nearby Grand Front Osaka / Umeda area, with Executive Lounge afternoon tea retained. Dinner is now Anniversary Dinner at PIERRE inside InterContinental Osaka. The reservation should note the anniversary, request a window table / Osaka night-view table, and ask about an anniversary dessert message or small celebration option if available. The window / night-view table request is not guaranteed until confirmed by the restaurant. Sushi is fallback-only unless the user changes back.
+
+## Budget Model
+
+The active budget model is `database/budget_model.yml` and the customer-readable document is `docs/06_預算/2027大阪自由行_預算模型_V5.24.0.md`. The current recommended budget is TWD 327,664 for two travelers, with a safety ceiling of TWD 380,000. Luxury handbags, jewelry, watches, USJ VIP Tour / Private VIP Tour, guaranteed early check-in, and paid upgrades are excluded unless explicitly added later.
 
 ## Customer-Facing Output Rules
 
