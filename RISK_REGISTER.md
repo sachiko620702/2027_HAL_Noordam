@@ -8,15 +8,15 @@ Mitigation: mark prices and rules as pending until official release.
 
 ## R002 Restaurant booking difficulty
 
-Risk: Good restaurants may be hard to reserve even if Michelin status is not part of the decision.
+Risk: Good restaurants may be hard to reserve.
 Impact: dining plan may need alternatives.
 Mitigation: maintain a taste-first backup restaurant list and booking schedule.
 
-## R003 Flight price volatility
+## R003 Flight schedule and price confirmation
 
-Risk: TPE-KIX fare changes before purchase.
-Impact: transportation budget may change.
-Mitigation: track monthly price patterns.
+Risk: BR178 and BR129 are selected, but official 2027-11 schedule and fare are not confirmed yet.
+Impact: arrival time, departure time, transfer time, and transportation budget may change.
+Mitigation: track EVA Air official schedule and fare before purchase.
 
 ## R004 Hotel policy changes
 
@@ -40,10 +40,16 @@ Mitigation: search database and docs before each update.
 
 Risk: KKday airport transfer details for 2027/11 are not confirmed yet.
 Impact: airport movement budget and timing may change.
-Mitigation: confirm exact product, price, vehicle type, luggage rules, waiting time, delayed-flight handling, and cancellation policy after flights are fixed.
+Mitigation: confirm product, price, vehicle type, luggage rules, waiting time, and booking rules after flights are fixed.
 
 ## R008 Payment status uncertainty
 
 Risk: insurance amount TWD 6,900 and phone roaming amount TWD 499 are recorded, but payment status is not confirmed.
 Impact: paid and unpaid budget totals may be inaccurate.
 Mitigation: confirm payment status and payment method before final budget calculation.
+
+## R009 KKday hotel-USJ transfer confirmation
+
+Risk: KKday hotel-USJ transfer details for 2027-11-18 are not confirmed yet.
+Impact: USJ departure time, return time, and transportation budget may change.
+Mitigation: confirm product, price, pickup time, pickup point, vehicle type, and booking rules after USJ schedule is known.
