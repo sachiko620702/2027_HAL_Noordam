@@ -1,0 +1,58 @@
+metadata:
+  id: flight_schedule
+  title: "長榮航空 BR178 / BR129 現行班表採用"
+  version: "V5.18.0"
+  status: "active_planning_baseline"
+  last_updated: "2026-07-06"
+  maintained_by: "ChatGPT"
+  language: "zh-Hant"
+
+planning_decision:
+  user_instruction: "飛機班表直接用現在的"
+  decision: "2027/11/17 去程與 2027/11/21 回程的小時制行程，先直接採用目前 BR178 / BR129 班表作為規劃基準。"
+  caveat: "2027/11 官方班表、票價、機型、航廈、行李與實際訂位狀態仍需於開賣後再次確認。"
+  source_confidence: "★★★ third-party current timetable reference; official EVA Air confirmation required before ticketing"
+
+flights:
+  outbound:
+    date: "2027/11/17（三）"
+    airline: "EVA Air"
+    flight_no: "BR178"
+    route: "TPE → KIX"
+    origin: "Taiwan Taoyuan International Airport"
+    destination: "Kansai International Airport"
+    planning_departure_time: "06:30"
+    planning_arrival_time: "10:10"
+    aircraft_reference: "Boeing 787-10"
+    planning_status: "use_current_timetable_as_baseline"
+    official_2027_status: "PENDING_OFFICIAL_ANNOUNCEMENT"
+  inbound:
+    date: "2027/11/21（日）"
+    airline: "EVA Air"
+    flight_no: "BR129"
+    route: "KIX → TPE"
+    origin: "Kansai International Airport"
+    destination: "Taiwan Taoyuan International Airport"
+    planning_departure_time: "18:30"
+    planning_arrival_time: "20:30"
+    aircraft_reference: "Boeing 787-10 / Airbus A330-300 reference shown in current timetable variants"
+    planning_status: "use_current_timetable_as_baseline"
+    official_2027_status: "PENDING_OFFICIAL_ANNOUNCEMENT"
+
+planning_impact:
+  day1:
+    arrival_to_kix: "10:10"
+    expected_hotel_arrival_window: "13:00–14:00"
+    itinerary_effect: "Day 1 梅田 Pokémon Center OSAKA 可排入下午至傍晚，抵達日仍保留休息。"
+  day5:
+    departure_from_kix: "18:30"
+    expected_hotel_pickup_window: "14:00–15:00"
+    itinerary_effect: "Day 5 可吃行政酒廊早餐並保留上午整理行李；不建議安排遠距離景點。"
+
+source_notes:
+  - source_name: "FlightConnections"
+    checked_date: "2026-07-06"
+    outbound_reference: "TPE → KIX BR 178 06:30 → 10:10"
+    inbound_reference: "KIX → TPE BR 129 18:30 → 20:30"
+  - source_name: "EVA Air official timetable"
+    status: "需要於 2027/11 開賣或官方班表發布後再次確認"
