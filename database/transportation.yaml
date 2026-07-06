@@ -1,5 +1,5 @@
 transportation:
-  version: V5.10.0
+  version: V5.11.0
   last_updated: 2026-07-06
   flights:
     airline: EVA Air
@@ -17,7 +17,7 @@ transportation:
     required_checks:
       - official 2027-11 schedule and ticket availability
       - departure and arrival times
-      - fare, baggage allowance, seat selection, and cancellation rules
+      - fare, baggage allowance, seat selection, and ticket rules
   airport_transfer:
     status: selected_product_price_pending
     platform: KKday
@@ -29,7 +29,6 @@ transportation:
       sold_count: 20000_plus
       query_date: 2026-07-06
       price_status: dynamic_price_needs_manual_confirmation
-      note: Public page text did not expose base fare. Need enter KKday date, destination, pickup/drop-off, and vehicle type to confirm price.
     service_type: airport_charter_transfer
     travelers: 2
     recommended_option:
@@ -74,12 +73,34 @@ transportation:
       - confirm if 7-seater allows actual luggage count
       - confirm flight number BR178 pickup handling
       - confirm BR129 hotel pickup time
-      - confirm refund and booking rules on checkout page
+      - confirm booking rules on checkout page
   usj_transfer:
-    status: selected_pending_product_confirmation
+    status: selected_product_price_pending
     platform: KKday
-    service_type: hotel_usj_charter_transfer
+    selected_product:
+      product_id: 536220
+      title: Osaka city or Kansai Airport to Universal Studios Japan point-to-point private transfer
+      url: https://www.kkday.com/zh-tw/product/536220
+      rating: 4.8
+      sold_count: 400_plus
+      query_date: 2026-07-06
+      visible_starting_price_twd: 600
+      price_status: visible_from_twd_600_dynamic_price_needs_manual_confirmation
+      note: Public page shows TWD 600 from price, but actual InterContinental Osaka to USJ route price must be confirmed after selecting date, route, and vehicle.
+    service_type: osaka_city_usj_point_to_point_transfer
     travelers: 2
+    recommended_option:
+      vehicle: luxury_7_seater
+      reason: best fit for two travelers and up to 4 pieces of 24-inch luggage on this product page
+      capacity_people: 5
+      luggage_allowance: 4 pieces 24-inch luggage
+      status: recommended_candidate
+    fallback_option:
+      vehicle: comfort_10_seater
+      reason: choose if more space or more luggage is preferred
+      capacity_people: 9
+      luggage_allowance: 9 pieces 24-inch luggage
+      status: backup_candidate
     routes:
       outbound:
         date: 2027-11-18
@@ -91,18 +112,34 @@ transportation:
         from: Universal Studios Japan
         to: InterContinental Osaka
         status: selected_pending_booking
+    rules_from_product_page:
+      service_area: Osaka city, Kansai Airport, Universal Studios Japan
+      service_time: 05:00-22:00
+      cancellation: free_cancellation_24_hours_before_non_urgent_booking
+      voucher: e_voucher
+      waiting_time: 30_minutes_free
+      overtime_fee_jpy_per_30_minutes: 3000
+      extra_mileage_fee_jpy_per_km: 300
+      point_to_point_distance_limit_km: 20
+      out_of_osaka_city_surcharge_jpy_from: 10000
+      night_service_fee_jpy_from: 2000
+      child_seat_jpy: 2000
+      driver_languages:
+        - Chinese
+        - Japanese
     required_checks:
-      - exact KKday product page and availability for 2027-11-18
-      - total round-trip price and currency
-      - pickup time and pickup point
-      - return pickup point after USJ closing
-      - vehicle type and luggage or stroller capacity if needed
-      - cancellation and refund policy
+      - select 2027-11-18 when available
+      - confirm InterContinental Osaka to USJ route price
+      - confirm USJ to InterContinental Osaka route price
+      - confirm pickup time and pickup point
+      - confirm return pickup point after USJ closing
+      - confirm whether 7-seater is sufficient
+      - confirm booking rules on checkout page
   local:
     airport_to_hotel: KKday product 129909 selected
     hotel_to_airport: KKday product 129909 selected
-    hotel_to_usj: KKday transfer selected
-    usj_to_hotel: KKday transfer selected
+    hotel_to_usj: KKday product 536220 selected
+    usj_to_hotel: KKday product 536220 selected
     shopping_routes: pending
     city_rail: backup
     taxi: candidate for shopping day and rainy-day movement
