@@ -1,7 +1,7 @@
 {
   "metadata": {
     "project": "2027 Osaka Trip",
-    "version": "V5.3.0",
+    "version": "V5.4.0",
     "purpose": "Daily price and open-status monitoring"
   },
   "web_checks": [
@@ -263,11 +263,11 @@
       "note": "Check upgrade offers and elite benefits."
     },
     {
-      "id": "dining_michelin_updates",
+      "id": "dining_non_michelin_candidates",
       "category": "Dining",
-      "label": "Michelin guide updates",
+      "label": "Non-Michelin Osaka restaurant candidates",
       "source": "WATCHLIST.md",
-      "note": "Check Michelin Osaka listings and star changes."
+      "note": "Check candidate restaurants for taste, comfort, opening hours, location fit, and reservation feasibility."
     },
     {
       "id": "dining_booking_windows",
