@@ -1,4 +1,4 @@
-# 2027 大阪自由行 V5.20.0
+# 2027 大阪自由行 V5.21.0
 
 本 repository 是 2027 大阪自由行專案的唯一主資料源，供 ChatGPT 與 Codex 共同維護。
 
@@ -19,7 +19,8 @@
 - Day 1 晚餐候補已建立：Kiji、Chibo、Negiyaki Yamamoto、Grill Ron、Kushikatsu Daruma、Hanadako、Tsurutontan TOP CHEFS。尚未正式決定；需再次確認 Google Maps / Tabelog 分數、營業、預約、價格與排隊狀況。
 - Day 3 正式確認：木津市場＋京都甜點伴手禮＋寶可夢／動漫＋京 鰻和 本店午餐＋天ぷら 京星晚餐。
 - 天ぷら 京星主預約方式：TABLEALL Reservation Request；目前參考晚餐 JPY 25,500，包含 TABLEALL booking fee JPY 8,000；2027/11/19 可訂狀態、價格與取消政策待確認。
-- Day 4 正式確認：Pokémon Center OSAKA DX＋InterContinental Osaka 行政酒廊下午茶。
+- Day 4 正式確認：活動範圍以心齋橋為主，包含 Pokémon Center OSAKA DX；午餐後回 InterContinental Osaka；下午在飯店附近活動，保留 InterContinental Osaka 行政酒廊下午茶；晚餐在飯店內餐廳使用。
+- Day 4 飯店內晚餐候選：PIERRE 為主候選，NOKA Roast & Grill 為較輕鬆備案，ADEE 僅作飯後飲料／Nightcap 候選。2027/11/20 訂位、菜單、價格、服務費與取消政策待確認。
 - Day 3 交通主方案：電車＋短程計程車；KKday #133661 10 小時包車僅保留為雨天、疲勞或大量購物備案。
 - 機場接送：KIX 與 InterContinental Osaka 來回皆使用 KKday 商品 #129909；價格待確認。
 - USJ 接送：InterContinental Osaka 與 USJ 來回皆使用 KKday 商品 #536220；實際路線價格待確認。
@@ -31,9 +32,10 @@
 ## Quick access
 
 - [顧客版旅遊規劃三表](docs/15_顧客版資料/旅遊規劃三表.md)
-- [小時制時間表](docs/01_行程規劃/2027大阪自由行_小時制時間表_V5.19.0.md)
+- [小時制時間表](docs/01_行程規劃/2027大阪自由行_小時制時間表_V5.20.0.md)
 - [Day 1 梅田 Pokémon Center 附近晚餐候選](docs/02_餐廳美食/Day1_梅田PokemonCenter附近晚餐候選_V5.20.0.md)
 - [Day 3 正式行程](docs/01_行程規劃/2027-11-19_Day3_木津市場京都甜點寶可夢動漫正式行程_V5.16.0.md)
+- [Day 4 心齋橋與飯店內晚餐資料庫](database/day4_shinsaibashi_hotel_dinner.yml)
 - [票券平台候補方案](docs/09_票券平台/KKday_Klook_候補方案.md)
 - [每日同步狀態](docs/14_自動同步狀態/每日同步狀態.md)
 
