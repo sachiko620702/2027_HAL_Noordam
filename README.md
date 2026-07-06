@@ -1,4 +1,4 @@
-# 2027 大阪自由行 V5.8.0
+# 2027 大阪自由行 V5.9.0
 
 本 repository 是 2027 大阪自由行專案的唯一主資料源，供 ChatGPT 與 Codex 共同維護。
 
@@ -10,49 +10,18 @@
 - 核心定位：Luxury Slow Travel
 - 固定重點：USJ 一天、好吃優先餐飲、精品購物、候補景點與候補美食資料庫
 
-## 維護原則
-
-1. `main` 分支是唯一主檔，不再以 ZIP 或單一 Markdown 作為主資料。
-2. 新資訊先整理到 `database/`，再同步更新 `docs/`。
-3. 不覆蓋既有決策；若需修正，必須保留歷史脈絡並寫入 `CHANGELOG.md`。
-4. 2027 官方尚未公布的價格、時間、活動、票券，統一標示【待官方公布】或【需再次確認】。
-5. ChatGPT 負責判斷、策略、取捨與專案整合；Codex 負責批次整理、格式化、去重與一致性檢查。
-
 ## 目前已確認的新資訊
 
-- 旅遊保險：TWD 6,900（使用者提供總額，付款狀態待確認）。
-- 網路：不採 eSIM / SIM / Pocket Wi-Fi 為主，改用手機漫遊；兩人總額 TWD 499。
-- 機場接送：KIX ↔ InterContinental Osaka 來回皆使用 KKday 包車，實際商品、價格、取消規則待確認。
-- 餐飲方向：只要好吃即可，是否米其林不重要；不得再用「非米其林」作為主要標籤。
+- 航班：去程 EVA Air BR178，回程 EVA Air BR129；2027/11 官方班表與票價待確認。
+- 旅遊保險：TWD 6,900，付款狀態待確認。
+- 網路：手機漫遊，兩人總額 TWD 499。
+- 機場接送：KIX 與 InterContinental Osaka 來回皆使用 KKday 接送車，商品與價格待確認。
+- USJ 接送：InterContinental Osaka 與 USJ 來回皆使用 KKday 接送車，商品、價格、上下車地點待確認。
+- 餐飲方向：好吃優先，是否米其林不重要。
 
-## 目錄結構
+## 維護原則
 
-```text
-2027_OSAKA/
-├── README.md
-├── AGENTS.md
-├── PROJECT_RULE.md
-├── CHANGELOG.md
-├── docs/
-├── database/
-├── templates/
-└── assets/
-```
-
-## 常用流程
-
-1. 新增 YouTube、餐廳、景點、USJ、交通或預算資訊。
-2. 先搜尋 `docs/` 與 `database/` 是否已有相同內容。
-3. 若已存在，進行合併、補充或修正。
-4. 若不存在，新增資料卡。
-5. 同步更新受影響章節與 `CHANGELOG.md`。
-
-## 自動維護
-
-每日排程可直接執行：
-
-```bash
-python3 scripts/daily_maintenance.py
-```
-
-預設會同步固定欄位、更新 `database/project.yaml` 的 `last_updated`、執行每日價格與開賣狀態檢查、同步輸出 GitHub Pages 網頁（根目錄 `index.md` 與 `docs/index.md`）、並在有變更時執行 `git commit` 和 `git push`。
+1. main 分支是唯一主檔。
+2. 新資訊先整理到 database，再同步更新 docs。
+3. 不覆蓋既有決策；重大修改需更新 CHANGELOG。
+4. 2027 官方尚未公布的價格、時間、活動、票券，統一標示待官方公布或需再次確認。
