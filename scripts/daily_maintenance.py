@@ -441,7 +441,7 @@ def build_pages_index(snapshot: Snapshot, report: dict, docs_prefix: str) -> str
     checked_at = report.get("metadata", {}).get("checked_at") or "pending"
     version_page = docs_link(
         docs_prefix,
-        f"13_版本與更新/2026-07-06_{snapshot.version}_GitHub_Pages_Root_Homepage.md",
+        f"13_版本與更新/2026-07-06_{snapshot.version}_Travel_Website.md",
     )
     status_page = docs_link(docs_prefix, "14_自動同步狀態/每日同步狀態.md")
     ticket_page = docs_link(docs_prefix, "09_票券平台/KKday_Klook_候補方案.md")
@@ -471,6 +471,52 @@ def build_pages_index(snapshot: Snapshot, report: dict, docs_prefix: str) -> str
             ("Stay", f"{snapshot.hotel}"),
             ("Style", f"{snapshot.positioning}"),
             ("Priority", "USJ one day, non-Michelin dining, and luxury shopping"),
+        ]
+    )
+    journey_cards = "\n".join(
+        f"""
+        <article class=\"journey-card\">
+          <span>{html.escape(day)}</span>
+          <strong>{html.escape(title)}</strong>
+          <p>{html.escape(detail)}</p>
+        </article>
+        """.strip()
+        for day, title, detail in [
+            ("Day 1", "Arrival and check-in", "Settle into InterContinental Osaka and ease into the trip."),
+            ("Day 2", "USJ one day", "Dedicate one full day to Universal Studios Japan."),
+            ("Day 3", "Osaka city rhythm", "Keep the pace light with flexible city exploration and dining."),
+            ("Day 4", "Luxury shopping", "Focus on premium shopping, department stores, and polished downtime."),
+            ("Day 5", "Departure", "Wrap the plan cleanly and keep the exit day unhurried."),
+        ]
+    )
+    watchlist_groups = "\n".join(
+        f"""
+        <article class=\"watch-group\">
+          <h3>{html.escape(title)}</h3>
+          <ul>
+            {''.join(f'<li>{html.escape(item)}</li>' for item in items)}
+          </ul>
+        </article>
+        """.strip()
+        for title, items in [
+            ("USJ", [
+                "2027 Studio Pass release",
+                "2027 Express Pass release",
+                "Timed entry rules",
+                "Seasonal events",
+            ]),
+            ("Hotel and flights", [
+                "InterContinental Osaka rates",
+                "Lounge and breakfast policy",
+                "TPE to KIX schedule",
+                "EVA Air pricing",
+            ]),
+            ("Dining and shopping", [
+                "Non-Michelin Osaka candidates",
+                "Booking windows and cancellation rules",
+                "Luxury boutique appointment policy",
+                "Seasonal sale dates",
+            ]),
         ]
     )
     return f"""---
@@ -642,7 +688,9 @@ title: 2027 大阪自由行
   }}
 
   .feature-card,
-  .stat-card {{
+  .stat-card,
+  .journey-card,
+  .watch-group {{
     border-radius: 22px;
     padding: 18px;
     border: 1px solid var(--line);
@@ -650,7 +698,9 @@ title: 2027 大阪自由行
   }}
 
   .feature-card h3,
-  .stat-card strong {{
+  .journey-card strong,
+  .stat-card strong,
+  .watch-group h3 {{
     margin: 0;
     color: var(--text);
   }}
@@ -660,10 +710,33 @@ title: 2027 大阪自由行
   }}
 
   .feature-card p,
-  .stat-card span {{
+  .journey-card p,
+  .stat-card span,
+  .watch-group li {{
     margin: 8px 0 0;
     color: var(--muted);
     line-height: 1.7;
+  }}
+
+  .journey-card span {{
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 8px;
+    color: var(--gold);
+    font-size: 0.8rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+  }}
+
+  .watch-grid {{
+    display: grid;
+    gap: 14px;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }}
+
+  .watch-group ul {{
+    margin: 10px 0 0;
+    padding-left: 1.1rem;
   }}
 
   .stat-card strong {{
@@ -753,6 +826,13 @@ title: 2027 大阪自由行
   </section>
 
   <section class="section">
+    <h2>Travel rhythm</h2>
+    <div class="grid features">
+      {journey_cards}
+    </div>
+  </section>
+
+  <section class="section">
     <h2>Project frame</h2>
     <div class="grid features">
       {focus_cards}
@@ -811,6 +891,13 @@ title: 2027 大阪自由行
         </div>
         <span>Open</span>
       </a>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Watchlist</h2>
+    <div class="watch-grid">
+      {watchlist_groups}
     </div>
   </section>
 

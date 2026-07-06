@@ -167,7 +167,9 @@ title: 2027 大阪自由行
   }
 
   .feature-card,
-  .stat-card {
+  .stat-card,
+  .journey-card,
+  .watch-group {
     border-radius: 22px;
     padding: 18px;
     border: 1px solid var(--line);
@@ -175,7 +177,9 @@ title: 2027 大阪自由行
   }
 
   .feature-card h3,
-  .stat-card strong {
+  .journey-card strong,
+  .stat-card strong,
+  .watch-group h3 {
     margin: 0;
     color: var(--text);
   }
@@ -185,10 +189,33 @@ title: 2027 大阪自由行
   }
 
   .feature-card p,
-  .stat-card span {
+  .journey-card p,
+  .stat-card span,
+  .watch-group li {
     margin: 8px 0 0;
     color: var(--muted);
     line-height: 1.7;
+  }
+
+  .journey-card span {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 8px;
+    color: var(--gold);
+    font-size: 0.8rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+  }
+
+  .watch-grid {
+    display: grid;
+    gap: 14px;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
+
+  .watch-group ul {
+    margin: 10px 0 0;
+    padding-left: 1.1rem;
   }
 
   .stat-card strong {
@@ -248,7 +275,7 @@ title: 2027 大阪自由行
   <section class="hero">
     <div class="panel hero-copy">
       <div class="kicker">Osaka trip knowledge base</div>
-      <h1>2027 大阪自由行<br>V5.6.0</h1>
+      <h1>2027 大阪自由行<br>V5.7.0</h1>
       <p class="lead">
         這是專案的 GitHub Pages 首頁。每日維護腳本會同步資料庫、規則與狀態，
         再把結果輸出成完整網站入口，讓這份旅程計畫可以直接在瀏覽器閱讀。
@@ -264,7 +291,7 @@ title: 2027 大阪自由行
     <div class="panel side-panel">
       <div class="mini-card">
         <div class="label">Last sync</div>
-        <div class="value">2026-07-06T11:55:11+08:00</div>
+        <div class="value">2026-07-06T11:57:39+08:00</div>
       </div>
       <div class="mini-card">
         <div class="label">Trip focus</div>
@@ -274,6 +301,37 @@ title: 2027 大阪自由行
         <div class="label">Maintenance</div>
         <div class="value">Daily commit and push keep GitHub Pages in sync with the source database.</div>
       </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Travel rhythm</h2>
+    <div class="grid features">
+      <article class="journey-card">
+          <span>Day 1</span>
+          <strong>Arrival and check-in</strong>
+          <p>Settle into InterContinental Osaka and ease into the trip.</p>
+        </article>
+<article class="journey-card">
+          <span>Day 2</span>
+          <strong>USJ one day</strong>
+          <p>Dedicate one full day to Universal Studios Japan.</p>
+        </article>
+<article class="journey-card">
+          <span>Day 3</span>
+          <strong>Osaka city rhythm</strong>
+          <p>Keep the pace light with flexible city exploration and dining.</p>
+        </article>
+<article class="journey-card">
+          <span>Day 4</span>
+          <strong>Luxury shopping</strong>
+          <p>Focus on premium shopping, department stores, and polished downtime.</p>
+        </article>
+<article class="journey-card">
+          <span>Day 5</span>
+          <strong>Departure</strong>
+          <p>Wrap the plan cleanly and keep the exit day unhurried.</p>
+        </article>
     </div>
   </section>
 
@@ -331,7 +389,7 @@ title: 2027 大阪自由行
         </div>
         <span>Open</span>
       </a>
-      <a class="link-card" href="13_版本與更新/2026-07-06_V5.6.0_GitHub_Pages_Root_Homepage.md">
+      <a class="link-card" href="13_版本與更新/2026-07-06_V5.7.0_Travel_Website.md">
         <div>
           <strong>版本更新</strong><br>
           <span>GitHub Pages root homepage sync</span>
@@ -366,6 +424,30 @@ title: 2027 大阪自由行
         </div>
         <span>Open</span>
       </a>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Watchlist</h2>
+    <div class="watch-grid">
+      <article class="watch-group">
+          <h3>USJ</h3>
+          <ul>
+            <li>2027 Studio Pass release</li><li>2027 Express Pass release</li><li>Timed entry rules</li><li>Seasonal events</li>
+          </ul>
+        </article>
+<article class="watch-group">
+          <h3>Hotel and flights</h3>
+          <ul>
+            <li>InterContinental Osaka rates</li><li>Lounge and breakfast policy</li><li>TPE to KIX schedule</li><li>EVA Air pricing</li>
+          </ul>
+        </article>
+<article class="watch-group">
+          <h3>Dining and shopping</h3>
+          <ul>
+            <li>Non-Michelin Osaka candidates</li><li>Booking windows and cancellation rules</li><li>Luxury boutique appointment policy</li><li>Seasonal sale dates</li>
+          </ul>
+        </article>
     </div>
   </section>
 

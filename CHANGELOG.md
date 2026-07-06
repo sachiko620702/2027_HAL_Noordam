@@ -1,5 +1,25 @@
 # CHANGELOG
 
+## V5.7.0 - 2026-07-06
+
+### Changed
+
+- Reworked the GitHub Pages homepage into a travel-plan introduction website with a more polished landing-page layout.
+- Added travel rhythm, project frame, daily pulse, quick access, and watchlist sections to the generated homepage.
+- Updated the maintenance script so both the root homepage and `docs/index.md` use the same website-oriented template.
+- Bumped the project version markers to keep the public site and source-of-truth metadata aligned.
+
+### Reason
+
+The user wanted the project content to feel like a real travel planning site rather than a README-style page, so the homepage now presents the Osaka trip as a proper web experience.
+
+### Affected sections
+
+- GitHub Pages homepage
+- Maintenance automation
+- Version markers
+- Repository metadata
+
 ## V5.6.0 - 2026-07-06
 
 ### Changed

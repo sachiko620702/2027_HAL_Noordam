@@ -1,7 +1,7 @@
 # AI_CONTEXT
 
 Project: 2027 Osaka Trip
-Version: V5.6.0
+Version: V5.7.0
 Repository: sachiko620702/2027_OSAKA
 Source of truth: GitHub main branch
 
