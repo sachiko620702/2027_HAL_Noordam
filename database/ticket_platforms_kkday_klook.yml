@@ -1,7 +1,7 @@
 metadata:
   id: ticket_platforms_kkday_klook
   title: "KKday / Klook 票券平台候補與已選方案資料"
-  version: "V5.8.0"
+  version: "V5.9.0"
   status: "mixed_selected_and_candidate"
   last_updated: "2026-07-06"
   maintained_by: "ChatGPT"
@@ -19,31 +19,20 @@ trip_context:
     - "Luxury shopping"
     - "Phone roaming selected for internet"
     - "KKday airport transfer selected both ways"
+    - "KKday hotel-USJ transfer selected both ways"
 
 platforms:
   kkday:
     platform_name: "KKday"
-    role: "機場接送已選平台；其他票券仍作候補採購平台"
+    role: "機場接送與飯店-USJ接送已選平台；其他票券仍作候補採購平台"
     selected_for:
-      - "KIX ↔ InterContinental Osaka airport transfer both ways"
-    best_for:
-      - "USJ Studio Pass / Express Pass：僅作平台比價與庫存備援"
-      - "KKday 機場接送：已選方向，需確認實際商品、價格、車型、行李規則與取消政策"
-      - "JR / 機場交通電子票：僅作備援，不取代已選 KKday 包車方向"
-      - "eSIM / SIM / Pocket Wi-Fi：備援；目前主方案為手機漫遊"
-    not_primary_for:
-      - "正式餐廳決策：不得以平台推薦直接取代專案餐廳候補評估"
+      - "KIX to InterContinental Osaka transfer both ways"
+      - "InterContinental Osaka to USJ transfer both ways"
     source_status: "NEEDS_RECONFIRMATION"
     source_url: "https://www.kkday.com/"
   klook:
     platform_name: "Klook"
     role: "候補採購平台"
-    best_for:
-      - "USJ Studio Pass / Express Pass：僅作平台比價與庫存備援"
-      - "Osaka Amazing Pass / Osaka e-Pass：只在行程需要密集景點時列入"
-      - "KIX 機場交通、eSIM、私人接送：只作備援比價"
-    not_primary_for:
-      - "正式行程決策：不得以平台商品推薦直接取代官方資訊與專案決策"
     source_status: "NEEDS_RECONFIRMATION"
     source_url: "https://www.klook.com/"
 
@@ -51,14 +40,17 @@ selected_use_cases:
   - id: "KKDAY_AIRPORT_TRANSFER_ROUNDTRIP"
     category: "Transportation"
     item: "KKday airport transfer round trip between KIX and InterContinental Osaka"
-    recommendation: "已依使用者指示列為正式方向：機場到飯店與飯店到機場都找 KKday 包車。"
+    recommendation: "已依使用者指示列為正式方向：機場到飯店與飯店到機場都找 KKday 接送車。"
     purchase_timing: "航班時間確定後再預約。"
     decision_status: "selected_pending_product_confirmation"
     project_fit: "high"
-    required_checks:
-      - "2027/11/17 與 2027/11/21 是否可預約"
-      - "實際價格、幣別、刷卡費用與取消規則"
-      - "車型、行李件數、等待時間與航班延誤處理"
+  - id: "KKDAY_HOTEL_USJ_TRANSFER_ROUNDTRIP"
+    category: "Transportation"
+    item: "KKday hotel-USJ transfer round trip"
+    recommendation: "已依使用者指示列為正式方向：飯店到 USJ 與 USJ 回飯店都找 KKday 接送車。"
+    purchase_timing: "USJ 開園時間與 Express Pass 計畫確定後再預約。"
+    decision_status: "selected_pending_product_confirmation"
+    project_fit: "high"
   - id: "PHONE_ROAMING_SELECTED"
     category: "Connectivity"
     item: "Phone roaming for two people"
@@ -90,37 +82,12 @@ candidate_use_cases:
       source_status: "2026 reference; 2027 PENDING_OFFICIAL_ANNOUNCEMENT"
     decision_status: "candidate"
     project_fit: "medium-low for Luxury Slow Travel"
-  - id: "OSAKA_E_PASS"
-    category: "Sightseeing pass"
-    item: "Osaka e-Pass"
-    recommendation: "僅作景點 QR 入場候補；注意它不是 Osaka Amazing Pass，交通覆蓋不同。"
-    purchase_timing: "正式景點日確認後再比價。"
-    decision_status: "candidate"
-    project_fit: "medium-low"
-
-comparison_rules:
-  price_check:
-    - "同商品比較官方、KKday、Klook 三方總價。"
-    - "比較幣別、刷卡回饋、平台折扣碼、點數回饋與退款成本。"
-  voucher_check:
-    - "確認是否即時出票。"
-    - "確認是否需要現場換票。"
-    - "確認 QR code 是否可直接使用。"
-    - "確認旅客姓名、行李限制與旅客資格限制。"
-  cancellation_check:
-    - "不可退改商品不提前購買，除非票券高度稀缺。"
-    - "USJ Express Pass、KKday 機場接送與餐廳相關商品需逐筆檢查。"
-  itinerary_check:
-    - "不得因為平台套票便宜而壓縮 Luxury Slow Travel 節奏。"
-    - "未經使用者確認，不得把候補票券納入正式每日行程。"
 
 watchlist_items:
   - "2027/11 USJ Studio Pass official release"
   - "2027/11 USJ Express Pass and VIP product release"
-  - "KKday / Klook 2027 USJ inventory and cancellation policy"
-  - "KKday KIX ↔ InterContinental Osaka airport transfer availability, price, luggage rules, waiting time, delayed-flight handling, and cancellation policy"
-  - "Osaka Amazing Pass 2027 price, facility list, transportation coverage"
-  - "Osaka e-Pass 2027 price and eligible facilities"
+  - "KKday KIX to InterContinental Osaka transfer availability, price, luggage rules, waiting time, and booking rules"
+  - "KKday InterContinental Osaka to USJ transfer availability, price, pickup time, pickup point, and booking rules"
   - "Phone roaming activation, billing, hotspot, and fair-use policy"
 
 source_references:
@@ -131,14 +98,11 @@ source_references:
     - name: "Osaka Amazing Pass official new site"
       url: "https://osaka-amazing-pass.com/en/"
       confidence: "★★★★★"
-    - name: "Osaka e-Pass official site"
-      url: "https://www.e-pass.osaka-info.jp/en/"
-      confidence: "★★★★★"
   platform:
     - name: "KKday"
       url: "https://www.kkday.com/"
       confidence: "★★★★"
-      note: "Airport transfer selected direction; exact 2027 product details require reconfirmation."
+      note: "Airport transfer and hotel-USJ transfer selected direction; exact 2027 product details require reconfirmation."
     - name: "Klook"
       url: "https://www.klook.com/"
       confidence: "★★★★"
