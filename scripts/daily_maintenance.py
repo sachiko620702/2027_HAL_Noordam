@@ -445,45 +445,379 @@ def build_pages_index(snapshot: Snapshot, report: dict, docs_prefix: str) -> str
     )
     status_page = docs_link(docs_prefix, "14_自動同步狀態/每日同步狀態.md")
     ticket_page = docs_link(docs_prefix, "09_票券平台/KKday_Klook_候補方案.md")
+    stat_cards = "\n".join(
+        f"""
+        <article class=\"stat-card\">
+          <span>{html.escape(label)}</span>
+          <strong>{value}</strong>
+        </article>
+        """.strip()
+        for label, value in [
+            ("Web checks", summary.get("total_web", 0)),
+            ("Open", summary.get("open", 0)),
+            ("Fetch failed", summary.get("fetch_failed", 0)),
+            ("Manual review", summary.get("manual_review", 0)),
+        ]
+    )
+    focus_cards = "\n".join(
+        f"""
+        <article class=\"focus-card\">
+          <h3>{html.escape(title)}</h3>
+          <p>{html.escape(body)}</p>
+        </article>
+        """.strip()
+        for title, body in [
+            ("Travel frame", f"{snapshot.readme_period}"),
+            ("Stay", f"{snapshot.hotel}"),
+            ("Style", f"{snapshot.positioning}"),
+            ("Priority", "USJ one day, non-Michelin dining, and luxury shopping"),
+        ]
+    )
     return f"""---
 title: 2027 大阪自由行
 ---
 
-# 2027 大阪自由行 {snapshot.version}
+<style>
+  :root {{
+    --bg: #08111f;
+    --bg-soft: #0d1628;
+    --panel: rgba(12, 18, 33, 0.82);
+    --panel-strong: rgba(18, 27, 45, 0.94);
+    --text: #f4f7fb;
+    --muted: #a8b3c7;
+    --line: rgba(170, 190, 224, 0.18);
+    --accent: #8fb3ff;
+    --accent-strong: #c9d9ff;
+    --gold: #f2c97d;
+    --shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+  }}
 
-這是 GitHub Pages 的首頁，會由每日維護腳本同步輸出。
+  html {{
+    background:
+      radial-gradient(circle at top left, rgba(143, 179, 255, 0.2), transparent 28%),
+      radial-gradient(circle at top right, rgba(242, 201, 125, 0.14), transparent 24%),
+      linear-gradient(180deg, #040813 0%, #08111f 42%, #0c1526 100%);
+  }}
 
-## 專案定位
+  body {{
+    margin: 0;
+    color: var(--text);
+    font-family: "Noto Sans TC", "PingFang TC", "Hiragino Sans", "Microsoft JhengHei", system-ui, sans-serif;
+  }}
 
-- 旅行期間：{snapshot.readme_period}
-- 旅遊型態：五天四夜大阪自由行
-- 住宿：{snapshot.hotel}
-- 核心定位：{snapshot.positioning}
-- 固定重點：USJ 一天、非米其林導向餐飲、精品購物、候補景點與候補美食資料庫
+  .page-shell {{
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 48px 24px 72px;
+  }}
 
-## 每日監測
+  .hero {{
+    display: grid;
+    grid-template-columns: minmax(0, 1.45fr) minmax(300px, 0.85fr);
+    gap: 24px;
+    align-items: stretch;
+  }}
 
-- 最近檢查時間：{checked_at}
-- 自動檢查數：{summary.get("total_web", 0)}
-- 開啟：{summary.get("open", 0)}
-- 關閉：{summary.get("closed", 0)}
-- 價格命中：{summary.get("price_found", 0)}
-- 未知：{summary.get("unknown", 0)}
-- 抓取失敗：{summary.get("fetch_failed", 0)}
-- 手動復核：{summary.get("manual_review", 0)}
+  .panel {{
+    position: relative;
+    overflow: hidden;
+    border: 1px solid var(--line);
+    border-radius: 28px;
+    background: linear-gradient(180deg, rgba(18, 27, 45, 0.94), rgba(10, 16, 28, 0.9));
+    box-shadow: var(--shadow);
+    backdrop-filter: blur(18px);
+  }}
 
-## 快速連結
+  .hero-copy {{
+    padding: 34px;
+  }}
 
-- [票券平台候補方案]({ticket_page})
-- [版本更新 - GitHub Pages 根目錄首頁]({version_page})
-- [每日同步狀態]({status_page})
-- [README](/README.md)
-- [WATCHLIST](/WATCHLIST.md)
-- [PROJECT_RULE](/PROJECT_RULE.md)
+  .kicker {{
+    display: inline-flex;
+    gap: 0.5rem;
+    align-items: center;
+    margin-bottom: 18px;
+    color: var(--accent-strong);
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    font-weight: 700;
+  }}
 
-## 維護說明
+  .kicker::before {{
+    content: "";
+    width: 36px;
+    height: 1px;
+    background: linear-gradient(90deg, var(--gold), transparent);
+  }}
 
-每日排程會先同步資料庫與規則文件，再輸出這個頁面與每日狀態頁，最後如有變更就 commit 並 push。
+  h1 {{
+    margin: 0;
+    font-size: clamp(2.8rem, 6vw, 5rem);
+    line-height: 0.95;
+    letter-spacing: -0.05em;
+  }}
+
+  .lead {{
+    margin: 18px 0 0;
+    max-width: 62ch;
+    color: var(--muted);
+    font-size: 1.04rem;
+    line-height: 1.8;
+  }}
+
+  .badge-row {{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 24px;
+  }}
+
+  .badge {{
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.62rem 0.9rem;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.04);
+    color: var(--text);
+    font-size: 0.9rem;
+  }}
+
+  .badge strong {{
+    color: var(--accent-strong);
+    font-weight: 700;
+  }}
+
+  .side-panel {{
+    display: grid;
+    gap: 12px;
+    padding: 18px;
+  }}
+
+  .mini-card {{
+    border-radius: 22px;
+    padding: 18px 18px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.04);
+  }}
+
+  .mini-card .label {{
+    color: var(--muted);
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+  }}
+
+  .mini-card .value {{
+    margin-top: 8px;
+    font-size: 1.05rem;
+    line-height: 1.5;
+  }}
+
+  .section {{
+    margin-top: 26px;
+  }}
+
+  .section h2 {{
+    margin: 0 0 14px;
+    font-size: 1.12rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent-strong);
+  }}
+
+  .grid {{
+    display: grid;
+    gap: 14px;
+  }}
+
+  .grid.features {{
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  }}
+
+  .grid.metrics {{
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  }}
+
+  .feature-card,
+  .stat-card {{
+    border-radius: 22px;
+    padding: 18px;
+    border: 1px solid var(--line);
+    background: rgba(255, 255, 255, 0.04);
+  }}
+
+  .feature-card h3,
+  .stat-card strong {{
+    margin: 0;
+    color: var(--text);
+  }}
+
+  .feature-card h3 {{
+    font-size: 1rem;
+  }}
+
+  .feature-card p,
+  .stat-card span {{
+    margin: 8px 0 0;
+    color: var(--muted);
+    line-height: 1.7;
+  }}
+
+  .stat-card strong {{
+    display: block;
+    margin-top: 10px;
+    font-size: clamp(1.7rem, 4vw, 2.4rem);
+    letter-spacing: -0.04em;
+  }}
+
+  .link-grid {{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 12px;
+  }}
+
+  .link-card {{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 16px 18px;
+    border-radius: 18px;
+    border: 1px solid var(--line);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.03));
+    color: var(--text);
+    text-decoration: none;
+  }}
+
+  .link-card:hover {{
+    border-color: rgba(143, 179, 255, 0.55);
+    transform: translateY(-1px);
+  }}
+
+  .link-card span {{
+    color: var(--muted);
+    font-size: 0.84rem;
+  }}
+
+  .note {{
+    margin-top: 18px;
+    padding: 18px 20px;
+    border-left: 4px solid var(--gold);
+    border-radius: 18px;
+    background: rgba(242, 201, 125, 0.08);
+    color: var(--text);
+    line-height: 1.8;
+  }}
+
+  @media (max-width: 860px) {{
+    .hero {{
+      grid-template-columns: 1fr;
+    }}
+  }}
+</style>
+
+<div class="page-shell">
+  <section class="hero">
+    <div class="panel hero-copy">
+      <div class="kicker">Osaka trip knowledge base</div>
+      <h1>2027 大阪自由行<br>{snapshot.version}</h1>
+      <p class="lead">
+        這是專案的 GitHub Pages 首頁。每日維護腳本會同步資料庫、規則與狀態，
+        再把結果輸出成完整網站入口，讓這份旅程計畫可以直接在瀏覽器閱讀。
+      </p>
+
+      <div class="badge-row">
+        <div class="badge"><strong>Dates</strong> {html.escape(snapshot.readme_period)}</div>
+        <div class="badge"><strong>Stay</strong> {html.escape(snapshot.hotel)}</div>
+        <div class="badge"><strong>Style</strong> {html.escape(snapshot.positioning)}</div>
+      </div>
+    </div>
+
+    <div class="panel side-panel">
+      <div class="mini-card">
+        <div class="label">Last sync</div>
+        <div class="value">{html.escape(checked_at)}</div>
+      </div>
+      <div class="mini-card">
+        <div class="label">Trip focus</div>
+        <div class="value">USJ one day, non-Michelin dining, luxury shopping</div>
+      </div>
+      <div class="mini-card">
+        <div class="label">Maintenance</div>
+        <div class="value">Daily commit and push keep GitHub Pages in sync with the source database.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Project frame</h2>
+    <div class="grid features">
+      {focus_cards}
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Daily pulse</h2>
+    <div class="grid metrics">
+      {stat_cards}
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Quick access</h2>
+    <div class="link-grid">
+      <a class="link-card" href="{ticket_page}">
+        <div>
+          <strong>票券平台候補方案</strong><br>
+          <span>KKday / Klook candidate planning</span>
+        </div>
+        <span>Open</span>
+      </a>
+      <a class="link-card" href="{version_page}">
+        <div>
+          <strong>版本更新</strong><br>
+          <span>GitHub Pages root homepage sync</span>
+        </div>
+        <span>Open</span>
+      </a>
+      <a class="link-card" href="{status_page}">
+        <div>
+          <strong>每日同步狀態</strong><br>
+          <span>Latest monitoring snapshot</span>
+        </div>
+        <span>Open</span>
+      </a>
+      <a class="link-card" href="/README.md">
+        <div>
+          <strong>README</strong><br>
+          <span>Repository guide and workflow</span>
+        </div>
+        <span>Open</span>
+      </a>
+      <a class="link-card" href="/WATCHLIST.md">
+        <div>
+          <strong>WATCHLIST</strong><br>
+          <span>Tracking sources and reminders</span>
+        </div>
+        <span>Open</span>
+      </a>
+      <a class="link-card" href="/PROJECT_RULE.md">
+        <div>
+          <strong>PROJECT_RULE</strong><br>
+          <span>Canonical maintenance rules</span>
+        </div>
+        <span>Open</span>
+      </a>
+    </div>
+  </section>
+
+  <div class="note">
+    每日排程會先同步資料庫與規則文件，再輸出這個首頁與每日狀態頁，最後如有變更就 commit 並 push。
+  </div>
+</div>
 """
 
 
