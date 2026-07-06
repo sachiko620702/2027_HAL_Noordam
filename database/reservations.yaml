@@ -1,5 +1,5 @@
 reservations:
-  version: V5.9.0
+  version: V5.10.0
   last_updated: 2026-07-06
   hotel:
     status: fixed
@@ -27,25 +27,30 @@ reservations:
       date: 2027-11-21
       route: KIX to TPE
       status: selected_pending_booking
-    required_confirmation:
-      - official schedule
-      - fare and booking status
-      - baggage allowance
-      - seat selection
-      - ticket rules
   airport_transfer:
     platform: KKday
+    selected_product_id: 129909
+    product_url: https://www.kkday.com/zh-tw/product/129909-japan-kansai-international-airport-private-transfer-to-osaka-kyoto-nara-kobe-nagoya
     service_type: airport_charter_transfer
-    status: selected_pending_booking
+    status: selected_product_price_pending
+    recommended_vehicle: luxury_7_seater
+    fallback_vehicle: comfort_10_seater
     routes:
       - date: 2027-11-17
         from: KIX
         to: InterContinental Osaka
-        status: pending_product_confirmation
+        status: pending_date_route_price
       - date: 2027-11-21
         from: InterContinental Osaka
         to: KIX
-        status: pending_product_confirmation
+        status: pending_date_route_price
+    required_confirmation:
+      - 2027 route availability
+      - final price after selecting date and route
+      - vehicle type 7-seater or 10-seater
+      - luggage count fit
+      - pickup time
+      - booking rules
   usj_transfer:
     platform: KKday
     service_type: hotel_usj_charter_transfer
@@ -59,12 +64,6 @@ reservations:
         from: Universal Studios Japan
         to: InterContinental Osaka
         status: pending_product_confirmation
-    required_confirmation:
-      - product availability
-      - final price
-      - pickup time
-      - pickup point
-      - booking rules
   insurance:
     amount_twd: 6900
     status: amount_recorded_payment_status_needs_confirmation
