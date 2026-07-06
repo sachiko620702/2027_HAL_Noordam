@@ -21,5 +21,12 @@ Fixed assumptions:
 - InterContinental Osaka
 - Luxury Slow Travel
 - USJ one day
-- Non-Michelin-focused dining
+- Taste-first dining; Michelin status neutral
 - Luxury shopping
+
+Current logistics and budget inputs:
+
+- Insurance: TWD 6,900, payment status needs confirmation.
+- Internet: phone roaming for two people, total TWD 499.
+- Airport transfer: KKday private charter for both KIX to hotel and hotel to KIX.
+- Dining: choose good restaurants; do not label the plan as non-Michelin, and do not prioritize Michelin status either way.
