@@ -1,7 +1,7 @@
 # AI_CONTEXT
 
 Project: 2027 Osaka Trip
-Version: V5.8.0
+Version: V5.9.0
 Repository: sachiko620702/2027_OSAKA
 Source of truth: GitHub main branch
 
@@ -26,14 +26,17 @@ Source of truth: GitHub main branch
 7. Osaka Amazing Pass candidate plan
 8. YouTube source database cleanup
 9. Budget tracking
-10. KKday private airport transfer details and cancellation rules
-11. Mobile roaming setup and payment confirmation
+10. KKday airport transfer details and booking rules
+11. KKday hotel-USJ transfer details and booking rules
+12. Mobile roaming setup and payment confirmation
 
 ## User-Provided Confirmed Planning Inputs
 
+- Flights: EVA Air BR178 outbound and BR129 return; official 2027-11 schedule and fare need confirmation.
 - Travel insurance budget amount: TWD 6,900; payment status needs confirmation.
 - Internet: phone roaming for two people, total TWD 499; eSIM / SIM / Pocket Wi-Fi are backup only.
-- Airport transfer: use KKday private charter for both KIX to hotel and hotel to KIX.
+- Airport transfer: use KKday transfer both ways between KIX and InterContinental Osaka.
+- USJ transfer: use KKday transfer both ways between InterContinental Osaka and Universal Studios Japan.
 - Dining: choose restaurants because they are good; Michelin status does not matter either way.
 
 ## Maintenance Rule
