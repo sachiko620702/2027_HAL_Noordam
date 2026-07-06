@@ -1,0 +1,10 @@
+shopping:
+  focus: luxury shopping
+  areas:
+    - Umeda
+    - Shinsaibashi
+    - Namba
+  tracking:
+    tax_refund: pending
+    boutique_appointments: pending
+    department_store_services: pending
