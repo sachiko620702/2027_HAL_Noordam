@@ -1,6 +1,6 @@
 project:
   name: 2027 Osaka Trip
-  version: V5.9.0
+  version: V5.10.0
   source_of_truth: GitHub main
   repository: sachiko620702/2027_OSAKA
   dates:
@@ -15,7 +15,7 @@ project:
     - Luxury shopping
     - Phone roaming for two people
     - EVA Air BR178 outbound and BR129 return
-    - KKday transfer for KIX hotel round trip
+    - KKday product 129909 for KIX hotel round trip candidate
     - KKday transfer for hotel USJ round trip
   user_confirmed_inputs:
     flights:
@@ -36,11 +36,16 @@ project:
       total_for_two_people_twd: 499
     airport_transfer:
       platform: KKday
+      selected_product_id: 129909
+      product_url: https://www.kkday.com/zh-tw/product/129909-japan-kansai-international-airport-private-transfer-to-osaka-kyoto-nara-kobe-nagoya
       service_type: airport_charter_transfer
+      recommended_vehicle: luxury_7_seater_if_luggage_under_3_checked_bags
+      fallback_vehicle: comfort_10_seater_if_luggage_over_3_checked_bags
+      price_status: dynamic_price_needs_manual_confirmation
       routes:
         - KIX to InterContinental Osaka
         - InterContinental Osaka to KIX
-      booking_status: product_pending_confirmation
+      booking_status: product_selected_price_pending
     usj_transfer:
       platform: KKday
       service_type: hotel_usj_charter_transfer
