@@ -1,5 +1,25 @@
 # CHANGELOG
 
+## V5.6.0 - 2026-07-06
+
+### Changed
+
+- Added GitHub Pages root homepage synchronization to the daily maintenance flow.
+- Synced both the root `index.md` homepage and `docs/index.md` from the same maintenance script.
+- Added the rule requirement to regenerate GitHub Pages outputs before commit and push when maintenance changes occur.
+- Added the new version record for the root homepage sync.
+
+### Reason
+
+The repository now needs a real root-level GitHub Pages entry point, not only the `docs/` homepage, so the public site stays aligned with the canonical database after every maintenance run.
+
+### Affected sections
+
+- Maintenance automation
+- GitHub Pages output
+- Repository rules
+- Version control
+
 ## V5.5.0 - 2026-07-06
 
 ### Changed
@@ -43,19 +63,6 @@ The user explicitly stated that they no longer want Michelin dining. The project
 - Ticket platform candidate planning
 - Daily maintenance automation
 - Version control
-- Added GitHub Pages synchronization to the daily maintenance flow so generated web output stays in sync with repository changes.
-- Added generated Pages content for the homepage and daily sync status.
-- Restored the fixed three-star Michelin dining assumption in the rule files and summary metadata.
-
-### Reason
-
-The repository now publishes a GitHub Pages view, so maintenance needs to keep the public site synchronized with the canonical database and docs.
-
-### Affected sections
-
-- Maintenance automation
-- GitHub Pages output
-- Repository rules
 
 ## V5.3.0 - 2026-07-06
 

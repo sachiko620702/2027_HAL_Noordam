@@ -26,6 +26,7 @@ PROJECT_YAML = ROOT / "database" / "project.yaml"
 DAILY_CHECKS_CONFIG = ROOT / "database" / "daily_checks.json"
 DAILY_STATUS_REPORT = ROOT / "database" / "daily_status.json"
 DOCS_ROOT = ROOT / "docs"
+ROOT_INDEX = ROOT / "index.md"
 DOCS_INDEX = DOCS_ROOT / "index.md"
 DOCS_STATUS_PAGE = DOCS_ROOT / "14_自動同步狀態" / "每日同步狀態.md"
 README = ROOT / "README.md"
@@ -234,6 +235,12 @@ def write_if_changed(path: Path, text: str, dry_run: bool, changed_files: list[P
         path.write_text(text, encoding="utf-8")
 
 
+def docs_link(docs_prefix: str, relative_path: str) -> str:
+    if not docs_prefix:
+        return relative_path
+    return f"{docs_prefix}/{relative_path}"
+
+
 def run_git(args: list[str], check: bool = True) -> subprocess.CompletedProcess[str]:
     return subprocess.run(
         ["git", *args],
@@ -429,9 +436,15 @@ def update_daily_status_report(snapshot: Snapshot, dry_run: bool, changed_files:
     return report
 
 
-def build_docs_index(snapshot: Snapshot, report: dict) -> str:
+def build_pages_index(snapshot: Snapshot, report: dict, docs_prefix: str) -> str:
     summary = report.get("summary", {})
     checked_at = report.get("metadata", {}).get("checked_at") or "pending"
+    version_page = docs_link(
+        docs_prefix,
+        f"13_版本與更新/2026-07-06_{snapshot.version}_GitHub_Pages_Root_Homepage.md",
+    )
+    status_page = docs_link(docs_prefix, "14_自動同步狀態/每日同步狀態.md")
+    ticket_page = docs_link(docs_prefix, "09_票券平台/KKday_Klook_候補方案.md")
     return f"""---
 title: 2027 大阪自由行
 ---
@@ -461,9 +474,9 @@ title: 2027 大阪自由行
 
 ## 快速連結
 
-- [票券平台候補方案](09_票券平台/KKday_Klook_候補方案.md)
-- [版本更新 - Non-Michelin Dining](13_版本與更新/2026-07-06_V5.5.0_Non_Michelin_Dining.md)
-- [每日同步狀態]({DOCS_STATUS_PAGE.relative_to(DOCS_ROOT).as_posix()})
+- [票券平台候補方案]({ticket_page})
+- [版本更新 - GitHub Pages 根目錄首頁]({version_page})
+- [每日同步狀態]({status_page})
 - [README](/README.md)
 - [WATCHLIST](/WATCHLIST.md)
 - [PROJECT_RULE](/PROJECT_RULE.md)
@@ -504,7 +517,7 @@ title: 每日同步狀態
 
 # 每日同步狀態
 
-Version: {snapshot.version}  
+Version: {snapshot.version}
 Checked at: {checked_at}
 
 ## Summary
@@ -538,7 +551,8 @@ Checked at: {checked_at}
 
 
 def sync_github_pages(snapshot: Snapshot, report: dict, dry_run: bool, changed_files: list[Path]) -> None:
-    write_if_changed(DOCS_INDEX, build_docs_index(snapshot, report), dry_run, changed_files)
+    write_if_changed(ROOT_INDEX, build_pages_index(snapshot, report, "docs"), dry_run, changed_files)
+    write_if_changed(DOCS_INDEX, build_pages_index(snapshot, report, ""), dry_run, changed_files)
     write_if_changed(DOCS_STATUS_PAGE, build_docs_status_page(snapshot, report), dry_run, changed_files)
 
 

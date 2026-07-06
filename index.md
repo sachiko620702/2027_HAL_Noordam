@@ -27,9 +27,9 @@ title: 2027 大阪自由行
 
 ## 快速連結
 
-- [票券平台候補方案](09_票券平台/KKday_Klook_候補方案.md)
-- [版本更新 - GitHub Pages 根目錄首頁](13_版本與更新/2026-07-06_V5.6.0_GitHub_Pages_Root_Homepage.md)
-- [每日同步狀態](14_自動同步狀態/每日同步狀態.md)
+- [票券平台候補方案](docs/09_票券平台/KKday_Klook_候補方案.md)
+- [版本更新 - GitHub Pages 根目錄首頁](docs/13_版本與更新/2026-07-06_V5.6.0_GitHub_Pages_Root_Homepage.md)
+- [每日同步狀態](docs/14_自動同步狀態/每日同步狀態.md)
 - [README](/README.md)
 - [WATCHLIST](/WATCHLIST.md)
 - [PROJECT_RULE](/PROJECT_RULE.md)

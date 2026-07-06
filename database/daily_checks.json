@@ -1,7 +1,7 @@
 {
   "metadata": {
     "project": "2027 Osaka Trip",
-    "version": "V5.5.0",
+    "version": "V5.6.0",
     "purpose": "Daily price and open-status monitoring"
   },
   "web_checks": [
