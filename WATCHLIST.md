@@ -32,30 +32,29 @@ Track items that may change before departure.
 - early check-in pricing
 - room upgrade options
 - Day 1 Executive Lounge afternoon tea 2027 hours, arrival-day access rules, room benefit eligibility, companion policy, and food / beverage offering for 2027-11-17
-- Executive Lounge afternoon tea 2027 hours, access rules, and food / beverage offering for 2027-11-20
+- Executive Lounge afternoon tea 2027 hours, access rules, and food / beverage offering for 2027-11-19 and 2027-11-20
 - InterContinental Osaka 2027 restaurant lineup and PIERRE operating status
 - PIERRE 2027/11/20 dinner hours, menu, price, service charge, dress code, reservation window, cancellation policy, and seat request rules
 - PIERRE anniversary dinner request: window seat / Osaka night-view table, anniversary dessert message, small celebration option, and photo assistance
-- ADEE Lounge & Bar 2027-11-20 after-dinner availability and age / live music rules if used as optional nightcap
 
 ## Dining
 
 - Day 1 dinner candidates near Pokémon Center OSAKA in Umeda
+- Day 3 Osaka city sushi dinner candidates near Umeda / Kitashinchi / Fukushima / Nakanoshima / north Namba
+- Day 3 Namba / Dotonbori / Shinsaibashi lunch candidates
 - Day 4 Shinsaibashi lunch candidates that allow returning to InterContinental Osaka after lunch
 - Day 4 PIERRE Anniversary Dinner reservation readiness
 - Whether PIERRE can note a window / Osaka night-view table request for an anniversary dinner
 - Whether PIERRE offers anniversary dessert messages, small celebration options, or photo support
-- Sushi fallback candidates near InterContinental Osaka / Umeda / Osaka Station only if the user changes back from PIERRE
+- Day 3 previous Kyoto restaurants, 京 鰻和 本店 and 天ぷら 京星, are fallback / historical only unless user restores Kyoto
 - Taste-first Osaka restaurant candidates
 - Restaurant opening days and hours
 - Booking windows
 - TableCheck availability where relevant
 - Cancellation policies
-- Location fit with InterContinental Osaka, USJ day, shopping day, formal Day 3 route, formal Day 4 Shinsaibashi route, and slow-travel pacing
+- Location fit with InterContinental Osaka, USJ day, shopping day, formal Day 3 Osaka city route, formal Day 4 Shinsaibashi route, and slow-travel pacing
 - Michelin status is neutral and should not be used as the main planning label
 - Osaka Kizu Market 2027-11-19 business calendar and brunch restaurant candidates
-- 京 鰻和 本店 2027-11-19 lunch reservation window, opening hours, menu, price, 10% reservation fee rule, and cancellation policy
-- 天ぷら 京星 2027-11-19 TABLEALL availability, Reservation Request rules, dinner time, price, booking fee, cancellation policy, and final availability
 
 ## Day 1 formal route
 
@@ -69,14 +68,14 @@ Track items that may change before departure.
 ## Day 3 formal route
 
 - Kizu Market 2027-11-19 business calendar and brunch restaurant candidates
-- Tsuruya Yoshinobu IRODORI 2027-11-19 hours, closure notices, and product availability
-- Suetomi 2027-11-19 hours, closure notices, and product availability
-- MALEBRANCHE Cacao 365 Gion 2027-11-19 hours, closure notices, and product availability
-- Kyoto route timing after Kizu Market brunch
-- Rail plus short taxi cost estimate for the formal Day 3 route
-- KKday #133661 backup-only status and whether to keep it for rain, fatigue, or heavy shopping
-- Lunch at 京 鰻和 本店 timing fit after Kizu Market and before Kyoto sweets stops
-- Dinner at 天ぷら 京星 timing fit after Gion / Higashiyama
+- Kizu Market queue and best arrival time
+- Kizu Market to Namba / Nipponbashi route by metro or short taxi
+- Nipponbashi / Den Den Town / Ota Road 2027-11-19 store hours, closure notices, events, limited goods, and crowd conditions
+- Namba / Dotonbori / Shinsaibashi lunch candidates that allow returning to InterContinental Osaka after lunch
+- Return route from Namba / Nipponbashi to InterContinental Osaka
+- Executive Lounge afternoon tea 2027-11-19 access rules, timing, and food / beverage offering
+- Osaka city sushi dinner candidates, price, booking window, cancellation policy, and transportation
+- Kyoto sweets route, Pokemon Center KYOTO, Kyoto International Manga Museum, 京 鰻和 本店, and 天ぷら 京星 are fallback-only after V5.25.0
 
 ## Day 4 formal route
 
@@ -89,16 +88,16 @@ Track items that may change before departure.
 - PIERRE Anniversary Dinner 2027/11/20 booking window, dinner hours, menu, price, service charge, dress code, and cancellation policy
 - PIERRE window seat / Osaka night-view request rules and whether it can be noted at booking
 - PIERRE anniversary dessert message, small celebration option, and photo support availability
-- Sushi fallback-only status if the user later changes back to sushi dinner
+- Sushi fallback-only status if the user later changes back to sushi dinner for Day 4
 - ADEE Lounge & Bar availability only if used as optional after-dinner drink / nightcap
 
 ## Shopping and anime interests
 
-- Pokemon Center KYOTO 2027 hours, closure notices, events, and limited goods
+- Pokemon Center KYOTO only if Kyoto is restored
 - Pokemon Center OSAKA 2027-11-17 hours, closure notices, events, and limited goods
 - Pokemon Center OSAKA DX 2027-11-20 hours, closure notices, events, and limited goods
-- Kyoto International Manga Museum 2027 calendar, hours, exhibits, and closure days
-- Detective Conan Osaka or Kyoto limited-time events, pop-up shops, cafe, exhibitions, and official announcements
+- Nipponbashi / Den Den Town / Ota Road 2027-11-19 anime, model, character goods, event, and limited item information
+- Detective Conan Osaka limited-time events, pop-up shops, cafe, exhibitions, and official announcements
 - department store tax refund rules
 - luxury boutique appointment policy
 - seasonal sale dates
@@ -110,8 +109,8 @@ Track items that may change before departure.
 - credit card reward rules
 - hotel rate changes
 - USJ price changes
-- Active V5.24.0 recommended budget: TWD 327,664 for two travelers
-- Active V5.24.0 safety ceiling: TWD 380,000 for two travelers
+- Active V5.25.0 recommended budget: TWD 324,664 for two travelers
+- Active V5.25.0 safety ceiling: TWD 380,000 for two travelers
 - Luxury handbags, jewelry, and watches are excluded from the base budget and must be budgeted separately
 - EVA Air BR178 / BR129 fare and payment status; V5.24.0 reference TWD 35,000 for two travelers round trip
 - travel insurance amount TWD 6,900 and payment status
@@ -119,16 +118,15 @@ Track items that may change before departure.
 - KKday product #129909 airport transfer final price and booking rules; V5.24.0 reference TWD 2,600 each way, TWD 5,200 round trip
 - KKday product #536220 hotel-USJ transfer final price and booking rules; V5.24.0 reference TWD 1,732 each way, TWD 3,464 round trip
 - Day 1 dinner near Pokémon Center OSAKA budget
-- Day 3 rail plus short taxi actual cost
+- Day 3 Osaka city transportation actual cost
+- Day 3 sushi dinner budget after restaurant selection
+- Day 3 lunch budget near Namba / Dotonbori / Shinsaibashi
 - Day 4 Shinsaibashi lunch budget
 - Day 4 Shinsaibashi to InterContinental Osaka return transport cost
 - Day 4 PIERRE Anniversary Dinner budget, service charge, cancellation risk, and optional anniversary add-ons
 - Optional ADEE nightcap budget if added
-- Sushi fallback budget only if the user changes back to sushi
-- KKday product 133661 backup-only Day 3 10-hour charter final price, vehicle choice, and overtime risk
-- 京 鰻和 本店 lunch budget and reservation fee
-- 天ぷら 京星 TABLEALL price, booking fee, and cancellation policy
-- Pokemon Center OSAKA / OSAKA DX shopping budget
+- Day 3 Kyoto route budget only if user restores Kyoto
+- Pokemon Center OSAKA / OSAKA DX / Nipponbashi shopping budget
 - Executive Lounge afternoon tea included benefit versus extra charge status
 
 ## Ticket Platforms
@@ -140,7 +138,7 @@ Track items that may change before departure.
 - KKday product 129909 KIX to InterContinental Osaka route price, luggage rules, waiting time, and vehicle choice
 - KKday product 536220 InterContinental Osaka to USJ route price, pickup time, pickup point, 20KM rule, and vehicle choice
 - KKday product 536220 USJ to InterContinental Osaka return pickup point and route price
-- KKday product 133661 backup-only 2027-11-19 availability, price, vehicle choice, custom route confirmation, and overtime fee rules
+- KKday product 133661 backup-only availability only if Kyoto or comfort-day route is restored
 - Osaka Amazing Pass 2027 price, valid facilities, and transportation coverage
 - Osaka e-Pass 2027 price and valid facilities
 - Japan eSIM / SIM / Pocket Wi-Fi only as backup; phone roaming is the selected primary plan
