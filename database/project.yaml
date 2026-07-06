@@ -1,0 +1,17 @@
+project:
+  name: 2027 Osaka Trip
+  version: V4.0.0
+  source_of_truth: GitHub main
+  repository: sachiko620702/2027_OSAKA
+  dates:
+    start: 2027-11-17
+    end: 2027-11-21
+  duration: 5 days 4 nights
+  hotel: InterContinental Osaka
+  positioning: Luxury Slow Travel
+  fixed_items:
+    - USJ one day
+    - Three-star Michelin planning
+    - Luxury shopping
+  status: active
+  last_updated: 2026-07-06
