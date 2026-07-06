@@ -1,0 +1,16 @@
+restaurants:
+  - id: restaurant-001
+    name: Date Dachi
+    category: candidate
+    source: YouTube
+    status: needs review
+  - id: restaurant-002
+    name: Uotoyo
+    category: candidate
+    source: YouTube
+    status: needs review
+  - id: restaurant-003
+    name: Ganso Ice Dog
+    category: candidate
+    source: YouTube
+    status: needs review
