@@ -14,8 +14,8 @@ Source of truth: GitHub main branch
 - USJ: one day
 - Dining: taste-first dining; Michelin status is neutral and should not be used as the primary label
 - Shopping: luxury shopping
-- Day 1 formal sequence: arrival at InterContinental Osaka, target Executive Lounge afternoon tea, rest at the hotel, Pokémon Center OSAKA in Umeda, dinner near Pokémon Center OSAKA, then return to the hotel.
-- Day 1 dinner candidate list exists but no candidate has been promoted to formal itinerary yet.
+- Day 1 formal sequence: arrival at InterContinental Osaka, target Executive Lounge afternoon tea, rest at the hotel, Pokémon Center OSAKA in Umeda, dinner at 千房 梅田周邊店 / Chibo Umeda-area branch, then return to the hotel.
+- Day 1 formal dinner: 千房 梅田周邊店 is selected; exact branch, hours, reservation rules, rating, price, and walking route from Pokémon Center OSAKA still require confirmation.
 - Day 3 formal itinerary: Kizu Market + Kyoto sweets souvenirs + Pokemon / anime + 京 鰻和 本店 lunch + 天ぷら 京星 dinner
 - Day 4 formal route: Shinsaibashi-centered morning / lunch area including Pokémon Center OSAKA DX; return to InterContinental Osaka after lunch; hotel / nearby activities in the afternoon; Executive Lounge afternoon tea; dinner cuisine preference is now sushi.
 - Day 4 dinner location issue: InterContinental Osaka official FAQ currently says there is no Japanese restaurant in the hotel, so sushi dinner likely requires a hotel-nearby / Umeda / Osaka Station sushi candidate unless the hotel offering changes by 2027.
@@ -40,7 +40,7 @@ Source of truth: GitHub main branch
 15. Day 3 official 2027 opening-hour confirmation for Kizu Market, Kyoto sweets shops, Pokemon Center KYOTO, Kyoto International Manga Museum, 京 鰻和 本店, and 天ぷら 京星
 16. Tableall availability and reservation rules for 天ぷら 京星
 17. Keep the current hourly itinerary aligned with current flight baseline and later official 2027 airline updates
-18. Confirm Day 1 InterContinental Osaka Executive Lounge afternoon tea access and choose one formal dinner from the Day 1 Umeda candidate list only after user confirmation
+18. Confirm Day 1 InterContinental Osaka Executive Lounge afternoon tea access and the exact Chibo branch for Day 1 dinner
 19. Confirm Day 4 Shinsaibashi lunch candidate and the post-lunch return-to-hotel route
 20. Search and compare Day 4 sushi dinner candidates near InterContinental Osaka / Umeda / Osaka Station, prioritizing taste, reservation feasibility, comfort, and short travel time
 21. Keep PIERRE / NOKA as fallback-only if the user decides in-hotel dinner is more important than sushi
@@ -50,7 +50,7 @@ Source of truth: GitHub main branch
 - Flights: EVA Air BR178 outbound and BR129 return.
 - Flight timing baseline: per user instruction, use the current schedule directly for planning: BR178 06:30 TPE to 10:10 KIX; BR129 18:30 KIX to 20:30 TPE. Official 2027-11 schedule, fare, aircraft, terminal, baggage, and booking status still require reconfirmation.
 - Day 1 sequence: after arrival at the hotel, the user wants to use afternoon tea, rest a bit, then go to Umeda Pokémon Center, eat dinner near the Pokémon Center, and return to the hotel.
-- Day 1 dinner candidates near Pokémon Center OSAKA / Umeda have been added, but no final dinner has been selected yet.
+- Day 1 dinner: user selected 千房 梅田周邊店 / Chibo Umeda-area branch as the formal dinner direction; exact branch still requires confirmation.
 - Travel insurance budget amount: TWD 6,900; payment status needs confirmation.
 - Internet: phone roaming for two people, total TWD 499; eSIM / SIM / Pocket Wi-Fi are backup only.
 - Airport transfer: use KKday product 129909 both ways between KIX and InterContinental Osaka.
