@@ -14,3 +14,21 @@ restaurants:
     category: candidate
     source: YouTube
     status: needs review
+  - id: sweets-001
+    name: Tsuruya Yoshinobu IRODORI
+    category: kyoto_sweets_candidate
+    item: kohakuto
+    area: Kyoto Station
+    status: day3_candidate
+  - id: sweets-002
+    name: MALEBRANCHE Kaka 365 Gion
+    category: kyoto_sweets_candidate
+    item: Kyoto pattern chocolate
+    area: Gion
+    status: day3_candidate
+  - id: sweets-003
+    name: Suetomi
+    category: kyoto_sweets_candidate
+    item: baked fu senbei
+    area: Shijo Karasuma or Gojo
+    status: day3_candidate
