@@ -1,7 +1,7 @@
 metadata:
   id: ticket_platforms_kkday_klook
   title: "KKday / Klook 票券平台候補資料"
-  version: "V5.1.0"
+  version: "V5.4.0"
   status: "candidate"
   last_updated: "2026-07-06"
   maintained_by: "ChatGPT"
@@ -15,7 +15,7 @@ trip_context:
   style: "Luxury Slow Travel"
   fixed_scope:
     - "USJ one day"
-    - "Three-star Michelin planning"
+    - "Non-Michelin-focused dining"
     - "Luxury shopping"
 
 platforms:
@@ -28,7 +28,7 @@ platforms:
       - "eSIM / SIM / Pocket Wi-Fi：出發前 1-2 週再確認方案"
       - "私人接送 / 行李配送：若行李多或抵達時間不佳，可列候補"
     not_primary_for:
-      - "三星米其林正式預約：優先 TableCheck / 餐廳官方 / 飯店 Concierge"
+      - "正式餐廳決策：不得以平台推薦直接取代專案餐廳候補評估"
     source_status: "NEEDS_RECONFIRMATION"
     source_url: "https://www.kkday.com/"
   klook:
@@ -39,7 +39,7 @@ platforms:
       - "Osaka Amazing Pass / Osaka e-Pass：只在行程需要密集景點時列入"
       - "KIX 機場交通、eSIM、私人接送：出發前依航班與促銷比價"
     not_primary_for:
-      - "正式行程決策：不得以平台商品推薦直接取代官方資訊"
+      - "正式行程決策：不得以平台商品推薦直接取代官方資訊與專案決策"
     source_status: "NEEDS_RECONFIRMATION"
     source_url: "https://www.klook.com/"
 
@@ -54,7 +54,7 @@ candidate_use_cases:
     risk:
       - "平台庫存可能晚於官方或限量。"
       - "Express Pass 方案與入場保證時段可能每季變動。"
-      - "取消政策通常比官方或飯店 Concierge 更需要逐筆確認。"
+      - "取消政策通常比官方更需要逐筆確認。"
   - id: "KIX_TO_UMEDA_TRANSPORT"
     category: "Transportation"
     item: "Kansai Airport to Umeda / Osaka Station area"
