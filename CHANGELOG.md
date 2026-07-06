@@ -1,5 +1,52 @@
 # CHANGELOG
 
+## V5.21.0 - 2026-07-06
+
+### Changed
+
+- Added Day 4 formal route for 2027/11/20: Shinsaibashi-centered activity range before and around lunch.
+- Confirmed Day 4 sequence: Pokémon Center OSAKA DX / Daimaru Shinsaibashi area → Shinsaibashi lunch → return to InterContinental Osaka after lunch → Executive Lounge afternoon tea / hotel-nearby activities → in-hotel dinner.
+- Added `database/day4_shinsaibashi_hotel_dinner.yml`.
+- Updated `database/itinerary_hourly.yml` with the Day 4 post-lunch return-to-hotel route and hotel dinner block.
+- Updated `database/hotel_lounge.yml` with Day 4 afternoon tea, hotel-nearby activity, and in-hotel dinner flow.
+- Updated `database/customer_facing_travel_plan.yml`, `docs/15_顧客版資料/旅遊規劃三表.md`, root `index.md`, and `docs/index.md` with the Day 4 plan.
+- Added `docs/01_行程規劃/2027大阪自由行_小時制時間表_V5.20.0.md` as the Day 4 hourly planning document generated during this update cycle.
+- Updated README, AI_CONTEXT, PROJECT_RULE, AGENTS, DECISIONS, ROADMAP, WATCHLIST, and daily sync status.
+
+### Day 4 confirmed direction
+
+- Activity range: Shinsaibashi-centered.
+- Anchor stop: Pokémon Center OSAKA DX / Daimaru Shinsaibashi.
+- Lunch: Shinsaibashi-area candidate needed.
+- After lunch: return to InterContinental Osaka.
+- Afternoon: hotel / hotel-nearby activities only, with Executive Lounge afternoon tea retained.
+- Dinner: InterContinental Osaka in-hotel restaurant.
+
+### In-hotel dinner candidates
+
+- PIERRE / フレンチレストラン ピエール: primary formal dinner candidate.
+- NOKA Roast & Grill / ノカ ロースト & グリル: relaxed in-hotel backup.
+- ADEE Lounge & Bar / アディ ラウンジ＆バー: optional after-dinner lounge / nightcap only, not the main dinner.
+
+### Reason
+
+The user explicitly specified that Day 4 should mainly stay within Shinsaibashi, return to the hotel after lunch, keep later activities near the hotel, and use an in-hotel restaurant for dinner.
+
+### Impact
+
+- Day 4 is now more consistent with Luxury Slow Travel.
+- Day 4 afternoon should not include distant attractions or a second long shopping area.
+- Day 4 dinner should not be moved to Shinsaibashi, Namba, or Umeda unless the user explicitly changes the plan.
+- Day 4 lunch and in-hotel dinner now have clear follow-up tasks.
+
+### Follow-up required
+
+- Confirm Pokémon Center OSAKA DX 2027/11/20 hours, entry rules, events, and limited goods.
+- Add Shinsaibashi lunch candidates that fit a post-lunch return to InterContinental Osaka.
+- Confirm Shinsaibashi → InterContinental Osaka return route by Osaka Metro Midosuji Line vs taxi.
+- Confirm InterContinental Osaka Executive Lounge 2027/11/20 afternoon tea hours and eligibility.
+- Confirm PIERRE / NOKA 2027/11/20 dinner availability, booking window, menu, price, service charge, dress code, and cancellation policy.
+
 ## V5.20.0 - 2026-07-06
 
 ### Changed
