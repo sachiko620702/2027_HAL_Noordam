@@ -1,0 +1,56 @@
+metadata:
+  id: day1_formal_dinner
+  title: "Day 1 正式晚餐｜千房 梅田周邊店"
+  version: "V5.22.0"
+  status: "formal_dinner_direction_branch_pending"
+  last_updated: "2026-07-06"
+  maintained_by: "ChatGPT"
+  language: "zh-Hant"
+
+formal_dinner:
+  date: "2027/11/17（三）"
+  day: "Day 1"
+  planned_time: "19:00–20:30"
+  restaurant_name_ja: "千房 梅田周邊店"
+  restaurant_name_en: "Chibo Umeda-area branch"
+  category: "大阪燒 / Okonomiyaki"
+  status: "formal_selection_branch_pending"
+  user_decision: "那就選 千房 梅田周邊店"
+  decision_date: "2026-07-06"
+  location_policy: "必須選 Pokémon Center OSAKA / JR 大阪站 / 梅田站周邊動線合理的分店，不可選距離過遠的分店。"
+  exact_branch: "NEEDS_RECONFIRMATION"
+  google_maps: "NEEDS_RECONFIRMATION"
+  google_rating: "NEEDS_RECONFIRMATION"
+  tabelog: "NEEDS_RECONFIRMATION"
+  tabelog_score: "NEEDS_RECONFIRMATION"
+  michelin: "NOT_PRIMARY_CRITERIA"
+  estimated_price: "中價位；需再次確認"
+  recommended_dishes:
+    - "大阪燒"
+    - "綜合大阪燒類"
+  reservation_required: "需確認實際分店是否可訂位"
+  best_booking_time: "出發前 1 個月內確認訂位；若可訂位則優先訂 19:00 前後"
+  cancellation_policy: "NEEDS_RECONFIRMATION"
+  nearest_station: "梅田 / 西梅田 / 大阪站周邊，視實際分店而定"
+  access: "Pokémon Center OSAKA 後步行或短程移動；需用 Google Maps 實測"
+  best_dining_time: "19:00–20:30"
+  queue_time: "NEEDS_RECONFIRMATION"
+  worth_arranging: "YES_FORMAL_DIRECTION"
+
+fit_analysis:
+  advantages:
+    - "大阪燒符合大阪抵達日晚餐主題。"
+    - "比排隊名店更穩定，較適合早班機抵達日。"
+    - "可銜接梅田 Pokémon Center OSAKA 後晚餐。"
+    - "下午茶後可彈性點餐，不一定要吃太重。"
+  risks:
+    - "目前尚未確認實際分店。"
+    - "2027/11/17 營業時間、預約、價格與排隊需再次確認。"
+    - "若實際分店離 Pokémon Center OSAKA 過遠，需改選更近分店或啟用備案。"
+  backup_policy:
+    - "若千房無法訂位或動線不佳，優先改查 Tsurutontan TOP CHEFS 或其他梅田舒適型晚餐。"
+    - "若下午茶吃太飽，可改 Hanadako 作輕食備案。"
+
+source_notes:
+  - "使用者已確認選千房作為 Day 1 正式晚餐方向。"
+  - "實際分店、評分、營業、預約與價格需再次確認。"
