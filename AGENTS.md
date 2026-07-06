@@ -23,7 +23,9 @@ Fixed assumptions:
 - USJ one day
 - Taste-first dining; Michelin status neutral
 - Luxury shopping
-- Day 3 formal itinerary: Kizu Market brunch + Kyoto sweets souvenirs + Pokemon / anime
+- Day 1 formal stop: Pokemon Center OSAKA in Umeda
+- Day 3 formal itinerary: Kizu Market, Kyoto sweets souvenirs, Pokemon / anime, formal Kyoto lunch, and formal Kyoto tempura dinner
+- Day 4 formal stop: Pokemon Center OSAKA DX and InterContinental Osaka Executive Lounge afternoon tea
 
 Current logistics and budget inputs:
 
@@ -33,4 +35,5 @@ Current logistics and budget inputs:
 - Airport transfer: KKday transfer for both KIX to hotel and hotel to KIX.
 - USJ transfer: KKday transfer for both hotel to USJ and USJ to hotel.
 - Day 3 transport: public rail plus short taxi is the primary plan; KKday #133661 10-hour charter is backup only.
+- Day 3 dinner reservation: primary route is TABLEALL Reservation Request unless a better official route is confirmed.
 - Dining: choose good restaurants; do not label the plan as non-Michelin, and do not prioritize Michelin status either way.
