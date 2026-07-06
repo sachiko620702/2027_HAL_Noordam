@@ -1,0 +1,47 @@
+metadata:
+  id: hotel_lounge
+  title: "InterContinental Osaka 行政酒廊規劃"
+  version: "V5.19.0"
+  status: "active_planning_baseline"
+  last_updated: "2026-07-06"
+  maintained_by: "ChatGPT"
+  language: "zh-Hant"
+
+hotel:
+  name: "InterContinental Osaka"
+  role: "正式住宿"
+  trip_dates: "2027/11/17（三）～2027/11/21（日）"
+
+lounge_policy:
+  breakfast_principle: "平常早餐以飯店行政酒廊為主；Day 3 木津市場日例外，不吃飯店早餐。"
+  afternoon_tea_principle: "Day 1 抵達後希望使用行政酒廊下午茶；Day 4 也已正式安排行政酒廊下午茶。"
+  confirmation_status: "PENDING_OFFICIAL_ANNOUNCEMENT"
+  caveat: "2027 行政酒廊開放時段、入住日是否可於正式入住前使用、房型禮遇、同行者資格與餐飲內容仍需向飯店再次確認。"
+
+planned_lounge_uses:
+  - date: "2027/11/17（三）"
+    day: "Day 1"
+    purpose: "抵達日行政酒廊下午茶"
+    planning_time: "15:00–16:30"
+    status: "preferred_target_pending_hotel_policy"
+    note: "使用者希望第一天用到下午茶。依 BR178 10:10 抵達與 KIX 接送暫排，若 13:30–14:30 抵達飯店且 lounge access 可用，優先安排下午茶，再去梅田 Pokémon Center OSAKA。"
+  - date: "2027/11/20（六）"
+    day: "Day 4"
+    purpose: "行政酒廊下午茶"
+    planning_time: "15:00–16:30"
+    status: "fixed_pending_hotel_policy"
+    note: "已正式排入 Day 4；需確認 2027 實際時段、資格與內容。"
+
+fallbacks:
+  day1_if_not_available:
+    - "若抵達飯店時尚未能使用行政酒廊，先寄放行李並在飯店休息。"
+    - "若下午茶時段錯過，Day 1 保留梅田輕食／咖啡作備案。"
+    - "Day 4 行政酒廊下午茶仍保留為正式安排。"
+
+watch_items:
+  - "InterContinental Osaka 2027 Executive Lounge afternoon tea hours."
+  - "Arrival-day lounge access before / at check-in."
+  - "Room type and lounge benefit eligibility."
+  - "Guest policy for two travelers."
+  - "Afternoon tea food and beverage offering."
+  - "Whether Day 1 arrival time can realistically connect to afternoon tea after KIX transfer."
