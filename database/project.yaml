@@ -1,6 +1,6 @@
 project:
   name: 2027 Osaka Trip
-  version: V5.8.0
+  version: V5.9.0
   source_of_truth: GitHub main
   repository: sachiko620702/2027_OSAKA
   dates:
@@ -14,18 +14,39 @@ project:
     - Taste-first dining; Michelin status neutral
     - Luxury shopping
     - Phone roaming for two people
-    - KKday airport transfer both ways
+    - EVA Air BR178 outbound and BR129 return
+    - KKday transfer for KIX hotel round trip
+    - KKday transfer for hotel USJ round trip
   user_confirmed_inputs:
+    flights:
+      airline: EVA Air
+      outbound:
+        flight_number: BR178
+        route: TPE to KIX
+        date: 2027-11-17
+        status: user_selected_needs_official_schedule_confirmation
+      return:
+        flight_number: BR129
+        route: KIX to TPE
+        date: 2027-11-21
+        status: user_selected_needs_official_schedule_confirmation
     insurance_total_twd: 6900
     internet:
       type: phone_roaming
       total_for_two_people_twd: 499
     airport_transfer:
       platform: KKday
-      service_type: private_airport_transfer
+      service_type: airport_charter_transfer
       routes:
         - KIX to InterContinental Osaka
         - InterContinental Osaka to KIX
+      booking_status: product_pending_confirmation
+    usj_transfer:
+      platform: KKday
+      service_type: hotel_usj_charter_transfer
+      routes:
+        - InterContinental Osaka to Universal Studios Japan
+        - Universal Studios Japan to InterContinental Osaka
       booking_status: product_pending_confirmation
     dining:
       principle: taste_first
