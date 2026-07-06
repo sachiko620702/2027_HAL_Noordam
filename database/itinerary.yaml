@@ -1,11 +1,17 @@
 itinerary:
-  version: V5.14.0
+  version: V5.15.0
   status: planning
+  breakfast_policy:
+    normal_days: InterContinental Osaka Executive Lounge breakfast
+    exception: Day 3 uses Osaka Kizu Market brunch instead of hotel Executive Lounge breakfast
   dates:
     - date: 2027-11-17
       day: day1
       status: draft
       focus: arrival_osaka_hotel_checkin
+      meals:
+        breakfast: not_applicable_departure_day
+        dinner: pending
       fixed_transport:
         flight: BR178
         airport_transfer: KKday product 129909 KIX to InterContinental Osaka
@@ -13,6 +19,10 @@ itinerary:
       day: day2
       status: draft
       focus: USJ one day
+      meals:
+        breakfast: hotel_executive_lounge
+        lunch: USJ_pending
+        dinner: USJ_or_hotel_pending
       fixed_transport:
         outbound: KKday product 536220 InterContinental Osaka to USJ
         return: KKday product 536220 USJ to InterContinental Osaka
@@ -20,8 +30,14 @@ itinerary:
       day: day3
       status: candidate_not_formal
       focus: relaxed food photo Pokemon anime Kyoto sweets day
+      breakfast: skip_hotel_executive_lounge_for_kizu_market_brunch
       primary_transport: public rail plus short taxi; no charter required for this version
-      fallback_transport: KKday product 133661 10-hour charter only if comfort or weather requires it
+      kyoto_access:
+        recommended: Osaka Kizu Market to Kyoto Station by metro plus JR
+        comfort_option: short taxi from Kizu Market to Osaka Station then JR to Kyoto Station
+        kyoto_inside_city: subway plus short taxi as needed
+        return_to_osaka: Hankyu or JR; short taxi to hotel if tired
+      fallback_transport: KKday product 133661 10-hour charter only if comfort, rain, fatigue, or shopping load requires it
       candidate_route:
         title: Kizu Market plus Kyoto sweets Pokemon anime walk
         stops:
@@ -32,11 +48,13 @@ itinerary:
           - time: late_morning
             place: Tsuruya Yoshinobu IRODORI at Kyoto Station
             activity: kohakuto sweets shopping
-            status: candidate_needs_2027_hours_confirmation
+            current_hours_reference: weekday shop 10:00-20:00; open year round
+            status: likely_open_if_current_rules_continue_needs_2027_confirmation
           - time: midday
             place: Suetomi
             activity: baked fu senbei sweets shopping
-            status: candidate_needs_2027_hours_confirmation
+            current_hours_reference: 09:00-17:00; closed Sunday and national holidays
+            status: likely_open_if_current_rules_continue_needs_2027_confirmation
           - time: midday_or_afternoon
             place: Pokemon Center KYOTO
             activity: Pokemon goods shopping
@@ -48,7 +66,8 @@ itinerary:
           - time: afternoon
             place: MALEBRANCHE Cacao 365 Gion
             activity: Kyoto-pattern chocolate shopping
-            status: candidate_needs_2027_hours_confirmation
+            current_hours_reference: 10:00-17:00; no regular closure
+            status: likely_open_if_current_rules_continue_needs_2027_confirmation
           - time: late_afternoon
             place: Higashiyama and Gion photo walk
             activity: Kyoto atmosphere photos
@@ -65,10 +84,16 @@ itinerary:
       day: day4
       status: draft
       focus: luxury shopping and free time
+      meals:
+        breakfast: hotel_executive_lounge
+        lunch: pending
+        dinner: pending
     - date: 2027-11-21
       day: day5
       status: draft
       focus: checkout_return_taiwan
+      meals:
+        breakfast: hotel_executive_lounge_or_airport_pending
       fixed_transport:
         hotel_to_airport: KKday product 129909 InterContinental Osaka to KIX
         flight: BR129
