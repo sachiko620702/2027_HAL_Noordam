@@ -1,0 +1,25 @@
+attractions:
+  - id: attraction-001
+    name: Umeda Sky Building
+    category: candidate
+    status: pending
+  - id: attraction-002
+    name: HEP FIVE Ferris Wheel
+    category: candidate
+    status: pending
+  - id: attraction-003
+    name: Dotonbori Cruise
+    category: candidate
+    status: pending
+  - id: attraction-004
+    name: Tsutenkaku
+    category: candidate
+    status: pending
+  - id: attraction-005
+    name: Osaka Castle
+    category: candidate
+    status: pending
+  - id: attraction-006
+    name: Nakanoshima Water Bus
+    category: candidate
+    status: pending
