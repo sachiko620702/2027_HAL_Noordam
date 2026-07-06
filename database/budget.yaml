@@ -1,11 +1,62 @@
 budget:
   status: active
+  version: V5.8.0
+  last_updated: 2026-07-06
+  currency_assumptions:
+    primary_currency: TWD
+    jpy_twd_rate: NEEDS_RECONFIRMATION
+    note: Use actual paid amounts when available. JPY/TWD must be recalculated before purchase and departure.
   categories:
-    - lodging
-    - dining
     - transportation
+    - lodging
     - shopping
+    - dining
     - usj
-    - reserve
-    - exchange_rate
-    - credit_card_rewards
+    - other
+  user_provided_amounts:
+    - id: travel_insurance
+      category: other
+      item: Travel insurance
+      amount: 6900
+      currency: TWD
+      people: NEEDS_RECONFIRMATION
+      quantity: 1
+      subtotal_twd: 6900
+      payment_status: NEEDS_PAYMENT_CONFIRMATION
+      paid: NEEDS_RECONFIRMATION
+      payment_method: NEEDS_RECONFIRMATION
+      price_type: user_provided_amount
+      note: User provided insurance amount on 2026-07-06.
+    - id: phone_roaming_two_people
+      category: other
+      item: Phone roaming for two people
+      amount: 499
+      currency: TWD
+      people: 2
+      quantity: 1
+      subtotal_twd: 499
+      payment_status: NEEDS_PAYMENT_CONFIRMATION
+      paid: NEEDS_RECONFIRMATION
+      payment_method: carrier_billing_or_credit_card_NEEDS_RECONFIRMATION
+      price_type: user_provided_amount
+      note: Primary internet plan. eSIM, SIM, and Pocket Wi-Fi are backup only.
+    - id: kkday_airport_transfer_roundtrip
+      category: transportation
+      item: KKday airport transfer round trip between KIX and InterContinental Osaka
+      amount: NEEDS_RECONFIRMATION
+      currency: NEEDS_RECONFIRMATION
+      people: 2
+      quantity: 2
+      subtotal_twd: NEEDS_RECONFIRMATION
+      payment_status: NOT_PAID_OR_NEEDS_CONFIRMATION
+      paid: NEEDS_RECONFIRMATION
+      payment_method: KKday_checkout_NEEDS_RECONFIRMATION
+      price_type: pending_query_price
+      note: User selected KKday airport transfer both ways; exact product, vehicle type, luggage rules, price, waiting time, and cancellation policy must be confirmed.
+  budget_model_notes:
+    transportation: Includes flights, KKday airport transfer, local rail, taxi, and luggage-related movement.
+    lodging: Includes InterContinental Osaka room cost, taxes, breakfast or lounge add-ons, early check-in, late check-out, and upgrade fees.
+    shopping: Includes department stores, luxury boutiques, drugstores, apparel, electronics, character goods, souvenirs, and tax-free shopping.
+    dining: Taste-first planning. Michelin status is neutral and should not be used as the budget label.
+    usj: Includes Studio Pass, Express Pass, Nintendo-area-related access if applicable, park dining, park shopping, lockers, and special experiences.
+    other: Includes insurance, phone roaming, travel goods, fees, emergency reserve, medicine, laundry, and temporary spending.
