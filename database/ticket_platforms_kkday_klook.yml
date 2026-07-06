@@ -1,12 +1,53 @@
 metadata:
   id: ticket_platforms_kkday_klook
   title: "KKday / Klook 票券平台候補與已選方案資料"
-  version: "V5.9.0"
+  version: "V5.10.0"
   status: "mixed_selected_and_candidate"
   last_updated: "2026-07-06"
   maintained_by: "ChatGPT"
   source_rule: "官方網站優先；平台商品次之；2027 未公布者標示 PENDING_OFFICIAL_ANNOUNCEMENT 或 NEEDS_RECONFIRMATION"
   project_fit: "2027 Osaka Luxury Slow Travel"
+
+selected_kkday_products:
+  airport_transfer_129909:
+    product_id: 129909
+    title: "日本關西機場 KIX 至大阪京都奈良神戶等接機或送機"
+    url: "https://www.kkday.com/zh-tw/product/129909-japan-kansai-international-airport-private-transfer-to-osaka-kyoto-nara-kobe-nagoya"
+    query_date: "2026-07-06"
+    status: "selected_candidate_price_pending"
+    rating: 4.9
+    sold_count: "20K+"
+    cancellation: "3天前可免費取消"
+    voucher: "電子憑證"
+    booking_deadline: "最快可於出發日期前24小時預訂"
+    price_status: "dynamic_price_not_visible_in_public_extract"
+    base_price_note: "需進入 KKday 商品頁選日期、上下車地點、車型後再次確認。"
+    routes_for_project:
+      - date: "2027-11-17"
+        route: "KIX to InterContinental Osaka"
+      - date: "2027-11-21"
+        route: "InterContinental Osaka to KIX"
+    recommended_choice:
+      vehicle: "豪華7座 / Toyota Alphard 2代同等級"
+      capacity: "5人"
+      luggage: "3件28-30吋托運行李"
+      reason: "2人旅行且行李3件內時最符合 Luxury Slow Travel 與舒適度。"
+    backup_choice:
+      vehicle: "舒適10座 / HiAce同等級"
+      capacity: "9人"
+      luggage: "9件28-30吋托運行李"
+      reason: "若行李超過3件，或想要更寬敞空間，改選10座。"
+    extra_fees:
+      child_seat_second_jpy: 2000
+      night_surcharge_jpy: 2000
+      night_surcharge_time: "22:00-06:00"
+      overtime_7_to_14_seater_jpy_per_hour: 5000
+    waiting_time:
+      arrival: "90分鐘"
+      departure: "30分鐘"
+    driver_languages:
+      - "日文"
+      - "中文"
 
 trip_context:
   dates: "2027-11-17 to 2027-11-21"
@@ -18,7 +59,7 @@ trip_context:
     - "Taste-first dining; Michelin status neutral"
     - "Luxury shopping"
     - "Phone roaming selected for internet"
-    - "KKday airport transfer selected both ways"
+    - "KKday product 129909 selected candidate for KIX-hotel transfer"
     - "KKday hotel-USJ transfer selected both ways"
 
 platforms:
@@ -26,43 +67,15 @@ platforms:
     platform_name: "KKday"
     role: "機場接送與飯店-USJ接送已選平台；其他票券仍作候補採購平台"
     selected_for:
-      - "KIX to InterContinental Osaka transfer both ways"
+      - "KIX to InterContinental Osaka transfer both ways via product 129909"
       - "InterContinental Osaka to USJ transfer both ways"
-    source_status: "NEEDS_RECONFIRMATION"
+    source_status: "NEEDS_RECONFIRMATION_FOR_2027"
     source_url: "https://www.kkday.com/"
   klook:
     platform_name: "Klook"
     role: "候補採購平台"
     source_status: "NEEDS_RECONFIRMATION"
     source_url: "https://www.klook.com/"
-
-selected_use_cases:
-  - id: "KKDAY_AIRPORT_TRANSFER_ROUNDTRIP"
-    category: "Transportation"
-    item: "KKday airport transfer round trip between KIX and InterContinental Osaka"
-    recommendation: "已依使用者指示列為正式方向：機場到飯店與飯店到機場都找 KKday 接送車。"
-    purchase_timing: "航班時間確定後再預約。"
-    decision_status: "selected_pending_product_confirmation"
-    project_fit: "high"
-  - id: "KKDAY_HOTEL_USJ_TRANSFER_ROUNDTRIP"
-    category: "Transportation"
-    item: "KKday hotel-USJ transfer round trip"
-    recommendation: "已依使用者指示列為正式方向：飯店到 USJ 與 USJ 回飯店都找 KKday 接送車。"
-    purchase_timing: "USJ 開園時間與 Express Pass 計畫確定後再預約。"
-    decision_status: "selected_pending_product_confirmation"
-    project_fit: "high"
-  - id: "PHONE_ROAMING_SELECTED"
-    category: "Connectivity"
-    item: "Phone roaming for two people"
-    recommendation: "已依使用者指示列為主方案，兩人總額 TWD 499。eSIM / SIM / Pocket Wi-Fi 改為備援。"
-    purchase_timing: "出發前確認電信商開通與計費方式。"
-    decision_status: "selected_payment_status_needs_confirmation"
-    project_fit: "high"
-  - id: "TRAVEL_INSURANCE_AMOUNT"
-    category: "Other"
-    item: "Travel insurance"
-    recommendation: "使用者提供保險金額 TWD 6,900，需補付款狀態與保障內容。"
-    decision_status: "amount_recorded_payment_status_needs_confirmation"
 
 candidate_use_cases:
   - id: "USJ_TICKET_BACKUP"
@@ -76,34 +89,13 @@ candidate_use_cases:
     category: "Sightseeing pass"
     item: "Osaka Amazing Pass"
     recommendation: "只在同一天安排 2-3 個以上免費入場設施與大阪市內移動時才考慮；目前不納入正式行程。"
-    current_reference:
-      one_day: "JPY 3,500"
-      two_day: "JPY 5,000"
-      source_status: "2026 reference; 2027 PENDING_OFFICIAL_ANNOUNCEMENT"
     decision_status: "candidate"
     project_fit: "medium-low for Luxury Slow Travel"
 
 watchlist_items:
-  - "2027/11 USJ Studio Pass official release"
-  - "2027/11 USJ Express Pass and VIP product release"
-  - "KKday KIX to InterContinental Osaka transfer availability, price, luggage rules, waiting time, and booking rules"
+  - "KKday product 129909 2027/11/17 KIX to InterContinental Osaka price"
+  - "KKday product 129909 2027/11/21 InterContinental Osaka to KIX price"
+  - "KKday product 129909 7-seater versus 10-seater price comparison"
   - "KKday InterContinental Osaka to USJ transfer availability, price, pickup time, pickup point, and booking rules"
+  - "2027/11 USJ Studio Pass official release"
   - "Phone roaming activation, billing, hotspot, and fair-use policy"
-
-source_references:
-  official:
-    - name: "Universal Studios Japan official site"
-      url: "https://www.usj.co.jp/web/en/us"
-      confidence: "★★★★★"
-    - name: "Osaka Amazing Pass official new site"
-      url: "https://osaka-amazing-pass.com/en/"
-      confidence: "★★★★★"
-  platform:
-    - name: "KKday"
-      url: "https://www.kkday.com/"
-      confidence: "★★★★"
-      note: "Airport transfer and hotel-USJ transfer selected direction; exact 2027 product details require reconfirmation."
-    - name: "Klook"
-      url: "https://www.klook.com/"
-      confidence: "★★★★"
-      note: "Backup platform for ticket and transport comparison."
