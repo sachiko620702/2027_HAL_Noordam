@@ -1,6 +1,6 @@
 project:
   name: 2027 Osaka Trip
-  version: V5.11.0
+  version: V5.13.0
   source_of_truth: GitHub main
   repository: sachiko620702/2027_OSAKA
   dates:
@@ -58,6 +58,29 @@ project:
         - InterContinental Osaka to Universal Studios Japan
         - Universal Studios Japan to InterContinental Osaka
       booking_status: product_selected_price_pending
+    day3_candidate:
+      date: 2027-11-19
+      status: candidate_not_formal
+      theme: relaxed_food_photo_pokemon_anime
+      principle: do_not_force_vendor_sample_route
+      charter_candidate:
+        platform: KKday
+        product_id: 133661
+        product_url: https://www.kkday.com/zh-tw/product/133661-10-hour-private-charter-tour-osaka-kyoto-nara-japan
+        duration: 10 hours
+        recommended_vehicle: luxury_7_seater
+        price_status: dynamic_price_needs_manual_confirmation
+      preferred_route:
+        - InterContinental Osaka
+        - Osaka Kizu Market brunch
+        - Pokemon Center KYOTO
+        - Kyoto International Manga Museum
+        - Higashiyama Gion photo walk
+        - Shinsaibashi or Dotonbori drop-off
+      optional_swaps:
+        - Fushimi Inari front section if energy allows
+        - Kiyomizu Temple and Ninenzaka Sannenzaka if Kyoto classic photo spots are preferred
+        - Skip temple interiors if the day feels too full
     dining:
       principle: taste_first
       michelin_status: neutral
