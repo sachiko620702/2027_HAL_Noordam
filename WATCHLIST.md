@@ -16,7 +16,10 @@ Track items that may change before departure.
 
 - EVA Air BR178 TPE to KIX official 2027-11 schedule
 - EVA Air BR129 KIX to TPE official 2027-11 schedule
+- Current planning baseline stability: BR178 06:30 TPE to 10:10 KIX; BR129 18:30 KIX to 20:30 TPE
 - EVA Air pricing
+- aircraft type
+- terminal and check-in rules
 - baggage policy
 - seat selection and ticket rules
 - airport services
