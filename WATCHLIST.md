@@ -36,9 +36,19 @@ Track items that may change before departure.
 - Booking windows
 - TableCheck availability where relevant
 - Cancellation policies
-- Location fit with InterContinental Osaka, USJ day, shopping day, Day 3 charter candidate, and slow-travel pacing
+- Location fit with InterContinental Osaka, USJ day, shopping day, formal Day 3 route, and slow-travel pacing
 - Michelin status is neutral and should not be used as the main planning label
 - Osaka Kizu Market 2027-11-19 business calendar and brunch restaurant candidates
+
+## Day 3 formal route
+
+- Kizu Market 2027-11-19 business calendar and brunch restaurant candidates
+- Tsuruya Yoshinobu IRODORI 2027-11-19 hours, closure notices, and product availability
+- Suetomi 2027-11-19 hours, closure notices, and product availability
+- MALEBRANCHE Cacao 365 Gion 2027-11-19 hours, closure notices, and product availability
+- Kyoto route timing after Kizu Market brunch
+- Rail plus short taxi cost estimate for the formal Day 3 route
+- KKday #133661 backup-only status and whether to keep it for rain, fatigue, or heavy shopping
 
 ## Shopping and anime interests
 
@@ -61,7 +71,8 @@ Track items that may change before departure.
 - phone roaming amount TWD 499 for two people and carrier billing rules
 - KKday product 129909 airport transfer final price and booking rules
 - KKday product 536220 hotel-USJ transfer final price and booking rules
-- KKday product 133661 Day 3 10-hour charter final price, vehicle choice, and overtime risk
+- Day 3 rail plus short taxi actual cost
+- KKday product 133661 backup-only Day 3 10-hour charter final price, vehicle choice, and overtime risk
 
 ## Ticket Platforms
 
@@ -72,7 +83,7 @@ Track items that may change before departure.
 - KKday product 129909 KIX to InterContinental Osaka route price, luggage rules, waiting time, and vehicle choice
 - KKday product 536220 InterContinental Osaka to USJ route price, pickup time, pickup point, and vehicle choice
 - KKday product 536220 USJ to InterContinental Osaka return pickup point and route price
-- KKday product 133661 2027-11-19 availability, price, vehicle choice, custom route confirmation, and overtime fee rules
+- KKday product 133661 backup-only 2027-11-19 availability, price, vehicle choice, custom route confirmation, and overtime fee rules
 - Osaka Amazing Pass 2027 price, valid facilities, and transportation coverage
 - Osaka e-Pass 2027 price and valid facilities
 - Japan eSIM / SIM / Pocket Wi-Fi only as backup; phone roaming is the selected primary plan
