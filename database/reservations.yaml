@@ -1,0 +1,13 @@
+reservations:
+  hotel:
+    status: fixed
+    name: InterContinental Osaka
+  usj:
+    studio_pass: pending
+    express_pass: pending
+    vip: pending
+  restaurants:
+    status: tracking
+    michelin_three_star: priority
+  flights:
+    status: tracking
