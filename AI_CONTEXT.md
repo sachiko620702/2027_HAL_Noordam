@@ -1,7 +1,7 @@
 # AI_CONTEXT
 
 Project: 2027 Osaka Trip
-Version: V5.17.0
+Version: V5.18.0
 Repository: sachiko620702/2027_OSAKA
 Source of truth: GitHub main branch
 
@@ -17,6 +17,7 @@ Source of truth: GitHub main branch
 - Day 1 formal stop: Pokémon Center OSAKA in Umeda
 - Day 3 formal itinerary: Kizu Market + Kyoto sweets souvenirs + Pokemon / anime + 京 鰻和 本店 lunch + 天ぷら 京星 dinner
 - Day 4 formal stop: Pokémon Center OSAKA DX and InterContinental Osaka Executive Lounge afternoon tea
+- Flight timing baseline: use the current BR178 / BR129 timetable for hourly planning: BR178 TPE 06:30 to KIX 10:10; BR129 KIX 18:30 to TPE 20:30. Official 2027-11 schedule, fare, aircraft, terminal, baggage, and booking status still require reconfirmation.
 
 ## Current Priorities
 
@@ -36,10 +37,12 @@ Source of truth: GitHub main branch
 14. Customer-facing travel planning tables: itinerary, pre-trip TODO list, and budget summary
 15. Day 3 official 2027 opening-hour confirmation for Kizu Market, Kyoto sweets shops, Pokemon Center KYOTO, Kyoto International Manga Museum, 京 鰻和 本店, and 天ぷら 京星
 16. Tableall availability and reservation rules for 天ぷら 京星
+17. Keep the V5.18.0 hourly itinerary aligned with current flight baseline and later official 2027 airline updates
 
 ## User-Provided Confirmed Planning Inputs
 
-- Flights: EVA Air BR178 outbound and BR129 return; official 2027-11 schedule and fare need confirmation.
+- Flights: EVA Air BR178 outbound and BR129 return.
+- Flight timing baseline: per user instruction, use the current schedule directly for planning: BR178 06:30 TPE to 10:10 KIX; BR129 18:30 KIX to 20:30 TPE. Official 2027-11 schedule, fare, aircraft, terminal, baggage, and booking status still require reconfirmation.
 - Travel insurance budget amount: TWD 6,900; payment status needs confirmation.
 - Internet: phone roaming for two people, total TWD 499; eSIM / SIM / Pocket Wi-Fi are backup only.
 - Airport transfer: use KKday product 129909 both ways between KIX and InterContinental Osaka.
