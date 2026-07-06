@@ -7,11 +7,11 @@
 - Import current Markdown handbook into docs.
 - Clean YouTube candidate entries.
 - Build Osaka Amazing Pass candidate plan.
-- Normalize budget tracking for insurance, phone roaming, and KKday airport transfer.
+- Normalize budget tracking for insurance, phone roaming, KKday airport transfer, KKday hotel-USJ transfer, and selected flights.
 
 ## 2026 Q4
 
-- Track 2027 flight schedule patterns.
+- Track 2027 flight schedule patterns for EVA Air BR178 and BR129.
 - Track hotel price references.
 - Improve budget model.
 - Expand taste-first Osaka restaurant candidate database.
@@ -24,17 +24,19 @@
 
 ## 2027 Q2
 
-- Confirm flight purchase window.
+- Confirm EVA Air BR178 and BR129 purchase window.
 - Update USJ Express Pass strategy.
 - Update hotel and lounge planning.
 - Recalculate budget.
 - Confirm KKday airport transfer products and price.
+- Confirm KKday hotel-USJ transfer products and price.
 
 ## 2027 Q3
 
 - Start reservation preparation.
 - Confirm priority restaurant booking dates.
 - Confirm airport transportation via KKday.
+- Confirm hotel-USJ transportation via KKday.
 - Prepare packing and payment checklist.
 - Confirm phone roaming activation and billing rules.
 
