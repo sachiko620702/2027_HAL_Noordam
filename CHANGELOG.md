@@ -1,5 +1,37 @@
 # CHANGELOG
 
+## V5.18.0 - 2026-07-06
+
+### Changed
+
+- Recorded the user instruction that the flight timetable should directly use the current schedule.
+- Added the current flight timetable planning baseline:
+  - EVA Air BR178 TPE 06:30 → KIX 10:10.
+  - EVA Air BR129 KIX 18:30 → TPE 20:30.
+- Added `database/flight_schedule.yml`.
+- Added `database/itinerary_hourly.yml`.
+- Added `docs/01_行程規劃/2027大阪自由行_小時制時間表_V5.18.0.md`.
+- Updated customer-facing three tables with flight times.
+- Updated GitHub Pages root page and docs homepage.
+- Updated README, AI_CONTEXT, PROJECT_RULE, AGENTS, DECISIONS, ROADMAP, WATCHLIST, and daily sync status.
+
+### Reason
+
+The user explicitly instructed: “飛機班表直接用現在的”. The project therefore now uses the current BR178 / BR129 timetable as the hourly itinerary planning baseline instead of leaving the flight timing blank.
+
+### Impact
+
+- Day 1 now assumes BR178 arrives at KIX at 10:10, allowing early afternoon hotel arrival and a late afternoon / evening Pokémon Center OSAKA stop if energy allows.
+- Day 5 now assumes BR129 departs KIX at 18:30, allowing a relaxed breakfast, packing, checkout, and possible final nearby shopping before airport transfer.
+- The schedule remains a planning baseline only. 2027/11 official EVA Air schedule, fare, aircraft, terminal, baggage, seat selection, and booking status must still be confirmed before ticketing.
+
+### Follow-up required
+
+- Reconfirm BR178 / BR129 on EVA Air official channels when 2027/11 schedules open.
+- Confirm final fare, aircraft, terminal, baggage, seat selection, and ticket rules.
+- Recalculate KKday #129909 pickup times after the official flight times are confirmed.
+- Keep the hourly itinerary synchronized with any future flight schedule changes.
+
 ## V5.17.0 - 2026-07-06
 
 ### Changed
