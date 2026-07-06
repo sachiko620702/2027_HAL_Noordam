@@ -1,5 +1,26 @@
 # CHANGELOG
 
+## V5.15.0 - 2026-07-06
+
+### Changed
+
+- Checked current official business-hour sources for the three Day 3 Kyoto sweets shops.
+- Recorded current regular hours and closure rules for Tsuruya Yoshinobu IRODORI, MALEBRANCHE Cacao 365 Gion, and Suetomi.
+- Marked 2027-11-19 shop status as likely workable if current rules continue, but still requiring final 2027 confirmation.
+- Added Kyoto access note: after Osaka Kizu Market, go to Kyoto Station by metro plus JR, or use a short taxi to Osaka Station then JR; use short taxi inside Kyoto as needed.
+- Added breakfast policy: normal breakfasts at InterContinental Osaka Executive Lounge, except Day 3 Kizu Market brunch.
+- Updated project, itinerary, restaurants, customer-facing plan, README, and changelog.
+
+### Reason
+
+The user asked to confirm whether the three shops are open on 2027-11-19, record their hours, add Kyoto transportation notes, and record the breakfast preference.
+
+### Follow-up required
+
+- Reconfirm the three sweets shops after their 2027 calendar and holiday notices are published.
+- Reconfirm Osaka Kizu Market 2027-11-19 market calendar.
+- Reconfirm InterContinental Osaka Executive Lounge breakfast hours and access rules.
+
 ## V5.14.0 - 2026-07-06
 
 ### Changed
@@ -26,14 +47,10 @@ The user asked whether this route can be done without a charter after adding thr
 ### Changed
 
 - Added a Day 3 candidate itinerary for 2027-11-19 focused on relaxed pacing, food, photo spots, Pokemon, Conan atmosphere, and anime.
-- Recorded the user preference that the plan does not need to follow KKday sample routes and should prioritize a relaxed route that matches personal interests.
+- Recorded the user preference that the plan does not need to follow KKday sample routes and should prioritize an easy pace that matches personal interests.
 - Added KKday product #133661 as the candidate 10-hour private charter for Day 3.
 - Added candidate route: InterContinental Osaka, Osaka Kizu Market brunch, Pokemon Center KYOTO, Kyoto International Manga Museum, Higashiyama/Gion photo walk, and Shinsaibashi/Dotonbori or hotel drop-off.
 - Added `docs/01_行程規劃/2027-11-19_Day3_木津市場京都寶可夢動漫候補包車_V5.13.0.md`.
-
-### Reason
-
-The user clarified that Day 3 does not need to follow KKday's suggested routes and should prioritize an easy pace that matches interests.
 
 ## V5.12.0 - 2026-07-06
 
