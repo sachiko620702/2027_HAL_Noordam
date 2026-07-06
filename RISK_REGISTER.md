@@ -38,9 +38,9 @@ Mitigation: search database and docs before each update.
 
 ## R007 KKday airport transfer confirmation
 
-Risk: KKday airport transfer details for 2027/11 are not confirmed yet.
+Risk: KKday product 129909 route price and 2027 date availability are not confirmed yet.
 Impact: airport movement budget and timing may change.
-Mitigation: confirm product, price, vehicle type, luggage rules, waiting time, and booking rules after flights are fixed.
+Mitigation: confirm price, vehicle type, luggage rules, waiting time, and booking rules after flights are fixed.
 
 ## R008 Payment status uncertainty
 
@@ -50,6 +50,6 @@ Mitigation: confirm payment status and payment method before final budget calcul
 
 ## R009 KKday hotel-USJ transfer confirmation
 
-Risk: KKday hotel-USJ transfer details for 2027-11-18 are not confirmed yet.
+Risk: KKday product 536220 shows a from price, but actual InterContinental Osaka to USJ route price and 2027 date availability are not confirmed yet.
 Impact: USJ departure time, return time, and transportation budget may change.
-Mitigation: confirm product, price, pickup time, pickup point, vehicle type, and booking rules after USJ schedule is known.
+Mitigation: confirm route price, pickup time, pickup point, return pickup point, vehicle type, and booking rules after USJ schedule is known.
