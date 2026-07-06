@@ -8,9 +8,11 @@
 - Clean YouTube candidate entries.
 - Build Osaka Amazing Pass candidate plan.
 - Normalize budget tracking for insurance, phone roaming, KKday airport transfer, KKday hotel-USJ transfer, selected flights, and Day 3 formal route budget.
+- Maintain V5.18.0 hourly itinerary using current BR178 / BR129 timetable baseline.
 
 ## 2026 Q4
 
+- Track whether the BR178 / BR129 current timetable baseline remains stable.
 - Track 2027 flight schedule patterns for EVA Air BR178 and BR129.
 - Track hotel price references.
 - Improve budget model.
@@ -23,6 +25,7 @@
 - Update USJ official ticket and pass policy when available.
 - Review shopping targets.
 - Review Day 3 formal route pacing after updated Kyoto and Osaka shop information is available.
+- Recheck the hourly itinerary against any updated BR178 / BR129 public schedules.
 
 ## 2027 Q2
 
@@ -49,6 +52,7 @@
 ## 2027 Q4
 
 - Finalize itinerary.
+- Confirm EVA Air BR178 / BR129 official 2027-11 schedule, fare, aircraft, terminal, baggage, and ticketing status.
 - Confirm all reservations.
 - Confirm USJ entry and Express Pass.
 - Confirm weather, events, and transportation.
