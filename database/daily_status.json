@@ -1,20 +1,399 @@
 {
   "metadata": {
     "project": "2027 Osaka Trip",
-    "version": "V5.4.0",
-    "checked_at": null,
+    "version": "V5.5.0",
+    "checked_at": "2026-07-06T11:28:28+08:00",
     "source": "scripts/daily_maintenance.py"
   },
   "summary": {
-    "total_web": 0,
-    "total_manual": 0,
-    "open": 0,
+    "total_web": 9,
+    "total_manual": 24,
+    "open": 4,
     "closed": 0,
     "price_found": 0,
-    "unknown": 0,
-    "fetch_failed": 0,
-    "manual_review": 0
+    "unknown": 1,
+    "fetch_failed": 4,
+    "manual_review": 24
   },
-  "web_checks": [],
-  "manual_checks": []
+  "web_checks": [
+    {
+      "id": "usj_official",
+      "category": "USJ",
+      "label": "Universal Studios Japan official site",
+      "url": "https://www.usj.co.jp/web/en/us",
+      "kind": "status",
+      "checked_at": "2026-07-06T11:28:28+08:00",
+      "http_status": 200,
+      "title": "ユニバーサル・スタジオ・ジャパン｜USJ",
+      "status": "unknown",
+      "price_matches": [],
+      "open_hits": [],
+      "closed_hits": [],
+      "error": ""
+    },
+    {
+      "id": "hotel_intercontinental_osaka",
+      "category": "Hotel",
+      "label": "InterContinental Osaka rates",
+      "url": "https://www.ihg.com/intercontinental/hotels/us/en/osaka/osaha/hoteldetail",
+      "kind": "price",
+      "checked_at": "2026-07-06T11:28:28+08:00",
+      "http_status": null,
+      "title": "",
+      "status": "fetch_failed",
+      "price_matches": [],
+      "open_hits": [],
+      "closed_hits": [],
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "flight_eva_air",
+      "category": "Flights",
+      "label": "EVA Air official site",
+      "url": "https://www.evaair.com/en-global/index.html",
+      "kind": "status",
+      "checked_at": "2026-07-06T11:28:28+08:00",
+      "http_status": null,
+      "title": "",
+      "status": "fetch_failed",
+      "price_matches": [],
+      "open_hits": [],
+      "closed_hits": [],
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "dining_tablecheck",
+      "category": "Dining",
+      "label": "TableCheck official site",
+      "url": "https://www.tablecheck.com/en/",
+      "kind": "status",
+      "checked_at": "2026-07-06T11:28:28+08:00",
+      "http_status": 200,
+      "title": "TableCheck - Reservations at Japan's Best Restaurants",
+      "status": "open",
+      "price_matches": [
+        "1,500",
+        "3,500",
+        "2,500",
+        "3,000",
+        "6,000"
+      ],
+      "open_hits": [
+        "reserve",
+        "Restaurant",
+        "restaurant"
+      ],
+      "closed_hits": [],
+      "error": ""
+    },
+    {
+      "id": "jrwest_access",
+      "category": "Transportation",
+      "label": "JR-WEST Kansai access guide",
+      "url": "https://www.westjr.co.jp/global/en/travel/shopping/access/train.html",
+      "kind": "status",
+      "checked_at": "2026-07-06T11:28:28+08:00",
+      "http_status": 200,
+      "title": "JR-WEST Usage Guide from Kansai International Airport | West Japan Railway Company",
+      "status": "open",
+      "price_matches": [],
+      "open_hits": [
+        "HARUKA",
+        "Kansai",
+        "Osaka",
+        "Train",
+        "train",
+        "TRAIN"
+      ],
+      "closed_hits": [],
+      "error": ""
+    },
+    {
+      "id": "osaka_amazing_pass",
+      "category": "Ticket Platforms",
+      "label": "Osaka Amazing Pass official site",
+      "url": "https://osaka-amazing-pass.com/en/",
+      "kind": "price",
+      "checked_at": "2026-07-06T11:28:28+08:00",
+      "http_status": 200,
+      "title": "Allows you entry into approximately 40 sightseeing spots! Allows you one-day free ride on buses and trains! | SURUTTO KANSAI【OSAKA AMAZING PASS】",
+      "status": "open",
+      "price_matches": [],
+      "open_hits": [
+        "Buy",
+        "buy",
+        "PASS",
+        "pass"
+      ],
+      "closed_hits": [],
+      "error": ""
+    },
+    {
+      "id": "osaka_e_pass",
+      "category": "Ticket Platforms",
+      "label": "Osaka e-Pass official site",
+      "url": "https://www.e-pass.osaka-info.jp/en/",
+      "kind": "price",
+      "checked_at": "2026-07-06T11:28:28+08:00",
+      "http_status": 200,
+      "title": "Enjoy more than 25 sightseeing spots for free with just a QR-code [Osaka e-Pass]",
+      "status": "open",
+      "price_matches": [],
+      "open_hits": [
+        "BUY",
+        "available",
+        "Pass"
+      ],
+      "closed_hits": [],
+      "error": ""
+    },
+    {
+      "id": "kkday_home",
+      "category": "Ticket Platforms",
+      "label": "KKday home page",
+      "url": "https://www.kkday.com/",
+      "kind": "status",
+      "checked_at": "2026-07-06T11:28:28+08:00",
+      "http_status": null,
+      "title": "",
+      "status": "fetch_failed",
+      "price_matches": [],
+      "open_hits": [],
+      "closed_hits": [],
+      "error": "HTTP Error 403: HTTP Forbidden"
+    },
+    {
+      "id": "klook_home",
+      "category": "Ticket Platforms",
+      "label": "Klook home page",
+      "url": "https://www.klook.com/",
+      "kind": "status",
+      "checked_at": "2026-07-06T11:28:28+08:00",
+      "http_status": null,
+      "title": "",
+      "status": "fetch_failed",
+      "price_matches": [],
+      "open_hits": [],
+      "closed_hits": [],
+      "error": "HTTP Error 403: Forbidden"
+    }
+  ],
+  "manual_checks": [
+    {
+      "id": "usj_timed_entry",
+      "category": "USJ",
+      "label": "Super Nintendo World timed entry rules",
+      "status": "manual_review",
+      "checked_at": "2026-07-06T11:28:28+08:00",
+      "note": "Check official USJ policy and ticket flow.",
+      "source": "WATCHLIST.md"
+    },
+    {
+      "id": "usj_donkey_kong",
+      "category": "USJ",
+      "label": "Donkey Kong Country rules",
+      "status": "manual_review",
+      "checked_at": "2026-07-06T11:28:28+08:00",
+      "note": "Check official USJ policy and timed entry changes.",
+      "source": "WATCHLIST.md"
+    },
+    {
+      "id": "usj_seasonal_events",
+      "category": "USJ",
+      "label": "Seasonal events",
+      "status": "manual_review",
+      "checked_at": "2026-07-06T11:28:28+08:00",
+      "note": "Check USJ event calendar and ticket tie-ins.",
+      "source": "WATCHLIST.md"
+    },
+    {
+      "id": "flight_schedule",
+      "category": "Flights",
+      "label": "TPE to KIX and KIX to TPE schedule",
+      "status": "manual_review",
+      "checked_at": "2026-07-06T11:28:28+08:00",
+      "note": "Check airline timetable release.",
+      "source": "WATCHLIST.md"
+    },
+    {
+      "id": "flight_baggage",
+      "category": "Flights",
+      "label": "Baggage policy",
+      "status": "manual_review",
+      "checked_at": "2026-07-06T11:28:28+08:00",
+      "note": "Check airline baggage allowance and fee rules.",
+      "source": "WATCHLIST.md"
+    },
+    {
+      "id": "flight_airport_services",
+      "category": "Flights",
+      "label": "Airport services",
+      "status": "manual_review",
+      "checked_at": "2026-07-06T11:28:28+08:00",
+      "note": "Check lounge, check-in, and transfer services.",
+      "source": "WATCHLIST.md"
+    },
+    {
+      "id": "hotel_lounge_policy",
+      "category": "Hotel",
+      "label": "Lounge policy",
+      "status": "manual_review",
+      "checked_at": "2026-07-06T11:28:28+08:00",
+      "note": "Check breakfast, lounge access, and room package rules.",
+      "source": "WATCHLIST.md"
+    },
+    {
+      "id": "hotel_breakfast_policy",
+      "category": "Hotel",
+      "label": "Breakfast policy",
+      "status": "manual_review",
+      "checked_at": "2026-07-06T11:28:28+08:00",
+      "note": "Check room-rate inclusions and lounge breakfast rules.",
+      "source": "WATCHLIST.md"
+    },
+    {
+      "id": "hotel_early_checkin",
+      "category": "Hotel",
+      "label": "Early check-in pricing",
+      "status": "manual_review",
+      "checked_at": "2026-07-06T11:28:28+08:00",
+      "note": "Check paid early check-in and luggage handling.",
+      "source": "WATCHLIST.md"
+    },
+    {
+      "id": "hotel_upgrade_options",
+      "category": "Hotel",
+      "label": "Room upgrade options",
+      "status": "manual_review",
+      "checked_at": "2026-07-06T11:28:28+08:00",
+      "note": "Check upgrade offers and elite benefits.",
+      "source": "WATCHLIST.md"
+    },
+    {
+      "id": "dining_michelin_updates",
+      "category": "Dining",
+      "label": "Michelin guide updates",
+      "status": "manual_review",
+      "checked_at": "2026-07-06T11:28:28+08:00",
+      "note": "Check Michelin Osaka listings and star changes.",
+      "source": "WATCHLIST.md"
+    },
+    {
+      "id": "dining_booking_windows",
+      "category": "Dining",
+      "label": "Booking windows",
+      "status": "manual_review",
+      "checked_at": "2026-07-06T11:28:28+08:00",
+      "note": "Check reservation opening dates.",
+      "source": "WATCHLIST.md"
+    },
+    {
+      "id": "dining_cancellation",
+      "category": "Dining",
+      "label": "Cancellation policies",
+      "status": "manual_review",
+      "checked_at": "2026-07-06T11:28:28+08:00",
+      "note": "Check TableCheck or restaurant cancellation terms.",
+      "source": "WATCHLIST.md"
+    },
+    {
+      "id": "shopping_tax_refund",
+      "category": "Shopping",
+      "label": "Department store tax refund rules",
+      "status": "manual_review",
+      "checked_at": "2026-07-06T11:28:28+08:00",
+      "note": "Check current Japan tax-free policy.",
+      "source": "WATCHLIST.md"
+    },
+    {
+      "id": "shopping_boutique_appointments",
+      "category": "Shopping",
+      "label": "Luxury boutique appointment policy",
+      "status": "manual_review",
+      "checked_at": "2026-07-06T11:28:28+08:00",
+      "note": "Check appointment requirements for luxury brands.",
+      "source": "WATCHLIST.md"
+    },
+    {
+      "id": "shopping_sale_dates",
+      "category": "Shopping",
+      "label": "Seasonal sale dates",
+      "status": "manual_review",
+      "checked_at": "2026-07-06T11:28:28+08:00",
+      "note": "Check department store seasonal sale calendar.",
+      "source": "WATCHLIST.md"
+    },
+    {
+      "id": "budget_exchange_rate",
+      "category": "Budget",
+      "label": "JPY/TWD exchange rate",
+      "status": "manual_review",
+      "checked_at": "2026-07-06T11:28:28+08:00",
+      "note": "Check exchange rate before budgeting.",
+      "source": "WATCHLIST.md"
+    },
+    {
+      "id": "budget_credit_card_rewards",
+      "category": "Budget",
+      "label": "Credit card reward rules",
+      "status": "manual_review",
+      "checked_at": "2026-07-06T11:28:28+08:00",
+      "note": "Check reward and cashback policy.",
+      "source": "WATCHLIST.md"
+    },
+    {
+      "id": "budget_hotel_rate_changes",
+      "category": "Budget",
+      "label": "Hotel rate changes",
+      "status": "manual_review",
+      "checked_at": "2026-07-06T11:28:28+08:00",
+      "note": "Check InterContinental Osaka changes against the booking rate.",
+      "source": "WATCHLIST.md"
+    },
+    {
+      "id": "budget_usj_price_changes",
+      "category": "Budget",
+      "label": "USJ price changes",
+      "status": "manual_review",
+      "checked_at": "2026-07-06T11:28:28+08:00",
+      "note": "Check official USJ ticket pricing changes.",
+      "source": "WATCHLIST.md"
+    },
+    {
+      "id": "ticket_platform_policy",
+      "category": "Ticket Platforms",
+      "label": "KKday / Klook cancellation and refund policy",
+      "status": "manual_review",
+      "checked_at": "2026-07-06T11:28:28+08:00",
+      "note": "Check platform policy before purchase.",
+      "source": "WATCHLIST.md"
+    },
+    {
+      "id": "ticket_platform_kix_transport",
+      "category": "Ticket Platforms",
+      "label": "KIX to Osaka / Umeda transportation vouchers",
+      "status": "manual_review",
+      "checked_at": "2026-07-06T11:28:28+08:00",
+      "note": "Check voucher redemption and route coverage.",
+      "source": "WATCHLIST.md"
+    },
+    {
+      "id": "ticket_platforms_esim",
+      "category": "Ticket Platforms",
+      "label": "Japan eSIM / SIM / Pocket Wi-Fi rules",
+      "status": "manual_review",
+      "checked_at": "2026-07-06T11:28:28+08:00",
+      "note": "Check hotspot, fair-use, and validity policy.",
+      "source": "WATCHLIST.md"
+    },
+    {
+      "id": "ticket_platforms_private_transfer",
+      "category": "Ticket Platforms",
+      "label": "Private airport transfer luggage and delay rules",
+      "status": "manual_review",
+      "checked_at": "2026-07-06T11:28:28+08:00",
+      "note": "Check luggage limits and flight delay handling.",
+      "source": "WATCHLIST.md"
+    }
+  ]
 }

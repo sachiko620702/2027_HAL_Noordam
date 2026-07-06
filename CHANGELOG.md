@@ -1,5 +1,24 @@
 # CHANGELOG
 
+## V5.5.0 - 2026-07-06
+
+### Changed
+
+- Reverted the dining scope back to non-Michelin-focused planning at the user's request.
+- Aligned the repository rules, decision records, maintenance script, and GitHub Pages outputs with the non-Michelin dining scope.
+- Updated the generated Pages homepage and daily status snapshot to the new project version.
+
+### Reason
+
+The project scope changed again, so the canonical repository and its GitHub Pages output need to reflect the non-Michelin dining preference everywhere.
+
+### Affected sections
+
+- Dining scope
+- Maintenance automation
+- GitHub Pages output
+- Source-of-truth metadata
+
 ## V5.4.0 - 2026-07-06
 
 ### Changed
@@ -24,6 +43,19 @@ The user explicitly stated that they no longer want Michelin dining. The project
 - Ticket platform candidate planning
 - Daily maintenance automation
 - Version control
+- Added GitHub Pages synchronization to the daily maintenance flow so generated web output stays in sync with repository changes.
+- Added generated Pages content for the homepage and daily sync status.
+- Restored the fixed three-star Michelin dining assumption in the rule files and summary metadata.
+
+### Reason
+
+The repository now publishes a GitHub Pages view, so maintenance needs to keep the public site synchronized with the canonical database and docs.
+
+### Affected sections
+
+- Maintenance automation
+- GitHub Pages output
+- Repository rules
 
 ## V5.3.0 - 2026-07-06
 
