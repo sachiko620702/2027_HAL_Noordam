@@ -1,33 +1,34 @@
 metadata:
   id: day4_shinsaibashi_hotel_dinner
-  title: "Day 4 心齋橋為主＋午餐後回飯店＋壽司晚餐偏好"
-  version: "V5.22.0"
-  status: "active_formal_day4_planning_baseline_with_sushi_dinner_preference"
+  title: "Day 4 心齋橋為主＋午餐後回飯店＋PIERRE Anniversary Dinner"
+  version: "V5.23.0"
+  status: "active_formal_day4_planning_baseline_with_pierre_anniversary_dinner"
   last_updated: "2026-07-06"
   maintained_by: "ChatGPT"
   language: "zh-Hant"
 
 user_confirmed_input:
   date_received: "2026-07-06"
-  previous_day4_intent: "2027/11/20 活動範圍以心齋橋為主；午餐之後回飯店，在飯店附近活動；晚餐想在飯店內的餐廳使用。"
-  new_dinner_intent: "晚餐想要吃壽司。"
+  previous_dinner_intent_v5_22: "晚餐想要吃壽司。"
+  new_dinner_intent_v5_23: "Anniversary Dinner Pierre 的靠窗座位，盡享大阪夜景美景。"
   interpretation:
     - "Day 4 上午與午餐前後仍以心齋橋／大丸心齋橋／Pokémon Center OSAKA DX 周邊為主。"
     - "午餐後仍維持回 InterContinental Osaka，下午只在飯店或飯店附近活動。"
-    - "Day 4 晚餐餐飲偏好改為壽司優先。"
-    - "因 InterContinental Osaka 官方 FAQ 目前寫明館內沒有和食餐廳，壽司晚餐很可能需要改為飯店附近／梅田／大阪站周邊壽司候選。"
-    - "若使用者仍堅持晚餐必須在飯店內，則 PIERRE / NOKA Roast & Grill 可作非壽司備案，但不符合新壽司偏好。"
+    - "Day 4 晚餐正式方向改為 InterContinental Osaka 館內 PIERRE Anniversary Dinner。"
+    - "預約備註需請求靠窗座位／大阪夜景座位，但座位安排不可視為保證，需由餐廳確認。"
+    - "V5.22.0 壽司晚餐偏好降為備案，不再作為 Day 4 主晚餐方向。"
 
-conflict_note:
-  issue: "飯店內晚餐 vs 壽司晚餐"
-  current_official_reference: "InterContinental Osaka 官方 FAQ 目前列出館內餐廳包含 PIERRE、NOKA Roast & Grill、ADEE、3-60、STRESSED，並明確回答館內沒有和食餐廳。"
-  implication: "壽司晚餐若作為優先目標，需改找飯店附近或梅田／大阪站周邊壽司餐廳。"
-  status: "NEEDS_USER_FINAL_CONFIRMATION_FOR_LOCATION"
+conflict_resolution:
+  issue: "壽司晚餐 vs PIERRE Anniversary Dinner"
+  decision: "PIERRE Anniversary Dinner 優先。"
+  reason: "使用者明確指定 Anniversary Dinner Pierre 的靠窗座位與大阪夜景。"
+  impact: "Day 4 晚餐不再需要優先搜尋壽司候選；壽司僅保留為使用者再次改回壽司時的備案。"
+  status: "RESOLVED_BY_USER_CONFIRMATION"
 
 formal_day4_route:
   date: "2027/11/20（六）"
-  theme: "心齋橋 Pokémon Center OSAKA DX＋精品購物＋午餐後回飯店＋行政酒廊下午茶＋壽司晚餐"
-  planning_principle: "Luxury Slow Travel；上午集中在心齋橋，午餐後回飯店降低移動負擔；晚餐改以壽司為優先。"
+  theme: "心齋橋 Pokémon Center OSAKA DX＋精品購物＋午餐後回飯店＋行政酒廊下午茶＋PIERRE Anniversary Dinner"
+  planning_principle: "Luxury Slow Travel；上午集中在心齋橋，午餐後回飯店降低移動負擔；晚餐在館內 PIERRE 做紀念日晚餐。"
   items:
     - time: "08:30–09:30"
       plan: "InterContinental Osaka 行政酒廊早餐"
@@ -58,68 +59,70 @@ formal_day4_route:
       status: "fixed_area"
       note: "活動範圍限制在飯店附近，不再回心齋橋或安排遠距離景點。"
     - time: "19:00–20:30"
-      plan: "壽司晚餐"
-      status: "preferred_cuisine_location_candidate_needed"
-      note: "使用者新增偏好：晚餐想吃壽司。因飯店內無和食餐廳，目前建議改找飯店附近／梅田／大阪站周邊壽司候選；若仍堅持飯店內，則只能保留 PIERRE / NOKA 作非壽司備案。"
+      plan: "Anniversary Dinner：PIERRE"
+      status: "formal_dinner_direction_pending_2027_reservation"
+      note: "預約時需註明 anniversary dinner，並請求靠窗座位／大阪夜景座位；座位安排需由餐廳確認，不保證。"
     - time: "20:30 後"
       plan: "回飯店整理戰利品與行李／休息"
       status: "planning_baseline"
       note: "隔天退房返台。"
 
-sushi_dinner_strategy:
-  priority: "SUSHI_FIRST"
-  preferred_area_order:
-    - "InterContinental Osaka 附近／Grand Front Osaka／梅田北側"
-    - "大阪站／梅田周邊"
-    - "心齋橋高品質壽司，僅在使用者願意晚餐再外出時考慮"
-  selection_principles:
-    - "好吃優先，不以米其林作主要標籤。"
-    - "符合 Luxury Slow Travel，避免 Day 4 晚上再安排遠距離移動。"
-    - "可預約優先，避免最後一晚排隊過久。"
-    - "需確認 2027/11/20 營業、訂位、價格、取消政策與座位舒適度。"
-  candidate_status: "CANDIDATE_NEEDED"
+anniversary_dinner:
+  date: "2027/11/20（六）"
+  restaurant_japanese: "フレンチレストラン ピエール"
+  restaurant_english: "PIERRE"
+  location: "InterContinental Osaka"
+  role: "Day 4 formal anniversary dinner"
+  priority: "PRIMARY_FORMAL_DINNER"
+  requested_seat: "Window seat / night-view seat"
+  requested_experience: "Anniversary Dinner with Osaka night view"
+  reservation_note:
+    - "預約時需明確備註：Anniversary Dinner。"
+    - "請求靠窗座位／大阪夜景座位。"
+    - "靠窗座位與夜景座位需由餐廳安排，不可視為保證。"
+    - "可同步詢問是否能安排紀念日小驚喜、甜點訊息或拍照協助。"
+  reservation_status: "PENDING_2027_BOOKING_WINDOW"
+  menu_status: "PENDING_2027_MENU"
+  price_status: "NEEDS_RECONFIRMATION"
+  cancellation_policy_status: "NEEDS_RECONFIRMATION"
 
-hotel_dinner_fallbacks:
-  - id: "intercontinental_osaka_pierre"
-    restaurant_japanese: "フレンチレストラン ピエール"
-    restaurant_english: "PIERRE"
-    role: "非壽司飯店內備案"
-    fit: "若使用者最後仍堅持不出飯店，可作正式感較高的飯店內備案，但不符合壽司偏好。"
-    status: "FALLBACK_ONLY_NOT_SUSHI"
-    source_reliability: "★★★★★ official hotel"
-    source_url: "https://icosaka.com/restaurant/pierre/"
-  - id: "intercontinental_osaka_noka"
+reservation_message_draft:
+  english: >-
+    This is an anniversary dinner. If possible, we would be very grateful to have a window table or a table with a beautiful Osaka night view. We understand that seating cannot be guaranteed, but we would truly appreciate it if you could note our request. If there is any anniversary dessert message or small celebration option available, we would also be happy to know.
+
+fallbacks:
+  sushi:
+    role: "備案"
+    status: "FALLBACK_ONLY"
+    note: "V5.22.0 曾記錄壽司晚餐偏好；V5.23.0 已由使用者改為 PIERRE Anniversary Dinner。除非使用者再次改回壽司，否則不作主方案。"
+  noka:
     restaurant_japanese: "ノカ ロースト & グリル"
     restaurant_english: "NOKA Roast & Grill"
-    role: "非壽司飯店內備案"
-    fit: "比 PIERRE 較輕鬆，但不符合壽司偏好。"
-    status: "FALLBACK_ONLY_NOT_SUSHI"
-    source_reliability: "★★★★★ official hotel"
-    source_url: "https://icosaka.com/restaurant/noka-roast-grill/"
-  - id: "intercontinental_osaka_adee"
+    role: "館內非 PIERRE 備案"
+    status: "FALLBACK_ONLY"
+    note: "若 PIERRE 無法預約或座位／菜單不符合需求，可再比較 NOKA，但不作目前主方案。"
+  adee:
     restaurant_japanese: "アディ ラウンジ＆バー"
     restaurant_english: "ADEE Lounge & Bar"
     role: "飯後飲料／Nightcap 候選，不作主晚餐"
-    fit: "若壽司晚餐後回飯店仍想喝飲料，可作飯後選項。"
     status: "OPTIONAL_NIGHTCAP_ONLY"
-    source_reliability: "★★★★★ official hotel"
-    source_url: "https://icosaka.com/restaurant/adee/"
+    note: "如 PIERRE 晚餐後仍想喝飲料，可作飯後選項。"
 
 watch_items:
   - "Pokémon Center OSAKA DX 2027/11/20 business hours, entry restrictions, event / campaign, limited goods."
   - "心齋橋午餐候選：需補好吃優先、回飯店動線順的餐廳。"
   - "Day 4 午餐後回飯店交通：御堂筋線 vs taxi, depending on purchases and fatigue."
   - "InterContinental Osaka Executive Lounge 2027 Day 4 afternoon tea hours and eligibility."
-  - "Day 4 sushi dinner candidates near InterContinental Osaka / Umeda / Osaka Station."
-  - "Whether the user accepts leaving the hotel for sushi dinner, because the hotel currently has no Japanese restaurant."
-  - "PIERRE / NOKA remain fallback-only if the user decides in-hotel dinner is more important than sushi."
+  - "PIERRE 2027/11/20 dinner booking window, menu, price, service charge, dress code, cancellation policy, and table request rules."
+  - "PIERRE anniversary dinner request: window seat / Osaka night view, anniversary dessert message, small celebration option, and photo assistance."
+  - "Sushi is retained only as fallback if the user changes back."
 
 source_notes:
   - source: "Pokémon Center official website"
     reliability: "★★★★★"
     url: "https://shop.pokemon.co.jp/en/shop/pokemoncenter-osakadx/"
     note: "Current official location and hours reference only; 2027/11/20 must be reconfirmed."
-  - source: "InterContinental Osaka official restaurant FAQ"
+  - source: "InterContinental Osaka official restaurant information"
     reliability: "★★★★★"
-    url: "https://icosaka.com/restaurant/"
-    note: "Current official FAQ states there is no Japanese restaurant in the hotel; therefore sushi dinner likely requires an outside restaurant unless future hotel offerings change."
+    url: "https://icosaka.com/restaurant/pierre/"
+    note: "PIERRE current official restaurant reference only; 2027/11/20 booking window, menu, price, seat request handling, and cancellation policy must be reconfirmed."
