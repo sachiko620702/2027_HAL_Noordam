@@ -1,4 +1,4 @@
-# 2027 大阪自由行 V5.9.0
+# 2027 大阪自由行 V5.10.0
 
 本 repository 是 2027 大阪自由行專案的唯一主資料源，供 ChatGPT 與 Codex 共同維護。
 
@@ -15,7 +15,7 @@
 - 航班：去程 EVA Air BR178，回程 EVA Air BR129；2027/11 官方班表與票價待確認。
 - 旅遊保險：TWD 6,900，付款狀態待確認。
 - 網路：手機漫遊，兩人總額 TWD 499。
-- 機場接送：KIX 與 InterContinental Osaka 來回皆使用 KKday 接送車，商品與價格待確認。
+- 機場接送：KIX 與 InterContinental Osaka 來回皆使用 KKday 商品 #129909；推薦豪華 7 座，若行李超過 3 件則改舒適 10 座；價格待確認。
 - USJ 接送：InterContinental Osaka 與 USJ 來回皆使用 KKday 接送車，商品、價格、上下車地點待確認。
 - 餐飲方向：好吃優先，是否米其林不重要。
 
