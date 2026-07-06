@@ -1,6 +1,6 @@
 # DECISIONS
 
-This file records fixed project decisions.
+This file records fixed project decisions and candidate decisions.
 
 ## D001 Travel dates
 
@@ -82,4 +82,10 @@ Changed: 2026-07-06.
 
 Decision: maintain a customer-facing travel planning document with three fixed tables: itinerary, pre-trip TODO list, and budget summary.
 Status: fixed.
+Changed: 2026-07-06.
+
+## D016 Day 3 relaxed interest-based charter
+
+Decision: 2027-11-19 should use a candidate route focused on relaxed pacing, food, photo spots, Pokemon, Conan atmosphere, and anime, instead of forcing KKday sample routes or temple collection.
+Status: candidate, not formal.
 Changed: 2026-07-06.
