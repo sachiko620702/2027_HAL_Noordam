@@ -1,7 +1,7 @@
 # AI_CONTEXT
 
 Project: 2027 Osaka Trip
-Version: V5.13.0
+Version: V5.16.0
 Repository: sachiko620702/2027_OSAKA
 Source of truth: GitHub main branch
 
@@ -14,6 +14,7 @@ Source of truth: GitHub main branch
 - USJ: one day
 - Dining: taste-first dining; Michelin status is neutral and should not be used as the primary label
 - Shopping: luxury shopping
+- Day 3 formal itinerary: Kizu Market brunch + Kyoto sweets souvenirs + Pokemon / anime
 
 ## Current Priorities
 
@@ -28,9 +29,10 @@ Source of truth: GitHub main branch
 9. Budget tracking
 10. KKday airport transfer product 129909 details and price confirmation
 11. KKday hotel-USJ transfer product 536220 details and price confirmation
-12. KKday Day 3 charter product 133661 price and route confirmation
+12. KKday Day 3 charter product 133661 as backup only
 13. Mobile roaming setup and payment confirmation
 14. Customer-facing travel planning tables: itinerary, pre-trip TODO list, and budget summary
+15. Day 3 official 2027 opening-hour confirmation for Kizu Market, Kyoto sweets shops, Pokemon Center KYOTO, and Kyoto International Manga Museum
 
 ## User-Provided Confirmed Planning Inputs
 
@@ -41,11 +43,12 @@ Source of truth: GitHub main branch
 - USJ transfer: use KKday product 536220 both ways between InterContinental Osaka and Universal Studios Japan.
 - Dining: choose restaurants because they are good; Michelin status does not matter either way.
 - Customer-facing output: always maintain the three simple tables requested by the user: 行程表, 行前提醒／TODO LIST, 預算表.
-- Day 3 candidate preference: do not force KKday sample routes; plan a relaxed route matching food, photo spots, Pokemon, Conan, and anime interests.
+- Day 3 formal itinerary: 木津市場早午餐＋京都甜點伴手禮＋寶可夢／動漫.
+- Day 3 transport: public rail plus short taxi is the primary plan; KKday #133661 10-hour charter is backup only for rain, fatigue, heavy shopping, or door-to-door comfort.
 
-## Day 3 Candidate Principle
+## Day 3 Formal Plan
 
-2027-11-19 should remain a candidate until user explicitly confirms. Suggested theme: Kizu Market brunch, Pokemon Center KYOTO, Kyoto International Manga Museum, Higashiyama/Gion photo walk, and Shinsaibashi/Dotonbori or hotel drop-off. Keep the route relaxed and do not overload with temple collection.
+2027-11-19 is no longer a candidate. The formal theme is Kizu Market brunch, Kyoto sweets souvenirs, Pokemon Center KYOTO, Kyoto International Manga Museum / anime interests, and Gion / Higashiyama photo walk. Keep the route relaxed and do not overload with temple collection. Reconfirm 2027 official opening hours, closures, events, and product availability before departure.
 
 ## Customer-Facing Output Rules
 
