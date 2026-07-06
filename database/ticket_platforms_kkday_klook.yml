@@ -1,8 +1,8 @@
 metadata:
   id: ticket_platforms_kkday_klook
-  title: "KKday / Klook 票券平台候補資料"
-  version: "V5.7.0"
-  status: "candidate"
+  title: "KKday / Klook 票券平台候補與已選方案資料"
+  version: "V5.8.0"
+  status: "mixed_selected_and_candidate"
   last_updated: "2026-07-06"
   maintained_by: "ChatGPT"
   source_rule: "官方網站優先；平台商品次之；2027 未公布者標示 PENDING_OFFICIAL_ANNOUNCEMENT 或 NEEDS_RECONFIRMATION"
@@ -15,18 +15,22 @@ trip_context:
   style: "Luxury Slow Travel"
   fixed_scope:
     - "USJ one day"
-    - "Non-Michelin-focused dining"
+    - "Taste-first dining; Michelin status neutral"
     - "Luxury shopping"
+    - "Phone roaming selected for internet"
+    - "KKday airport transfer selected both ways"
 
 platforms:
   kkday:
     platform_name: "KKday"
-    role: "候補採購平台"
+    role: "機場接送已選平台；其他票券仍作候補採購平台"
+    selected_for:
+      - "KIX ↔ InterContinental Osaka airport transfer both ways"
     best_for:
       - "USJ Studio Pass / Express Pass：僅作平台比價與庫存備援"
-      - "JR / 機場交通電子票：需比對官方兌換規則"
-      - "eSIM / SIM / Pocket Wi-Fi：出發前 1-2 週再確認方案"
-      - "私人接送 / 行李配送：若行李多或抵達時間不佳，可列候補"
+      - "KKday 機場接送：已選方向，需確認實際商品、價格、車型、行李規則與取消政策"
+      - "JR / 機場交通電子票：僅作備援，不取代已選 KKday 包車方向"
+      - "eSIM / SIM / Pocket Wi-Fi：備援；目前主方案為手機漫遊"
     not_primary_for:
       - "正式餐廳決策：不得以平台推薦直接取代專案餐廳候補評估"
     source_status: "NEEDS_RECONFIRMATION"
@@ -37,11 +41,36 @@ platforms:
     best_for:
       - "USJ Studio Pass / Express Pass：僅作平台比價與庫存備援"
       - "Osaka Amazing Pass / Osaka e-Pass：只在行程需要密集景點時列入"
-      - "KIX 機場交通、eSIM、私人接送：出發前依航班與促銷比價"
+      - "KIX 機場交通、eSIM、私人接送：只作備援比價"
     not_primary_for:
       - "正式行程決策：不得以平台商品推薦直接取代官方資訊與專案決策"
     source_status: "NEEDS_RECONFIRMATION"
     source_url: "https://www.klook.com/"
+
+selected_use_cases:
+  - id: "KKDAY_AIRPORT_TRANSFER_ROUNDTRIP"
+    category: "Transportation"
+    item: "KKday airport transfer round trip between KIX and InterContinental Osaka"
+    recommendation: "已依使用者指示列為正式方向：機場到飯店與飯店到機場都找 KKday 包車。"
+    purchase_timing: "航班時間確定後再預約。"
+    decision_status: "selected_pending_product_confirmation"
+    project_fit: "high"
+    required_checks:
+      - "2027/11/17 與 2027/11/21 是否可預約"
+      - "實際價格、幣別、刷卡費用與取消規則"
+      - "車型、行李件數、等待時間與航班延誤處理"
+  - id: "PHONE_ROAMING_SELECTED"
+    category: "Connectivity"
+    item: "Phone roaming for two people"
+    recommendation: "已依使用者指示列為主方案，兩人總額 TWD 499。eSIM / SIM / Pocket Wi-Fi 改為備援。"
+    purchase_timing: "出發前確認電信商開通與計費方式。"
+    decision_status: "selected_payment_status_needs_confirmation"
+    project_fit: "high"
+  - id: "TRAVEL_INSURANCE_AMOUNT"
+    category: "Other"
+    item: "Travel insurance"
+    recommendation: "使用者提供保險金額 TWD 6,900，需補付款狀態與保障內容。"
+    decision_status: "amount_recorded_payment_status_needs_confirmation"
 
 candidate_use_cases:
   - id: "USJ_TICKET_BACKUP"
@@ -51,20 +80,6 @@ candidate_use_cases:
     purchase_timing: "2027 官方票券與 Express Pass 開賣後立即比較；2027-11 目前 PENDING_OFFICIAL_ANNOUNCEMENT。"
     decision_status: "candidate"
     project_fit: "high"
-    risk:
-      - "平台庫存可能晚於官方或限量。"
-      - "Express Pass 方案與入場保證時段可能每季變動。"
-      - "取消政策通常比官方更需要逐筆確認。"
-  - id: "KIX_TO_UMEDA_TRANSPORT"
-    category: "Transportation"
-    item: "Kansai Airport to Umeda / Osaka Station area"
-    recommendation: "InterContinental Osaka 位於梅田/大阪站生活圈，HARUKA 至 Osaka / Umeda 周邊是優先候補；若行李多或抵達晚，改列私人接送。"
-    purchase_timing: "航班確認後再購買；若需指定座位或 QR 兌換，出發前 2-4 週確認。"
-    decision_status: "candidate"
-    project_fit: "high"
-    risk:
-      - "電子票兌換地點與護照 IC chip 要求需再次確認。"
-      - "若班機延誤，指定班次票券可能不如現場購票彈性。"
   - id: "OSAKA_AMAZING_PASS"
     category: "Sightseeing pass"
     item: "Osaka Amazing Pass"
@@ -75,9 +90,6 @@ candidate_use_cases:
       source_status: "2026 reference; 2027 PENDING_OFFICIAL_ANNOUNCEMENT"
     decision_status: "candidate"
     project_fit: "medium-low for Luxury Slow Travel"
-    risk:
-      - "為了回本可能壓縮慢旅行節奏。"
-      - "免費設施、可用交通、營業日曆每年可能調整。"
   - id: "OSAKA_E_PASS"
     category: "Sightseeing pass"
     item: "Osaka e-Pass"
@@ -85,29 +97,6 @@ candidate_use_cases:
     purchase_timing: "正式景點日確認後再比價。"
     decision_status: "candidate"
     project_fit: "medium-low"
-    risk:
-      - "不適合以交通省錢為主要目的。"
-      - "景點營業日與使用期限需逐日確認。"
-  - id: "ESIM_CONNECTIVITY"
-    category: "Connectivity"
-    item: "Japan eSIM / SIM / Pocket Wi-Fi"
-    recommendation: "5 天 4 夜建議以 eSIM 為主、飯店 Wi-Fi 為輔；若同行者需要共享，Pocket Wi-Fi 才列候補。"
-    purchase_timing: "出發前 1-2 週購買，確認天數、每日流量、熱點分享、降速規則。"
-    decision_status: "candidate"
-    project_fit: "high"
-    risk:
-      - "便宜方案可能有 Fair Use Policy 或降速門檻。"
-      - "eSIM 需確認手機支援與安裝期限。"
-  - id: "PRIVATE_TRANSFER_LUGGAGE"
-    category: "Luxury convenience"
-    item: "Private airport transfer / luggage delivery"
-    recommendation: "若購物行李多、晚班機抵達、或不想拖行李轉乘，私人接送符合 Luxury Slow Travel；行李配送可作離店日候補。"
-    purchase_timing: "航班與飯店入住/退房時間確定後再決定。"
-    decision_status: "candidate"
-    project_fit: "high if luggage-heavy"
-    risk:
-      - "取消政策、等候時間、航班延誤條款需逐筆確認。"
-      - "大型行李件數與車型限制需事先寫入預約。"
 
 comparison_rules:
   price_check:
@@ -116,11 +105,11 @@ comparison_rules:
   voucher_check:
     - "確認是否即時出票。"
     - "確認是否需要現場換票。"
-    - "確認 QR code 是否可直接入場或搭乘。"
-    - "確認護照姓名、護照 IC chip、旅客資格限制。"
+    - "確認 QR code 是否可直接使用。"
+    - "確認旅客姓名、行李限制與旅客資格限制。"
   cancellation_check:
     - "不可退改商品不提前購買，除非票券高度稀缺。"
-    - "USJ Express Pass、私人接送、餐廳相關商品需逐筆檢查。"
+    - "USJ Express Pass、KKday 機場接送與餐廳相關商品需逐筆檢查。"
   itinerary_check:
     - "不得因為平台套票便宜而壓縮 Luxury Slow Travel 節奏。"
     - "未經使用者確認，不得把候補票券納入正式每日行程。"
@@ -129,16 +118,15 @@ watchlist_items:
   - "2027/11 USJ Studio Pass official release"
   - "2027/11 USJ Express Pass and VIP product release"
   - "KKday / Klook 2027 USJ inventory and cancellation policy"
+  - "KKday KIX ↔ InterContinental Osaka airport transfer availability, price, luggage rules, waiting time, delayed-flight handling, and cancellation policy"
   - "Osaka Amazing Pass 2027 price, facility list, transportation coverage"
   - "Osaka e-Pass 2027 price and eligible facilities"
-  - "KIX to Osaka Station / Umeda e-ticket redemption rules"
-  - "Japan eSIM 5-day plan fair-use and hotspot rules"
-  - "Private transfer luggage limit and flight delay policy"
+  - "Phone roaming activation, billing, hotspot, and fair-use policy"
 
 source_references:
   official:
-    - name: "JR-WEST Usage Guide from Kansai International Airport"
-      url: "https://www.westjr.co.jp/global/en/travel/shopping/access/train.html"
+    - name: "Universal Studios Japan official site"
+      url: "https://www.usj.co.jp/web/en/us"
       confidence: "★★★★★"
     - name: "Osaka Amazing Pass official new site"
       url: "https://osaka-amazing-pass.com/en/"
@@ -146,15 +134,12 @@ source_references:
     - name: "Osaka e-Pass official site"
       url: "https://www.e-pass.osaka-info.jp/en/"
       confidence: "★★★★★"
-    - name: "Universal Studios Japan official site"
-      url: "https://www.usj.co.jp/web/en/us"
-      confidence: "★★★★★"
   platform:
     - name: "KKday"
       url: "https://www.kkday.com/"
       confidence: "★★★★"
-      note: "Platform product pages and 2027 inventory require reconfirmation."
+      note: "Airport transfer selected direction; exact 2027 product details require reconfirmation."
     - name: "Klook"
       url: "https://www.klook.com/"
       confidence: "★★★★"
-      note: "Platform product pages and 2027 inventory require reconfirmation."
+      note: "Backup platform for ticket and transport comparison."
