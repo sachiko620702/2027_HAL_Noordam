@@ -1,5 +1,39 @@
 # CHANGELOG
 
+## V5.25.0 - 2026-07-06
+
+### Changed
+
+- Overwrote the formal Day 3 itinerary from the previous Kyoto route to the Osaka city route.
+- Added `database/day3_osaka_city_sushi_formal.yml`.
+- Added `docs/01_行程規劃/2027-11-19_Day3_大阪市內木津市場日本橋壽司正式行程_V5.25.0.md`.
+- Added `docs/01_行程規劃/2027大阪自由行_小時制時間表_V5.25.0.md`.
+- Added `docs/06_預算/2027大阪自由行_預算模型_V5.25.0.md`.
+- Added `docs/13_版本與更新/V5.25.0_Day3_不去京都大阪市內壽司正式行程.md`.
+- Updated README, AI_CONTEXT, PROJECT_RULE, AGENTS, DECISIONS, ROADMAP, WATCHLIST, project database, hourly itinerary database, customer-facing tables, budget model, homepage files, and daily sync status.
+- Added D033 Day 3 Osaka city sushi formal route.
+- Updated D016, D017, D019, D020, D021, and D032 to reflect the Day 3 formal route replacement.
+
+### Reason
+
+The user explicitly instructed: “晚餐吃壽司，覆蓋正式行程，並更新所需更新章節。”
+
+### Impact
+
+- Day 3 is now: Kizu Market brunch, Namba / Nipponbashi anime models and merch, return to InterContinental Osaka for rest and Executive Lounge afternoon tea, and Osaka city sushi dinner.
+- Kyoto sweets route, 京 鰻和 本店, 天ぷら 京星, Pokemon Center KYOTO, Kyoto International Manga Museum, and TABLEALL Reservation Request for Kyoboshi are fallback / historical only.
+- Day 3 no longer uses the Kyoto public-rail route as the primary plan.
+- Recommended budget baseline is adjusted from TWD 327,664 to TWD 324,664 for two travelers.
+- Safety ceiling remains TWD 380,000 for two travelers.
+
+### Follow-up required
+
+- Search and add Day 3 Osaka city sushi dinner candidates near Umeda / Kitashinchi / Fukushima / Nakanoshima / north Namba.
+- Search and add Day 3 Namba / Dotonbori / Shinsaibashi lunch candidates.
+- Confirm Nipponbashi / Den Den Town / Ota Road 2027-11-19 store hours, closure notices, events, limited goods, and crowd conditions.
+- Confirm InterContinental Osaka Executive Lounge afternoon tea access and timing for 2027-11-19.
+- Recalculate Day 3 dining budget after selecting the sushi restaurant.
+
 ## V5.24.0 - 2026-07-06
 
 ### Changed
