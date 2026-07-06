@@ -12,8 +12,8 @@
 - Keep homepage `index.md` and `docs/index.md` itinerary table in hourly format.
 - Add Day 1 dinner candidates near Pokémon Center OSAKA in Umeda.
 - Add Day 4 Shinsaibashi lunch candidates that allow returning to InterContinental Osaka after lunch.
-- Add Day 4 sushi dinner candidates near InterContinental Osaka / Umeda / Osaka Station.
-- Keep PIERRE / NOKA as fallback-only if the user later prioritizes in-hotel non-sushi dining.
+- Confirm Day 4 PIERRE Anniversary Dinner reservation workflow, booking window, menu, price, cancellation policy, dress code, and seat request wording.
+- Keep sushi as fallback-only if the user changes back from PIERRE.
 
 ## 2026 Q4
 
@@ -24,14 +24,14 @@
 - Improve budget model.
 - Expand taste-first Osaka restaurant candidate database.
 - Maintain Day 3 formal itinerary source status: Kizu Market brunch, Kyoto sweets souvenirs, Pokemon / anime.
-- Maintain Day 4 Shinsaibashi-centered route and sushi dinner planning status.
+- Maintain Day 4 Shinsaibashi-centered route and PIERRE Anniversary Dinner planning status.
 
 ## 2027 Q1
 
 - Review Osaka restaurant candidates for taste, comfort, location, and reservation feasibility.
 - Review Day 1 Umeda dinner candidates after Pokémon Center OSAKA.
 - Review Day 4 Shinsaibashi lunch candidates.
-- Review Day 4 sushi dinner candidates near InterContinental Osaka / Umeda / Osaka Station.
+- Review Day 4 PIERRE Anniversary Dinner booking status and current restaurant details.
 - Update USJ official ticket and pass policy when available.
 - Review shopping targets.
 - Review Day 3 formal route pacing after updated Kyoto and Osaka shop information is available.
@@ -47,7 +47,7 @@
 - Confirm KKday hotel-USJ transfer products and price.
 - Recalculate Day 3 rail plus short taxi transportation cost.
 - Recalculate Day 4 Shinsaibashi-to-hotel return transport cost by metro vs taxi.
-- Recalculate Day 4 sushi dinner short-transfer cost if outside the hotel.
+- Recalculate Day 4 PIERRE Anniversary Dinner budget and optional nightcap cost.
 
 ## 2027 Q3
 
@@ -63,8 +63,8 @@
 - Confirm Pokemon Center KYOTO and Kyoto International Manga Museum hours, closure days, events, and product availability.
 - Confirm Day 4 Pokémon Center OSAKA DX hours, entry rules, events, and limited goods.
 - Confirm Day 4 Shinsaibashi lunch choice.
-- Confirm Day 4 sushi dinner booking window, menu, price, service charge, and cancellation policy.
-- Reconfirm InterContinental Osaka official restaurant lineup in case a Japanese / sushi option is added by 2027.
+- Confirm Day 4 PIERRE booking window, menu, price, service charge, dress code, cancellation policy, window / night-view seat request rules, anniversary dessert message, and photo support.
+- Keep sushi only as fallback if the user changes back.
 
 ## 2027 Q4
 
@@ -76,4 +76,4 @@
 - Confirm travel insurance documents.
 - Final confirmation for Day 1 formal route: afternoon tea, hotel rest, Umeda Pokémon Center, dinner nearby, return to hotel.
 - Final confirmation for Day 3 formal itinerary: Kizu Market brunch + Kyoto sweets souvenirs + Pokemon / anime.
-- Final confirmation for Day 4 formal route: Shinsaibashi-centered morning/lunch, return to hotel after lunch, Executive Lounge afternoon tea, hotel-nearby activities, sushi dinner.
+- Final confirmation for Day 4 formal route: Shinsaibashi-centered morning/lunch, return to hotel after lunch, Executive Lounge afternoon tea, hotel-nearby activities, PIERRE Anniversary Dinner with window / Osaka night-view request.
