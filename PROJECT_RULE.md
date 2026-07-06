@@ -9,14 +9,21 @@ Do not change these without an explicit user request:
 - InterContinental Osaka
 - Luxury Slow Travel
 - One USJ day
-- Non-Michelin-focused dining
+- Taste-first dining; Michelin status neutral
 - Luxury shopping
+
+Current user-confirmed planning inputs:
+
+- Travel insurance budget amount: TWD 6,900; payment status needs confirmation.
+- Internet: phone roaming for two people, total TWD 499; eSIM / SIM / Pocket Wi-Fi are backup only.
+- Airport transfer: use KKday private charter both ways between KIX and InterContinental Osaka.
+- Dining: restaurants should be selected because they are good. Michelin status does not matter either way and should not be used as the main planning label.
 
 Before adding content, check existing docs, database files, and changelog.
 
 When content already exists, update or merge it instead of creating a duplicate.
 
-If daily maintenance changes anything, regenerate the GitHub Pages outputs before commit and push:
+If daily maintenance changes anything, regenerate GitHub Pages outputs before commit and push:
 
 - root `index.md`
 - `docs/index.md`
