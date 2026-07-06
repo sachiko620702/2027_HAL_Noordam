@@ -1,7 +1,7 @@
 # AI_CONTEXT
 
 Project: 2027 Osaka Trip
-Version: V5.3.0
+Version: V5.4.0
 Repository: sachiko620702/2027_OSAKA
 Source of truth: GitHub main branch
 
@@ -12,14 +12,14 @@ Source of truth: GitHub main branch
 - Hotel: InterContinental Osaka
 - Style: Luxury Slow Travel
 - USJ: one day
-- Dining: three-star Michelin planning
+- Dining: non-Michelin-focused dining; prioritize taste, comfort, convenience, and reservation feasibility
 - Shopping: luxury shopping
 
 ## Current Priorities
 
 1. Daily price and open-status monitoring across watchlist sources
 2. USJ strategy and official 2027 updates
-3. Michelin restaurant reservation planning
+3. Non-Michelin Osaka restaurant candidate planning
 4. Flight and airport planning
 5. InterContinental Osaka stay planning
 6. Luxury shopping plan
