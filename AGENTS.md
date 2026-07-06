@@ -23,6 +23,7 @@ Fixed assumptions:
 - USJ one day
 - Taste-first dining; Michelin status neutral
 - Luxury shopping
+- Day 3 formal itinerary: Kizu Market brunch + Kyoto sweets souvenirs + Pokemon / anime
 
 Current logistics and budget inputs:
 
@@ -31,4 +32,5 @@ Current logistics and budget inputs:
 - Internet: phone roaming for two people, total TWD 499.
 - Airport transfer: KKday transfer for both KIX to hotel and hotel to KIX.
 - USJ transfer: KKday transfer for both hotel to USJ and USJ to hotel.
+- Day 3 transport: public rail plus short taxi is the primary plan; KKday #133661 10-hour charter is backup only.
 - Dining: choose good restaurants; do not label the plan as non-Michelin, and do not prioritize Michelin status either way.
