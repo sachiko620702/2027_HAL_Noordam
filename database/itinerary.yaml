@@ -1,36 +1,89 @@
 itinerary:
-  version: V5.9.0
+  version: V5.13.0
   status: planning
   dates:
     - date: 2027-11-17
       day: day1
       status: draft
+      focus: arrival_osaka_hotel_checkin
       fixed_transport:
         flight: BR178
-        airport_transfer: KKday KIX to InterContinental Osaka
+        airport_transfer: KKday product 129909 KIX to InterContinental Osaka
     - date: 2027-11-18
       day: day2
       status: draft
       focus: USJ one day
       fixed_transport:
-        outbound: KKday InterContinental Osaka to USJ
-        return: KKday USJ to InterContinental Osaka
+        outbound: KKday product 536220 InterContinental Osaka to USJ
+        return: KKday product 536220 USJ to InterContinental Osaka
     - date: 2027-11-19
       day: day3
-      status: draft
+      status: candidate_not_formal
+      focus: relaxed food photo Pokemon anime charter day
+      planning_principle:
+        - relaxed_pace_first
+        - match_user_interests_food_photo_pokemon_conan_anime
+        - do_not_force_kkday_sample_routes
+        - avoid_temple_collection_route
+        - keep_optional_swaps_instead_of_overloading_day
+      candidate_route:
+        title: Kizu Market plus Kyoto Pokemon Manga Gion photo walk
+        charter: KKday product 133661 10-hour private charter candidate
+        start_time: 09:00
+        end_time: 19:00
+        recommended_dropoff: Shinsaibashi or Dotonbori if energy is good; hotel if tired
+        stops:
+          - time: 09:00
+            place: InterContinental Osaka
+            activity: depart by charter
+            status: candidate
+          - time: 09:25-10:30
+            place: Osaka Kizu Market
+            activity: brunch and market food
+            status: candidate_needs_2027_calendar_confirmation
+          - time: 10:30-11:45
+            place: Osaka to Kyoto
+            activity: charter transfer
+            status: candidate
+          - time: 11:45-12:45
+            place: Pokemon Center KYOTO
+            activity: Pokemon goods and Kyoto-limited shopping
+            status: candidate
+          - time: 13:00-14:20
+            place: Kyoto International Manga Museum
+            activity: manga and anime interest stop
+            status: candidate_needs_2027_calendar_confirmation
+          - time: 14:40-16:10
+            place: Higashiyama and Gion photo walk
+            activity: Yasaka Pagoda area, Ishibe-koji, Yasaka Shrine, Hanamikoji atmosphere photos
+            status: candidate
+          - time: 16:10-17:10
+            place: flexible slot
+            activity: tea cafe, snack, short shopping, or Fushimi Inari front section only if energy allows
+            status: optional
+          - time: 17:10-19:00
+            place: return to Osaka
+            activity: drop off at Shinsaibashi, Dotonbori, or hotel
+            status: candidate
+        optional_swaps:
+          - remove Kyoto International Manga Museum and add Kiyomizu Temple/Ninenzaka/Sannenzaka if classic Kyoto photos are preferred
+          - remove Fushimi Inari if the day feels full
+          - end at hotel instead of Shinsaibashi/Dotonbori if tired after Day 2 USJ
     - date: 2027-11-20
       day: day4
       status: draft
+      focus: luxury shopping and free time
     - date: 2027-11-21
       day: day5
       status: draft
+      focus: checkout_return_taiwan
       fixed_transport:
-        hotel_to_airport: KKday InterContinental Osaka to KIX
+        hotel_to_airport: KKday product 129909 InterContinental Osaka to KIX
         flight: BR129
   fixed:
     hotel: InterContinental Osaka
     usj_days: 1
     outbound_flight: BR178
     return_flight: BR129
-    airport_transfer: KKday round trip
-    usj_transfer: KKday round trip
+    airport_transfer: KKday product 129909 round trip
+    usj_transfer: KKday product 536220 round trip
