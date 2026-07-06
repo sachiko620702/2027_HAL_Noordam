@@ -13,11 +13,11 @@
 - Track 2027 flight schedule patterns.
 - Track hotel price references.
 - Improve budget model.
-- Expand restaurant database.
+- Expand non-Michelin restaurant candidate database.
 
 ## 2027 Q1
 
-- Check Michelin restaurant booking windows.
+- Review Osaka restaurant candidates for taste, comfort, location, and reservation feasibility.
 - Update USJ official ticket and pass policy when available.
 - Review shopping targets.
 
@@ -31,7 +31,7 @@
 ## 2027 Q3
 
 - Start reservation preparation.
-- Confirm Michelin booking dates.
+- Confirm priority restaurant booking dates.
 - Confirm airport transportation.
 - Prepare packing and payment checklist.
 
