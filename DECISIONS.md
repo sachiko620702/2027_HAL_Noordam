@@ -85,3 +85,39 @@ Changed: 2026-07-06.
 Decision: Day 3 public rail plus short taxi is the primary plan. KKday #133661 10-hour charter remains backup only for rain, fatigue, heavy shopping, or door-to-door comfort.
 Status: fixed, backup retained.
 Changed: 2026-07-06.
+
+## D018 Day 1 Pokemon Center Osaka
+
+Decision: 2027-11-17 Day 1 includes Pokémon Center OSAKA in Umeda if arrival-day energy allows.
+Status: fixed, final timing pending official flight schedule and store hours.
+Changed: 2026-07-06.
+
+## D019 Day 3 formal lunch
+
+Decision: 2027-11-19 Day 3 lunch is 京 鰻和 本店 / 京 うな和 本店.
+Status: fixed, reservation and 2027 business status pending.
+Changed: 2026-07-06.
+
+## D020 Day 3 formal dinner
+
+Decision: 2027-11-19 Day 3 dinner is 天ぷら 京星 / Tempura Kyoboshi.
+Status: fixed, reservation and 2027 business status pending.
+Changed: 2026-07-06.
+
+## D021 Tempura Kyoboshi reservation route
+
+Decision: Use TABLEALL Reservation Request as the primary recorded reservation method for 天ぷら 京星 unless a better official route is confirmed.
+Status: selected; 2027-11-19 availability, price, booking fee, and cancellation policy need reconfirmation.
+Changed: 2026-07-06.
+
+## D022 Day 4 Pokemon Center Osaka DX
+
+Decision: 2027-11-20 Day 4 includes Pokémon Center OSAKA DX.
+Status: fixed, store hours and event rules pending.
+Changed: 2026-07-06.
+
+## D023 Day 4 Executive Lounge afternoon tea
+
+Decision: 2027-11-20 Day 4 includes InterContinental Osaka Executive Lounge afternoon tea.
+Status: fixed, lounge access and 2027 afternoon tea hours pending.
+Changed: 2026-07-06.
