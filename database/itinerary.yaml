@@ -1,5 +1,5 @@
 itinerary:
-  version: V5.13.0
+  version: V5.14.0
   status: planning
   dates:
     - date: 2027-11-17
@@ -19,56 +19,48 @@ itinerary:
     - date: 2027-11-19
       day: day3
       status: candidate_not_formal
-      focus: relaxed food photo Pokemon anime charter day
-      planning_principle:
-        - relaxed_pace_first
-        - match_user_interests_food_photo_pokemon_conan_anime
-        - do_not_force_kkday_sample_routes
-        - avoid_temple_collection_route
-        - keep_optional_swaps_instead_of_overloading_day
+      focus: relaxed food photo Pokemon anime Kyoto sweets day
+      primary_transport: public rail plus short taxi; no charter required for this version
+      fallback_transport: KKday product 133661 10-hour charter only if comfort or weather requires it
       candidate_route:
-        title: Kizu Market plus Kyoto Pokemon Manga Gion photo walk
-        charter: KKday product 133661 10-hour private charter candidate
-        start_time: 09:00
-        end_time: 19:00
-        recommended_dropoff: Shinsaibashi or Dotonbori if energy is good; hotel if tired
+        title: Kizu Market plus Kyoto sweets Pokemon anime walk
         stops:
-          - time: 09:00
-            place: InterContinental Osaka
-            activity: depart by charter
-            status: candidate
-          - time: 09:25-10:30
+          - time: morning
             place: Osaka Kizu Market
             activity: brunch and market food
             status: candidate_needs_2027_calendar_confirmation
-          - time: 10:30-11:45
-            place: Osaka to Kyoto
-            activity: charter transfer
-            status: candidate
-          - time: 11:45-12:45
+          - time: late_morning
+            place: Tsuruya Yoshinobu IRODORI at Kyoto Station
+            activity: kohakuto sweets shopping
+            status: candidate_needs_2027_hours_confirmation
+          - time: midday
+            place: Suetomi
+            activity: baked fu senbei sweets shopping
+            status: candidate_needs_2027_hours_confirmation
+          - time: midday_or_afternoon
             place: Pokemon Center KYOTO
-            activity: Pokemon goods and Kyoto-limited shopping
-            status: candidate
-          - time: 13:00-14:20
+            activity: Pokemon goods shopping
+            status: candidate_needs_2027_hours_confirmation
+          - time: afternoon
             place: Kyoto International Manga Museum
             activity: manga and anime interest stop
-            status: candidate_needs_2027_calendar_confirmation
-          - time: 14:40-16:10
+            status: optional_candidate
+          - time: afternoon
+            place: MALEBRANCHE Cacao 365 Gion
+            activity: Kyoto-pattern chocolate shopping
+            status: candidate_needs_2027_hours_confirmation
+          - time: late_afternoon
             place: Higashiyama and Gion photo walk
-            activity: Yasaka Pagoda area, Ishibe-koji, Yasaka Shrine, Hanamikoji atmosphere photos
+            activity: Kyoto atmosphere photos
             status: candidate
-          - time: 16:10-17:10
-            place: flexible slot
-            activity: tea cafe, snack, short shopping, or Fushimi Inari front section only if energy allows
-            status: optional
-          - time: 17:10-19:00
-            place: return to Osaka
-            activity: drop off at Shinsaibashi, Dotonbori, or hotel
-            status: candidate
-        optional_swaps:
-          - remove Kyoto International Manga Museum and add Kiyomizu Temple/Ninenzaka/Sannenzaka if classic Kyoto photos are preferred
-          - remove Fushimi Inari if the day feels full
-          - end at hotel instead of Shinsaibashi/Dotonbori if tired after Day 2 USJ
+          - time: evening
+            place: Shinsaibashi, Dotonbori, or hotel
+            activity: return to Osaka and dinner
+            status: flexible
+      optional_swaps:
+        - skip Kyoto International Manga Museum if sweets shopping and photo spots need more time
+        - use KKday charter if the user wants door-to-door comfort
+        - end at hotel if tired after USJ day
     - date: 2027-11-20
       day: day4
       status: draft
