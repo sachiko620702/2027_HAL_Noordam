@@ -1,5 +1,5 @@
 reservations:
-  version: V5.10.0
+  version: V5.11.0
   last_updated: 2026-07-06
   hotel:
     status: fixed
@@ -44,26 +44,32 @@ reservations:
         from: InterContinental Osaka
         to: KIX
         status: pending_date_route_price
-    required_confirmation:
-      - 2027 route availability
-      - final price after selecting date and route
-      - vehicle type 7-seater or 10-seater
-      - luggage count fit
-      - pickup time
-      - booking rules
   usj_transfer:
     platform: KKday
-    service_type: hotel_usj_charter_transfer
-    status: selected_pending_booking
+    selected_product_id: 536220
+    product_url: https://www.kkday.com/zh-tw/product/536220
+    service_type: osaka_city_usj_point_to_point_transfer
+    status: selected_product_price_pending
+    recommended_vehicle: luxury_7_seater
+    fallback_vehicle: comfort_10_seater
+    visible_starting_price_twd: 600
     routes:
       - date: 2027-11-18
         from: InterContinental Osaka
         to: Universal Studios Japan
-        status: pending_product_confirmation
+        status: pending_date_route_price
       - date: 2027-11-18
         from: Universal Studios Japan
         to: InterContinental Osaka
-        status: pending_product_confirmation
+        status: pending_date_route_price
+    required_confirmation:
+      - 2027 route availability
+      - final price after selecting date and route
+      - vehicle type 7-seater or 10-seater
+      - pickup time
+      - pickup point
+      - return pickup point
+      - booking rules
   insurance:
     amount_twd: 6900
     status: amount_recorded_payment_status_needs_confirmation
