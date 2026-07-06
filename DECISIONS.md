@@ -30,8 +30,11 @@ Status: fixed.
 
 ## D006 Dining
 
-Decision: three-star Michelin restaurants are the main fine dining target.
+Decision: Michelin dining is no longer a project target. Dining should be planned around comfort, taste, convenience, reservation feasibility, and fit with Luxury Slow Travel. Michelin-starred restaurants should not be prioritized unless the user explicitly reopens this scope.
 Status: fixed.
+Changed: 2026-07-06.
+Previous decision: three-star Michelin restaurants were the main fine dining target.
+Reason: user explicitly stated that they no longer want to eat Michelin restaurants.
 
 ## D007 Shopping
 
