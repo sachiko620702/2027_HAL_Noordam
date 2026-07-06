@@ -1,7 +1,7 @@
 # AI_CONTEXT
 
 Project: 2027 Osaka Trip
-Version: V5.18.0
+Version: V5.19.0
 Repository: sachiko620702/2027_OSAKA
 Source of truth: GitHub main branch
 
@@ -14,7 +14,7 @@ Source of truth: GitHub main branch
 - USJ: one day
 - Dining: taste-first dining; Michelin status is neutral and should not be used as the primary label
 - Shopping: luxury shopping
-- Day 1 formal stop: Pokémon Center OSAKA in Umeda
+- Day 1 formal sequence: arrival at InterContinental Osaka, target Executive Lounge afternoon tea, rest at the hotel, Pokémon Center OSAKA in Umeda, dinner near Pokémon Center OSAKA, then return to the hotel.
 - Day 3 formal itinerary: Kizu Market + Kyoto sweets souvenirs + Pokemon / anime + 京 鰻和 本店 lunch + 天ぷら 京星 dinner
 - Day 4 formal stop: Pokémon Center OSAKA DX and InterContinental Osaka Executive Lounge afternoon tea
 - Flight timing baseline: use the current BR178 / BR129 timetable for hourly planning: BR178 TPE 06:30 to KIX 10:10; BR129 KIX 18:30 to TPE 20:30. Official 2027-11 schedule, fare, aircraft, terminal, baggage, and booking status still require reconfirmation.
@@ -37,19 +37,20 @@ Source of truth: GitHub main branch
 14. Customer-facing travel planning tables: itinerary, pre-trip TODO list, and budget summary
 15. Day 3 official 2027 opening-hour confirmation for Kizu Market, Kyoto sweets shops, Pokemon Center KYOTO, Kyoto International Manga Museum, 京 鰻和 本店, and 天ぷら 京星
 16. Tableall availability and reservation rules for 天ぷら 京星
-17. Keep the V5.18.0 hourly itinerary aligned with current flight baseline and later official 2027 airline updates
+17. Keep the V5.19.0 hourly itinerary aligned with current flight baseline and later official 2027 airline updates
+18. Confirm Day 1 InterContinental Osaka Executive Lounge afternoon tea access and identify dinner candidates near Pokémon Center OSAKA in Umeda
 
 ## User-Provided Confirmed Planning Inputs
 
 - Flights: EVA Air BR178 outbound and BR129 return.
 - Flight timing baseline: per user instruction, use the current schedule directly for planning: BR178 06:30 TPE to 10:10 KIX; BR129 18:30 KIX to 20:30 TPE. Official 2027-11 schedule, fare, aircraft, terminal, baggage, and booking status still require reconfirmation.
+- Day 1 sequence: after arrival at the hotel, the user wants to use afternoon tea, rest a bit, then go to Umeda Pokémon Center, eat dinner near the Pokémon Center, and return to the hotel.
 - Travel insurance budget amount: TWD 6,900; payment status needs confirmation.
 - Internet: phone roaming for two people, total TWD 499; eSIM / SIM / Pocket Wi-Fi are backup only.
 - Airport transfer: use KKday product 129909 both ways between KIX and InterContinental Osaka.
 - USJ transfer: use KKday product 536220 both ways between InterContinental Osaka and Universal Studios Japan.
 - Dining: choose restaurants because they are good; Michelin status does not matter either way.
 - Customer-facing output: always maintain the three simple tables requested by the user: 行程表, 行前提醒／TODO LIST, 預算表.
-- Day 1 formal stop: 梅田 Pokémon Center OSAKA.
 - Day 3 formal itinerary: 木津市場＋京都甜點伴手禮＋寶可夢／動漫＋京 鰻和 本店午餐＋天ぷら 京星晚餐.
 - Day 3 dinner reservation method: TABLEALL Reservation Request for 天ぷら 京星; current reference JPY 25,500 including TABLEALL booking fee JPY 8,000; 2027-11-19 availability and cancellation rules need reconfirmation.
 - Day 4 formal stop: Pokémon Center OSAKA DX and InterContinental Osaka Executive Lounge afternoon tea.
