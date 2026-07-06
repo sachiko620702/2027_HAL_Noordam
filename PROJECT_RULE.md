@@ -9,7 +9,7 @@ Do not change these without an explicit user request:
 - InterContinental Osaka
 - Luxury Slow Travel
 - One USJ day
-- Three-star Michelin planning
+- Non-Michelin-focused dining
 - Luxury shopping
 
 Before adding content, check existing docs, database files, and changelog.
