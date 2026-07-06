@@ -1,7 +1,7 @@
 # AI_CONTEXT
 
 Project: 2027 Osaka Trip
-Version: V5.12.0
+Version: V5.13.0
 Repository: sachiko620702/2027_OSAKA
 Source of truth: GitHub main branch
 
@@ -28,8 +28,9 @@ Source of truth: GitHub main branch
 9. Budget tracking
 10. KKday airport transfer product 129909 details and price confirmation
 11. KKday hotel-USJ transfer product 536220 details and price confirmation
-12. Mobile roaming setup and payment confirmation
-13. Customer-facing travel planning tables: itinerary, pre-trip TODO list, and budget summary
+12. KKday Day 3 charter product 133661 price and route confirmation
+13. Mobile roaming setup and payment confirmation
+14. Customer-facing travel planning tables: itinerary, pre-trip TODO list, and budget summary
 
 ## User-Provided Confirmed Planning Inputs
 
@@ -40,6 +41,11 @@ Source of truth: GitHub main branch
 - USJ transfer: use KKday product 536220 both ways between InterContinental Osaka and Universal Studios Japan.
 - Dining: choose restaurants because they are good; Michelin status does not matter either way.
 - Customer-facing output: always maintain the three simple tables requested by the user: 行程表, 行前提醒／TODO LIST, 預算表.
+- Day 3 candidate preference: do not force KKday sample routes; plan a relaxed route matching food, photo spots, Pokemon, Conan, and anime interests.
+
+## Day 3 Candidate Principle
+
+2027-11-19 should remain a candidate until user explicitly confirms. Suggested theme: Kizu Market brunch, Pokemon Center KYOTO, Kyoto International Manga Museum, Higashiyama/Gion photo walk, and Shinsaibashi/Dotonbori or hotel drop-off. Keep the route relaxed and do not overload with temple collection.
 
 ## Customer-Facing Output Rules
 
