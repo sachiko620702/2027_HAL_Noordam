@@ -88,8 +88,8 @@ Changed: 2026-07-06.
 
 ## D018 Day 1 Pokemon Center Osaka
 
-Decision: 2027-11-17 Day 1 includes Pokémon Center OSAKA in Umeda if arrival-day energy allows.
-Status: fixed, timing now planned around BR178 current timetable baseline 06:30-10:10; final timing still pending official 2027 flight schedule and store hours.
+Decision: 2027-11-17 Day 1 includes Pokémon Center OSAKA in Umeda after afternoon tea and hotel rest if arrival-day energy allows.
+Status: fixed, timing now planned around BR178 current timetable baseline 06:30-10:10; final timing still pending official 2027 flight schedule, hotel lounge policy, and store hours.
 Changed: 2026-07-06.
 
 ## D019 Day 3 formal lunch
@@ -129,3 +129,11 @@ Status: planning baseline; not a ticketed or official 2027-11 confirmation.
 Changed: 2026-07-06.
 Reason: The user explicitly instructed that the flight schedule should directly use the current timetable.
 Impact: Day 1 now assumes KIX arrival at 10:10 and hotel arrival around early afternoon; Day 5 now assumes KIX departure at 18:30 and allows a relaxed morning / early afternoon before airport transfer.
+
+## D025 Day 1 afternoon tea and Umeda sequence
+
+Decision: Day 1 sequence is hotel arrival, InterContinental Osaka Executive Lounge afternoon tea target, rest at the hotel, Pokémon Center OSAKA in Umeda, dinner near Pokémon Center OSAKA, then return to InterContinental Osaka.
+Status: fixed preference, implementation pending 2027 hotel lounge policy, arrival timing, store hours, and dinner candidate selection.
+Changed: 2026-07-06.
+Reason: The user specified that after afternoon tea they want to rest, then go to Umeda Pokémon Center, eat dinner nearby, and return to the hotel.
+Impact: Day 1 dinner should be selected from restaurants near Pokémon Center OSAKA / Umeda. The afternoon schedule should not move directly from afternoon tea to shopping without a rest block.
