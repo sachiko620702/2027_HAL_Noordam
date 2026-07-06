@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 """Daily repository maintenance for the Osaka trip knowledge base.
 
-This script keeps the duplicated fixed travel metadata in sync, updates the
-project timestamp, and optionally commits and pushes any resulting changes.
-It is designed for cron, launchd, or another daily scheduler.
+This script keeps duplicated fixed travel metadata in sync, updates the
+project timestamp, runs configured web/manual checks, and optionally commits
+and pushes resulting changes. It is designed for cron, launchd, or another
+daily scheduler.
 """
 
 from __future__ import annotations
@@ -31,6 +32,18 @@ DECISIONS = ROOT / "DECISIONS.md"
 HOTELS = ROOT / "database" / "hotels.yaml"
 RESERVATIONS = ROOT / "database" / "reservations.yaml"
 ITINERARY = ROOT / "database" / "itinerary.yaml"
+
+README_FIXED_FOCUS = "- 固定重點：USJ 一天、非米其林導向餐飲、精品購物、候補景點與候補美食資料庫"
+AI_DINING_LINE = (
+    "- Dining: non-Michelin-focused dining; prioritize taste, comfort, "
+    "convenience, and reservation feasibility"
+)
+D006_DINING_DECISION = (
+    "Decision: Michelin dining is no longer a project target. Dining should be "
+    "planned around comfort, taste, convenience, reservation feasibility, and "
+    "fit with Luxury Slow Travel. Michelin-starred restaurants should not be "
+    "prioritized unless the user explicitly reopens this scope."
+)
 
 
 @dataclass(frozen=True)
@@ -121,7 +134,7 @@ def sync_readme(snapshot: Snapshot) -> str:
         (r"^- 旅遊型態：.+$", "- 旅遊型態：五天四夜大阪自由行"),
         (r"^- 住宿：.+$", f"- 住宿：{snapshot.hotel}"),
         (r"^- 核心定位：.+$", f"- 核心定位：{snapshot.positioning}"),
-        (r"^- 固定重點：.+$", "- 固定重點：USJ 一天、三星米其林、精品購物、候補景點與候補美食資料庫"),
+        (r"^- 固定重點：.+$", README_FIXED_FOCUS),
     ]
     new_text, _ = apply_replacements(text, replacements)
     return new_text
@@ -136,7 +149,7 @@ def sync_ai_context(snapshot: Snapshot) -> str:
         (r"^- Hotel: .+$", f"- Hotel: {snapshot.hotel}"),
         (r"^- Style: .+$", f"- Style: {snapshot.positioning}"),
         (r"^- USJ: .+$", "- USJ: one day"),
-        (r"^- Dining: .+$", "- Dining: three-star Michelin planning"),
+        (r"^- Dining: .+$", AI_DINING_LINE),
         (r"^- Shopping: .+$", "- Shopping: luxury shopping"),
     ]
     new_text, _ = apply_replacements(text, replacements)
@@ -150,6 +163,7 @@ def sync_project_rule(snapshot: Snapshot) -> str:
         (r"^- InterContinental Osaka$", f"- {snapshot.hotel}"),
         (r"^- Luxury Slow Travel$", f"- {snapshot.positioning}"),
         (r"^- One USJ day$", "- One USJ day"),
+        (r"^- Non-Michelin-focused dining$", "- Non-Michelin-focused dining"),
     ]
     new_text, _ = apply_replacements(text, replacements)
     return new_text
@@ -163,10 +177,7 @@ def sync_decisions(snapshot: Snapshot) -> str:
         (r"^Decision: InterContinental Osaka\.$", f"Decision: {snapshot.hotel}."),
         (r"^Decision: Luxury Slow Travel\.$", f"Decision: {snapshot.positioning}."),
         (r"^Decision: USJ is planned for one day\.$", "Decision: USJ is planned for one day."),
-        (
-            r"^Decision: three-star Michelin restaurants are the main fine dining target\.$",
-            "Decision: three-star Michelin restaurants are the main fine dining target.",
-        ),
+        (r"^Decision: Michelin dining is no longer a project target\..*$", D006_DINING_DECISION),
         (r"^Decision: luxury shopping is part of the formal project scope\.$", "Decision: luxury shopping is part of the formal project scope."),
     ]
     new_text, _ = apply_replacements(text, replacements)
@@ -189,18 +200,14 @@ def sync_itinerary(snapshot: Snapshot) -> str:
 
 def sync_reservations(snapshot: Snapshot) -> str:
     text = RESERVATIONS.read_text(encoding="utf-8")
-    replacements = [
-        (r"^    name: InterContinental Osaka$", f"    name: {snapshot.hotel}"),
-    ]
+    replacements = [(r"^    name: InterContinental Osaka$", f"    name: {snapshot.hotel}")]
     new_text, _ = apply_replacements(text, replacements)
     return new_text
 
 
 def sync_hotels(snapshot: Snapshot) -> str:
     text = HOTELS.read_text(encoding="utf-8")
-    replacements = [
-        (r"^    name: InterContinental Osaka$", f"    name: {snapshot.hotel}"),
-    ]
+    replacements = [(r"^    name: InterContinental Osaka$", f"    name: {snapshot.hotel}")]
     new_text, _ = apply_replacements(text, replacements)
     return new_text
 
