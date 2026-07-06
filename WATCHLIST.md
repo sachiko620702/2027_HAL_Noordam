@@ -33,16 +33,20 @@ Track items that may change before departure.
 - room upgrade options
 - Day 1 Executive Lounge afternoon tea 2027 hours, arrival-day access rules, room benefit eligibility, companion policy, and food / beverage offering for 2027-11-17
 - Executive Lounge afternoon tea 2027 hours, access rules, and food / beverage offering for 2027-11-20
+- Day 4 PIERRE / NOKA Roast & Grill 2027-11-20 dinner availability, booking window, menu, price, service charge, dress code, and cancellation policy
+- Day 4 ADEE Lounge & Bar 2027-11-20 after-dinner availability and age / live music rules if used as optional nightcap
 
 ## Dining
 
 - Day 1 dinner candidates near Pokémon Center OSAKA in Umeda
+- Day 4 Shinsaibashi lunch candidates that allow returning to InterContinental Osaka after lunch
+- Day 4 InterContinental Osaka in-hotel dinner candidate selection: PIERRE vs NOKA Roast & Grill
 - Taste-first Osaka restaurant candidates
 - Restaurant opening days and hours
 - Booking windows
 - TableCheck availability where relevant
 - Cancellation policies
-- Location fit with InterContinental Osaka, USJ day, shopping day, formal Day 3 route, and slow-travel pacing
+- Location fit with InterContinental Osaka, USJ day, shopping day, formal Day 3 route, formal Day 4 Shinsaibashi route, and slow-travel pacing
 - Michelin status is neutral and should not be used as the main planning label
 - Osaka Kizu Market 2027-11-19 business calendar and brunch restaurant candidates
 - 京 鰻和 本店 2027-11-19 lunch reservation window, opening hours, menu, price, 10% reservation fee rule, and cancellation policy
@@ -69,6 +73,18 @@ Track items that may change before departure.
 - Lunch at 京 鰻和 本店 timing fit after Kizu Market and before Kyoto sweets stops
 - Dinner at 天ぷら 京星 timing fit after Gion / Higashiyama
 
+## Day 4 formal route
+
+- Pokémon Center OSAKA DX 2027-11-20 hours, entry rules, events, campaigns, limited goods, and crowd control
+- Pokémon Cafe OSAKA 2027-11-20 reservation rules if considered, but do not add unless explicitly selected
+- Shinsaibashi / Daimaru Shinsaibashi lunch candidates and whether they fit a post-lunch hotel return
+- Shinsaibashi to InterContinental Osaka return route: Osaka Metro Midosuji Line vs direct taxi depending on shopping volume and fatigue
+- InterContinental Osaka Executive Lounge afternoon tea 2027 hours and eligibility for 2027-11-20
+- Hotel / Grand Front Osaka nearby activity options after returning from Shinsaibashi
+- InterContinental Osaka PIERRE 2027-11-20 dinner booking window, menu, price, service charge, dress code, cancellation policy, and table availability
+- InterContinental Osaka NOKA Roast & Grill 2027-11-20 dinner booking window, menu, price, service charge, cancellation policy, and table availability
+- ADEE Lounge & Bar availability only if used as optional after-dinner drink / nightcap
+
 ## Shopping and anime interests
 
 - Pokemon Center KYOTO 2027 hours, closure notices, events, and limited goods
@@ -79,6 +95,7 @@ Track items that may change before departure.
 - department store tax refund rules
 - luxury boutique appointment policy
 - seasonal sale dates
+- Shinsaibashi luxury shopping store hours, tax refund rules, and appointment needs
 
 ## Budget
 
@@ -93,6 +110,9 @@ Track items that may change before departure.
 - KKday product 536220 hotel-USJ transfer final price and booking rules
 - Day 1 dinner near Pokémon Center OSAKA budget
 - Day 3 rail plus short taxi actual cost
+- Day 4 Shinsaibashi lunch budget
+- Day 4 Shinsaibashi to InterContinental Osaka return transport cost
+- Day 4 PIERRE / NOKA Roast & Grill dinner budget
 - KKday product 133661 backup-only Day 3 10-hour charter final price, vehicle choice, and overtime risk
 - 京 鰻和 本店 lunch budget and reservation fee
 - 天ぷら 京星 TABLEALL price, booking fee, and cancellation policy
