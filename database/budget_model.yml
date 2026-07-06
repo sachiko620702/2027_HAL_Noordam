@@ -1,13 +1,13 @@
 metadata:
   id: budget_model
   title: "2027 大阪自由行預算模型"
-  version: "V5.24.0"
+  version: "V5.25.0"
   status: "active_budget_baseline"
   last_updated: "2026-07-06"
   maintained_by: "ChatGPT"
   currency: "TWD"
   travelers: 2
-  caveat: "本模型為 2026/07 依使用者提供價格與目前正式行程建立的暫估模型；2027 官方價格、航班票價、KKday 商品價格、USJ 票券、飯店房價與餐廳菜單仍需再次確認。"
+  caveat: "本模型為 2026/07 依使用者提供價格與目前正式行程建立的暫估模型；2027 官方價格、航班票價、KKday 商品價格、USJ 票券、飯店房價與餐廳菜單仍需再次確認。V5.25.0 已將 Day 3 正式行程改為大阪市內版，壽司餐廳未定，餐飲仍採暫估。"
 
 trip_scope:
   dates: "2027/11/17（三）～2027/11/21（日）"
@@ -21,13 +21,14 @@ trip_scope:
     - "InterContinental Osaka 四晚"
     - "USJ 一天，含 Studio Pass / Express Pass 暫估"
     - "Day 1 千房梅田周邊店"
-    - "Day 3 木津市場、京 鰻和 本店、天ぷら 京星"
+    - "Day 3 木津市場、日本橋動漫模型周邊、飯店酒廊下午茶、大阪市內壽司晚餐"
     - "Day 4 PIERRE Anniversary Dinner"
-    - "Pokémon / 動漫 / 京都甜點伴手禮與一般購物"
+    - "Pokémon / 動漫 / 大阪百貨伴手禮與一般購物"
   excluded_scope:
     - "精品包、珠寶、手錶等大額精品購物"
     - "USJ VIP Tour / Private VIP Tour"
     - "未確認的飯店付費升等、保證提早入住或特殊加購"
+    - "已降為備案的京都版 Day 3：京 鰻和 本店、天ぷら 京星、京都甜點伴手禮路線"
 
 user_provided_reference_prices:
   flight_round_trip:
@@ -61,12 +62,12 @@ user_provided_reference_prices:
 
 recommended_budget:
   title: "建議版主預算"
-  total_twd: 327664
-  per_person_twd: 163832
-  note: "不含精品包、珠寶、手錶；購物僅含寶可夢、動漫、京都伴手禮、百貨小物。"
+  total_twd: 324664
+  per_person_twd: 162332
+  note: "不含精品包、珠寶、手錶；Day 3 壽司餐廳尚未選定，餐飲仍採暫估。"
   categories:
     - category: "交通"
-      amount_twd: 57664
+      amount_twd: 54664
       detail:
         - item: "長榮 TPE ↔ KIX 兩人來回"
           amount_twd: 35000
@@ -78,8 +79,8 @@ recommended_budget:
           amount_twd: 1732
         - item: "USJ → InterContinental Osaka"
           amount_twd: 1732
-        - item: "Day 3 大阪 ↔ 京都交通＋短程計程車"
-          amount_twd: 6000
+        - item: "Day 3 大阪市內交通＋短程計程車"
+          amount_twd: 3000
         - item: "Day 4 心齋橋 → 飯店交通"
           amount_twd: 2000
         - item: "市區交通／臨時計程車緩衝"
@@ -89,10 +90,10 @@ recommended_budget:
       note: "InterContinental Osaka 四晚暫估；Ambassador Weekend BOGO 或早鳥優惠成功時可再下修。"
     - category: "購物"
       amount_twd: 40000
-      note: "寶可夢、動漫、京都甜點伴手禮、百貨小物；不含精品包。"
+      note: "寶可夢、動漫、模型、日本橋周邊、百貨小物；不含精品包。"
     - category: "飲食"
       amount_twd: 60000
-      note: "含千房、木津市場、京 鰻和、京都甜點、天ぷら 京星、Day 4 心齋橋午餐、PIERRE Anniversary Dinner、Day 5 午餐與飲料緩衝。"
+      note: "含千房、木津市場、Day 3 大阪市內午餐、Day 3 壽司晚餐、Day 4 心齋橋午餐、PIERRE Anniversary Dinner、Day 5 午餐與飲料緩衝。"
     - category: "USJ"
       amount_twd: 40000
       note: "Studio Pass、Express Pass、園區餐飲與小購物暫估；2027 官方票價待公布。"
@@ -103,28 +104,28 @@ recommended_budget:
 budget_scenarios:
   controlled:
     label: "節制版"
-    total_twd: 288000
-    per_person_twd: 144000
-    use_case: "購物克制、USJ 不買最高階 Express、住宿有優惠時的低壓版本。"
+    total_twd: 285000
+    per_person_twd: 142500
+    use_case: "購物克制、USJ 不買最高階 Express、住宿有優惠、Day 3 壽司餐廳價格中低時的低壓版本。"
   recommended:
     label: "建議版"
-    total_twd: 327664
-    per_person_twd: 163832
+    total_twd: 324664
+    per_person_twd: 162332
     use_case: "目前正式行程最適合作為主控預算的版本。"
   safety:
     label: "安全版"
     total_twd: 380000
     per_person_twd: 190000
-    use_case: "住宿、USJ Express、餐飲、匯率或臨時加購偏高時的安全上限。"
+    use_case: "住宿、USJ Express、Day 3 壽司、PIERRE、匯率或臨時加購偏高時的安全上限。"
 
 revision_notes:
-  previous_estimate_twd: 410000
-  corrected_to_recommended_twd: 327664
+  previous_estimate_twd: 327664
+  corrected_to_recommended_twd: 324664
   correction_reason:
-    - "機票改採使用者提供的兩人來回 NT$35,000 暫估。"
-    - "KKday 機場接送改採使用者提供的單程 NT$2,600，來回 NT$5,200。"
-    - "KKday USJ 接送改採使用者截圖的單程 NT$1,732 起，來回 NT$3,464。"
-  budget_positioning: "目前建議以 NT$328,000 作為主預算，NT$380,000 作為安全上限；精品購物另計。"
+    - "V5.25.0 Day 3 正式覆蓋為大阪市內版，不去京都。"
+    - "Day 3 交通由大阪 ↔ 京都交通＋短程計程車 NT$6,000 暫估，下修為大阪市內交通＋短程計程車 NT$3,000 暫估。"
+    - "Day 3 晚餐改為大阪市內壽司；餐廳未定，飲食總額暫不下修。"
+  budget_positioning: "目前建議以 NT$325,000 作為主預算，NT$380,000 作為安全上限；精品購物另計。"
 
 pending_reconfirmation:
   - "EVA Air BR178 / BR129 2027/11 官方班表、票價、行李與訂位狀態。"
@@ -132,4 +133,6 @@ pending_reconfirmation:
   - "KKday #536220 2027/11 飯店 ↔ USJ 接送價格、20KM 範圍、接送點與可訂狀態。"
   - "InterContinental Osaka 2027/11 房價、BOGO、行政酒廊房型與提早入住費用。"
   - "USJ 2027 Studio Pass、Express Pass、VIP 與園區餐飲價格。"
+  - "Day 3 日本橋、Den Den Town、Ota Road 2027/11/19 營業時間、活動與採買動線。"
+  - "Day 3 大阪市內壽司晚餐候選、價位、預約方式、取消政策與交通。"
   - "PIERRE 2027/11/20 菜單、價格、服務費、取消政策與紀念日加購。"
