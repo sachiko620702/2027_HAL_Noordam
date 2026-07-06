@@ -1,7 +1,7 @@
 {
   "metadata": {
     "project": "2027 Osaka Trip",
-    "version": "V5.6.0",
+    "version": "V5.8.0",
     "purpose": "Daily price and open-status monitoring"
   },
   "web_checks": [
@@ -11,22 +11,9 @@
       "label": "Universal Studios Japan official site",
       "url": "https://www.usj.co.jp/web/en/us",
       "kind": "status",
-      "open_patterns": [
-        "buy tickets",
-        "book now",
-        "available",
-        "express pass",
-        "studio pass"
-      ],
-      "closed_patterns": [
-        "sold out",
-        "unavailable",
-        "closed"
-      ],
-      "price_patterns": [
-        "(?:JPY|¥)\\s?([0-9,]+)",
-        "([0-9,]+)\\s*円"
-      ]
+      "open_patterns": ["buy tickets", "book now", "available", "express pass", "studio pass"],
+      "closed_patterns": ["sold out", "unavailable", "closed"],
+      "price_patterns": ["(?:JPY|¥)\\s?([0-9,]+)", "([0-9,]+)\\s*円"]
     },
     {
       "id": "hotel_intercontinental_osaka",
@@ -34,20 +21,9 @@
       "label": "InterContinental Osaka rates",
       "url": "https://www.ihg.com/intercontinental/hotels/us/en/osaka/osaha/hoteldetail",
       "kind": "price",
-      "open_patterns": [
-        "book now",
-        "rooms",
-        "suites",
-        "availability"
-      ],
-      "closed_patterns": [
-        "sold out",
-        "unavailable"
-      ],
-      "price_patterns": [
-        "(?:JPY|¥)\\s?([0-9,]+)",
-        "from\\s*([0-9,]+)"
-      ]
+      "open_patterns": ["book now", "rooms", "suites", "availability"],
+      "closed_patterns": ["sold out", "unavailable"],
+      "price_patterns": ["(?:JPY|¥)\\s?([0-9,]+)", "from\\s*([0-9,]+)"]
     },
     {
       "id": "flight_eva_air",
@@ -55,19 +31,9 @@
       "label": "EVA Air official site",
       "url": "https://www.evaair.com/en-global/index.html",
       "kind": "status",
-      "open_patterns": [
-        "book",
-        "flight",
-        "manage booking",
-        "schedule"
-      ],
-      "closed_patterns": [
-        "sold out",
-        "unavailable"
-      ],
-      "price_patterns": [
-        "(?:JPY|TWD|USD|NT\\$|¥)\\s?([0-9,]+)"
-      ]
+      "open_patterns": ["book", "flight", "manage booking", "schedule"],
+      "closed_patterns": ["sold out", "unavailable"],
+      "price_patterns": ["(?:JPY|TWD|USD|NT\\$|¥)\\s?([0-9,]+)"]
     },
     {
       "id": "dining_tablecheck",
@@ -75,40 +41,9 @@
       "label": "TableCheck official site",
       "url": "https://www.tablecheck.com/en/",
       "kind": "status",
-      "open_patterns": [
-        "reserve",
-        "booking",
-        "restaurant",
-        "available"
-      ],
-      "closed_patterns": [
-        "sold out",
-        "unavailable",
-        "closed"
-      ],
-      "price_patterns": [
-        "(?:JPY|¥)\\s?([0-9,]+)"
-      ]
-    },
-    {
-      "id": "jrwest_access",
-      "category": "Transportation",
-      "label": "JR-WEST Kansai access guide",
-      "url": "https://www.westjr.co.jp/global/en/travel/shopping/access/train.html",
-      "kind": "status",
-      "open_patterns": [
-        "haruka",
-        "kansai",
-        "osaka",
-        "train"
-      ],
-      "closed_patterns": [
-        "not available",
-        "closed"
-      ],
-      "price_patterns": [
-        "(?:JPY|¥)\\s?([0-9,]+)"
-      ]
+      "open_patterns": ["reserve", "booking", "restaurant", "available"],
+      "closed_patterns": ["sold out", "unavailable", "closed"],
+      "price_patterns": ["(?:JPY|¥)\\s?([0-9,]+)"]
     },
     {
       "id": "osaka_amazing_pass",
@@ -116,20 +51,9 @@
       "label": "Osaka Amazing Pass official site",
       "url": "https://osaka-amazing-pass.com/en/",
       "kind": "price",
-      "open_patterns": [
-        "buy",
-        "price",
-        "available",
-        "pass"
-      ],
-      "closed_patterns": [
-        "sold out",
-        "unavailable"
-      ],
-      "price_patterns": [
-        "(?:JPY|¥)\\s?([0-9,]+)",
-        "([0-9,]+)\\s*円"
-      ]
+      "open_patterns": ["buy", "price", "available", "pass"],
+      "closed_patterns": ["sold out", "unavailable"],
+      "price_patterns": ["(?:JPY|¥)\\s?([0-9,]+)", "([0-9,]+)\\s*円"]
     },
     {
       "id": "osaka_e_pass",
@@ -137,18 +61,9 @@
       "label": "Osaka e-Pass official site",
       "url": "https://www.e-pass.osaka-info.jp/en/",
       "kind": "price",
-      "open_patterns": [
-        "buy",
-        "available",
-        "pass"
-      ],
-      "closed_patterns": [
-        "sold out",
-        "unavailable"
-      ],
-      "price_patterns": [
-        "(?:JPY|¥)\\s?([0-9,]+)"
-      ]
+      "open_patterns": ["buy", "available", "pass"],
+      "closed_patterns": ["sold out", "unavailable"],
+      "price_patterns": ["(?:JPY|¥)\\s?([0-9,]+)"]
     },
     {
       "id": "kkday_home",
@@ -156,19 +71,9 @@
       "label": "KKday home page",
       "url": "https://www.kkday.com/",
       "kind": "status",
-      "open_patterns": [
-        "ticket",
-        "experience",
-        "travel",
-        "book"
-      ],
-      "closed_patterns": [
-        "sold out",
-        "unavailable"
-      ],
-      "price_patterns": [
-        "(?:JPY|TWD|USD|NT\\$|¥)\\s?([0-9,]+)"
-      ]
+      "open_patterns": ["ticket", "experience", "travel", "book"],
+      "closed_patterns": ["sold out", "unavailable"],
+      "price_patterns": ["(?:JPY|TWD|USD|NT\\$|¥)\\s?([0-9,]+)"]
     },
     {
       "id": "klook_home",
@@ -176,189 +81,26 @@
       "label": "Klook home page",
       "url": "https://www.klook.com/",
       "kind": "status",
-      "open_patterns": [
-        "ticket",
-        "experience",
-        "travel",
-        "book"
-      ],
-      "closed_patterns": [
-        "sold out",
-        "unavailable"
-      ],
-      "price_patterns": [
-        "(?:JPY|TWD|USD|NT\\$|¥)\\s?([0-9,]+)"
-      ]
+      "open_patterns": ["ticket", "experience", "travel", "book"],
+      "closed_patterns": ["sold out", "unavailable"],
+      "price_patterns": ["(?:JPY|TWD|USD|NT\\$|¥)\\s?([0-9,]+)"]
     }
   ],
   "manual_checks": [
-    {
-      "id": "usj_timed_entry",
-      "category": "USJ",
-      "label": "Super Nintendo World timed entry rules",
-      "source": "WATCHLIST.md",
-      "note": "Check official USJ policy and ticket flow."
-    },
-    {
-      "id": "usj_donkey_kong",
-      "category": "USJ",
-      "label": "Donkey Kong Country rules",
-      "source": "WATCHLIST.md",
-      "note": "Check official USJ policy and timed entry changes."
-    },
-    {
-      "id": "usj_seasonal_events",
-      "category": "USJ",
-      "label": "Seasonal events",
-      "source": "WATCHLIST.md",
-      "note": "Check USJ event calendar and ticket tie-ins."
-    },
-    {
-      "id": "flight_schedule",
-      "category": "Flights",
-      "label": "TPE to KIX and KIX to TPE schedule",
-      "source": "WATCHLIST.md",
-      "note": "Check airline timetable release."
-    },
-    {
-      "id": "flight_baggage",
-      "category": "Flights",
-      "label": "Baggage policy",
-      "source": "WATCHLIST.md",
-      "note": "Check airline baggage allowance and fee rules."
-    },
-    {
-      "id": "flight_airport_services",
-      "category": "Flights",
-      "label": "Airport services",
-      "source": "WATCHLIST.md",
-      "note": "Check lounge, check-in, and transfer services."
-    },
-    {
-      "id": "hotel_lounge_policy",
-      "category": "Hotel",
-      "label": "Lounge policy",
-      "source": "WATCHLIST.md",
-      "note": "Check breakfast, lounge access, and room package rules."
-    },
-    {
-      "id": "hotel_breakfast_policy",
-      "category": "Hotel",
-      "label": "Breakfast policy",
-      "source": "WATCHLIST.md",
-      "note": "Check room-rate inclusions and lounge breakfast rules."
-    },
-    {
-      "id": "hotel_early_checkin",
-      "category": "Hotel",
-      "label": "Early check-in pricing",
-      "source": "WATCHLIST.md",
-      "note": "Check paid early check-in and luggage handling."
-    },
-    {
-      "id": "hotel_upgrade_options",
-      "category": "Hotel",
-      "label": "Room upgrade options",
-      "source": "WATCHLIST.md",
-      "note": "Check upgrade offers and elite benefits."
-    },
-    {
-      "id": "dining_non_michelin_candidates",
-      "category": "Dining",
-      "label": "Non-Michelin Osaka restaurant candidates",
-      "source": "WATCHLIST.md",
-      "note": "Check candidate restaurants for taste, comfort, opening hours, location fit, and reservation feasibility."
-    },
-    {
-      "id": "dining_booking_windows",
-      "category": "Dining",
-      "label": "Booking windows",
-      "source": "WATCHLIST.md",
-      "note": "Check reservation opening dates."
-    },
-    {
-      "id": "dining_cancellation",
-      "category": "Dining",
-      "label": "Cancellation policies",
-      "source": "WATCHLIST.md",
-      "note": "Check TableCheck or restaurant cancellation terms."
-    },
-    {
-      "id": "shopping_tax_refund",
-      "category": "Shopping",
-      "label": "Department store tax refund rules",
-      "source": "WATCHLIST.md",
-      "note": "Check current Japan tax-free policy."
-    },
-    {
-      "id": "shopping_boutique_appointments",
-      "category": "Shopping",
-      "label": "Luxury boutique appointment policy",
-      "source": "WATCHLIST.md",
-      "note": "Check appointment requirements for luxury brands."
-    },
-    {
-      "id": "shopping_sale_dates",
-      "category": "Shopping",
-      "label": "Seasonal sale dates",
-      "source": "WATCHLIST.md",
-      "note": "Check department store seasonal sale calendar."
-    },
-    {
-      "id": "budget_exchange_rate",
-      "category": "Budget",
-      "label": "JPY/TWD exchange rate",
-      "source": "WATCHLIST.md",
-      "note": "Check exchange rate before budgeting."
-    },
-    {
-      "id": "budget_credit_card_rewards",
-      "category": "Budget",
-      "label": "Credit card reward rules",
-      "source": "WATCHLIST.md",
-      "note": "Check reward and cashback policy."
-    },
-    {
-      "id": "budget_hotel_rate_changes",
-      "category": "Budget",
-      "label": "Hotel rate changes",
-      "source": "WATCHLIST.md",
-      "note": "Check InterContinental Osaka changes against the booking rate."
-    },
-    {
-      "id": "budget_usj_price_changes",
-      "category": "Budget",
-      "label": "USJ price changes",
-      "source": "WATCHLIST.md",
-      "note": "Check official USJ ticket pricing changes."
-    },
-    {
-      "id": "ticket_platform_policy",
-      "category": "Ticket Platforms",
-      "label": "KKday / Klook cancellation and refund policy",
-      "source": "WATCHLIST.md",
-      "note": "Check platform policy before purchase."
-    },
-    {
-      "id": "ticket_platform_kix_transport",
-      "category": "Ticket Platforms",
-      "label": "KIX to Osaka / Umeda transportation vouchers",
-      "source": "WATCHLIST.md",
-      "note": "Check voucher redemption and route coverage."
-    },
-    {
-      "id": "ticket_platforms_esim",
-      "category": "Ticket Platforms",
-      "label": "Japan eSIM / SIM / Pocket Wi-Fi rules",
-      "source": "WATCHLIST.md",
-      "note": "Check hotspot, fair-use, and validity policy."
-    },
-    {
-      "id": "ticket_platforms_private_transfer",
-      "category": "Ticket Platforms",
-      "label": "Private airport transfer luggage and delay rules",
-      "source": "WATCHLIST.md",
-      "note": "Check luggage limits and flight delay handling."
-    }
+    {"id": "usj_timed_entry", "category": "USJ", "label": "Super Nintendo World timed entry rules", "source": "WATCHLIST.md", "note": "Check official USJ policy and ticket flow."},
+    {"id": "usj_donkey_kong", "category": "USJ", "label": "Donkey Kong Country rules", "source": "WATCHLIST.md", "note": "Check official USJ policy and timed entry changes."},
+    {"id": "flight_schedule", "category": "Flights", "label": "TPE to KIX and KIX to TPE schedule", "source": "WATCHLIST.md", "note": "Check airline timetable release."},
+    {"id": "hotel_lounge_policy", "category": "Hotel", "label": "Lounge and breakfast policy", "source": "WATCHLIST.md", "note": "Check room-rate inclusions and lounge breakfast rules."},
+    {"id": "dining_taste_first_candidates", "category": "Dining", "label": "Taste-first Osaka restaurant candidates", "source": "WATCHLIST.md", "note": "Check candidate restaurants for taste, comfort, opening hours, location fit, and reservation feasibility. Michelin status is neutral."},
+    {"id": "dining_booking_windows", "category": "Dining", "label": "Booking windows", "source": "WATCHLIST.md", "note": "Check reservation opening dates."},
+    {"id": "dining_cancellation", "category": "Dining", "label": "Cancellation policies", "source": "WATCHLIST.md", "note": "Check TableCheck or restaurant cancellation terms."},
+    {"id": "shopping_tax_refund", "category": "Shopping", "label": "Department store tax refund rules", "source": "WATCHLIST.md", "note": "Check current Japan tax-free policy."},
+    {"id": "shopping_boutique_appointments", "category": "Shopping", "label": "Luxury boutique appointment policy", "source": "WATCHLIST.md", "note": "Check appointment requirements for luxury brands."},
+    {"id": "budget_exchange_rate", "category": "Budget", "label": "JPY/TWD exchange rate", "source": "WATCHLIST.md", "note": "Check exchange rate before budgeting."},
+    {"id": "budget_credit_card_rewards", "category": "Budget", "label": "Credit card reward rules", "source": "WATCHLIST.md", "note": "Check reward and cashback policy."},
+    {"id": "budget_insurance", "category": "Budget", "label": "Travel insurance payment status", "source": "database/budget.yaml", "note": "Confirm whether the TWD 6,900 insurance amount has been paid and by which method."},
+    {"id": "budget_phone_roaming", "category": "Budget", "label": "Phone roaming billing", "source": "database/budget.yaml", "note": "Confirm roaming activation, billing method, hotspot rules, and fair-use policy for the TWD 499 two-person plan."},
+    {"id": "ticket_platform_policy", "category": "Ticket Platforms", "label": "KKday / Klook cancellation and refund policy", "source": "WATCHLIST.md", "note": "Check platform policy before purchase."},
+    {"id": "ticket_platform_kix_transfer", "category": "Ticket Platforms", "label": "KKday KIX airport transfer", "source": "WATCHLIST.md", "note": "Check KKday product, price, vehicle type, luggage rules, waiting time, and delayed-flight handling."}
   ]
 }
