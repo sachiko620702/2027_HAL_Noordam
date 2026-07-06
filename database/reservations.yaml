@@ -1,13 +1,49 @@
 reservations:
+  version: V5.8.0
+  last_updated: 2026-07-06
   hotel:
     status: fixed
     name: InterContinental Osaka
+    confirmation_status: NEEDS_RECONFIRMATION
   usj:
-    studio_pass: pending
-    express_pass: pending
-    vip: pending
+    studio_pass: pending_official_announcement
+    express_pass: pending_official_announcement
+    vip: pending_official_announcement
   restaurants:
     status: tracking
-    michelin_three_star: priority
+    planning_principle: taste_first
+    michelin_status: neutral
+    note: Choose good restaurants. Michelin status does not matter either way and should not be used as the main label.
+    booking_channels:
+      - official restaurant site
+      - TableCheck where relevant
+      - hotel concierge if useful
   flights:
     status: tracking
+  airport_transfer:
+    platform: KKday
+    service_type: airport_charter_transfer
+    status: selected_pending_booking
+    routes:
+      - date: 2027-11-17
+        from: KIX
+        to: InterContinental Osaka
+        status: pending_product_confirmation
+      - date: 2027-11-21
+        from: InterContinental Osaka
+        to: KIX
+        status: pending_product_confirmation
+    required_confirmation:
+      - product availability
+      - final price
+      - vehicle and luggage capacity
+      - cancellation policy
+      - waiting time and delayed-flight handling
+  insurance:
+    amount_twd: 6900
+    status: amount_recorded_payment_status_needs_confirmation
+  internet:
+    type: phone_roaming
+    travelers: 2
+    amount_twd: 499
+    status: selected_payment_status_needs_confirmation
