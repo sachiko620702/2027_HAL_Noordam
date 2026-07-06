@@ -17,7 +17,8 @@ Do not change these without an explicit user request:
 
 Current user-confirmed planning inputs:
 
-- Flights: EVA Air BR178 outbound and BR129 return; official 2027-11 schedule and fare need confirmation.
+- Flights: EVA Air BR178 outbound and BR129 return.
+- Flight timing baseline: use the current timetable directly for hourly planning: BR178 06:30 TPE to 10:10 KIX; BR129 18:30 KIX to 20:30 TPE. Official 2027-11 schedule, fare, aircraft, terminal, baggage, and booking status still require confirmation before ticketing.
 - Travel insurance budget amount: TWD 6,900; payment status needs confirmation.
 - Internet: phone roaming for two people. Amount is TWD 499.
 - Airport transfer: use KKday transfer both ways between KIX and InterContinental Osaka.
