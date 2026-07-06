@@ -1,0 +1,11 @@
+transportation:
+  flights:
+    route_outbound: TPE to KIX
+    route_return: KIX to TPE
+    airline_focus: EVA Air
+    status: tracking
+  local:
+    airport_to_hotel: pending
+    hotel_to_usj: pending
+    hotel_to_michelin: pending
+    shopping_routes: pending
