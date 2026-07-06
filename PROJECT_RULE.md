@@ -11,22 +11,24 @@ Do not change these without an explicit user request:
 - One USJ day
 - Taste-first dining; Michelin status neutral
 - Luxury shopping
-- Day 1 formal sequence: arrival at InterContinental Osaka, target Executive Lounge afternoon tea, rest at the hotel, Pokémon Center OSAKA in Umeda, dinner near Pokémon Center OSAKA, then return to the hotel
+- Day 1 formal sequence: arrival at InterContinental Osaka, target Executive Lounge afternoon tea, rest at the hotel, Pokemon Center OSAKA in Umeda, dinner near Pokemon Center, then return to the hotel
 - Day 3 formal itinerary: Kizu Market + Kyoto sweets souvenirs + Pokemon / anime + 京 鰻和 本店 lunch + 天ぷら 京星 dinner
-- Day 4 formal stop: Pokémon Center OSAKA DX and InterContinental Osaka Executive Lounge afternoon tea
+- Day 4 formal route: Shinsaibashi-centered activity range until lunch, including Pokemon Center OSAKA DX; return to InterContinental Osaka after lunch; afternoon at / near the hotel; Executive Lounge afternoon tea; dinner at an InterContinental Osaka in-hotel restaurant
 
 Current user-confirmed planning inputs:
 
 - Flights: EVA Air BR178 outbound and BR129 return.
 - Flight timing baseline: use the current timetable directly for hourly planning: BR178 06:30 TPE to 10:10 KIX; BR129 18:30 KIX to 20:30 TPE. Official 2027-11 schedule, fare, aircraft, terminal, baggage, and booking status still require confirmation before ticketing.
 - Day 1 arrival sequence: use afternoon tea at the hotel, rest a bit, go to Umeda Pokémon Center, eat dinner near the Pokémon Center, and return to the hotel.
+- Day 4 sequence: Shinsaibashi / Daimaru Shinsaibashi / Pokémon Center OSAKA DX before and around lunch; after lunch return to InterContinental Osaka; afternoon at or near the hotel; dinner at an in-hotel restaurant.
+- Day 4 dinner candidates: PIERRE primary, NOKA Roast & Grill backup; ADEE is optional after-dinner lounge / nightcap only.
 - Travel insurance budget amount: TWD 6,900; payment status needs confirmation.
 - Internet: phone roaming for two people. Amount is TWD 499.
 - Airport transfer: use KKday transfer both ways between KIX and InterContinental Osaka.
 - USJ transfer: use KKday transfer both ways between InterContinental Osaka and Universal Studios Japan.
 - Dining: restaurants should be selected because they are good. Michelin status does not matter either way and should not be used as the main planning label.
 - Customer-facing output: maintain a traveler/customer readable three-table format consisting of itinerary, pre-trip TODO list, and budget summary.
-- Day 3 transport primary plan is public rail plus short taxi. KKday #133661 10-hour charter is backup only for rain, fatigue, heavy shopping, or door-to-door comfort.
+- Day 3 transport primary plan is public rail plus short taxi. KKday #133661 10-hour charter remains backup only for rain, fatigue, heavy shopping, or door-to-door comfort.
 - 天ぷら 京星 primary reservation method is TABLEALL Reservation Request unless a better official route is confirmed.
 
 Before adding content, check existing docs, database files, and changelog.
