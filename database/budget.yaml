@@ -1,6 +1,6 @@
 budget:
   status: active
-  version: V5.9.0
+  version: V5.10.0
   last_updated: 2026-07-06
   currency_assumptions:
     primary_currency: TWD
@@ -53,10 +53,10 @@ budget:
       payment_method: NEEDS_RECONFIRMATION
       price_type: pending_query_price
       note: User selected outbound BR178 and return BR129. Official schedule, fare, baggage, and ticket rules still need confirmation.
-    - id: kkday_airport_transfer_roundtrip
+    - id: kkday_airport_transfer_129909_luxury_7_seater_roundtrip
       category: transportation
-      item: KKday airport transfer round trip between KIX and InterContinental Osaka
-      amount: NEEDS_RECONFIRMATION
+      item: KKday product 129909 KIX hotel round trip luxury 7-seater candidate
+      amount: NEEDS_MANUAL_KKDAY_DATE_ROUTE_PRICE
       currency: NEEDS_RECONFIRMATION
       people: 2
       quantity: 2
@@ -64,8 +64,23 @@ budget:
       payment_status: NOT_PAID_OR_NEEDS_CONFIRMATION
       paid: NEEDS_RECONFIRMATION
       payment_method: KKday_checkout_NEEDS_RECONFIRMATION
-      price_type: pending_query_price
-      note: User selected KKday airport transfer both ways; exact product, vehicle type, luggage rules, price, waiting time, and booking rules must be confirmed.
+      price_type: dynamic_query_price_pending
+      recommendation: recommended_if_luggage_under_3_checked_bags
+      note: Product page confirms 7-seater capacity 5 people and 3 checked bags. Base route price was not exposed in public extracted page.
+    - id: kkday_airport_transfer_129909_comfort_10_seater_roundtrip
+      category: transportation
+      item: KKday product 129909 KIX hotel round trip comfort 10-seater backup
+      amount: NEEDS_MANUAL_KKDAY_DATE_ROUTE_PRICE
+      currency: NEEDS_RECONFIRMATION
+      people: 2
+      quantity: 2
+      subtotal_twd: NEEDS_RECONFIRMATION
+      payment_status: NOT_PAID_OR_NEEDS_CONFIRMATION
+      paid: NEEDS_RECONFIRMATION
+      payment_method: KKday_checkout_NEEDS_RECONFIRMATION
+      price_type: dynamic_query_price_pending
+      recommendation: backup_if_luggage_over_3_checked_bags_or_more_space_needed
+      note: Product page confirms 10-seater capacity 9 people and 9 checked bags. Use only if luggage or comfort needs exceed 7-seater.
     - id: kkday_hotel_usj_transfer_roundtrip
       category: transportation
       item: KKday hotel to USJ round trip transfer
@@ -80,7 +95,7 @@ budget:
       price_type: pending_query_price
       note: User selected KKday transfer between InterContinental Osaka and USJ both ways. Product, price, pickup time, and pickup point need confirmation.
   budget_model_notes:
-    transportation: Includes flights, KKday airport transfer, KKday hotel-USJ transfer, local rail backup, taxi, and luggage-related movement.
+    transportation: Includes flights, KKday airport product 129909, KKday hotel-USJ transfer, local rail backup, taxi, and luggage-related movement.
     lodging: Includes InterContinental Osaka room cost, taxes, breakfast or lounge add-ons, early check-in, late check-out, and upgrade fees.
     shopping: Includes department stores, luxury boutiques, drugstores, apparel, electronics, character goods, souvenirs, and tax-free shopping.
     dining: Taste-first planning. Michelin status is neutral and should not be used as the budget label.
