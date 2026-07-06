@@ -31,10 +31,12 @@ Track items that may change before departure.
 - breakfast policy
 - early check-in pricing
 - room upgrade options
+- Day 1 Executive Lounge afternoon tea 2027 hours, arrival-day access rules, room benefit eligibility, companion policy, and food / beverage offering for 2027-11-17
 - Executive Lounge afternoon tea 2027 hours, access rules, and food / beverage offering for 2027-11-20
 
 ## Dining
 
+- Day 1 dinner candidates near Pokémon Center OSAKA in Umeda
 - Taste-first Osaka restaurant candidates
 - Restaurant opening days and hours
 - Booking windows
@@ -45,6 +47,15 @@ Track items that may change before departure.
 - Osaka Kizu Market 2027-11-19 business calendar and brunch restaurant candidates
 - 京 鰻和 本店 2027-11-19 lunch reservation window, opening hours, menu, price, 10% reservation fee rule, and cancellation policy
 - 天ぷら 京星 2027-11-19 TABLEALL availability, Reservation Request rules, dinner time, price, booking fee, cancellation policy, and final availability
+
+## Day 1 formal route
+
+- BR178 arrival timing and actual KIX exit time
+- KKday #129909 KIX to InterContinental Osaka pickup time
+- Arrival-day Executive Lounge afternoon tea feasibility
+- Hotel rest block after afternoon tea
+- Pokémon Center OSAKA 2027-11-17 hours, entry rules, events, and limited goods
+- Dinner candidates near Pokémon Center OSAKA in Umeda
 
 ## Day 3 formal route
 
@@ -80,6 +91,7 @@ Track items that may change before departure.
 - phone roaming amount TWD 499 for two people and carrier billing rules
 - KKday product 129909 airport transfer final price and booking rules
 - KKday product 536220 hotel-USJ transfer final price and booking rules
+- Day 1 dinner near Pokémon Center OSAKA budget
 - Day 3 rail plus short taxi actual cost
 - KKday product 133661 backup-only Day 3 10-hour charter final price, vehicle choice, and overtime risk
 - 京 鰻和 本店 lunch budget and reservation fee
