@@ -59,7 +59,7 @@ Changed: 2026-07-06.
 ## D013 Flights
 
 Decision: outbound flight is EVA Air BR178 and return flight is EVA Air BR129.
-Status: selected; official 2027-11 schedule, fare, and booking status need confirmation.
+Status: selected; current timetable is now used as hourly planning baseline; official 2027-11 schedule, fare, aircraft, terminal, baggage, and booking status still need confirmation before ticketing.
 Changed: 2026-07-06.
 
 ## D014 Hotel to USJ transfer
@@ -89,7 +89,7 @@ Changed: 2026-07-06.
 ## D018 Day 1 Pokemon Center Osaka
 
 Decision: 2027-11-17 Day 1 includes Pokémon Center OSAKA in Umeda if arrival-day energy allows.
-Status: fixed, final timing pending official flight schedule and store hours.
+Status: fixed, timing now planned around BR178 current timetable baseline 06:30-10:10; final timing still pending official 2027 flight schedule and store hours.
 Changed: 2026-07-06.
 
 ## D019 Day 3 formal lunch
@@ -121,3 +121,11 @@ Changed: 2026-07-06.
 Decision: 2027-11-20 Day 4 includes InterContinental Osaka Executive Lounge afternoon tea.
 Status: fixed, lounge access and 2027 afternoon tea hours pending.
 Changed: 2026-07-06.
+
+## D024 Flight timetable baseline
+
+Decision: For hourly itinerary planning, use the current EVA Air timetable directly: BR178 TPE 06:30 to KIX 10:10; BR129 KIX 18:30 to TPE 20:30.
+Status: planning baseline; not a ticketed or official 2027-11 confirmation.
+Changed: 2026-07-06.
+Reason: The user explicitly instructed that the flight schedule should directly use the current timetable.
+Impact: Day 1 now assumes KIX arrival at 10:10 and hotel arrival around early afternoon; Day 5 now assumes KIX departure at 18:30 and allows a relaxed morning / early afternoon before airport transfer.
