@@ -1,6 +1,6 @@
 project:
   name: 2027 Osaka Trip
-  version: V5.15.0
+  version: V5.25.0
   source_of_truth: GitHub main
   repository: sachiko620702/2027_OSAKA
   dates:
@@ -18,6 +18,7 @@ project:
     - KKday product 129909 for KIX hotel transfer
     - KKday product 536220 for hotel USJ transfer
     - Breakfast normally at hotel Executive Lounge except Kizu Market day
+    - Day 3 formal route is Osaka city route, not Kyoto
   user_confirmed_inputs:
     flights:
       airline: EVA Air
@@ -31,6 +32,7 @@ project:
         route: KIX to TPE
         date: 2027-11-21
         status: needs_official_schedule_confirmation
+      budget_reference_twd_for_two: 35000
     insurance_total_twd: 6900
     internet:
       type: phone_roaming
@@ -38,33 +40,49 @@ project:
     airport_transfer:
       platform: KKday
       selected_product_id: 129909
-      price_status: needs_confirmation
+      reference_price_each_way_twd: 2600
+      round_trip_total_twd: 5200
+      price_status: user_provided_reference_needs_2027_confirmation
     usj_transfer:
       platform: KKday
       selected_product_id: 536220
-      price_status: needs_confirmation
+      reference_price_each_way_twd: 1732
+      round_trip_total_twd: 3464
+      price_status: user_screenshot_reference_needs_2027_confirmation
     breakfast_preference:
       normal_days: hotel_executive_lounge_breakfast
       exception_day: 2027-11-19
       exception_reason: Osaka Kizu Market brunch day
-    day3_candidate:
+    day3_formal_route:
       date: 2027-11-19
-      status: candidate_not_formal
-      theme: relaxed food, photo spots, Pokemon, anime, Kyoto sweets
-      primary_transport: public rail plus short taxi
-      kyoto_access_note: after Kizu Market, go to Kyoto Station by metro plus JR or taxi to Osaka Station then JR; use short taxi in Kyoto as needed
-      charter_fallback: KKday product 133661 only if comfort, weather, or shopping load requires it
-      shop_status_summary: 2027-11-19 final shop calendar not published; current regular hours recorded in restaurants database
-      preferred_stops:
-        - Osaka Kizu Market brunch
-        - Tsuruya Yoshinobu IRODORI
-        - Suetomi
-        - Pokemon Center KYOTO
-        - Kyoto International Manga Museum optional
-        - MALEBRANCHE Cacao 365 Gion
-        - Higashiyama and Gion photo walk
+      status: formal_active
+      theme: Osaka city slow travel, Kizu Market, Nipponbashi anime models, hotel lounge afternoon tea, Osaka sushi dinner
+      primary_transport: Osaka city metro, walking, and short taxi
+      route:
+        - 08:00-09:30 Osaka Kizu Market brunch
+        - 09:30-10:15 Move to Namba / Nipponbashi
+        - 10:15-12:30 Nipponbashi anime, models, and merch shopping
+        - 12:30-14:00 Namba / Dotonbori / Shinsaibashi lunch
+        - 14:00-15:00 Return to InterContinental Osaka, rest, organize shopping items
+        - 15:00-16:30 InterContinental Osaka Executive Lounge afternoon tea
+        - 16:30-18:30 Hotel rest or light Umeda walk
+        - 19:00-20:30 Osaka city sushi dinner
+      dinner_direction: sushi
+      sushi_restaurant_status: candidate_needed
+      supersedes:
+        - Kyoto sweets route
+        - 京 鰻和 本店 lunch
+        - 天ぷら 京星 dinner
+        - TABLEALL reservation task for Tempura Kyoboshi as formal Day 3 dinner
+      charter_fallback: KKday product 133661 no longer needed for current Day 3 formal route; keep only as backup if the user restores Kyoto or requests comfort travel
     dining:
       principle: taste_first
       michelin_status: neutral
+  budget:
+    active_model: database/budget_model.yml
+    version: V5.25.0
+    recommended_total_twd_for_two: 324664
+    safety_ceiling_twd_for_two: 380000
+    luxury_shopping: separate
   status: active
   last_updated: 2026-07-06
