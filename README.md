@@ -15,8 +15,8 @@
 - 航班：去程 EVA Air BR178，回程 EVA Air BR129。
 - 航班時間規劃基準：依使用者指示先直接採用目前班表暫排，BR178 06:30 TPE → 10:10 KIX；BR129 18:30 KIX → 20:30 TPE。2027/11 官方班表、票價、機型、航廈、行李與訂位狀態仍需再次確認。
 - 早餐原則：平常早餐以飯店行政酒廊為主；Day 3 木津市場日例外，不吃飯店早餐，改吃木津市場早段輕食／早午餐。
-- Day 1 正式確認：抵達飯店後目標使用 InterContinental Osaka 行政酒廊下午茶；下午茶後先休息一下，再去梅田 Pokémon Center OSAKA，並在 Pokémon Center 附近吃晚餐後回飯店。
-- Day 1 晚餐候補已建立：Kiji、Chibo、Negiyaki Yamamoto、Grill Ron、Kushikatsu Daruma、Hanadako、Tsurutontan TOP CHEFS。尚未正式決定；需再次確認 Google Maps / Tabelog 分數、營業、預約、價格與排隊狀況。
+- Day 1 正式確認：抵達飯店後目標使用 InterContinental Osaka 行政酒廊下午茶；下午茶後先休息一下，再去梅田 Pokémon Center OSAKA；晚餐選千房梅田周邊店；晚餐後回飯店。
+- Day 1 晚餐正式方向：千房 梅田周邊店 / Chibo Umeda-area branch。實際梅田周邊分店、評分、營業、預約、價格與排隊狀況待確認。
 - Day 3 正式確認：木津市場＋京都甜點伴手禮＋寶可夢／動漫＋京 鰻和 本店午餐＋天ぷら 京星晚餐。
 - 天ぷら 京星主預約方式：TABLEALL Reservation Request；目前參考晚餐 JPY 25,500，包含 TABLEALL booking fee JPY 8,000；2027/11/19 可訂狀態、價格與取消政策待確認。
 - Day 4 正式確認：活動範圍以心齋橋為主，包含 Pokémon Center OSAKA DX；午餐後回 InterContinental Osaka；下午在飯店附近活動，保留 InterContinental Osaka 行政酒廊下午茶。
@@ -33,6 +33,7 @@
 
 - [顧客版旅遊規劃三表](docs/15_顧客版資料/旅遊規劃三表.md)
 - [小時制時間表](docs/01_行程規劃/2027大阪自由行_小時制時間表_V5.21.0.md)
+- [Day 1 正式晚餐：千房梅田周邊店](docs/02_餐廳美食/Day1_正式晚餐_千房梅田周邊店_V5.22.0.md)
 - [Day 1 梅田 Pokémon Center 附近晚餐候選](docs/02_餐廳美食/Day1_梅田PokemonCenter附近晚餐候選_V5.20.0.md)
 - [Day 3 正式行程](docs/01_行程規劃/2027-11-19_Day3_木津市場京都甜點寶可夢動漫正式行程_V5.16.0.md)
 - [Day 4 心齋橋與壽司晚餐偏好資料庫](database/day4_shinsaibashi_hotel_dinner.yml)
