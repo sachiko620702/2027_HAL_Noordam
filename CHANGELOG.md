@@ -1,5 +1,36 @@
 # CHANGELOG
 
+## V5.19.0 - 2026-07-06
+
+### Changed
+
+- Added Day 1 arrival-day Executive Lounge afternoon tea target at InterContinental Osaka.
+- Refined Day 1 formal sequence: afternoon tea, rest at the hotel, Umeda Pokémon Center OSAKA, dinner near Pokémon Center, then return to the hotel.
+- Added `database/hotel_lounge.yml` for InterContinental Osaka lounge planning.
+- Added `docs/01_行程規劃/2027大阪自由行_小時制時間表_V5.19.0.md`.
+- Updated `database/itinerary_hourly.yml` with the Day 1 rest block and dinner-near-Pokémon-Center sequence.
+- Updated `database/customer_facing_travel_plan.yml` and `docs/15_顧客版資料/旅遊規劃三表.md`.
+- Updated GitHub Pages root `index.md` and `docs/index.md` so the homepage itinerary table is now hourly instead of a daily summary table.
+- Updated README, AI_CONTEXT, PROJECT_RULE, AGENTS, and DECISIONS.
+
+### Reason
+
+The user first specified that Day 1 should use afternoon tea, then clarified the desired order: after afternoon tea, rest at the hotel, go to Umeda Pokémon Center, eat dinner near Pokémon Center, and return to the hotel. The user also requested that the homepage itinerary table be changed to an hourly format.
+
+### Impact
+
+- Day 1 is now more explicitly aligned with Luxury Slow Travel and includes a rest block before going out to Umeda.
+- Day 1 dinner must be selected from restaurants near Pokémon Center OSAKA / Umeda.
+- InterContinental Osaka Executive Lounge arrival-day afternoon tea access must be confirmed before departure.
+- The project homepage now shows the trip by hour rather than only by day.
+
+### Follow-up required
+
+- Confirm InterContinental Osaka Executive Lounge 2027 afternoon tea hours, arrival-day access rules, room benefit eligibility, and companion policy.
+- Confirm Pokémon Center OSAKA 2027-11-17 hours and event / entry rules.
+- Add dinner candidates near Pokémon Center OSAKA in Umeda.
+- Keep the homepage hourly table synchronized with `database/itinerary_hourly.yml`.
+
 ## V5.18.0 - 2026-07-06
 
 ### Changed
