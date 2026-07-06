@@ -1,5 +1,40 @@
 # CHANGELOG
 
+## V5.24.0 - 2026-07-06
+
+### Changed
+
+- Initialized the formal budget model in `database/budget_model.yml`.
+- Added customer-readable budget model document `docs/06_預算/2027大阪自由行_預算模型_V5.24.0.md`.
+- Added version update note `docs/13_版本與更新/V5.24.0_預算模型初始化.md`.
+- Updated customer-facing budget table and GitHub Pages budget summary.
+- Updated README, AI_CONTEXT, PROJECT_RULE, AGENTS, DECISIONS, ROADMAP, WATCHLIST, customer-facing tables, homepage files, and daily sync status.
+- Added D032 Budget model V5.24.0.
+
+### Reason
+
+The user corrected overestimated transportation assumptions:
+
+- Flight budget: TWD 35,000 for two travelers round trip.
+- KKday #129909 airport transfer: TWD 2,600 each way, TWD 5,200 round trip.
+- KKday #536220 hotel-USJ transfer: TWD 1,732 each way, TWD 3,464 round trip.
+
+### Impact
+
+- Recommended budget baseline is now TWD 327,664 for two travelers.
+- Safety ceiling is TWD 380,000 for two travelers.
+- Luxury handbags, jewelry, and watches are excluded from the base budget and should be budgeted separately.
+- 2027 official prices, booking availability, route rules, hotel rates, USJ tickets, and restaurant prices still require reconfirmation.
+
+### Follow-up required
+
+- Confirm EVA Air BR178 / BR129 2027-11 official fare and ticketing status.
+- Confirm KKday #129909 2027-11 airport transfer price, vehicle, luggage, route, waiting time, and availability.
+- Confirm KKday #536220 2027-11 hotel-USJ transfer price, 20KM scope, pickup point, vehicle, luggage, and availability.
+- Confirm InterContinental Osaka 2027-11 hotel rate, BOGO feasibility, lounge room type, and early check-in cost.
+- Confirm USJ 2027 Studio Pass / Express Pass prices.
+- Confirm PIERRE 2027-11-20 dinner price, service charge, and anniversary add-ons.
+
 ## V5.23.0 - 2026-07-06
 
 ### Changed
@@ -89,5 +124,4 @@ The user selected “千房 梅田周邊店” for Day 1 dinner after the Pokém
 
 ### Follow-up required
 
-- Reconfirm 2027/11/17 business hours, reservation availability, prices, and cancellation rules.
-- Confirm walking time from Pokémon Center OSAKA to each restaurant.
+- Confirm 2027/11/17 business hours, exact location, budget, booking rules, and walking time from Pokémon Center OSAKA.
