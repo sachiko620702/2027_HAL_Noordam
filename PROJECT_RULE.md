@@ -11,7 +11,9 @@ Do not change these without an explicit user request:
 - One USJ day
 - Taste-first dining; Michelin status neutral
 - Luxury shopping
-- Day 3 formal itinerary: Kizu Market brunch + Kyoto sweets souvenirs + Pokemon / anime
+- Day 1 formal stop: Pokémon Center OSAKA in Umeda
+- Day 3 formal itinerary: Kizu Market + Kyoto sweets souvenirs + Pokemon / anime + 京 鰻和 本店 lunch + 天ぷら 京星 dinner
+- Day 4 formal stop: Pokémon Center OSAKA DX and InterContinental Osaka Executive Lounge afternoon tea
 
 Current user-confirmed planning inputs:
 
@@ -22,8 +24,8 @@ Current user-confirmed planning inputs:
 - USJ transfer: use KKday transfer both ways between InterContinental Osaka and Universal Studios Japan.
 - Dining: restaurants should be selected because they are good. Michelin status does not matter either way and should not be used as the main planning label.
 - Customer-facing output: maintain a traveler/customer readable three-table format consisting of itinerary, pre-trip TODO list, and budget summary.
-- Day 3 is formally confirmed as Kizu Market brunch + Kyoto sweets souvenirs + Pokemon / anime.
 - Day 3 transport primary plan is public rail plus short taxi. KKday #133661 10-hour charter is backup only for rain, fatigue, heavy shopping, or door-to-door comfort.
+- 天ぷら 京星 primary reservation method is TABLEALL Reservation Request unless a better official route is confirmed.
 
 Before adding content, check existing docs, database files, and changelog.
 
