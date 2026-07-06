@@ -156,19 +156,19 @@ Impact: Day 4 afternoon should not include distant attractions. Keep Executive L
 
 ## D028 Day 4 hotel in-house dinner
 
-Decision: Day 4 dinner was previously recorded as an InterContinental Osaka in-hotel restaurant.
-Status: superseded by D029 sushi dinner preference unless the user later prioritizes in-hotel dining over sushi.
+Decision: Day 4 dinner is planned inside InterContinental Osaka, with PIERRE now selected as the primary formal direction for Anniversary Dinner.
+Status: active again through D031.
 Changed: 2026-07-06.
-Reason: The user previously wanted to use an in-hotel restaurant, but later clarified that dinner should be sushi.
-Impact: PIERRE / NOKA Roast & Grill are no longer primary Day 4 dinner candidates. They remain fallback-only if the user accepts non-sushi in-hotel dining.
+Reason: The user explicitly changed Day 4 dinner back to PIERRE for an anniversary dinner with a window / Osaka night view request.
+Impact: The Day 4 evening should remain in-hotel and low-effort after Shinsaibashi, with PIERRE as the primary dinner direction.
 
 ## D029 Day 4 sushi dinner preference
 
-Decision: Day 4 dinner cuisine preference is sushi.
-Status: fixed cuisine preference; exact restaurant and location pending candidate search and user confirmation.
+Decision: Day 4 dinner cuisine preference was previously recorded as sushi.
+Status: superseded by D031 Anniversary Dinner at PIERRE.
 Changed: 2026-07-06.
-Reason: The user explicitly stated: “晚餐想要吃壽司”.
-Impact: Because InterContinental Osaka official FAQ currently says the hotel has no Japanese restaurant, the project should search hotel-nearby / Umeda / Osaka Station sushi candidates first. Do not promote PIERRE / NOKA as the final dinner unless the user explicitly changes back to non-sushi in-hotel dining.
+Reason: The user later stated: “Anniversary Dinner Pierre的靠窗座位，盡享大阪夜景美景。”
+Impact: Sushi is no longer the primary Day 4 dinner direction. Keep sushi only as a fallback if the user changes back.
 
 ## D030 Day 1 formal dinner direction
 
@@ -177,3 +177,11 @@ Status: formal dinner direction; exact branch pending confirmation.
 Changed: 2026-07-06.
 Reason: The user explicitly selected 千房 梅田周邊店 from the Day 1 Umeda dinner candidates.
 Impact: Day 1 dinner is no longer only a candidate list. Keep dinner in the Chibo / Umeda branch direction, but do not record a specific branch as final until Google Maps / official source / Tabelog confirms the best actual branch, hours, reservation rules, price, and walking route from Pokémon Center OSAKA.
+
+## D031 Day 4 Anniversary Dinner at PIERRE
+
+Decision: 2027-11-20 Day 4 dinner should be Anniversary Dinner at PIERRE, with a window seat / Osaka night view request.
+Status: formal dinner direction; reservation, menu, price, cancellation policy, and seat assignment pending confirmation.
+Changed: 2026-07-06.
+Reason: The user explicitly stated: “Anniversary Dinner Pierre的靠窗座位，盡享大阪夜景美景。”
+Impact: Day 4 dinner should be planned around PIERRE at InterContinental Osaka. Reservation notes must request an anniversary dinner, a window / Osaka night-view seat, and optionally an anniversary dessert message or photo support. The window seat is a request, not a guarantee, until confirmed by the restaurant.
