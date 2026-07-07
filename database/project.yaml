@@ -51,6 +51,15 @@ project:
         rate_name: "Ambassador Complimentary Weekend Night"
         total_twd: 65883.49
       checkout_adjusted_net_total_twd: 83845.73
+      planned_room_type:
+        requested: "1 King Premium Club Lounge Access City View"
+        usual_upgrade: "1 King Junior Suite with club lounge access"
+        note: "飯店回信表示通常會升等到 Junior Suite with club lounge access，但仍視房況而定。"
+      hotel_reply:
+        reservation_open_timing: "通常約入住前 10 個月開放；2027/11 預訂建議 2027/02 留意。"
+        consecutive_reservations: "同房型兩筆連住可盡量安排同一間房；若兩筆都訂含 Club Lounge Access 的房型，入住期間可持續使用 Club Lounge。"
+        f_and_b_credit_policy: "兩筆連住的 Food & Beverage credit 只會提供一次。"
+        early_check_in: "12:00 提早入住可視當天房況安排；若要保證，需在完成訂房後詢問付費方案與實際加價。"
     insurance_total_twd: 6900
     insurance_planned_purchase_date: 2027-11-05
     internet:

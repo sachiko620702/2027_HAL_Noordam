@@ -2,8 +2,8 @@ metadata:
   id: hotel_lounge
   title: "InterContinental Osaka 行政酒廊規劃"
   version: "V5.20.0"
-  status: "active_planning_baseline"
-  last_updated: "2026-07-06"
+  status: "active_planning_baseline_with_hotel_reply"
+  last_updated: "2026-07-07"
   maintained_by: "ChatGPT"
   language: "zh-Hant"
 
@@ -15,8 +15,24 @@ hotel:
 lounge_policy:
   breakfast_principle: "平常早餐以飯店行政酒廊為主；Day 3 木津市場日例外，不吃飯店早餐。"
   afternoon_tea_principle: "Day 1 抵達後希望使用行政酒廊下午茶；Day 4 也已正式安排行政酒廊下午茶，且 Day 4 午餐後會回飯店並在飯店附近活動。"
-  confirmation_status: "PENDING_OFFICIAL_ANNOUNCEMENT"
-  caveat: "2027 行政酒廊開放時段、入住日是否可於正式入住前使用、房型禮遇、同行者資格與餐飲內容仍需向飯店再次確認。"
+  confirmation_status: "PARTIALLY_CONFIRMED_BY_HOTEL_REPLY"
+  caveat: "飯店已回覆預訂開放時間、房型升等與 12:00 提早入住可付費保證的方向；2027 行政酒廊開放時段、入住日是否可於正式入住前使用、同行者資格與餐飲內容仍需向飯店再次確認。"
+
+hotel_reply:
+  received_date: "2026-07-07"
+  reply_status: "PARTIALLY_CONFIRMED"
+  reservation_open_timing: "通常約入住前 10 個月開放；2027/11 預訂可先於 2027/02 左右留意。"
+  planned_room_type:
+    requested: "1 King Premium Club Lounge Access City View"
+    usual_upgrade: "1 King Junior Suite with club lounge access"
+    note: "飯店表示通常會升等到 Junior Suite with club lounge access，但仍以當下房況為準。"
+  consecutive_reservations:
+    same_room_policy: "若兩筆連住訂的是同房型，飯店會盡量安排同一間房。"
+    lounge_access_policy: "若兩筆連住都訂含 Club Lounge Access 的房型，入住期間可持續使用 Club Lounge。"
+    f_and_b_credit_policy: "兩筆連住的 Food & Beverage credit 只會提供一次。"
+  early_check_in:
+    target_time: "12:00"
+    policy: "可視當天房況協助安排；若要保證，可在訂房後詢問付費提早入住方案，但實際加價需完成訂房後才能確認。"
 
 planned_lounge_uses:
   - date: "2027/11/17（三）"

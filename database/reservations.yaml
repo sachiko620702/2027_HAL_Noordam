@@ -1,10 +1,19 @@
 reservations:
   version: V5.11.0
-  last_updated: 2026-07-06
+  last_updated: 2026-07-07
   hotel:
     status: fixed
     name: InterContinental Osaka
-    confirmation_status: NEEDS_RECONFIRMATION
+    confirmation_status: PARTIALLY_CONFIRMED_BY_HOTEL_REPLY
+    planned_room_type:
+      requested: 1 King Premium Club Lounge Access City View
+      usual_upgrade: 1 King Junior Suite with club lounge access
+      note: Hotel replied that this booking usually upgrades to a Junior Suite with club lounge access, subject to availability.
+    hotel_reply:
+      reservation_open_timing: "Usually opens around 10 months before arrival; watch around 2027-02 for November 2027."
+      consecutive_reservations: "Same-room consecutive reservations are usually possible if both bookings use the same room type."
+      lounge_access_policy: "If both consecutive bookings are made with Club Lounge Access room types, lounge access can continue during the stay."
+      early_check_in: "12:00 early check-in can be offered for an additional charge after booking, depending on availability."
   usj:
     studio_pass: pending_official_announcement
     express_pass: pending_official_announcement

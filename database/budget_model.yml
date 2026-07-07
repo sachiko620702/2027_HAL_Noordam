@@ -7,7 +7,7 @@ metadata:
   maintained_by: "ChatGPT"
   currency: "TWD"
   travelers: 2
-  caveat: "本模型為 2026/07 依使用者提供價格與目前正式行程建立的暫估模型；2027 官方價格、航班票價、KKday 商品價格、USJ 票券、飯店房價與餐廳菜單仍需再次確認。V5.26.2 新增預約與購買時間軸，並將 EVA Air BR178 / BR129 兩人機票預算由 TWD 35,000 更新為 TWD 36,000。洲際酒店第二張住宿訂單會在退房時更新金額，低價那晚視為免費；Ambassador 續約 USD 250 先以外幣獨立追蹤，不硬轉 TWD。"
+  caveat: "本模型為 2026/07 依使用者提供價格與目前正式行程建立的暫估模型；2027 官方價格、航班票價、KKday 商品價格、USJ 票券、飯店房價與餐廳菜單仍需再次確認。V5.26.2 新增預約與購買時間軸，並將 EVA Air BR178 / BR129 兩人機票預算由 TWD 35,000 更新為 TWD 36,000。洲際酒店第二張住宿訂單會在退房時更新金額，低價那晚視為免費；Ambassador 續約 USD 250 先以外幣獨立追蹤，不硬轉 TWD。飯店回信已確認 1 King Premium Club Lounge Access City View 通常升等為 1 King Junior Suite with club lounge access，且同房型兩筆連住可盡量安排同房；12:00 提早入住可付費保證，但費用需完成訂房後再確認，尚未列入主預算。"
 
 trip_scope:
   dates: "2027/11/17（三）～2027/11/21（日）"
@@ -27,7 +27,7 @@ trip_scope:
   excluded_scope:
     - "精品包、珠寶、手錶等大額精品購物"
     - "USJ VIP Tour / Private VIP Tour"
-    - "未確認的飯店付費升等、保證提早入住或特殊加購"
+    - "飯店付費提早入住加價與特殊加購費用（尚未報價）"
     - "已降為備案的京都版 Day 3：京 鰻和 本店、天ぷら 京星、京都甜點伴手禮路線"
     - "InterContinental Ambassador 續約 USD 250 暫以外幣獨立追蹤，待匯率確認後再決定是否併入 TWD 主預算"
 
@@ -89,7 +89,7 @@ reservation_purchase_timeline:
   title: "建議版主預算"
   total_twd: 220292
   per_person_twd: 110146
-  note: "不含精品包、珠寶、手錶；不含尚未換算的 InterContinental Ambassador 續約 USD 250；購物預算已由 NT$40,000 下修為 NT$10,000；其他預算已由 NT$25,000 下修為 NT$15,000；住宿已按低價那晚免費後暫估為 NT$83,845.73（第一張單 NT$49,726.35，第二張單約 NT$34,119.38）；Day 4 NOKA 參考價以 JPY 38,500／兩人、匯率 0.2 換算為 NT$7,700（每人 NT$3,850）計；Day 3 壽司已指定 KKday #268366，單人 NT$1,541、兩人合計 NT$3,082；USJ Express Pass 7 與 Studio Pass 皆以單人價格估算後乘以兩人，USJ 類別合計 NT$25,000；園區餐飲與購物維持 NT$7,892；Day 3／Day 4 市區交通以西瓜卡搭地鐵為主，計程車僅作備援。"
+  note: "不含精品包、珠寶、手錶；不含尚未換算的 InterContinental Ambassador 續約 USD 250；購物預算已由 NT$40,000 下修為 NT$10,000；其他預算已由 NT$25,000 下修為 NT$15,000；住宿已按低價那晚免費後暫估為 NT$83,845.73（第一張單 NT$49,726.35，第二張單約 NT$34,119.38）；飯店回信已確認 1 King Premium Club Lounge Access City View 通常升等為 1 King Junior Suite with club lounge access，且兩筆同房型連住可盡量安排同房；12:00 提早入住可付費保證，但費用需訂房後確認，未列入主預算；Day 4 NOKA 參考價以 JPY 38,500／兩人、匯率 0.2 換算為 NT$7,700（每人 NT$3,850）計；Day 3 壽司已指定 KKday #268366，單人 NT$1,541、兩人合計 NT$3,082；USJ Express Pass 7 與 Studio Pass 皆以單人價格估算後乘以兩人，USJ 類別合計 NT$25,000；園區餐飲與購物維持 NT$7,892；Day 3／Day 4 市區交通以西瓜卡搭地鐵為主，計程車僅作備援。"
   categories:
     - category: "交通"
       amount_twd: 55664
@@ -165,7 +165,7 @@ reservation_purchase_timeline:
 
 pending_reconfirmation:
   - "EVA Air BR178 / BR129 2027/11 官方班表、票價、行李與訂位狀態。"
-  - "InterContinental Ambassador 續約費、BOGO 使用規則、房型升等與 2027 住宿方案。"
+  - "InterContinental Ambassador 續約費、BOGO 使用規則與 2027 住宿方案；12:00 提早入住加價方案與實際費用。"
   - "KKday #129909 2027/11 機場接送價格、車型、行李限制與可訂狀態。"
   - "KKday #536220 2027/11 飯店 ↔ USJ 接送價格、20KM 範圍、接送點與可訂狀態；購買日期待補。"
   - "InterContinental Osaka 2027/11 房價、BOGO、行政酒廊房型與提早入住費用。"

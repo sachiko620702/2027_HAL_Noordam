@@ -28,6 +28,7 @@
 - 早餐原則：平常早餐以飯店行政酒廊為主；Day 3 木津市場日例外，不吃飯店早餐，改吃木津市場早段輕食／早午餐。
 - Day 1 正式確認：抵達飯店後目標使用 InterContinental Osaka 行政酒廊下午茶；下午茶後先休息一下，再去梅田 Pokémon Center OSAKA；晚餐選千房梅田周邊店；晚餐後回飯店。
 - Day 1 晚餐正式方向：千房 梅田周邊店 / Chibo Umeda-area branch。實際梅田周邊分店、評分、營業、預約、價格與排隊狀況待確認。
+- 飯店回信已確認：預計房型為 1 King Premium Club Lounge Access City View，通常可升等至 1 King Junior Suite with club lounge access；若兩筆連住為同房型，飯店會盡量安排同一間房；12:00 提早入住可視房況安排，若要保證可詢問付費方案。
 - Day 4 正式確認：活動範圍以心齋橋為主，包含 Pokémon Center OSAKA DX；午餐後回 InterContinental Osaka；下午在飯店附近活動，保留 InterContinental Osaka 行政酒廊下午茶。
 - Day 4 晚餐正式方向：NOKA Roast & Grill。預約時需確認套餐、主菜、90 分鐘暢飲與特價菜單日不適用條件；V5.22.0 的壽司晚餐偏好降為備案。
 - 機場接送：KIX 與 InterContinental Osaka 來回皆使用 KKday 商品 #129909；V5.24.0 暫估單程 NT$2,600、來回 NT$5,200；購買目標為 2027/10/10。

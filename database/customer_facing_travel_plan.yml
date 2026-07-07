@@ -14,6 +14,7 @@ trip_overview:
   duration: "五天四夜"
   travelers: 2
   hotel: "InterContinental Osaka"
+  planned_room_type: "1 King Premium Club Lounge Access City View（預計升等為 1 King Junior Suite with club lounge access）"
   style: "Luxury Slow Travel"
   flight_baseline: "去程 EVA Air BR178 暫採現行班表 06:30 TPE → 10:10 KIX；回程 EVA Air BR129 暫採現行班表 18:30 KIX → 20:30 TPE。2027/11 官方班表、票價與訂位狀態仍需確認。"
   budget_baseline: "V5.47.0 建議版主預算 NT$217,292／兩人；安全版 NT$250,000／兩人；安全上限 NT$280,000／兩人；Ambassador 續約 USD 250 與精品購物另計。住宿以低價那晚免費後的淨額估算，不用把臨時刷卡高峰值當主預算。Day 4 NOKA 以 JPY 38,500／兩人、匯率 0.2 換算成 NT$7,700／兩人。USJ 票券以兩人計算。"
@@ -28,6 +29,23 @@ trip_overview:
     - "Day 4 正式確認：心齋橋為主；Pokémon Center OSAKA DX；午餐後回 InterContinental Osaka；下午在飯店附近活動；NOKA Roast & Grill"
     - "V5.26.2 將 KKday #536220 飯店 ↔ USJ 接送補入 2027/10/10 購買批次"
     - "機票預算為 TWD 36,000；建議版主預算為 TWD 217,292／兩人。"
+
+hotel_reply_summary:
+  received_date: "2026-07-07"
+  faq:
+    reservation_open: "2027 年 11 月的訂房通常會在入住前約 10 個月開放，建議 2027/02 左右留意官網。"
+    room_upgrade: "若預訂 1 King Premium Club Lounge Access City View，通常會升等為 1 King Junior Suite with club lounge access。"
+    consecutive_reservations: "兩筆同房型連住可盡量安排同一間房；若兩筆都訂含 Club Lounge Access 的房型，入住期間可持續使用 Club Lounge。"
+    f_and_b_credit: "兩筆連住的 Food & Beverage credit 只會提供一次。"
+  hotel_policy_memo:
+    room_type_note: "預計房型為 1 King Premium Club Lounge Access City View；飯店回信表示通常可升等到 Junior Suite with club lounge access，但仍視房況而定。"
+    early_check_in: "12:00 提早入住可視當天房況安排；若要保證，可在訂房後詢問付費方案與實際加價。"
+    lounge_access: "只要訂的是含 Club Lounge Access 的房型，入住期間即可使用 Club Lounge。"
+  pre_trip_to_confirm:
+    - "確認 2027/02 左右開放後的實際可訂房型與價格。"
+    - "若拆成兩筆連住訂單，確認兩筆都維持同房型與 Club Lounge Access。"
+    - "確認 12:00 提早入住的加價方案、計費方式與預訂條件。"
+    - "確認續約 Ambassador 後是否仍適用預期的升等與 Club Lounge 使用方式。"
 
 itinerary_table:
   - date: "Day 1｜2027/11/17（三）"
@@ -69,7 +87,7 @@ todo_table:
   - item: "2026/12 續約洲際酒店大使 Ambassador"
     suggested_time: "2026/12"
     status: "已排程，USD 獨立追蹤"
-    reminder: "金額 USD 250；未指定匯率前不硬轉 TWD，不併入 TWD 主預算。需確認 BOGO、房型升等與會員禮遇。"
+    reminder: "金額 USD 250；未指定匯率前不硬轉 TWD，不併入 TWD 主預算。需確認 BOGO 與會員禮遇細節。"
   - item: "2027/09/17 搶購 USJ Express Pass 7"
     suggested_time: "2027/09/17"
     status: "已排程，待官方公布"
@@ -147,7 +165,7 @@ budget_summary:
 
 pending_items:
   - "EVA Air BR178 / BR129 2027/11 官方班表、票價、機型、航廈、行李與訂位狀態。"
-  - "InterContinental Ambassador 續約費、BOGO 使用規則、升等與會員禮遇。"
+  - "InterContinental Ambassador 續約費、BOGO 使用規則與會員禮遇。"
   - "KKday #129909 2027/11 機場接送價格、車型、行李限制、等待時間與可訂狀態。"
   - "KKday #536220 2027/11 飯店 ↔ USJ 接送價格、20KM 範圍、接送點、行李限制、等待時間與可訂狀態。"
   - "Day 1 千房梅田周邊店實際分店、營業、訂位、價格、評分與動線。"

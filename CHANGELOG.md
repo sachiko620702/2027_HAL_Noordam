@@ -1,5 +1,22 @@
 # CHANGELOG
 
+# V5.49.0 - 2026-07-07
+
+### Changed
+
+- Added the InterContinental Osaka hotel reply summary to the customer-facing docs and website, including the expected room type, usual upgrade path, same-room consecutive stay guidance, lounge access continuity, and paid 12:00 early check-in policy.
+- Updated `database/hotel_lounge.yml`, `database/reservations.yaml`, `database/project.yaml`, `database/customer_facing_travel_plan.yml`, `database/budget_model.yml`, `docs/15_顧客版資料/旅遊規劃三表.md`, `docs/15_顧客版資料/旅遊常用表格總覽.md`, `web/index.html`, `web/budget.js`, `README.md`, and `docs/14_自動同步狀態/每日同步狀態.md`.
+
+### Reason
+
+The user asked to turn the hotel reply into a reusable FAQ / policy memo / pre-trip checklist and to remember to update the website.
+
+### Impact
+
+- The planned room type is now recorded as `1 King Premium Club Lounge Access City View`.
+- The website now surfaces the hotel reply in both the hero area and a dedicated FAQ-style section.
+- The hotel and reservation records now distinguish between partial confirmation and items that still need reconfirmation.
+
 # V5.48.0 - 2026-07-07
 
 ### Changed
