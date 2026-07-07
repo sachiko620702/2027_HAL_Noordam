@@ -140,7 +140,7 @@ Track items that may change before departure.
 - credit card reward rules
 - hotel rate changes
 - USJ price changes
-- Active V5.26.1 recommended budget: TWD 295,664 for two travelers
+- Active V5.26.1 recommended budget: TWD 306,274 for two travelers
 - Active V5.26.1 safety ceiling: TWD 380,000 for two travelers
 - Luxury handbags, jewelry, and watches are excluded from the base budget and must be budgeted separately
 - InterContinental Ambassador renewal amount USD 250, tracked separately until conversion or actual card charge is known

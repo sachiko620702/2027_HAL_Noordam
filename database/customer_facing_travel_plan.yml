@@ -16,7 +16,7 @@ trip_overview:
   hotel: "InterContinental Osaka"
   style: "Luxury Slow Travel"
   flight_baseline: "去程 EVA Air BR178 暫採現行班表 06:30 TPE → 10:10 KIX；回程 EVA Air BR129 暫採現行班表 18:30 KIX → 20:30 TPE。2027/11 官方班表、票價與訂位狀態仍需確認。"
-  budget_baseline: "V5.26.1 建議版主預算 NT$295,664／兩人；安全上限 NT$380,000／兩人；Ambassador 續約 USD 250 與精品購物另計。"
+  budget_baseline: "V5.26.1 建議版主預算 NT$306,274／兩人；安全上限 NT$380,000／兩人；Ambassador 續約 USD 250 與精品購物另計。"
   confirmed_scope:
     - "USJ 一天"
     - "好吃優先餐飲"
@@ -27,7 +27,7 @@ trip_overview:
     - "Day 3 京都版、京 鰻和 本店與天ぷら 京星降為備案／歷史版本"
     - "Day 4 正式確認：心齋橋為主；Pokémon Center OSAKA DX；午餐後回 InterContinental Osaka；下午在飯店附近活動；PIERRE Anniversary Dinner"
     - "V5.26.1 將 KKday #536220 飯店 ↔ USJ 接送補入 2027/10/10 購買批次"
-    - "機票預算為 TWD 36,000；建議版主預算為 TWD 295,664／兩人。"
+    - "機票預算為 TWD 36,000；建議版主預算為 TWD 306,274／兩人。"
 
 itinerary_table:
   - date: "Day 1｜2027/11/17（三）"
@@ -107,9 +107,9 @@ budget_table:
     notes: "機票由 NT$35,000 更新為 NT$36,000；KKday #536220 已排入 2027/10/10 購買批次，但 2027 最終價格仍需確認。"
   - category: "住宿"
     description: "InterContinental Osaka 房費、行政酒廊早餐、Day 1／Day 3／Day 4 行政酒廊下午茶"
-    estimated_cost: "NT$105,000"
+    estimated_cost: "NT$115,610"
     paid: "NT$0（付款未確認）"
-    notes: "兩張住宿訂單，合計四晚；BOGO、早鳥、房型與 2027 lounge policy 需確認。Ambassador 續約 USD 250 另計。"
+    notes: "兩張住宿訂單，合計四晚；第一筆為 Preferred Partner Rate 20% Off，第二筆為 Ambassador Complimentary Weekend Night；實際 charges 合計 NT$115,609.84。Ambassador 續約 USD 250 另計。"
   - category: "購物"
     description: "Pokémon Center OSAKA、Pokémon Center OSAKA DX、日本橋動漫模型周邊、百貨小物"
     estimated_cost: "NT$10,000"
@@ -133,8 +133,8 @@ budget_table:
 
 budget_summary:
   controlled_total_twd: 286000
-  recommended_total_twd: 295664
-  recommended_per_person_twd: 147832
+  recommended_total_twd: 306274
+  recommended_per_person_twd: 153137
   safety_total_twd: 380000
   safety_per_person_twd: 190000
   known_scheduled_twd_payments_total: 43399

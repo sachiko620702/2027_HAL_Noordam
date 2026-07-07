@@ -19,7 +19,7 @@ budget_impact:
   flight_reference_twd_for_two:
     previous_amount_twd: 35000
     updated_amount_twd: 36000
-    impact: "交通預算 +TWD 1,000；建議版主預算由 TWD 324,664 調整為 TWD 325,664。"
+    impact: "交通預算 +TWD 1,000；主預算後續依住宿與購物確認調整，目前以 TWD 306,274 為基準。"
   ambassador_renewal:
     amount_usd: 250
     budget_policy: "以 USD 獨立追蹤；未指定匯率前不硬轉 TWD，不併入 TWD 主預算。"

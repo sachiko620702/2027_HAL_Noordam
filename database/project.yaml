@@ -40,6 +40,17 @@ project:
       planned_renewal_time: 2026/12
       renewal_amount_usd: 250
       budget_policy: USD tracked separately; do not convert to TWD until an exchange rate or actual card charge is confirmed
+    lodging:
+      hotel: InterContinental Osaka
+      booking_1:
+        dates: "2027-06-09 to 2027-06-11"
+        rate_name: "Preferred Partner Rate 20% Off"
+        total_twd: 49726.35
+      booking_2:
+        dates: "2027-06-11 to 2027-06-13"
+        rate_name: "Ambassador Complimentary Weekend Night"
+        total_twd: 65883.49
+      confirmed_total_twd: 115609.84
     insurance_total_twd: 6900
     insurance_planned_purchase_date: 2027-11-05
     internet:
@@ -112,8 +123,8 @@ project:
   budget:
     active_model: database/budget_model.yml
     version: V5.26.0
-    recommended_total_twd_for_two: 295664
-    recommended_per_person_twd: 147832
+    recommended_total_twd_for_two: 306274
+    recommended_per_person_twd: 153137
     safety_ceiling_twd_for_two: 380000
     luxury_shopping: separate
     ambassador_usd_250: tracked_separately_until_exchange_rate_or_actual_charge_confirmed

@@ -22,7 +22,7 @@ Source of truth: GitHub main branch
 - Day 4 dinner request: reserve PIERRE as an anniversary dinner and request a window table / Osaka night-view table. Seating cannot be treated as guaranteed until confirmed by the restaurant.
 - Day 4 sushi note: V5.22.0 recorded sushi as a preferred Day 4 dinner cuisine, but V5.23.0 supersedes it. Keep Day 4 sushi only as fallback if the user changes back.
 - Flight timing baseline: use the current BR178 / BR129 timetable for hourly planning: BR178 TPE 06:30 to KIX 10:10; BR129 KIX 18:30 to TPE 20:30. Official 2027-11 schedule, fare, aircraft, terminal, baggage, and booking status still require reconfirmation.
-- Budget baseline V5.26.0: recommended total TWD 295,664 for two travelers; safety ceiling TWD 380,000 for two travelers; InterContinental Ambassador renewal USD 250, luxury handbags, jewelry, and watches are excluded from the TWD base budget and should be tracked separately.
+- Budget baseline V5.26.0: recommended total TWD 306,274 for two travelers; safety ceiling TWD 380,000 for two travelers; InterContinental Ambassador renewal USD 250, luxury handbags, jewelry, and watches are excluded from the TWD base budget and should be tracked separately.
 
 ## Current Priorities
 
@@ -63,7 +63,7 @@ Source of truth: GitHub main branch
 - Airport transfer: use KKday product 129909 both ways between KIX and InterContinental Osaka. User-provided V5.24.0 reference is TWD 2,600 each way, TWD 5,200 round trip. V5.26.0 planned purchase date is 2027/10/10.
 - USJ Studio Pass purchase target: 2027/10/10; official 2027 price and inventory still need confirmation.
 - USJ transfer: use KKday product 536220 both ways between InterContinental Osaka and Universal Studios Japan. User-provided screenshot V5.24.0 reference is TWD 1,732 each way, TWD 3,464 round trip. V5.26.0 timeline does not assign a purchase date yet.
-- Recommended budget baseline: TWD 295,664 for two travelers; safety ceiling TWD 380,000; luxury shopping is separate; Ambassador renewal USD 250 is tracked separately.
+- Recommended budget baseline: TWD 306,274 for two travelers; safety ceiling TWD 380,000; luxury shopping is separate; Ambassador renewal USD 250 is tracked separately.
 - Day 1 sequence: after arrival at the hotel, the user wants to use afternoon tea, rest a bit, then go to Umeda Pokémon Center, eat dinner near the Pokémon Center, and return to the hotel.
 - Day 1 dinner: user selected 千房 梅田周邊店 / Chibo Umeda-area branch as the formal dinner direction; exact branch still requires confirmation.
 - Day 3 formal route: no Kyoto; Kizu Market brunch, move to Namba / Nipponbashi, Nipponbashi anime / model / merch shopping, Namba / Dotonbori / Shinsaibashi lunch, return to InterContinental Osaka, Executive Lounge afternoon tea, and Osaka city sushi dinner.
@@ -101,7 +101,7 @@ Current timeline:
 
 ## Budget Model
 
-The active budget model is `database/budget_model.yml` and the customer-readable document is `docs/06_預算/2027大阪自由行_預算模型_V5.26.0.md`. The current recommended TWD budget is TWD 295,664 for two travelers, with a safety ceiling of TWD 380,000. Luxury handbags, jewelry, watches, USJ VIP Tour / Private VIP Tour, guaranteed early check-in, paid upgrades, and Ambassador renewal USD 250 are excluded unless explicitly added later.
+The active budget model is `database/budget_model.yml` and the customer-readable document is `docs/06_預算/2027大阪自由行_預算模型_V5.26.0.md`. The current recommended TWD budget is TWD 306,274 for two travelers, with a safety ceiling of TWD 380,000. Luxury handbags, jewelry, watches, USJ VIP Tour / Private VIP Tour, guaranteed early check-in, paid upgrades, and Ambassador renewal USD 250 are excluded unless explicitly added later.
 
 ## Customer-Facing Output Rules
 

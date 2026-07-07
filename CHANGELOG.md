@@ -1,5 +1,25 @@
 # CHANGELOG
 
+# V5.35.0 - 2026-07-07
+
+### Changed
+
+- Replaced the estimated lodging baseline with the two confirmed InterContinental Osaka booking charges from the screenshots.
+- Updated the accommodation baseline to use NT$115,609.84 across the website, database, customer-facing docs, and active planning references.
+- Recalculated the recommended TWD budget from NT$295,664 to NT$306,274 for two travelers.
+- Updated `web/index.html`, `database/budget_model.yml`, `database/customer_facing_travel_plan.yml`, `docs/06_預算/2027大阪自由行_預算模型_V5.26.0.md`, `docs/15_顧客版資料/旅遊規劃三表.md`, `docs/15_顧客版資料/旅遊常用表格總覽.md`, `README.md`, `AGENTS.md`, `PROJECT_RULE.md`, `AI_CONTEXT.md`, `ROADMAP.md`, `WATCHLIST.md`, `database/project.yaml`, `database/reservation_purchase_timeline.yml`, `docs/03_預約購買/2027大阪自由行_預約購買時間軸_V5.26.0.md`, and `docs/14_自動同步狀態/每日同步狀態.md`.
+- Added version note `docs/13_版本與更新/V5.35.0_Web_Accommodation_Charge_Confirmation.md`.
+
+### Reason
+
+The user wanted the budget to use the actual booking amounts as the baseline and asked us not to keep inflating the estimate without basis.
+
+### Impact
+
+- The lodging line now reflects the confirmed two-booking structure and the exact charges shown in the screenshots.
+- The current recommended TWD budget is now based on confirmed accommodation charges instead of a placeholder estimate.
+- The safety ceiling remains unchanged at NT$380,000.
+
 # V5.34.0 - 2026-07-07
 
 ### Changed

@@ -36,7 +36,7 @@ Current user-confirmed planning inputs:
 - Internet: phone roaming for two people. Amount is TWD 499; planned application date is 2027/11/05.
 - Airport transfer: use KKday #129909 both ways between KIX and InterContinental Osaka. V5.24.0 user-provided reference is TWD 2,600 each way, TWD 5,200 round trip. Planned purchase date is 2027/10/10.
 - USJ transfer: use KKday #536220 both ways between InterContinental Osaka and Universal Studios Japan. V5.24.0 user-provided screenshot reference is TWD 1,732 each way, TWD 3,464 round trip. V5.26.0 timeline does not assign a purchase date yet.
-- Budget model: use V5.26.0 recommended total TWD 295,664 for two travelers and safety ceiling TWD 380,000. Luxury handbags, jewelry, watches, and Ambassador renewal USD 250 are separate.
+- Budget model: use V5.26.0 recommended total TWD 306,274 for two travelers and safety ceiling TWD 380,000. Luxury handbags, jewelry, watches, and Ambassador renewal USD 250 are separate.
 - Dining: restaurants should be selected because they are good. Michelin status does not matter either way and should not be used as the main planning label.
 - Customer-facing output: maintain a traveler/customer readable three-table format consisting of itinerary, pre-trip TODO list, and budget summary.
 

@@ -7,7 +7,7 @@ metadata:
   maintained_by: "ChatGPT"
   currency: "TWD"
   travelers: 2
-  caveat: "本模型為 2026/07 依使用者提供價格與目前正式行程建立的暫估模型；2027 官方價格、航班票價、KKday 商品價格、USJ 票券、飯店房價與餐廳菜單仍需再次確認。V5.26.0 新增預約與購買時間軸，並將 EVA Air BR178 / BR129 兩人機票預算由 TWD 35,000 更新為 TWD 36,000。洲際酒店大使續約 USD 250 先以外幣獨立追蹤，不硬轉 TWD。"
+  caveat: "本模型為 2026/07 依使用者提供價格與目前正式行程建立的暫估模型；2027 官方價格、航班票價、KKday 商品價格、USJ 票券、飯店房價與餐廳菜單仍需再次確認。V5.26.0 新增預約與購買時間軸，並將 EVA Air BR178 / BR129 兩人機票預算由 TWD 35,000 更新為 TWD 36,000。洲際酒店兩張住宿訂單已依實際 charges 確認；Ambassador 續約 USD 250 先以外幣獨立追蹤，不硬轉 TWD。"
 
 trip_scope:
   dates: "2027/11/17（三）～2027/11/21（日）"
@@ -87,9 +87,9 @@ reservation_purchase_timeline:
 
   recommended_budget:
   title: "建議版主預算"
-  total_twd: 295664
-  per_person_twd: 147832
-  note: "不含精品包、珠寶、手錶；不含尚未換算的 InterContinental Ambassador 續約 USD 250；購物預算已由 NT$40,000 下修為 NT$10,000，Day 3 壽司餐廳尚未選定，餐飲仍採暫估。"
+  total_twd: 306274
+  per_person_twd: 153137
+  note: "不含精品包、珠寶、手錶；不含尚未換算的 InterContinental Ambassador 續約 USD 250；購物預算已由 NT$40,000 下修為 NT$10,000；住宿已依兩筆實際 charges 調整為 NT$115,609.84（Preferred Partner Rate 20% Off 與 Ambassador Complimentary Weekend Night）；Day 3 壽司餐廳尚未選定，餐飲仍採暫估。"
   categories:
     - category: "交通"
       amount_twd: 55664
@@ -111,8 +111,8 @@ reservation_purchase_timeline:
         - item: "市區交通／臨時計程車緩衝"
           amount_twd: 6000
     - category: "住宿"
-      amount_twd: 105000
-      note: "InterContinental Osaka 兩張住宿訂單，合計四晚；Ambassador Weekend BOGO 或早鳥優惠成功時可再下修。Ambassador 續約 USD 250 另以外幣追蹤。"
+      amount_twd: 115610
+      note: "InterContinental Osaka 兩張住宿訂單，合計四晚；第一筆為 Preferred Partner Rate 20% Off，第二筆為 Ambassador Complimentary Weekend Night。實際 charges 合計 NT$115,609.84；Ambassador 續約 USD 250 另以外幣追蹤。"
     - category: "購物"
       amount_twd: 10000
       note: "寶可夢、動漫、模型、日本橋周邊、百貨小物；不含精品包。"
@@ -134,8 +134,8 @@ reservation_purchase_timeline:
     use_case: "購物克制、USJ 不買最高階 Express、住宿有優惠、Day 3 壽司餐廳價格中低時的低壓版本。"
   recommended:
     label: "建議版"
-    total_twd: 295664
-    per_person_twd: 147832
+    total_twd: 306274
+    per_person_twd: 153137
     use_case: "目前正式行程最適合作為主控預算的版本；另需追蹤 Ambassador 續約 USD 250。"
   safety:
     label: "安全版"
@@ -144,15 +144,16 @@ reservation_purchase_timeline:
     use_case: "住宿、USJ Express、Day 3 壽司、PIERRE、匯率或臨時加購偏高時的安全上限。"
 
   revision_notes:
-  previous_estimate_twd: 325664
-  corrected_to_recommended_twd: 295664
+  previous_estimate_twd: 295664
+  corrected_to_recommended_twd: 306274
   correction_reason:
     - "V5.26.0 使用者提供預約與購買時間軸。"
     - "機票預計 2026/11 購買，EVA Air BR178 / BR129 預算由 TWD 35,000 更新為 TWD 36,000。"
     - "交通預算上調 TWD 1,000，主預算由 TWD 324,664 調整為 TWD 325,664。"
     - "購物預算由 TWD 40,000 下修為 TWD 10,000，主預算由 TWD 325,664 調整為 TWD 295,664。"
+    - "兩張住宿訂單已依實際 charges 確認，住宿由 TWD 105,000 調整為 TWD 115,610，主預算由 TWD 295,664 調整為 TWD 306,274。"
     - "2026/12 續約 InterContinental Ambassador，金額 USD 250，先以外幣獨立追蹤。"
-  budget_positioning: "目前建議以 NT$296,000 作為 TWD 主預算記帳值，NT$380,000 作為安全上限；Ambassador USD 250 與精品購物另計。"
+  budget_positioning: "目前建議以 NT$306,274 作為 TWD 主預算記帳值，NT$380,000 作為安全上限；Ambassador USD 250 與精品購物另計。"
 
 pending_reconfirmation:
   - "EVA Air BR178 / BR129 2027/11 官方班表、票價、行李與訂位狀態。"
