@@ -1,5 +1,21 @@
 # CHANGELOG
 
+# V5.48.0 - 2026-07-07
+
+### Changed
+
+- Replaced the web budget section with JavaScript-driven rendering so the page now stores budget line-item details and computes totals, percentages, stacked bars, scenario widths, and summary cards dynamically.
+- Updated `web/index.html` and added `web/budget.js`.
+
+### Reason
+
+The user wanted the budget-related web content to be handled in JS, with only the detail records stored explicitly and the rest calculated automatically.
+
+### Impact
+
+- The website budget display is now driven by a single budget data object instead of repeated hard-coded totals.
+- The rendered totals, category percentages, and comparison bars stay synchronized with the stored line items.
+
 # V5.47.0 - 2026-07-07
 
 ### Changed

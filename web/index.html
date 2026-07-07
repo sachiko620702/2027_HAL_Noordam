@@ -58,8 +58,8 @@
         </div>
         <div class="side-card">
           <p class="side-label">Budget baseline</p>
-          <strong>NT$217,292</strong>
-          <span>兩人建議版；安全上限 NT$280,000。</span>
+          <strong data-budget-text="hero-recommended-total">由 JS 計算</strong>
+          <span data-budget-text="hero-recommended-note">載入後自動更新</span>
         </div>
         <div class="side-card">
           <p class="side-label">Next key dates</p>
@@ -102,8 +102,8 @@
         </article>
         <article class="info-card panel">
           <span>預算基準</span>
-          <strong>NT$217,292 / 2人</strong>
-          <p>精品購物與 Ambassador 續約另計。</p>
+          <strong data-budget-text="overview-recommended-total">由 JS 計算</strong>
+          <p data-budget-text="overview-recommended-note">載入後自動更新。</p>
         </article>
       </div>
     </section>
@@ -317,272 +317,7 @@
       <p class="section-note">
         先看上方圖表，再點開六大類預算樹狀清單。每一類都先顯示總額，展開後才會看到子項目。
       </p>
-
-      <div class="budget-summaries">
-        <article class="summary panel">
-          <span>建議版主預算</span>
-          <strong>NT$217,292</strong>
-          <p>兩人基本旅費的主控值。</p>
-        </article>
-        <article class="summary panel">
-          <span>安全上限</span>
-          <strong>NT$280,000</strong>
-          <p>若票券、餐廳或匯率提高，可用這個硬上限。</p>
-        </article>
-        <article class="summary panel">
-          <span>已排程且已有確定金額</span>
-          <strong>NT$43,399 + USD 250</strong>
-          <p>目前已知的固定支出。</p>
-        </article>
-      </div>
-
-      <div class="budget-visuals">
-        <article class="budget-chart panel">
-          <div class="chart-head">
-            <div>
-              <p class="chart-kicker">Budget mix</p>
-              <h3>建議版主預算結構</h3>
-            </div>
-            <strong>NT$217,292</strong>
-          </div>
-          <div class="stacked-budget" role="img" aria-label="預算結構長條圖，依序呈現交通、住宿、購物、飲食、USJ、其他的比例">
-            <span class="stacked-segment transport" style="--share: 25.6%"></span>
-            <span class="stacked-segment lodging" style="--share: 38.6%"></span>
-            <span class="stacked-segment shopping" style="--share: 4.5%"></span>
-            <span class="stacked-segment dining" style="--share: 12.8%"></span>
-            <span class="stacked-segment usj" style="--share: 11.5%"></span>
-            <span class="stacked-segment other" style="--share: 6.9%"></span>
-          </div>
-          <div class="legend-grid">
-            <div class="legend-item">
-              <span class="legend-swatch transport"></span>
-              <div>
-                <strong>交通</strong>
-                <span>NT$55,664 · 25.6%</span>
-              </div>
-            </div>
-            <div class="legend-item">
-              <span class="legend-swatch lodging"></span>
-              <div>
-                <strong>住宿</strong>
-                <span>NT$83,846 · 38.6%</span>
-              </div>
-            </div>
-            <div class="legend-item">
-              <span class="legend-swatch shopping"></span>
-              <div>
-                <strong>購物</strong>
-                <span>NT$10,000 · 4.6%</span>
-              </div>
-            </div>
-            <div class="legend-item">
-              <span class="legend-swatch dining"></span>
-              <div>
-                <strong>飲食</strong>
-                <span>NT$27,782 · 12.8%</span>
-              </div>
-            </div>
-            <div class="legend-item">
-              <span class="legend-swatch usj"></span>
-              <div>
-                <strong>USJ</strong>
-                <span>NT$25,000 · 11.5%</span>
-              </div>
-            </div>
-            <div class="legend-item">
-              <span class="legend-swatch other"></span>
-              <div>
-                <strong>其他</strong>
-                <span>NT$15,000 · 6.9%</span>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <article class="budget-chart panel">
-          <div class="chart-head">
-            <div>
-              <p class="chart-kicker">Budget range</p>
-              <h3>主預算與安全上限比較</h3>
-            </div>
-            <strong>上限 NT$280,000</strong>
-          </div>
-          <div class="scenario-bars" aria-label="節制版、建議版與安全版的預算比較">
-            <div class="scenario-row">
-              <div class="scenario-label">
-                <span>節制版</span>
-                <strong>NT$212,594</strong>
-              </div>
-              <div class="scenario-track">
-                <span class="scenario-fill controlled" style="width: 75.9%"></span>
-              </div>
-            </div>
-            <div class="scenario-row">
-              <div class="scenario-label">
-                <span>建議版</span>
-                <strong>NT$217,292</strong>
-              </div>
-              <div class="scenario-track">
-                <span class="scenario-fill recommended" style="width: 77.6%"></span>
-              </div>
-            </div>
-            <div class="scenario-row">
-              <div class="scenario-label">
-                <span>安全版</span>
-                <strong>NT$250,000</strong>
-              </div>
-              <div class="scenario-track">
-                <span class="scenario-fill safety" style="width: 89.3%"></span>
-              </div>
-            </div>
-          </div>
-          <p class="chart-note">已排程且已有確定金額的支出目前是 NT$43,399 + USD 250；USD 250 仍獨立追蹤，不直接併入 TWD 主預算。</p>
-        </article>
-      </div>
-
-      <div class="budget-tree panel">
-        <div class="tree-head">
-          <div>
-            <p class="chart-kicker">Budget tree</p>
-            <h3>六大類預算樹狀清單</h3>
-          </div>
-          <strong>點開看細項</strong>
-        </div>
-        <p class="tree-note">USD 250 的 InterContinental Ambassador 續約先獨立追蹤，不併入 TWD 主預算總額。</p>
-        <div class="tree-list">
-          <details class="tree-node" open>
-            <summary>
-              <div class="tree-summary-left">
-                <span class="tree-badge transport">交通</span>
-                <div>
-                  <strong>交通</strong>
-                  <p>機票、接送與市區移動</p>
-                </div>
-              </div>
-              <div class="tree-summary-right">
-                <strong>NT$55,664</strong>
-                <span>25.3%</span>
-              </div>
-            </summary>
-            <ul class="tree-leaf-list">
-              <li><span>長榮 TPE ↔ KIX 兩人來回</span><strong>NT$36,000</strong></li>
-              <li><span>KIX → InterContinental Osaka</span><strong>NT$2,600</strong></li>
-              <li><span>InterContinental Osaka → KIX</span><strong>NT$2,600</strong></li>
-              <li><span>InterContinental Osaka → USJ</span><strong>NT$1,732</strong></li>
-              <li><span>USJ → InterContinental Osaka</span><strong>NT$1,732</strong></li>
-              <li><span>Day 3 大阪市內地鐵／步行（西瓜卡）</span><strong>NT$3,000</strong></li>
-              <li><span>Day 4 心齋橋 → 飯店地鐵（西瓜卡）</span><strong>NT$2,000</strong></li>
-              <li><span>市區交通／地鐵與短程計程車備援</span><strong>NT$6,000</strong></li>
-            </ul>
-          </details>
-
-          <details class="tree-node">
-            <summary>
-              <div class="tree-summary-left">
-                <span class="tree-badge lodging">住宿</span>
-                <div>
-                  <strong>住宿</strong>
-                  <p>兩張住宿單，合計四晚與行政酒廊節奏</p>
-                </div>
-              </div>
-              <div class="tree-summary-right">
-                <strong>NT$83,846</strong>
-                <span>38.1%</span>
-              </div>
-            </summary>
-            <ul class="tree-leaf-list">
-              <li><span>Preferred Partner Rate 20% Off</span><strong>Jun 9 - Jun 11, 2027 · NT$49,726.35</strong></li>
-              <li><span>Ambassador Complimentary Weekend Night</span><strong>Jun 11 - Jun 13, 2027 · 約 NT$34,119（低價那晚免費後）</strong></li>
-              <li><span>InterContinental Osaka 兩張住宿訂單</span><strong>合計四晚 · 約 NT$83,846</strong></li>
-              <li><span>InterContinental Ambassador 續約</span><strong>USD 250</strong></li>
-            </ul>
-          </details>
-
-          <details class="tree-node">
-            <summary>
-              <div class="tree-summary-left">
-                <span class="tree-badge shopping">購物</span>
-                <div>
-                  <strong>購物</strong>
-                  <p>寶可夢、動漫與百貨小物</p>
-                </div>
-              </div>
-              <div class="tree-summary-right">
-                <strong>NT$10,000</strong>
-                <span>4.5%</span>
-              </div>
-            </summary>
-            <ul class="tree-leaf-list">
-              <li><span>寶可夢、動漫模型、日本橋周邊、百貨小物</span><strong>NT$10,000</strong></li>
-            </ul>
-          </details>
-
-          <details class="tree-node">
-            <summary>
-              <div class="tree-summary-left">
-                <span class="tree-badge dining">飲食</span>
-                <div>
-                  <strong>飲食</strong>
-                  <p>千房、木津市場、壽司、NOKA</p>
-                </div>
-              </div>
-              <div class="tree-summary-right">
-                <strong>NT$27,782</strong>
-                <span>12.8%</span>
-              </div>
-            </summary>
-            <ul class="tree-leaf-list">
-              <li><span>Day 1 千房 梅田周邊店</span><strong>NT$4,000</strong></li>
-              <li><span>Day 3 木津市場早午餐</span><strong>NT$8,000</strong></li>
-              <li><span>Day 3 肉NOASATSU 壽司晚餐（KKday #268366）</span><strong>NT$3,082</strong></li>
-              <li><span>Day 4 NOKA Roast & Grill</span><strong>NT$7,700</strong></li>
-              <li><span>Day 5 飲料／午餐緩衝</span><strong>NT$5,000</strong></li>
-            </ul>
-          </details>
-
-          <details class="tree-node">
-            <summary>
-              <div class="tree-summary-left">
-                <span class="tree-badge usj">USJ</span>
-                <div>
-                  <strong>USJ</strong>
-                  <p>票券、園區餐飲與購物</p>
-                </div>
-              </div>
-              <div class="tree-summary-right">
-                <strong>NT$25,000</strong>
-                <span>11.4%</span>
-              </div>
-            </summary>
-            <ul class="tree-leaf-list">
-              <li><span>USJ Express Pass 7</span><strong>NT$4,365 - NT$5,754／人</strong></li>
-              <li><span>USJ Studio Pass</span><strong>NT$1,840 - NT$2,800／人</strong></li>
-              <li><span>園區餐飲與購物</span><strong>NT$7,892</strong></li>
-            </ul>
-          </details>
-
-          <details class="tree-node">
-            <summary>
-              <div class="tree-summary-left">
-                <span class="tree-badge other">其他</span>
-                <div>
-                  <strong>其他</strong>
-                  <p>保險、漫遊與預備金</p>
-                </div>
-              </div>
-              <div class="tree-summary-right">
-                <strong>NT$15,000</strong>
-                <span>6.3%</span>
-              </div>
-            </summary>
-            <ul class="tree-leaf-list">
-              <li><span>旅遊保險</span><strong>NT$6,900</strong></li>
-              <li><span>手機漫遊</span><strong>NT$499</strong></li>
-              <li><span>旅行用品、匯差與預備金</span><strong>NT$7,601</strong></li>
-            </ul>
-          </details>
-        </div>
-      </div>
+      <div id="budget-app"></div>
     </section>
 
     <section id="dining" class="section">
@@ -644,5 +379,6 @@
     <span>Source of truth: repository database</span>
     <span>Public site files are concentrated under <code>./web</code></span>
   </footer>
+  <script defer src="./budget.js"></script>
 </body>
 </html>
