@@ -77,9 +77,12 @@ If information is not confirmed, mark it as 待確認, 待官方公布, 暫估, 
 
 If daily maintenance changes anything, regenerate GitHub Pages outputs before commit and push:
 
+- `web/index.html`
 - root `index.md`
 - `docs/index.md`
 - `docs/14_自動同步狀態/每日同步狀態.md`
+
+The public travel site should live under `web/`; root and `docs/` homepages are only lightweight entry points.
 
 Use official sources first. When information is uncertain, mark it as NEEDS_RECONFIRMATION. When 2027 official information is not published yet, mark it as PENDING_OFFICIAL_ANNOUNCEMENT.
 

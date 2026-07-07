@@ -1,5 +1,26 @@
 # CHANGELOG
 
+## V5.27.0 - 2026-07-07
+
+### Changed
+
+- Consolidated the public travel website into `web/index.html` and `web/styles.css`.
+- Replaced root `index.md` and `docs/index.md` with lightweight entry pages that point to `web/`.
+- Added the travel-agency style customer-facing homepage with a stronger visual hierarchy, preparation reminder calendar, itinerary cards, budget summary, and dining spotlight sections.
+- Updated `scripts/daily_maintenance.py` so future syncs keep the root and `docs/` entry pages as lightweight pointers.
+- Updated README and PROJECT_RULE to reflect the `web/` publication layout.
+- Added version note `docs/13_版本與更新/V5.27.0_Web_Travel_Site.md`.
+
+### Reason
+
+The user requested that all GitHub Pages-facing files be centralized under `./web` and that the public site present the trip as a customer-facing travel-agency style page.
+
+### Impact
+
+- Public-facing content is now clearly separated from repository source data.
+- The `web/` folder holds the main site presentation files.
+- Root and `docs/` homepages now act only as pointers.
+
 ## V5.26.1 - 2026-07-07
 
 ### Changed
@@ -10,6 +31,9 @@
 - Updated WATCHLIST and ROADMAP to remove the previous “purchase date unassigned” status for KKday #536220.
 - Updated customer-facing tables, customer-facing database, README, GitHub Pages index, and docs index.
 - Added version note `docs/13_版本與更新/V5.26.1_KKday_USJ接送購買日補入.md`.
+- Added `docs/15_顧客版資料/旅遊常用表格總覽.md` as a working summary for common travel tables.
+- Added README, root `index.md`, and `docs/index.md` links to the new common tables summary.
+- Updated `docs/15_顧客版資料/旅遊常用表格總覽.md` with a calendar-style preparation reminder table for booking and purchase dates.
 
 ### Timeline impact
 

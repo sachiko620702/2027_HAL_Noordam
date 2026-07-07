@@ -924,6 +924,30 @@ title: 2027 大阪自由行
 """
 
 
+def build_pages_entry_stub(snapshot: Snapshot, docs_prefix: str) -> str:
+    web_home = docs_link(docs_prefix, "web/index.html")
+    if docs_prefix == "..":
+        tables_page = "15_顧客版資料/旅遊規劃三表.md"
+        summary_page = "15_顧客版資料/旅遊常用表格總覽.md"
+    else:
+        tables_page = "docs/15_顧客版資料/旅遊規劃三表.md"
+        summary_page = "docs/15_顧客版資料/旅遊常用表格總覽.md"
+    return f"""---
+title: 2027 大阪自由行
+---
+
+# 2027 大阪自由行
+
+公開網站已集中到 `web/`。
+
+- [前往旅遊網站首頁]({web_home})
+- [顧客版旅遊規劃三表]({tables_page})
+- [旅遊常用表格總覽]({summary_page})
+
+如果你是在找旅行社風格的顧客頁面，優先看 `{web_home}`。
+"""
+
+
 def build_docs_status_page(snapshot: Snapshot, report: dict) -> str:
     checked_at = report.get("metadata", {}).get("checked_at") or "pending"
     summary = report.get("summary", {})
@@ -988,8 +1012,8 @@ Checked at: {checked_at}
 
 
 def sync_github_pages(snapshot: Snapshot, report: dict, dry_run: bool, changed_files: list[Path]) -> None:
-    write_if_changed(ROOT_INDEX, build_pages_index(snapshot, report, "docs"), dry_run, changed_files)
-    write_if_changed(DOCS_INDEX, build_pages_index(snapshot, report, ""), dry_run, changed_files)
+    write_if_changed(ROOT_INDEX, build_pages_entry_stub(snapshot, ""), dry_run, changed_files)
+    write_if_changed(DOCS_INDEX, build_pages_entry_stub(snapshot, ".."), dry_run, changed_files)
     write_if_changed(DOCS_STATUS_PAGE, build_docs_status_page(snapshot, report), dry_run, changed_files)
 
 
