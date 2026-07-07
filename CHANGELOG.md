@@ -1,5 +1,58 @@
 # CHANGELOG
 
+## V5.26.0 - 2026-07-07
+
+### Changed
+
+- Added the formal reservation and purchase timeline database: `database/reservation_purchase_timeline.yml`.
+- Added the readable reservation and purchase timeline document: `docs/03_預約購買/2027大阪自由行_預約購買時間軸_V5.26.0.md`.
+- Added the V5.26.0 budget model document: `docs/06_預算/2027大阪自由行_預算模型_V5.26.0.md`.
+- Added the version update note: `docs/13_版本與更新/V5.26.0_預約購買時間軸.md`.
+- Updated README, AI_CONTEXT, PROJECT_RULE, AGENTS, DECISIONS, ROADMAP, WATCHLIST, project database, customer-facing tables, budget model, homepage files, and daily sync status.
+- Updated the EVA Air BR178 / BR129 flight budget reference from TWD 35,000 to TWD 36,000 for two travelers.
+- Updated the recommended TWD budget baseline from TWD 324,664 to TWD 325,664 for two travelers.
+- Added InterContinental Ambassador renewal as a separate USD-tracked item: USD 250 planned for 2026/12.
+- Added D034 Reservation and purchase timeline V5.26.0.
+- Added D035 Ambassador renewal tracking.
+- Updated D013 Flights and D032 Budget model V5.26.0.
+
+### Reservation / purchase timeline
+
+| 日期 | 項目 | 金額 |
+|---|---|---:|
+| 2026/11 | 買機票 EVA Air BR178／BR129 | 36,000 TWD |
+| 2026/12 | 續約洲際酒店大使 | 250 USD |
+| 2027/09/17 | 搶購 USJ Express Pass 7 | 待官方公布 |
+| 2027/09/17 | PIERRE Anniversary Dinner 訂位 | 待確認 |
+| 2027/10/10 | 買 KKday 機場接送 | 待確認 |
+| 2027/10/10 | 買 USJ Studio Pass | 待官方公布 |
+| 2027/11/05 | 旅遊保險 | 6,900 TWD |
+| 2027/11/05 | 申請漫遊 | 499 TWD |
+
+### Reason
+
+The user clarified that the required output should be a date-sorted purchase / reservation timeline rather than a broad TODO list, and provided the target schedule and amounts.
+
+### Impact
+
+- The project now has a dedicated reservation / purchase source file.
+- Flight budget increases by TWD 1,000.
+- Transportation budget increases from TWD 54,664 to TWD 55,664.
+- Recommended TWD budget increases from TWD 324,664 to TWD 325,664 for two travelers.
+- Recommended per-person TWD budget increases from TWD 162,332 to TWD 162,832.
+- Safety ceiling remains TWD 380,000 for two travelers.
+- InterContinental Ambassador renewal USD 250 is tracked separately and is not forcibly converted into TWD until an exchange rate or actual card charge is confirmed.
+- KKday #536220 hotel-USJ transfer remains a selected project transportation item, but V5.26.0 does not yet assign its purchase date.
+
+### Follow-up required
+
+- Confirm EVA Air BR178 / BR129 official 2027-11 schedule, fare, baggage, aircraft, terminal, and ticketing status before the 2026/11 purchase target.
+- Confirm InterContinental Ambassador renewal price, benefits, BOGO / Weekend Night rules, upgrade implications, and whether it affects the InterContinental Osaka stay plan.
+- Confirm USJ Express Pass 7 and Studio Pass 2027 official release dates, prices, and inventory.
+- Confirm PIERRE 2027/11/20 booking window, menu, price, service charge, dress code, cancellation policy, and seat request rules.
+- Confirm KKday #129909 2027-11 airport transfer price, vehicle, luggage, route, waiting time, and availability before 2027/10/10.
+- Decide whether KKday #536220 hotel-USJ transfer should be added to the V5.26.0 purchase timeline, possibly on 2027/10/10.
+
 ## V5.25.0 - 2026-07-06
 
 ### Changed
