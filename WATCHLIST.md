@@ -2,10 +2,25 @@
 
 Track items that may change before departure.
 
+## Reservation / Purchase Timeline
+
+- Active source: `database/reservation_purchase_timeline.yml`
+- 2026/11 EVA Air BR178 / BR129 ticket purchase target; current user-provided reference TWD 36,000 for two travelers
+- 2026/12 InterContinental Ambassador renewal target; current reference USD 250, tracked separately from TWD base budget
+- 2027/09/17 USJ Express Pass 7 purchase target; official 2027 release and inventory pending
+- 2027/09/17 PIERRE Anniversary Dinner reservation target; booking window and seat request rules pending
+- 2027/10/10 KKday #129909 airport transfer purchase target
+- 2027/10/10 USJ Studio Pass purchase target; official 2027 release and inventory pending
+- 2027/11/05 travel insurance purchase target; current reference TWD 6,900
+- 2027/11/05 phone roaming application target; current reference TWD 499
+- KKday #536220 hotel-USJ transfer purchase date remains unassigned in V5.26.0 timeline
+
 ## USJ
 
 - 2027 Studio Pass release
+- 2027 Studio Pass purchase target: 2027/10/10 if official inventory is available
 - 2027 Express Pass release
+- 2027 Express Pass 7 purchase target: 2027/09/17 if official inventory is available
 - VIP Experience availability
 - Private VIP Tour availability
 - Super Nintendo World timed entry rules
@@ -17,7 +32,8 @@ Track items that may change before departure.
 - EVA Air BR178 TPE to KIX official 2027-11 schedule
 - EVA Air BR129 KIX to TPE official 2027-11 schedule
 - Current planning baseline stability: BR178 06:30 TPE to 10:10 KIX; BR129 18:30 KIX to 20:30 TPE
-- EVA Air pricing; V5.24.0 user-provided budget reference is TWD 35,000 for two travelers round trip
+- EVA Air pricing; V5.26.0 user-provided budget reference is TWD 36,000 for two travelers round trip
+- Planned purchase time: 2026/11
 - aircraft type
 - terminal and check-in rules
 - baggage policy
@@ -27,6 +43,8 @@ Track items that may change before departure.
 ## Hotel
 
 - InterContinental Osaka rates
+- InterContinental Ambassador renewal target: 2026/12; reference USD 250
+- Ambassador renewal fee, benefits, BOGO / Weekend Night rules, room upgrade implications, and expiration timing
 - lounge policy
 - breakfast policy
 - early check-in pricing
@@ -35,6 +53,7 @@ Track items that may change before departure.
 - Executive Lounge afternoon tea 2027 hours, access rules, and food / beverage offering for 2027-11-19 and 2027-11-20
 - InterContinental Osaka 2027 restaurant lineup and PIERRE operating status
 - PIERRE 2027/11/20 dinner hours, menu, price, service charge, dress code, reservation window, cancellation policy, and seat request rules
+- PIERRE reservation target: 2027/09/17
 - PIERRE anniversary dinner request: window seat / Osaka night-view table, anniversary dessert message, small celebration option, and photo assistance
 
 ## Dining
@@ -59,7 +78,9 @@ Track items that may change before departure.
 ## Day 1 formal route
 
 - BR178 arrival timing and actual KIX exit time
+- BR178 / BR129 planned ticket purchase in 2026/11; TWD 36,000 reference
 - KKday #129909 KIX to InterContinental Osaka pickup time and V5.24.0 reference price TWD 2,600
+- KKday #129909 purchase target: 2027/10/10
 - Arrival-day Executive Lounge afternoon tea feasibility
 - Hotel rest block after afternoon tea
 - Pokémon Center OSAKA 2027-11-17 hours, entry rules, events, and limited goods
@@ -86,6 +107,7 @@ Track items that may change before departure.
 - InterContinental Osaka Executive Lounge afternoon tea 2027 hours and eligibility for 2027-11-20
 - Hotel / Grand Front Osaka nearby activity options after returning from Shinsaibashi
 - PIERRE Anniversary Dinner 2027/11/20 booking window, dinner hours, menu, price, service charge, dress code, and cancellation policy
+- PIERRE reservation target: 2027/09/17
 - PIERRE window seat / Osaka night-view request rules and whether it can be noted at booking
 - PIERRE anniversary dessert message, small celebration option, and photo support availability
 - Sushi fallback-only status if the user later changes back to sushi dinner for Day 4
@@ -106,17 +128,19 @@ Track items that may change before departure.
 ## Budget
 
 - JPY/TWD exchange rate
+- USD/TWD exchange rate for Ambassador renewal if the user later wants it included in TWD budget
 - credit card reward rules
 - hotel rate changes
 - USJ price changes
-- Active V5.25.0 recommended budget: TWD 324,664 for two travelers
-- Active V5.25.0 safety ceiling: TWD 380,000 for two travelers
+- Active V5.26.0 recommended budget: TWD 325,664 for two travelers
+- Active V5.26.0 safety ceiling: TWD 380,000 for two travelers
 - Luxury handbags, jewelry, and watches are excluded from the base budget and must be budgeted separately
-- EVA Air BR178 / BR129 fare and payment status; V5.24.0 reference TWD 35,000 for two travelers round trip
-- travel insurance amount TWD 6,900 and payment status
-- phone roaming amount TWD 499 for two people and carrier billing rules
-- KKday product #129909 airport transfer final price and booking rules; V5.24.0 reference TWD 2,600 each way, TWD 5,200 round trip
-- KKday product #536220 hotel-USJ transfer final price and booking rules; V5.24.0 reference TWD 1,732 each way, TWD 3,464 round trip
+- InterContinental Ambassador renewal amount USD 250, tracked separately until conversion or actual card charge is known
+- EVA Air BR178 / BR129 fare and payment status; V5.26.0 reference TWD 36,000 for two travelers round trip
+- travel insurance amount TWD 6,900 and payment status; planned purchase date 2027/11/05
+- phone roaming amount TWD 499 for two people and carrier billing rules; planned application date 2027/11/05
+- KKday product #129909 airport transfer final price and booking rules; V5.24.0 reference TWD 2,600 each way, TWD 5,200 round trip; planned purchase date 2027/10/10
+- KKday product #536220 hotel-USJ transfer final price and booking rules; V5.24.0 reference TWD 1,732 each way, TWD 3,464 round trip; purchase date not yet assigned in V5.26.0
 - Day 1 dinner near Pokémon Center OSAKA budget
 - Day 3 Osaka city transportation actual cost
 - Day 3 sushi dinner budget after restaurant selection
