@@ -7,7 +7,7 @@
 - Import current Markdown handbook into docs.
 - Clean YouTube candidate entries.
 - Build Osaka Amazing Pass candidate plan.
-- Maintain V5.26.2 budget model: recommended TWD 274,510 for two travelers, safety ceiling TWD 380,000, Ambassador renewal USD 250 and luxury shopping separate. Use the lodging net amount after the lower-price complimentary night is treated as free.
+- Maintain V5.26.2 budget model: recommended TWD 244,646 for two travelers, safety ceiling TWD 380,000, Ambassador renewal USD 250 and luxury shopping separate. Use the lodging net amount after the lower-price complimentary night is treated as free.
 - Track user-provided transportation references: flight TWD 36,000, airport transfer TWD 2,600 each way, USJ transfer TWD 1,732 each way.
 - Maintain current hourly itinerary using current BR178 / BR129 timetable baseline.
 - Keep homepage `index.md` and `docs/index.md` itinerary table in hourly format.
@@ -17,7 +17,7 @@
 - Add Day 3 Namba / Dotonbori / Shinsaibashi lunch candidates.
 - Confirm Day 3 Nipponbashi / Den Den Town / Ota Road store hours, events, and shopping fit.
 - Add Day 4 Shinsaibashi lunch candidates that allow returning to InterContinental Osaka after lunch.
-- Confirm Day 4 PIERRE Anniversary Dinner reservation workflow, booking window, menu, price, cancellation policy, dress code, and seat request wording.
+- Confirm Day 4 NOKA Roast & Grill reservation workflow, booking window, menu, price, cancellation policy, dress code, and seat request wording.
 
 ## 2026 Q4
 
@@ -30,7 +30,7 @@
 - Improve budget model when new official or booking-platform prices appear.
 - Expand taste-first Osaka restaurant candidate database.
 - Maintain Day 3 Osaka city formal itinerary source status: Kizu Market, Nipponbashi anime / models, Executive Lounge afternoon tea, Osaka sushi dinner.
-- Maintain Day 4 Shinsaibashi-centered route and PIERRE Anniversary Dinner planning status.
+- Maintain Day 4 Shinsaibashi-centered route and NOKA Roast & Grill planning status.
 
 ## 2027 Q1
 
@@ -39,7 +39,7 @@
 - Review Day 3 Osaka city sushi dinner candidates.
 - Review Day 3 Namba / Dotonbori / Shinsaibashi lunch candidates.
 - Review Day 4 Shinsaibashi lunch candidates.
-- Review Day 4 PIERRE Anniversary Dinner booking status and current restaurant details.
+- Review Day 4 NOKA Roast & Grill booking status and current restaurant details.
 - Update USJ official ticket and pass policy when available.
 - Review shopping targets.
 - Recheck the hourly itinerary against any updated BR178 / BR129 public schedules.
@@ -56,14 +56,14 @@
 - Recalculate Day 3 Osaka city transportation cost.
 - Recalculate Day 3 sushi dinner budget after restaurant selection.
 - Recalculate Day 4 Shinsaibashi-to-hotel return transport cost by metro vs taxi.
-- Recalculate Day 4 PIERRE Anniversary Dinner budget and optional nightcap cost.
+- Recalculate Day 4 NOKA Roast & Grill budget and optional nightcap cost.
 
 ## 2027 Q3
 
 - Start reservation preparation.
 - Confirm priority restaurant booking dates.
 - 2027/09/17: attempt to purchase USJ Express Pass 7 if official inventory is available.
-- 2027/09/17: attempt / submit PIERRE Anniversary Dinner reservation with anniversary dinner and window / Osaka night-view request.
+- 2027/09/17: attempt / submit NOKA Roast & Grill reservation with anniversary dinner, buffet package, and 90-minute drinks request.
 - Confirm airport transportation via KKday before the 2027/10/10 purchase target.
 - Confirm hotel-USJ transportation via KKday before the 2027/10/10 purchase target.
 - Prepare packing and payment checklist.
@@ -74,7 +74,7 @@
 - Confirm Day 3 Osaka sushi dinner reservation.
 - Confirm Day 4 Pokémon Center OSAKA DX hours, entry rules, and limited goods.
 - Confirm Day 4 Shinsaibashi lunch choice.
-- Confirm Day 4 PIERRE booking window, menu, price, service charge, dress code, cancellation policy, window / night-view seat request rules, anniversary dessert message, and photo support.
+- Confirm Day 4 NOKA booking window, menu, price, service charge, dress code, cancellation policy, package terms, anniversary dessert message, and photo support.
 
 ## 2027 Q4
 
@@ -91,5 +91,5 @@
 - Confirm travel insurance documents.
 - Final confirmation for Day 1 formal route: afternoon tea, hotel rest, Umeda Pokémon Center, dinner nearby, return to hotel.
 - Final confirmation for Day 3 formal route: Kizu Market brunch, Namba / Nipponbashi anime models and merch, hotel lounge afternoon tea, Osaka city sushi dinner.
-- Final confirmation for Day 4 formal route: Shinsaibashi-centered morning/lunch, return to hotel after lunch, Executive Lounge afternoon tea, hotel-nearby activities, PIERRE Anniversary Dinner with window / Osaka night-view request.
-- Final budget lock: compare confirmed costs against V5.26.2 recommended TWD 274,510 and safety ceiling TWD 380,000; handle Ambassador USD 250 separately unless converted later. Lodging should remain net of the lower-price complimentary night.
+- Final confirmation for Day 4 formal route: Shinsaibashi-centered morning/lunch, return to hotel after lunch, Executive Lounge afternoon tea, hotel-nearby activities, NOKA Roast & Grill.
+- Final budget lock: compare confirmed costs against V5.26.2 recommended TWD 244,646 and safety ceiling TWD 380,000; handle Ambassador USD 250 separately unless converted later. Lodging should remain net of the lower-price complimentary night.

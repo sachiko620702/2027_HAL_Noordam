@@ -19,7 +19,7 @@ budget_impact:
   flight_reference_twd_for_two:
     previous_amount_twd: 35000
     updated_amount_twd: 36000
-    impact: "交通預算 +TWD 1,000；主預算後續依住宿淨額與購物確認調整，目前以 TWD 274,510 為基準。"
+    impact: "交通預算 +TWD 1,000；主預算後續依住宿淨額、購物、其他預備金、Day 4 NOKA 參考價與 USJ 兩人計算確認調整，目前以 TWD 220,292 為基準。"
   ambassador_renewal:
     amount_usd: 250
     budget_policy: "以 USD 獨立追蹤；未指定匯率前不硬轉 TWD，不併入 TWD 主預算。"
@@ -35,10 +35,11 @@ budget_impact:
     - "KKday #536220 飯店 ↔ USJ 接送：V5.24.0 參考來回 TWD 3,464，2027 最終價格待確認。"
   unknown_amount_items:
     - "USJ Express Pass 7"
-    - "PIERRE Anniversary Dinner"
+    - "NOKA Roast & Grill"
     - "KKday 機場接送最終價"
     - "KKday 飯店 ↔ USJ 接送最終價"
     - "USJ Studio Pass"
+    - "KKday #268366 Day 3 大阪市內壽司晚餐"
 
 timeline:
   - sort_key: "2026-11-01"
@@ -87,12 +88,15 @@ timeline:
       - "Day 2｜2027/11/18"
     reconfirmation: "2027/11 USJ Express Pass 7 開賣日、票種內容、價格、適用設施、Super Nintendo World / Donkey Kong Country 規則待官方公布。"
     budget_category: "USJ"
+    reference_price_range_twd:
+      low: 4365
+      high: 5754
 
   - sort_key: "2027-09-17"
     display_date: "2027/09/17"
     action_type: "restaurant_reservation"
-    item: "PIERRE Anniversary Dinner 訂位"
-    target: "PIERRE / InterContinental Osaka"
+    item: "NOKA Roast & Grill 訂位"
+    target: "NOKA Roast & Grill / InterContinental Osaka"
     amount:
       value: null
       currency: "JPY/TWD"
@@ -100,11 +104,7 @@ timeline:
     status: "planned_date_pending_booking_window"
     related_trip_day:
       - "Day 4｜2027/11/20"
-    reservation_note_required:
-      - "Anniversary Dinner"
-      - "Window table / Osaka night-view table request"
-      - "Anniversary dessert message or small celebration option if available"
-    reconfirmation: "2027/11/20 營業、訂位開放日、菜單、價格、服務費、dress code、取消政策與座位 request 規則待確認；靠窗／夜景座位不保證。"
+    reconfirmation: "2027/11/20 營業、訂位開放日、套餐內容、主菜選擇、飲品、特價菜單日規則與取消政策待確認。"
     budget_category: "飲食"
 
   - sort_key: "2027-10-10"
@@ -160,6 +160,9 @@ timeline:
       - "Day 2｜2027/11/18"
     reconfirmation: "2027/11 Studio Pass 價格、入園規則、平台庫存與取消規則待官方公布。"
     budget_category: "USJ"
+    reference_price_range_twd:
+      low: 1840
+      high: 2800
 
   - sort_key: "2027-11-05"
     display_date: "2027/11/05"
@@ -194,4 +197,5 @@ timeline:
 maintenance_notes:
   - "本檔為 V5.26.2 預約／購買主控時間軸。"
   - "V5.26.2 已將 KKday #536220 飯店 ↔ USJ 接送併入 2027/10/10 購買批次。"
+  - "USJ 預算參考已拆成 Express Pass 7、Studio Pass、園區餐飲與購物三段。"
   - "如未來使用者調整日期或金額，先更新本 database，再同步 docs、預算模型與 CHANGELOG。"

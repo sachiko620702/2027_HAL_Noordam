@@ -18,11 +18,11 @@ Source of truth: GitHub main branch
 - Day 1 formal dinner: 千房 梅田周邊店 is selected; exact branch, hours, reservation rules, rating, price, and walking route from Pokémon Center OSAKA still require confirmation.
 - Day 3 formal itinerary: no Kyoto. Kizu Market brunch, Namba / Nipponbashi anime models and merch, return to InterContinental Osaka for rest and Executive Lounge afternoon tea, and Osaka city sushi dinner.
 - Day 3 superseded items: Kyoto sweets route, 京 鰻和 本店 lunch, 天ぷら 京星 dinner, Pokemon Center KYOTO, Kyoto International Manga Museum, and TABLEALL Reservation Request for Kyoboshi are fallback / historical only unless the user restores Kyoto.
-- Day 4 formal route: Shinsaibashi-centered morning / lunch area including Pokémon Center OSAKA DX; return to InterContinental Osaka after lunch; hotel / nearby activities in the afternoon; Executive Lounge afternoon tea; Anniversary Dinner at PIERRE inside InterContinental Osaka.
-- Day 4 dinner request: reserve PIERRE as an anniversary dinner and request a window table / Osaka night-view table. Seating cannot be treated as guaranteed until confirmed by the restaurant.
+- Day 4 formal route: Shinsaibashi-centered morning / lunch area including Pokémon Center OSAKA DX; return to InterContinental Osaka after lunch; hotel / nearby activities in the afternoon; Executive Lounge afternoon tea; Anniversary Dinner at NOKA Roast & Grill inside InterContinental Osaka.
+- Day 4 dinner request: reserve NOKA Roast & Grill as an anniversary dinner and request the buffet package with 90-minute drinks. Seating cannot be treated as guaranteed until confirmed by the restaurant.
 - Day 4 sushi note: V5.22.0 recorded sushi as a preferred Day 4 dinner cuisine, but V5.23.0 supersedes it. Keep Day 4 sushi only as fallback if the user changes back.
 - Flight timing baseline: use the current BR178 / BR129 timetable for hourly planning: BR178 TPE 06:30 to KIX 10:10; BR129 KIX 18:30 to TPE 20:30. Official 2027-11 schedule, fare, aircraft, terminal, baggage, and booking status still require reconfirmation.
-- Budget baseline V5.26.2: recommended total TWD 274,510 for two travelers; safety ceiling TWD 380,000 for two travelers; InterContinental Ambassador renewal USD 250, luxury handbags, jewelry, and watches are excluded from the TWD base budget and should be tracked separately. Lodging should use the net amount after the lower-price complimentary night is treated as free.
+- Budget baseline V5.26.2: recommended total TWD 244,646 for two travelers; safety ceiling TWD 380,000 for two travelers; InterContinental Ambassador renewal USD 250, luxury handbags, jewelry, and watches are excluded from the TWD base budget and should be tracked separately. Lodging should use the net amount after the lower-price complimentary night is treated as free.
 
 ## Current Priorities
 
@@ -30,7 +30,7 @@ Source of truth: GitHub main branch
 2. Track 2026/11 EVA Air BR178 / BR129 purchase target and TWD 36,000 budget.
 3. Track 2026/12 InterContinental Ambassador renewal target and USD 250 standalone budget.
 4. Track 2027/09/17 USJ Express Pass 7 purchase attempt and official release status.
-5. Track 2027/09/17 PIERRE Anniversary Dinner reservation window.
+5. Track 2027/09/17 NOKA Roast & Grill reservation window.
 6. Track 2027/10/10 KKday #129909 airport transfer purchase and USJ Studio Pass purchase target.
 7. Track 2027/11/05 insurance purchase and roaming activation.
 8. Daily price and open-status monitoring across watchlist sources.
@@ -49,8 +49,8 @@ Source of truth: GitHub main branch
 21. Keep the current hourly itinerary aligned with current flight baseline and later official 2027 airline updates.
 22. Confirm Day 1 InterContinental Osaka Executive Lounge afternoon tea access and the exact Chibo branch for Day 1 dinner.
 23. Confirm Day 4 Shinsaibashi lunch candidate and the post-lunch return-to-hotel route.
-24. Confirm PIERRE 2027/11/20 dinner booking window, menu, price, service charge, dress code, cancellation policy, and seat request rules.
-25. Prepare PIERRE reservation note for anniversary dinner, window seat / Osaka night view request, anniversary dessert message, and photo support if available.
+24. Confirm NOKA Roast & Grill 2027/11/20 dinner booking window, menu, price, service charge, dress code, cancellation policy, and package rules.
+25. Prepare NOKA Roast & Grill reservation note for anniversary dinner, buffet package, 90-minute drinks, anniversary dessert message, and photo support if available.
 
 ## User-Provided Confirmed Planning Inputs
 
@@ -59,11 +59,11 @@ Source of truth: GitHub main branch
 - Flight budget reference: TWD 36,000 for two travelers round trip, user-provided in V5.26.0; planned purchase time is 2026/11; reconfirm before ticketing.
 - InterContinental Ambassador renewal: planned for 2026/12 at USD 250; track separately from the TWD base budget until exchange rate or actual charge is confirmed.
 - USJ Express Pass 7 purchase target: 2027/09/17; official 2027 release date, price, inventory, and rules still need confirmation.
-- PIERRE Anniversary Dinner reservation target: 2027/09/17; note anniversary dinner and window table / Osaka night-view request.
+- NOKA Roast & Grill reservation target: 2027/09/17; note anniversary dinner, buffet package, and 90-minute drinks.
 - Airport transfer: use KKday product 129909 both ways between KIX and InterContinental Osaka. User-provided V5.24.0 reference is TWD 2,600 each way, TWD 5,200 round trip. V5.26.0 planned purchase date is 2027/10/10.
 - USJ Studio Pass purchase target: 2027/10/10; official 2027 price and inventory still need confirmation.
 - USJ transfer: use KKday product 536220 both ways between InterContinental Osaka and Universal Studios Japan. User-provided screenshot V5.24.0 reference is TWD 1,732 each way, TWD 3,464 round trip. V5.26.2 timeline does not assign a purchase date yet.
-- Recommended budget baseline: TWD 274,510 for two travelers; safety ceiling TWD 380,000; luxury shopping is separate; Ambassador renewal USD 250 is tracked separately.
+- Recommended budget baseline: TWD 244,646 for two travelers; safety ceiling TWD 380,000; luxury shopping is separate; Ambassador renewal USD 250 is tracked separately.
 - Day 1 sequence: after arrival at the hotel, the user wants to use afternoon tea, rest a bit, then go to Umeda Pokémon Center, eat dinner near the Pokémon Center, and return to the hotel.
 - Day 1 dinner: user selected 千房 梅田周邊店 / Chibo Umeda-area branch as the formal dinner direction; exact branch still requires confirmation.
 - Day 3 formal route: no Kyoto; Kizu Market brunch, move to Namba / Nipponbashi, Nipponbashi anime / model / merch shopping, Namba / Dotonbori / Shinsaibashi lunch, return to InterContinental Osaka, Executive Lounge afternoon tea, and Osaka city sushi dinner.
@@ -74,7 +74,7 @@ Source of truth: GitHub main branch
 - Dining: choose restaurants because they are good; Michelin status does not matter either way.
 - Customer-facing output: always maintain the three simple tables requested by the user: 行程表, 行前提醒／TODO LIST, 預算表.
 - Day 4 formal route: 2027-11-20 activity range should be Shinsaibashi-centered; after lunch return to InterContinental Osaka; afternoon should stay at / near the hotel; Executive Lounge afternoon tea remains included.
-- Day 4 dinner: Anniversary Dinner at PIERRE. Reservation note should request a window seat / Osaka night-view table; this is a request only until confirmed by the restaurant.
+- Day 4 dinner: Anniversary Dinner at NOKA Roast & Grill. Reservation note should request the buffet package and 90-minute drinks; this is a request only until confirmed by the restaurant.
 
 ## Reservation / Purchase Timeline
 
@@ -85,7 +85,7 @@ Current timeline:
 - 2026/11: buy EVA Air BR178 / BR129, TWD 36,000.
 - 2026/12: renew InterContinental Ambassador, USD 250.
 - 2027/09/17: buy / attempt USJ Express Pass 7, pending official release.
-- 2027/09/17: reserve PIERRE Anniversary Dinner.
+- 2027/09/17: reserve NOKA Roast & Grill.
 - 2027/10/10: buy KKday #129909 airport transfer.
 - 2027/10/10: buy USJ Studio Pass, pending official release.
 - 2027/11/05: buy travel insurance, TWD 6,900.
@@ -97,11 +97,11 @@ Current timeline:
 
 ## Day 4 Formal Plan
 
-2027-11-20 is formally Shinsaibashi-centered until lunch: Pokémon Center OSAKA DX / Daimaru Shinsaibashi and nearby shopping. After lunch, the route returns to InterContinental Osaka. Afternoon activities should stay at the hotel or nearby Grand Front Osaka / Umeda area, with Executive Lounge afternoon tea retained. Dinner is Anniversary Dinner at PIERRE inside InterContinental Osaka. The reservation should note the anniversary, request a window table / Osaka night-view table, and ask about an anniversary dessert message or small celebration option if available. The window / night-view table request is not guaranteed until confirmed by the restaurant.
+2027-11-20 is formally Shinsaibashi-centered until lunch: Pokémon Center OSAKA DX / Daimaru Shinsaibashi and nearby shopping. After lunch, the route returns to InterContinental Osaka. Afternoon activities should stay at the hotel or nearby Grand Front Osaka / Umeda area, with Executive Lounge afternoon tea retained. Dinner is Anniversary Dinner at NOKA Roast & Grill inside InterContinental Osaka. The reservation should note the anniversary, request the buffet package and 90-minute drinks, and ask about an anniversary dessert message or small celebration option if available. The package request is not guaranteed until confirmed by the restaurant.
 
 ## Budget Model
 
-The active budget model is `database/budget_model.yml` and the customer-readable document is `docs/06_預算/2027大阪自由行_預算模型_V5.26.0.md`. The current recommended TWD budget is TWD 274,510 for two travelers, with a safety ceiling of TWD 380,000. Luxury handbags, jewelry, watches, USJ VIP Tour / Private VIP Tour, guaranteed early check-in, paid upgrades, and Ambassador renewal USD 250 are excluded unless explicitly added later. Use the lodging net amount after the lower-price complimentary night is treated as free.
+The active budget model is `database/budget_model.yml` and the customer-readable document is `docs/06_預算/2027大阪自由行_預算模型_V5.26.0.md`. The current recommended TWD budget is TWD 244,646 for two travelers, with a safety ceiling of TWD 380,000. Luxury handbags, jewelry, watches, USJ VIP Tour / Private VIP Tour, guaranteed early check-in, paid upgrades, and Ambassador renewal USD 250 are excluded unless explicitly added later. Use the lodging net amount after the lower-price complimentary night is treated as free.
 
 ## Customer-Facing Output Rules
 

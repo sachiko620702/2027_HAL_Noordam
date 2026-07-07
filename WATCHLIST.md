@@ -8,7 +8,7 @@ Track items that may change before departure.
 - 2026/11 EVA Air BR178 / BR129 ticket purchase target; current user-provided reference TWD 36,000 for two travelers
 - 2026/12 InterContinental Ambassador renewal target; current reference USD 250, tracked separately from TWD base budget
 - 2027/09/17 USJ Express Pass 7 purchase target; official 2027 release and inventory pending
-- 2027/09/17 PIERRE Anniversary Dinner reservation target; booking window and seat request rules pending
+- 2027/09/17 NOKA Roast & Grill reservation target; booking window and package terms pending
 - 2027/10/10 KKday #129909 airport transfer purchase target
 - 2027/10/10 KKday #536220 hotel-USJ transfer purchase target; final 2027 route price, 20KM rule, pickup point, and luggage rules pending
 - 2027/10/10 USJ Studio Pass purchase target; official 2027 release and inventory pending
@@ -51,10 +51,10 @@ Track items that may change before departure.
 - room upgrade options
 - Day 1 Executive Lounge afternoon tea 2027 hours, arrival-day access rules, room benefit eligibility, companion policy, and food / beverage offering for 2027-11-17
 - Executive Lounge afternoon tea 2027 hours, access rules, and food / beverage offering for 2027-11-19 and 2027-11-20
-- InterContinental Osaka 2027 restaurant lineup and PIERRE operating status
-- PIERRE 2027/11/20 dinner hours, menu, price, service charge, dress code, reservation window, cancellation policy, and seat request rules
-- PIERRE reservation target: 2027/09/17
-- PIERRE anniversary dinner request: window seat / Osaka night-view table, anniversary dessert message, small celebration option, and photo assistance
+- InterContinental Osaka 2027 restaurant lineup and NOKA Roast & Grill operating status
+- NOKA Roast & Grill 2027/11/20 dinner hours, menu, price, service charge, dress code, reservation window, cancellation policy, and package rules
+- NOKA Roast & Grill reservation target: 2027/09/17
+- NOKA Roast & Grill anniversary dinner request: buffet package, 90-minute drinks, anniversary dessert message, small celebration option, and photo assistance
 
 ## Dining
 
@@ -62,9 +62,9 @@ Track items that may change before departure.
 - Day 3 Osaka city sushi dinner candidates near Umeda / Kitashinchi / Fukushima / Nakanoshima / north Namba
 - Day 3 Namba / Dotonbori / Shinsaibashi lunch candidates
 - Day 4 Shinsaibashi lunch candidates that allow returning to InterContinental Osaka after lunch
-- Day 4 PIERRE Anniversary Dinner reservation readiness
-- Whether PIERRE can note a window / Osaka night-view table request for an anniversary dinner
-- Whether PIERRE offers anniversary dessert messages, small celebration options, or photo support
+- Day 4 NOKA Roast & Grill reservation readiness
+- Whether NOKA Roast & Grill can note an anniversary dinner, buffet package, and 90-minute drinks request
+- Whether NOKA Roast & Grill offers anniversary dessert messages, small celebration options, or photo support
 - Day 3 previous Kyoto restaurants, 京 鰻和 本店 and 天ぷら 京星, are fallback / historical only unless user restores Kyoto
 - Taste-first Osaka restaurant candidates
 - Restaurant opening days and hours
@@ -114,10 +114,10 @@ Track items that may change before departure.
 - Shinsaibashi to InterContinental Osaka return route: Osaka Metro Midosuji Line vs direct taxi depending on shopping volume and fatigue
 - InterContinental Osaka Executive Lounge afternoon tea 2027 hours and eligibility for 2027-11-20
 - Hotel / Grand Front Osaka nearby activity options after returning from Shinsaibashi
-- PIERRE Anniversary Dinner 2027/11/20 booking window, dinner hours, menu, price, service charge, dress code, and cancellation policy
-- PIERRE reservation target: 2027/09/17
-- PIERRE window seat / Osaka night-view request rules and whether it can be noted at booking
-- PIERRE anniversary dessert message, small celebration option, and photo support availability
+- NOKA Roast & Grill 2027/11/20 booking window, dinner hours, menu, price, service charge, dress code, and cancellation policy
+- NOKA Roast & Grill reservation target: 2027/09/17
+- NOKA Roast & Grill package request rules and whether it can be noted at booking
+- NOKA Roast & Grill anniversary dessert message, small celebration option, and photo support availability
 - Sushi fallback-only status if the user later changes back to sushi dinner for Day 4
 - ADEE Lounge & Bar availability only if used as optional after-dinner drink / nightcap
 
@@ -140,7 +140,7 @@ Track items that may change before departure.
 - credit card reward rules
 - hotel rate changes
 - USJ price changes
-- Active V5.26.2 recommended budget: TWD 274,510 for two travelers
+- Active V5.26.2 recommended budget: TWD 244,646 for two travelers
 - Active V5.26.2 safety ceiling: TWD 380,000 for two travelers
 - Luxury handbags, jewelry, and watches are excluded from the base budget and must be budgeted separately
 - InterContinental Ambassador renewal amount USD 250, tracked separately until conversion or actual card charge is known
@@ -155,7 +155,7 @@ Track items that may change before departure.
 - Day 3 lunch budget near Namba / Dotonbori / Shinsaibashi
 - Day 4 Shinsaibashi lunch budget
 - Day 4 Shinsaibashi to InterContinental Osaka return transport cost
-- Day 4 PIERRE Anniversary Dinner budget, service charge, cancellation risk, and optional anniversary add-ons
+- Day 4 NOKA Roast & Grill budget, service charge, cancellation risk, and optional anniversary add-ons
 - Optional ADEE nightcap budget if added
 - Day 3 Kyoto route budget only if user restores Kyoto
 - Pokemon Center OSAKA / OSAKA DX / Nipponbashi shopping budget

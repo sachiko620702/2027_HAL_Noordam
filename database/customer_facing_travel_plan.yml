@@ -16,7 +16,7 @@ trip_overview:
   hotel: "InterContinental Osaka"
   style: "Luxury Slow Travel"
   flight_baseline: "去程 EVA Air BR178 暫採現行班表 06:30 TPE → 10:10 KIX；回程 EVA Air BR129 暫採現行班表 18:30 KIX → 20:30 TPE。2027/11 官方班表、票價與訂位狀態仍需確認。"
-  budget_baseline: "V5.26.2 建議版主預算 NT$274,510／兩人；安全上限 NT$380,000／兩人；Ambassador 續約 USD 250 與精品購物另計。住宿以低價那晚免費後的淨額估算，不用把臨時刷卡高峰值當主預算。"
+  budget_baseline: "V5.26.2 建議版主預算 NT$220,292／兩人；安全上限 NT$380,000／兩人；Ambassador 續約 USD 250 與精品購物另計。住宿以低價那晚免費後的淨額估算，不用把臨時刷卡高峰值當主預算。Day 4 NOKA 以 JPY 38,500／兩人、匯率 0.2 換算成 NT$7,700／兩人。USJ 票券以兩人計算。"
   confirmed_scope:
     - "USJ 一天"
     - "好吃優先餐飲"
@@ -25,9 +25,9 @@ trip_overview:
     - "Day 1 晚餐正式方向：千房 梅田周邊店；實際分店、訂位、價格與營業時間待確認"
     - "Day 3 正式覆蓋：不去京都；木津市場早午餐＋難波／日本橋動漫模型周邊＋回飯店休息與行政酒廊下午茶＋大阪市內壽司晚餐"
     - "Day 3 京都版、京 鰻和 本店與天ぷら 京星降為備案／歷史版本"
-    - "Day 4 正式確認：心齋橋為主；Pokémon Center OSAKA DX；午餐後回 InterContinental Osaka；下午在飯店附近活動；PIERRE Anniversary Dinner"
+    - "Day 4 正式確認：心齋橋為主；Pokémon Center OSAKA DX；午餐後回 InterContinental Osaka；下午在飯店附近活動；NOKA Roast & Grill"
     - "V5.26.2 將 KKday #536220 飯店 ↔ USJ 接送補入 2027/10/10 購買批次"
-    - "機票預算為 TWD 36,000；建議版主預算為 TWD 274,510／兩人。"
+    - "機票預算為 TWD 36,000；建議版主預算為 TWD 220,292／兩人。"
 
 itinerary_table:
   - date: "Day 1｜2027/11/17（三）"
@@ -44,16 +44,16 @@ itinerary_table:
     notes: "V5.26.2 時間軸設定 2027/09/17 搶購 Express Pass 7，2027/10/10 買 Studio Pass 與 KKday #536220 飯店 ↔ USJ 接送。"
   - date: "Day 3｜2027/11/19（五）"
     focus: "木津市場、日本橋動漫模型、飯店酒廊下午茶、大阪市內壽司晚餐"
-    main_places: "木津市場、難波、日本橋、Den Den Town、Ota Road、InterContinental Osaka Executive Lounge、大阪市內壽司餐廳待選"
-    transportation: "大阪市內地鐵、步行、短程計程車；不去京都；KKday #133661 不再作為 Day 3 主方案"
-    meals: "木津市場早午餐；難波／道頓堀／心齋橋午餐待選；行政酒廊下午茶；晚餐：大阪市內壽司"
-    notes: "正式行程已覆蓋為大阪市內版。京都版、京 鰻和 本店、天ぷら 京星降為備案。"
+    main_places: "木津市場、難波、日本橋、Den Den Town、Ota Road、InterContinental Osaka Executive Lounge、KKday #268366 大阪市內壽司晚餐"
+    transportation: "大阪市內地鐵（預計刷西瓜卡）、步行；保留少量短程計程車備援；不去京都；KKday #133661 不再作為 Day 3 主方案"
+    meals: "木津市場早午餐；難波／道頓堀／心齋橋午餐待選；行政酒廊下午茶；晚餐：KKday #268366 壽司"
+    notes: "正式行程已覆蓋為大阪市內版。京都版、京 鰻和 本店、天ぷら 京星降為備案；Day 3 壽司晚餐已指定 KKday #268366，價格與取消政策待確認。"
   - date: "Day 4｜2027/11/20（六）"
-    focus: "心齋橋 Pokémon Center、精品購物、午餐後回飯店、行政酒廊下午茶、PIERRE Anniversary Dinner"
-    main_places: "心齋橋、大丸心齋橋、Pokémon Center OSAKA DX、InterContinental Osaka Executive Lounge、Grand Front Osaka、PIERRE"
-    transportation: "上午到心齋橋；午餐後回 InterContinental Osaka；下午只在飯店或飯店附近活動；晚餐在飯店內 PIERRE"
-    meals: "行政酒廊早餐；心齋橋周邊午餐待確認；行政酒廊下午茶；晚餐：PIERRE Anniversary Dinner"
-    notes: "V5.26.2 時間軸設定 2027/09/17 處理 PIERRE 訂位；預約時需備註紀念日晚餐，並請求靠窗座位／大阪夜景座位；座位安排不保證。"
+    focus: "心齋橋 Pokémon Center、精品購物、午餐後回飯店、行政酒廊下午茶、NOKA Roast & Grill"
+    main_places: "心齋橋、大丸心齋橋、Pokémon Center OSAKA DX、InterContinental Osaka Executive Lounge、Grand Front Osaka、NOKA Roast & Grill"
+    transportation: "上午到心齋橋；午餐後以西瓜卡搭地鐵回 InterContinental Osaka；下午只在飯店或飯店附近活動；晚餐在飯店內 NOKA"
+    meals: "行政酒廊早餐；心齋橋周邊午餐待確認；行政酒廊下午茶；晚餐：NOKA Roast & Grill"
+    notes: "V5.26.2 時間軸設定 2027/09/17 處理 NOKA 訂位；套餐包含開胃菜自助餐、主菜（選）、甜點自助餐與咖啡或茶，飲品 90 分鐘暢飲；特價菜單日不適用。"
   - date: "Day 5｜2027/11/21（日）"
     focus: "退房、返回台灣"
     main_places: "InterContinental Osaka、關西機場、台北桃園機場"
@@ -74,10 +74,10 @@ todo_table:
     suggested_time: "2027/09/17"
     status: "已排程，待官方公布"
     reminder: "實際開賣日、價格、設施內容、Super Nintendo World / Donkey Kong Country 規則需依官方公布。"
-  - item: "2027/09/17 PIERRE Anniversary Dinner 訂位"
+  - item: "2027/09/17 NOKA Roast & Grill 訂位"
     suggested_time: "2027/09/17"
     status: "已排程，待訂位窗口"
-    reminder: "訂位時備註 anniversary dinner，請求 window table / Osaka night view，並詢問紀念日甜點訊息或小驚喜；座位不保證。"
+    reminder: "訂位時備註 anniversary dinner，確認套餐、主菜、90 分鐘暢飲與特價菜單日不適用條件。"
   - item: "2027/10/10 買 KKday 機場接送"
     suggested_time: "2027/10/10"
     status: "已排程，價格待確認"
@@ -116,27 +116,27 @@ budget_table:
     paid: "NT$0"
     notes: "不含精品包、珠寶、手錶；大額精品購物另計。"
   - category: "飲食"
-    description: "Day 1 千房晚餐、木津市場、Day 3 大阪市內午餐、Day 3 壽司晚餐、Day 4 心齋橋午餐與 PIERRE Anniversary Dinner"
-    estimated_cost: "NT$60,000"
+    description: "Day 1 千房晚餐、木津市場、Day 3 大阪市內午餐、Day 3 壽司晚餐、Day 4 心齋橋午餐與 NOKA Roast & Grill"
+    estimated_cost: "NT$30,782"
     paid: "NT$0（付款未確認）"
-    notes: "Day 3 壽司餐廳未定；PIERRE 菜單、價格、服務費、取消政策與紀念日加購選項待確認。"
+    notes: "Day 3 壽司已指定 KKday #268366，頁面顯示單人 NT$1,541、兩人合計 NT$3,082；NOKA 以每人 JPY 17,500 + 10%（兩人 JPY 38,500）按匯率 0.2 換算為 NT$7,700；套餐、飲品與特價菜單日條件待確認。"
   - category: "USJ"
     description: "Studio Pass、Express Pass、園區餐飲與購物"
-    estimated_cost: "NT$40,000"
+    estimated_cost: "NT$25,000"
     paid: "NT$0"
-    notes: "2027/11 官方票券價格待公布；V5.26.2 時間軸設定 2027/09/17 搶 Express Pass 7，2027/10/10 買 Studio Pass。"
+    notes: "Express Pass 7 以單人 NT$4,365 至 NT$5,754 估算，兩人為 NT$8,730 至 NT$11,508；Studio Pass 以單人 NT$1,840 至 NT$2,800 估算，兩人為 NT$3,680 至 NT$5,600；園區餐飲與購物 NT$7,892。2027/11 官方票券價格與活動仍需確認。"
   - category: "其他"
     description: "保險、漫遊、用品、匯差／海外手續費、預備金"
-    estimated_cost: "NT$25,000"
+    estimated_cost: "NT$15,000"
     paid: "NT$0（付款未確認）"
     notes: "含保險 TWD 6,900、漫遊 TWD 499。"
 
 budget_summary:
-  controlled_total_twd: 286000
-  recommended_total_twd: 274510
-  recommended_per_person_twd: 137255
-  safety_total_twd: 380000
-  safety_per_person_twd: 190000
+  controlled_total_twd: 215594
+  recommended_total_twd: 220292
+  recommended_per_person_twd: 110146
+  safety_total_twd: 250000
+  safety_per_person_twd: 125000
   known_scheduled_twd_payments_total: 43399
   known_scheduled_usd_payments_total: 250
   reference_price_items:
@@ -153,7 +153,7 @@ pending_items:
   - "Day 1 千房梅田周邊店實際分店、營業、訂位、價格、評分與動線。"
   - "Day 3 日本橋、Den Den Town、Ota Road 2027/11/19 營業時間、活動與採買動線。"
   - "Day 3 難波／道頓堀／心齋橋午餐候選。"
-  - "Day 3 大阪市內壽司晚餐候選、價位、預約方式、取消政策與交通。"
-  - "Day 4 PIERRE 2027/11/20 晚餐營業、訂位開放、菜單、價格、服務費、dress code 與取消政策。"
-  - "Day 4 PIERRE 靠窗座位／大阪夜景座位 request 是否可備註與實際安排機率。"
-  - "Day 4 心齋橋午餐候選與午餐後回飯店交通。"
+  - "Day 3 大阪市內壽司晚餐（KKday #268366）價位、預約方式、取消政策與交通。"
+  - "Day 4 NOKA 2027/11/20 晚餐營業、訂位開放、套餐、飲品、特價菜單日規則與取消政策。"
+  - "Day 4 NOKA 套餐與暢飲是否可備註，以及實際安排機率。"
+  - "Day 4 心齋橋午餐候選與午餐後以西瓜卡搭地鐵回飯店交通。"

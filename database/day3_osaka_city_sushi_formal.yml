@@ -18,6 +18,14 @@ formal_itinerary:
   theme: "木津市場＋日本橋動漫模型＋飯店酒廊下午茶＋大阪市內壽司晚餐"
   breakfast_policy: "Day 3 不吃飯店行政酒廊早餐，保留木津市場早午餐。"
   transport_policy: "不去京都；全日以大阪市內移動為主，使用地鐵、步行與短程計程車。"
+  dinner_selection:
+    status: "selected_price_confirmed_from_user_screenshot"
+    platform: "KKday"
+    selected_product_id: 268366
+    selected_product_url: "https://www.kkday.com/zh-tw/product/268366?cid=5193&ud1=DSA02&ud2=product&ud3=sa&ud4=tw&ud5=23050718592"
+    unit_price_twd: 1541
+    estimated_total_twd_for_two: 3082
+    note: "使用者提供的 KKday 頁面顯示單人價格 NT$1,541；以兩人同行估算合計 NT$3,082。取消政策與實際訂位條件仍需再確認。"
   items:
     - time: "08:00–09:30"
       plan: "木津市場早午餐"
@@ -56,14 +64,14 @@ formal_itinerary:
       note: "不再安排遠距離景點，避免 Day 3 再變成長日。"
     - time: "19:00–20:30"
       plan: "大阪市內壽司晚餐"
-      location: "梅田／北新地／福島／中之島／難波北側，待選"
-      status: "formal_dinner_direction_restaurant_pending"
-      note: "使用者指定晚餐吃壽司；需搜尋並確認正式壽司餐廳、價位、預約方式、取消政策與交通。"
+      location: "KKday #268366｜大阪市內壽司晚餐"
+      status: "formal_dinner_direction_selected_price_confirmed_from_user_screenshot"
+      note: "使用者已指定此 KKday 商品作為正式壽司晚餐來源；單人 NT$1,541、兩人合計 NT$3,082。預約方式、取消政策與交通仍需再確認。"
     - time: "20:30 後"
       plan: "回飯店休息"
       location: "InterContinental Osaka"
       status: "formal_fixed"
-      note: "隔天 Day 4 仍有心齋橋、行政酒廊下午茶與 PIERRE Anniversary Dinner。"
+      note: "隔天 Day 4 仍有心齋橋、行政酒廊下午茶與 NOKA Roast & Grill。"
 
 superseded_items:
   kyoto_route:
@@ -85,9 +93,9 @@ superseded_items:
     status: "fallback_only"
     note: "京都甜點伴手禮不再是正式 Day 3 內容；可改由大阪百貨甜點或日本橋周邊購物補足。"
 
-follow_up_required:
-  - "搜尋並建立 Day 3 大阪市內壽司晚餐候選，範圍以梅田、北新地、福島、中之島、難波北側為主。"
+  follow_up_required:
+  - "確認 KKday #268366 壽司晚餐的最終價格、預約方式、取消政策與交通安排。"
   - "確認 Day 3 難波／道頓堀／心齋橋午餐候選。"
   - "確認日本橋、Den Den Town、Ota Road 2027/11/19 主要商店營業時間、活動與排隊情況。"
-  - "重新估算 Day 3 大阪市內交通與壽司晚餐預算。"
+  - "若 KKday #268366 的實際訂位條件或總價與目前兩人 NT$3,082 估算不同，重新估算 Day 3 壽司晚餐預算。"
   - "若使用者之後想恢復京都，需重新確認京都版是否回到主方案。"

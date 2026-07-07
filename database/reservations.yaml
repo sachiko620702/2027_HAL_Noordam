@@ -14,6 +14,15 @@ reservations:
     planning_principle: taste_first
     michelin_status: neutral
     note: Choose good restaurants. Michelin status does not matter either way and should not be used as the main label.
+    day3_sushi:
+      selected_product_id: 268366
+      product_url: https://www.kkday.com/zh-tw/product/268366?cid=5193&ud1=DSA02&ud2=product&ud3=sa&ud4=tw&ud5=23050718592
+      service_type: osaka_city_sushi_dinner_reservation
+      status: selected_price_confirmed_from_user_screenshot
+      booking_date: 2027-11-19
+      unit_price_twd: 1541
+      budget_reference_twd_for_two: 3082
+      note: Day 3 formal sushi dinner has been fixed to the user-provided KKday product; the screenshot shows NT$1,541 per person, NT$3,082 for two, and the cancellation policy still needs confirmation.
   flights:
     airline: EVA Air
     status: selected_needs_official_schedule_confirmation

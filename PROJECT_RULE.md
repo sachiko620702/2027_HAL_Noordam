@@ -13,7 +13,7 @@ Do not change these without an explicit user request:
 - Luxury shopping
 - Day 1 formal sequence: arrival at InterContinental Osaka, target Executive Lounge afternoon tea, rest at the hotel, Pokemon Center OSAKA in Umeda, dinner at 千房 梅田周邊店 / Chibo Umeda-area branch, then return to the hotel
 - Day 3 formal itinerary: no Kyoto; Kizu Market brunch, Namba / Nipponbashi anime models and merch, return to InterContinental Osaka for rest and Executive Lounge afternoon tea, and Osaka city sushi dinner
-- Day 4 formal route: Shinsaibashi-centered activity range until lunch, including Pokemon Center OSAKA DX; return to InterContinental Osaka after lunch; afternoon at / near the hotel; Executive Lounge afternoon tea; Anniversary Dinner at PIERRE inside InterContinental Osaka with window / Osaka night-view seat request
+- Day 4 formal route: Shinsaibashi-centered activity range until lunch, including Pokemon Center OSAKA DX; return to InterContinental Osaka after lunch; afternoon at / near the hotel; Executive Lounge afternoon tea; Anniversary Dinner at NOKA Roast & Grill inside InterContinental Osaka
 
 Current user-confirmed planning inputs:
 
@@ -23,20 +23,20 @@ Current user-confirmed planning inputs:
 - InterContinental Ambassador renewal: planned for 2026/12, USD 250, tracked separately from the TWD base budget until exchange rate or actual charge is confirmed.
 - Reservation / purchase timeline: use `database/reservation_purchase_timeline.yml` as the active source.
 - USJ Express Pass 7 purchase target: 2027/09/17; price and release status pending official announcement.
-- PIERRE Anniversary Dinner reservation target: 2027/09/17; reservation notes should request an anniversary dinner, window seat / Osaka night-view table, and optional anniversary dessert message or small celebration support if available. Seating is not guaranteed until confirmed by the restaurant.
+- NOKA Roast & Grill reservation target: 2027/09/17; reservation notes should request an anniversary dinner, buffet package, 90-minute drinks, and optional anniversary dessert message or small celebration support if available. Seating is not guaranteed until confirmed by the restaurant.
 - USJ Studio Pass purchase target: 2027/10/10; official 2027 price and inventory still need confirmation.
 - Day 1 arrival sequence: use afternoon tea at the hotel, rest a bit, go to Umeda Pokémon Center, eat dinner at 千房 梅田周邊店 / Chibo Umeda-area branch, and return to the hotel. Exact Chibo branch still needs confirmation.
 - Day 3 sequence: Kizu Market brunch, move to Namba / Nipponbashi, anime / model / merch shopping in Nipponbashi, Namba / Dotonbori / Shinsaibashi lunch, return to InterContinental Osaka, Executive Lounge afternoon tea, and Osaka city sushi dinner.
 - Day 3 dinner request: dinner should be sushi in Osaka city. Restaurant candidate, price, reservation route, cancellation policy, and transportation need confirmation.
 - Day 3 superseded route: Kyoto sweets route, 京 鰻和 本店 lunch, 天ぷら 京星 dinner, Pokemon Center KYOTO, Kyoto International Manga Museum, and TABLEALL Reservation Request for Kyoboshi are fallback / historical only.
-- Day 4 sequence: Shinsaibashi / Daimaru Shinsaibashi / Pokémon Center OSAKA DX before and around lunch; after lunch return to InterContinental Osaka; afternoon at or near the hotel; dinner is PIERRE Anniversary Dinner.
+- Day 4 sequence: Shinsaibashi / Daimaru Shinsaibashi / Pokémon Center OSAKA DX before and around lunch; after lunch return to InterContinental Osaka; afternoon at or near the hotel; dinner is NOKA Roast & Grill.
 - Day 4 dinner request: reservation notes should request an anniversary dinner, window seat / Osaka night-view table, and optional anniversary dessert message or small celebration support if available. Seating is not guaranteed until confirmed by the restaurant.
-- Day 4 sushi caveat: V5.22.0 sushi preference is superseded by V5.23.0 PIERRE Anniversary Dinner. Keep Day 4 sushi only as fallback if the user changes back.
+- Day 4 sushi caveat: V5.22.0 sushi preference is superseded by V5.23.0 NOKA Roast & Grill. Keep Day 4 sushi only as fallback if the user changes back.
 - Travel insurance budget amount: TWD 6,900; planned purchase date is 2027/11/05; payment status needs confirmation.
 - Internet: phone roaming for two people. Amount is TWD 499; planned application date is 2027/11/05.
 - Airport transfer: use KKday #129909 both ways between KIX and InterContinental Osaka. V5.24.0 user-provided reference is TWD 2,600 each way, TWD 5,200 round trip. Planned purchase date is 2027/10/10.
 - USJ transfer: use KKday #536220 both ways between InterContinental Osaka and Universal Studios Japan. V5.24.0 user-provided screenshot reference is TWD 1,732 each way, TWD 3,464 round trip. V5.26.2 timeline does not assign a purchase date yet.
-- Budget model: use V5.26.2 recommended total TWD 274,510 for two travelers and safety ceiling TWD 380,000. Luxury handbags, jewelry, watches, and Ambassador renewal USD 250 are separate. Estimate lodging net of the lower-price complimentary night rather than the temporary checkout charge peak.
+- Budget model: use V5.26.2 recommended total TWD 244,646 for two travelers and safety ceiling TWD 380,000. Luxury handbags, jewelry, watches, and Ambassador renewal USD 250 are separate. Estimate lodging net of the lower-price complimentary night rather than the temporary checkout charge peak.
 - Dining: restaurants should be selected because they are good. Michelin status does not matter either way and should not be used as the main planning label.
 - Customer-facing output: maintain a traveler/customer readable three-table format consisting of itinerary, pre-trip TODO list, and budget summary.
 

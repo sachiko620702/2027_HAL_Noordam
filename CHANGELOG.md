@@ -1,5 +1,162 @@
 # CHANGELOG
 
+# V5.45.0 - 2026-07-07
+
+### Changed
+
+- Lowered the displayed safety budget from NT$380,000 to NT$250,000 so it is closer to the recommended budget while still leaving the hard ceiling intact.
+- Updated `database/budget_model.yml`, `database/customer_facing_travel_plan.yml`, `docs/15_顧客版資料/旅遊規劃三表.md`, `docs/15_顧客版資料/旅遊常用表格總覽.md`, `web/index.html`, `docs/14_自動同步狀態/每日同步狀態.md`, `README.md`, and `docs/13_版本與更新/V5.45.0_Safety_Budget_Right_Sizing.md`.
+
+### Reason
+
+The user pointed out that the safety budget was too far above the recommended budget.
+
+### Impact
+
+- The active safety version is now NT$250,000 for two travelers.
+- The absolute ceiling remains NT$380,000 for two travelers.
+
+# V5.44.0 - 2026-07-07
+
+### Changed
+
+- Reduced the USJ park dining and shopping line from NT$10,000 to NT$7,892, keeping the two-person Express Pass 7 and Studio Pass calculation unchanged.
+- Recalculated the active recommended TWD budget from NT$222,400 to NT$220,292 for two travelers after the USJ in-park spend adjustment.
+- Updated `database/project.yaml`, `database/budget_model.yml`, `database/reservation_purchase_timeline.yml`, `database/day4_shinsaibashi_hotel_dinner.yml`, `database/customer_facing_travel_plan.yml`, `docs/15_顧客版資料/旅遊規劃三表.md`, `docs/15_顧客版資料/旅遊常用表格總覽.md`, `web/index.html`, `docs/14_自動同步狀態/每日同步狀態.md`, and `docs/13_版本與更新/V5.44.0_USJ_Park_Dining_Shopping_Adjustment.md`.
+
+### Reason
+
+The user clarified that the USJ park dining and shopping budget should be NT$7,892.
+
+### Impact
+
+- The active recommended TWD budget is now NT$220,292 for two travelers.
+- USJ now reflects the lower in-park spend across the database, customer-facing docs, and the website.
+
+# V5.43.0 - 2026-07-07
+
+### Changed
+
+- Confirmed the USJ ticket prices are per person, so the active USJ budget now multiplies the Express Pass 7 and Studio Pass by two travelers before adding park dining and shopping.
+- Recalculated the active recommended TWD budget from NT$213,846 to NT$222,400 for two travelers after applying the two-person USJ calculation.
+- Updated `database/project.yaml`, `database/budget_model.yml`, `database/reservation_purchase_timeline.yml`, `database/day4_shinsaibashi_hotel_dinner.yml`, `database/customer_facing_travel_plan.yml`, `docs/15_顧客版資料/旅遊規劃三表.md`, `docs/15_顧客版資料/旅遊常用表格總覽.md`, `README.md`, `web/index.html`, `docs/14_自動同步狀態/每日同步狀態.md`, and `docs/13_版本與更新/V5.43.0_USJ_Two_Person_Budget_Adjustment.md`.
+
+### Reason
+
+The user clarified that the USJ prices are single-person prices and the budget should be calculated for two travelers.
+
+### Impact
+
+- The active recommended TWD budget is now NT$222,400 for two travelers.
+- USJ now stays aligned across the database, customer-facing docs, and the website.
+
+# V5.42.0 - 2026-07-07
+
+### Changed
+
+- Cleaned up the Day 4 dinner naming so the restaurant is consistently `NOKA Roast & Grill`, while keeping `anniversary dinner` as the descriptive request.
+- Recalculated the active recommended TWD budget from NT$244,646 to NT$213,846 for two travelers after the Day 4 NOKA reference was converted from JPY to TWD at 0.2.
+- Updated `database/project.yaml`, `database/budget_model.yml`, `database/day4_shinsaibashi_hotel_dinner.yml`, `database/reservation_purchase_timeline.yml`, `database/customer_facing_travel_plan.yml`, `docs/15_顧客版資料/旅遊規劃三表.md`, `docs/15_顧客版資料/旅遊常用表格總覽.md`, `PROJECT_RULE.md`, `ROADMAP.md`, `WATCHLIST.md`, `AI_CONTEXT.md`, `web/index.html`, and `docs/14_自動同步狀態/每日同步狀態.md`.
+- Added version note `docs/13_版本與更新/V5.42.0_NOKA_Roast_Grill_Name_And_Budget_Cleanup.md`.
+
+### Reason
+
+The user clarified that the restaurant name should be `NOKA Roast & Grill`, not `NOKA Roast & Grill Anniversary Dinner`, and that the NOKA amount should be converted to TWD rather than added as JPY.
+
+### Impact
+
+- Active planning docs now use the restaurant name consistently.
+- The active recommended budget remains at NT$213,846 for two travelers.
+
+# V5.41.0 - 2026-07-07
+
+### Changed
+
+- Updated Day 3 and Day 4 Osaka city transport to use Suica / IC card metro as the primary mode, with short taxi kept only as backup.
+- Synchronized the transport wording across `database/project.yaml`, `database/customer_facing_travel_plan.yml`, `database/budget_model.yml`, `database/itinerary_hourly.yml`, `database/day4_shinsaibashi_hotel_dinner.yml`, `docs/15_顧客版資料/旅遊規劃三表.md`, `docs/15_顧客版資料/旅遊常用表格總覽.md`, `web/index.html`, and the active planning references.
+- Added version note `docs/13_版本與更新/V5.41.0_Suica_Metro_Transport_Update.md`.
+
+### Reason
+
+The user clarified that Day 3 and Day 4 city transport will likely be paid with Suica while using the metro.
+
+### Impact
+
+- The travel plan now matches the intended metro-based city movement.
+- The existing transport budget remains conservatively buffered instead of being reduced immediately.
+
+# V5.40.0 - 2026-07-07
+
+### Changed
+
+- Updated the USJ budget from a single NT$40,000 placeholder to the user-provided breakdown: Express Pass 7 at NT$4,365 to NT$5,754, Studio Pass at NT$1,840 to NT$2,800, and park dining plus shopping at NT$10,000.
+- Recalculated the recommended TWD budget from NT$259,342 to NT$237,896 for two travelers after removing the old lump-sum USJ placeholder.
+- Updated `database/budget_model.yml`, `database/customer_facing_travel_plan.yml`, `database/project.yaml`, `database/reservation_purchase_timeline.yml`, `docs/03_預約購買/2027大阪自由行_預約購買時間軸_V5.26.0.md`, `docs/06_預算/2027大阪自由行_預算模型_V5.26.0.md`, `docs/14_自動同步狀態/每日同步狀態.md`, `docs/15_顧客版資料/旅遊規劃三表.md`, `docs/15_顧客版資料/旅遊常用表格總覽.md`, `web/index.html`, `README.md`, `AGENTS.md`, `PROJECT_RULE.md`, `AI_CONTEXT.md`, `ROADMAP.md`, and `WATCHLIST.md`.
+- Added version note `docs/13_版本與更新/V5.40.0_USJ_Budget_Adjustment.md`.
+
+### Reason
+
+The user asked to update the USJ budget and整理專案內檔案.
+
+### Impact
+
+- The active recommended TWD budget is now NT$237,896 for two travelers.
+- The website and documentation now present USJ as three distinct budget sub-items rather than one single line.
+
+# V5.39.0 - 2026-07-07
+
+### Changed
+
+- Confirmed the Day 3 Osaka city sushi dinner as KKday product `268366` with the user screenshot price of NT$1,541 per person and NT$3,082 for two.
+- Recalculated the recommended TWD budget from NT$276,260 to NT$259,342 for two travelers after replacing the Day 3 sushi placeholder with the confirmed KKday price.
+- Updated `database/day3_osaka_city_sushi_formal.yml`, `database/reservations.yaml`, `database/project.yaml`, `database/budget_model.yml`, `database/customer_facing_travel_plan.yml`, `docs/01_行程規劃/2027-11-19_Day3_大阪市內木津市場日本橋壽司正式行程_V5.25.0.md`, `docs/06_預算/2027大阪自由行_預算模型_V5.26.0.md`, `docs/15_顧客版資料/旅遊規劃三表.md`, `docs/15_顧客版資料/旅遊常用表格總覽.md`, `web/index.html`, `README.md`, `AGENTS.md`, `PROJECT_RULE.md`, `AI_CONTEXT.md`, `ROADMAP.md`, `WATCHLIST.md`, and `docs/14_自動同步狀態/每日同步狀態.md`.
+- Added version note `docs/13_版本與更新/V5.39.0_Day3_KKday268366_Sushi_Price_Confirmation.md`.
+
+### Reason
+
+The user provided a screenshot showing the Day 3 KKday sushi price.
+
+### Impact
+
+- The active recommended TWD budget is now NT$259,342 for two travelers.
+- Day 3 sushi now has a concrete per-person and total price in both the data model and the web UI.
+
+# V5.38.0 - 2026-07-07
+
+### Changed
+
+- Fixed Day 3 Osaka city sushi dinner to the user-provided KKday product `268366` and kept the provisional dining amount at NT$20,000 pending the product-page price confirmation.
+- Updated `database/day3_osaka_city_sushi_formal.yml`, `database/reservations.yaml`, `database/project.yaml`, `database/budget_model.yml`, `database/customer_facing_travel_plan.yml`, `database/reservation_purchase_timeline.yml`, `docs/01_行程規劃/2027-11-19_Day3_大阪市內木津市場日本橋壽司正式行程_V5.25.0.md`, `docs/15_顧客版資料/旅遊規劃三表.md`, `docs/15_顧客版資料/旅遊常用表格總覽.md`, `web/index.html`, `README.md`, `AGENTS.md`, `PROJECT_RULE.md`, `AI_CONTEXT.md`, `ROADMAP.md`, `WATCHLIST.md`, and `docs/14_自動同步狀態/每日同步狀態.md`.
+- Added version note `docs/13_版本與更新/V5.38.0_Day3_KKday268366_Sushi_Selection.md`.
+
+### Reason
+
+The user specified that Day 3 Osaka city sushi dinner should be this KKday product.
+
+### Impact
+
+- Day 3 now has a concrete sushi dinner source instead of an open-ended candidate list.
+- The dining budget remains provisionally unchanged until the KKday page price is confirmed.
+
+# V5.36.0 - 2026-07-07
+
+### Changed
+
+- Recalculated the recommended TWD budget from NT$274,510 to NT$264,510 for two travelers after lowering the "other" category by NT$10,000.
+- Lowered the "other" budget line from NT$25,000 to NT$15,000, with the reserve sub-line reduced from NT$17,601 to NT$7,601.
+- Updated `web/index.html`, `database/budget_model.yml`, `database/customer_facing_travel_plan.yml`, `docs/06_預算/2027大阪自由行_預算模型_V5.26.0.md`, `docs/15_顧客版資料/旅遊規劃三表.md`, `docs/15_顧客版資料/旅遊常用表格總覽.md`, `docs/03_預約購買/2027大阪自由行_預約購買時間軸_V5.26.0.md`, `database/project.yaml`, `database/reservation_purchase_timeline.yml`, `README.md`, `AGENTS.md`, `PROJECT_RULE.md`, `AI_CONTEXT.md`, `ROADMAP.md`, `WATCHLIST.md`, and `docs/14_自動同步狀態/每日同步狀態.md`.
+- Added version note `docs/13_版本與更新/V5.36.0_Web_Other_Budget_Adjustment.md`.
+
+### Reason
+
+The user asked to reduce the travel goods, exchange spread, and reserve budget by NT$10,000.
+
+### Impact
+
+- The website and customer-facing docs now reflect the lower "other" budget line.
+- The active recommended TWD budget is now NT$264,510 for two travelers.
+- The safety ceiling remains unchanged at NT$380,000.
+
 # V5.26.2 - 2026-07-07
 
 ### Changed
@@ -436,3 +593,21 @@ The user selected “千房 梅田周邊店” for Day 1 dinner after the Pokém
 ### Follow-up required
 
 - Confirm 2027/11/17 business hours, exact location, budget, booking rules, and walking time from Pokémon Center OSAKA.
+# V5.37.0 - 2026-07-07
+
+### Changed
+
+- Recalculated the recommended TWD budget from NT$264,510 to NT$276,260 for two travelers after raising Day 4 PIERRE Anniversary Dinner to the user-provided reference price of NT$31,750.
+- Raised the dining budget from NT$60,000 to NT$71,750 and updated the Day 4 PIERRE dinner line to NT$31,750.
+- Updated `database/day4_shinsaibashi_hotel_dinner.yml`, `web/index.html`, `database/budget_model.yml`, `database/customer_facing_travel_plan.yml`, `docs/06_預算/2027大阪自由行_預算模型_V5.26.0.md`, `docs/15_顧客版資料/旅遊規劃三表.md`, `docs/15_顧客版資料/旅遊常用表格總覽.md`, `database/project.yaml`, `database/reservation_purchase_timeline.yml`, `README.md`, `AGENTS.md`, `PROJECT_RULE.md`, `AI_CONTEXT.md`, `ROADMAP.md`, `WATCHLIST.md`, and `docs/14_自動同步狀態/每日同步狀態.md`.
+- Added version note `docs/13_版本與更新/V5.37.0_Web_PIERRE_Budget_Adjustment.md`.
+
+### Reason
+
+The user provided a screenshot for Day 4 PIERRE Anniversary Dinner showing a reference price of ¥31,750 including tax and excluding service charge.
+
+### Impact
+
+- The website and customer-facing docs now reflect the higher Day 4 dinner reference budget.
+- The active recommended TWD budget is now NT$276,260 for two travelers.
+- The safety ceiling remains unchanged at NT$380,000.
