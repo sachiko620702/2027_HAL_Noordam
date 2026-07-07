@@ -419,6 +419,114 @@ tbody tr:hover td {
   margin-bottom: 14px;
 }
 
+.itinerary-visual,
+.calendar-visual {
+  display: grid;
+  gap: 18px;
+  padding: 20px;
+  margin-bottom: 14px;
+}
+
+.rhythm-grid {
+  display: grid;
+  gap: 14px;
+}
+
+.rhythm-row {
+  display: grid;
+  gap: 10px;
+}
+
+.rhythm-label {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: baseline;
+}
+
+.rhythm-label span,
+.milestone strong {
+  color: var(--accent-2);
+  font-size: 0.9rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.rhythm-label strong {
+  font-size: 0.94rem;
+  color: var(--text);
+}
+
+.rhythm-track {
+  display: flex;
+  overflow: hidden;
+  height: 18px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.rhythm-segment {
+  flex: 0 0 var(--share);
+}
+
+.arrival {
+  background: linear-gradient(90deg, rgba(143, 180, 255, 0.9), rgba(111, 150, 238, 0.96));
+}
+
+.rest {
+  background: linear-gradient(90deg, rgba(192, 204, 219, 0.72), rgba(156, 171, 191, 0.9));
+}
+
+.departure {
+  background: linear-gradient(90deg, rgba(242, 203, 133, 0.85), rgba(214, 166, 78, 0.96));
+}
+
+.milestone-track {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.milestone {
+  position: relative;
+  display: grid;
+  gap: 8px;
+  padding: 16px 16px 16px 18px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.milestone::before {
+  content: "";
+  position: absolute;
+  left: 18px;
+  top: 15px;
+  bottom: 15px;
+  width: 1px;
+  background: linear-gradient(180deg, rgba(143, 180, 255, 0.55), rgba(242, 203, 133, 0.2));
+}
+
+.milestone-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 999px;
+  background: linear-gradient(180deg, #8fb4ff, #f2cb85);
+  box-shadow: 0 0 0 5px rgba(143, 180, 255, 0.08);
+}
+
+.milestone strong {
+  color: var(--gold);
+  letter-spacing: 0.14em;
+}
+
+.milestone span:last-child {
+  color: #d5deec;
+  font-size: 0.92rem;
+}
+
 .budget-visuals {
   display: grid;
   gap: 14px;

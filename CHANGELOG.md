@@ -1,5 +1,24 @@
 # CHANGELOG
 
+## V5.29.0 - 2026-07-07
+
+### Changed
+
+- Added an itinerary rhythm chart to `web/index.html` so the Day 1 to Day 5 pacing is visible at a glance.
+- Added a key-date milestone timeline to `web/index.html` so purchase and reservation dates read like a visual schedule.
+- Updated `web/styles.css` with the itinerary and milestone chart styles.
+- Added version note `docs/13_版本與更新/V5.29.0_Web_Itinerary_and_Key_Date_Charts.md`.
+
+### Reason
+
+The user asked whether there were other parts of the web page that were suitable for charts and requested those be added too.
+
+### Impact
+
+- The homepage now shows budget, trip rhythm, and key-date charts.
+- The calendar table and itinerary cards remain available for detailed reading.
+- No planning values were changed; this is a presentation-layer enhancement.
+
 ## V5.28.0 - 2026-07-07
 
 ### Changed
