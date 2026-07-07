@@ -1,5 +1,39 @@
 # CHANGELOG
 
+## V5.26.1 - 2026-07-07
+
+### Changed
+
+- Added KKday #536220 hotel-USJ transfer to the formal 2027/10/10 purchase batch.
+- Updated `database/reservation_purchase_timeline.yml` to V5.26.1.
+- Updated the readable reservation and purchase timeline document `docs/03_預約購買/2027大阪自由行_預約購買時間軸_V5.26.0.md` with V5.26.1 content.
+- Updated WATCHLIST and ROADMAP to remove the previous “purchase date unassigned” status for KKday #536220.
+- Updated customer-facing tables, customer-facing database, README, GitHub Pages index, and docs index.
+- Added version note `docs/13_版本與更新/V5.26.1_KKday_USJ接送購買日補入.md`.
+
+### Timeline impact
+
+| 日期 | 項目 | 金額 |
+|---|---|---:|
+| 2027/10/10 | 買 KKday USJ 接送｜KKday #536220 | 待確認（V5.24.0 參考 3,464 TWD） |
+
+### Reason
+
+The user instructed to proceed according to the recommended update sections. The previous recommendation was to decide whether KKday #536220 hotel-USJ transfer should be added to the 2027/10/10 purchase timeline.
+
+### Impact
+
+- 2027/10/10 purchase batch now includes KKday #129909 airport transfer, KKday #536220 hotel-USJ transfer, and USJ Studio Pass.
+- Recommended TWD budget remains TWD 325,664 for two travelers.
+- Safety ceiling remains TWD 380,000 for two travelers.
+- KKday #536220 was already included in the transportation budget; this update only assigns the purchase date.
+
+### Follow-up required
+
+- Confirm KKday #536220 2027/11/18 availability.
+- Confirm InterContinental Osaka → USJ and USJ → InterContinental Osaka route pricing.
+- Confirm USJ return pickup point, 20KM rule, vehicle, luggage, waiting time, and cancellation policy before 2027/10/10.
+
 ## V5.26.0 - 2026-07-07
 
 ### Changed
@@ -42,7 +76,7 @@ The user clarified that the required output should be a date-sorted purchase / r
 - Recommended per-person TWD budget increases from TWD 162,332 to TWD 162,832.
 - Safety ceiling remains TWD 380,000 for two travelers.
 - InterContinental Ambassador renewal USD 250 is tracked separately and is not forcibly converted into TWD until an exchange rate or actual card charge is confirmed.
-- KKday #536220 hotel-USJ transfer remains a selected project transportation item, but V5.26.0 does not yet assign its purchase date.
+- KKday #536220 hotel-USJ transfer remained a selected project transportation item, but V5.26.0 did not assign its purchase date.
 
 ### Follow-up required
 
@@ -51,7 +85,6 @@ The user clarified that the required output should be a date-sorted purchase / r
 - Confirm USJ Express Pass 7 and Studio Pass 2027 official release dates, prices, and inventory.
 - Confirm PIERRE 2027/11/20 booking window, menu, price, service charge, dress code, cancellation policy, and seat request rules.
 - Confirm KKday #129909 2027-11 airport transfer price, vehicle, luggage, route, waiting time, and availability before 2027/10/10.
-- Decide whether KKday #536220 hotel-USJ transfer should be added to the V5.26.0 purchase timeline, possibly on 2027/10/10.
 
 ## V5.25.0 - 2026-07-06
 
