@@ -1,10 +1,40 @@
 usj:
   visit_policy: one_day
   target_month: 2027_11
-  future_prices: pending
-  express_pass: pending
-  vip_group: pending
-  vip_private: pending
-  timed_entry: pending
+  future_prices: pending_official_announcement
+  studio_pass:
+    planned_purchase_date: 2027-10-10
+    price_status: pending_official_announcement
+    budget_reference_twd_for_two: 7108
+    note: "仍需確認 USJ VIP 8 小時是否包含 Studio Pass；V5.53.0 先保留 Studio Pass 另購預算。"
+  express_pass_7:
+    status: superseded_by_usj_vip_8h
+    previous_planned_purchase_date: 2027-09-17
+    note: "V5.53.0 依使用者指示，USJ Express Pass 7 改為 USJ VIP 8 小時。"
+  vip_8h:
+    status: selected_user_confirmed_reference
+    planned_purchase_or_reservation_date: 2027-09-17
+    reference_amount_twd: 87000
+    amount_source: "使用者提供 87,000；本檔先以 TWD 估算。"
+    includes:
+      - lunch
+      - dinner
+      - in_park_dining
+    pending_reconfirmation:
+      - official_2027_availability
+      - currency_and_final_price
+      - whether_studio_pass_is_included
+      - booking_window
+      - cancellation_policy
+      - meal_scope
+      - route_and_facility_scope
+  vip_group:
+    status: candidate_or_related_option
+  vip_private:
+    status: not_in_current_budget
+  timed_entry: pending_official_announcement
   nintendo_area: priority
   donkey_kong_area: priority
+  park_dining_and_shopping:
+    status: removed_as_separate_budget_line
+    reason: "USJ VIP 8 小時包含午餐、晚餐與園內餐飲；USJ 周邊購物與普通購物合併為 TWD 14,000。"
