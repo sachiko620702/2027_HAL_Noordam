@@ -1,5 +1,27 @@
 # CHANGELOG
 
+# V5.52.0 - 2026-07-08
+
+### Changed
+
+- Refreshed the public website under `web/` into a more travel-agency-style visual storytelling page.
+- Updated `web/index.html` with a stronger hero section, visual story cards, editorial-style daily itinerary cards, dining visual cards, and V5.52.0 footer wording.
+- Updated `web/styles.css` with a luxury dark visual system, poster-style hero, CSS illustration cards, visual grid, day-card media blocks, responsive layout, and preserved budget JS styles.
+- Added version note `docs/13_版本與更新/V5.52.0_Website_Visual_Storytelling_Refresh.md`.
+- Updated README, AI_CONTEXT, PROJECT_RULE, AGENTS, ROADMAP, WATCHLIST, and daily sync status for the V5.52.0 website presentation refresh.
+
+### Reason
+
+The user felt the website lacked a visual, image-rich travel-agency promotional feel and wanted it to look more like a customer-facing travel proposal page.
+
+### Impact
+
+- The public website now feels more like a travel proposal than an internal memo.
+- The homepage now has a stronger visual hierarchy, visual story section, image-like CSS cards, and editorial itinerary cards.
+- No itinerary decision was changed.
+- No budget value was changed.
+- The active travel data baseline remains V5.51.0: recommended budget NT$199,346 for two travelers, Day 3 dinner as 肉NOASATSU / KKday #268366, Day 4 dinner as NOKA Roast & Grill, and PIERRE / Day 4 sushi as fallback-only.
+
 # V5.51.0 - 2026-07-08
 
 ### Changed
