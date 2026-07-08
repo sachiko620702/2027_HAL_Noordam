@@ -2,42 +2,46 @@
 
 Track items that may change before departure.
 
-Current sync version: V5.52.0 Website Visual Storytelling Refresh.
+Current sync version: V5.53.0 USJ VIP 8h Budget Update.
 
 ## Website / GitHub Pages
 
-- V5.52.0 public website presentation under `web/`.
-- `web/index.html` travel-agency-style visual storytelling layout.
-- `web/styles.css` luxury dark visual system, CSS illustration cards, poster-style hero, responsive visual grid, and editorial day cards.
+- V5.53.0 public website presentation under `web/`.
+- `web/index.html` updated for USJ VIP 8h, revised budget, and current pending confirmations.
+- `web/budget.js` updated to compute NT$272,454 recommended budget and NT$280,000 safety / hard ceiling.
 - Confirm actual GitHub Pages rendering after deployment.
 - Confirm mobile layout readability for hero, visual story cards, itinerary cards, budget tree, and preparation table.
 - If real photos are added later, confirm image licensing, source attribution, file size, and repository storage strategy before use.
-- Keep website wording aligned with V5.51.0 travel data baseline unless the user explicitly changes the itinerary or budget.
 
 ## Reservation / Purchase Timeline
 
 - Active source: `database/reservation_purchase_timeline.yml`
 - 2026/11 EVA Air BR178 / BR129 ticket purchase target; current user-provided reference TWD 36,000 for two travelers
 - 2026/12 InterContinental Ambassador renewal target; current reference USD 250, tracked separately from TWD base budget
-- 2027/09/17 USJ Express Pass 7 purchase target; official 2027 release and inventory pending
+- 2027/09/17 USJ VIP 8h purchase / reservation target; current user-provided reference TWD 87,000
 - 2027/09/17 NOKA Roast & Grill reservation target; booking window and package terms pending
 - 2027/10/10 KKday #129909 airport transfer purchase target
 - 2027/10/10 KKday #536220 hotel-USJ transfer purchase target; final 2027 route price, 20KM rule, pickup point, and luggage rules pending
-- 2027/10/10 USJ Studio Pass purchase target; official 2027 release and inventory pending
+- 2027/10/10 USJ Studio Pass purchase target; official 2027 release and inventory pending; must confirm whether VIP 8h includes admission
 - 2027/11/05 travel insurance purchase target; current reference TWD 6,900
 - 2027/11/05 phone roaming application target; current reference TWD 499
 
 ## USJ
 
+- USJ VIP 8h official 2027 availability
+- USJ VIP 8h currency and final official price
+- Whether USJ VIP 8h includes Studio Pass / admission
+- USJ VIP 8h meal scope: lunch, dinner, in-park dining, drink coverage, exclusions
+- USJ VIP 8h booking window, cancellation policy, and inventory
 - 2027 Studio Pass release
-- 2027 Studio Pass purchase target: 2027/10/10 if official inventory is available
-- 2027 Express Pass release
-- 2027 Express Pass 7 purchase target: 2027/09/17 if official inventory is available
+- 2027 Studio Pass purchase target: 2027/10/10 if official inventory is available and if VIP 8h does not already include admission
+- Express Pass 7 status: superseded by USJ VIP 8h unless the user changes back
 - VIP Experience availability
-- Private VIP Tour availability
+- Private VIP Tour availability, not included in current budget
 - Super Nintendo World timed entry rules
 - Donkey Kong Country rules
 - Seasonal events
+- USJ park dining and shopping should not be revived as a separate budget line unless user explicitly changes back
 
 ## Flights
 
@@ -71,6 +75,7 @@ Current sync version: V5.52.0 Website Visual Storytelling Refresh.
 ## Dining
 
 - Day 1 dinner branch near Pokémon Center OSAKA in Umeda: 千房 梅田周邊店 branch confirmation pending
+- Day 2 USJ meal scope under VIP 8h; do not add a separate USJ dining budget unless official terms contradict the current assumption
 - Day 3 肉NOASATSU / KKday #268366 final price, booking route, cancellation policy, exact location, and transportation
 - Day 3 Namba / Dotonbori / Shinsaibashi lunch candidates
 - Day 4 Shinsaibashi lunch candidates that allow returning to InterContinental Osaka after lunch
@@ -88,6 +93,13 @@ Current sync version: V5.52.0 Website Visual Storytelling Refresh.
 - Michelin status is neutral and should not be used as the main planning label
 - Osaka Kizu Market 2027-11-19 business calendar and brunch restaurant candidates
 
+## Shopping
+
+- V5.53.0 merged USJ shopping and ordinary Pokémon / anime / Nipponbashi / department-store small goods into TWD 14,000
+- Luxury handbags, jewelry, and watches remain separate from the base travel budget
+- Do not revive the old TWD 10,000 shopping line as current active budget
+- Do not revive the old separate USJ park dining and shopping line as current active budget
+
 ## Day 1 formal route
 
 - BR178 arrival timing and actual KIX exit time
@@ -104,8 +116,9 @@ Current sync version: V5.52.0 Website Visual Storytelling Refresh.
 - KKday #536220 InterContinental Osaka → USJ purchase target: 2027/10/10
 - KKday #536220 USJ → InterContinental Osaka purchase target: 2027/10/10
 - KKday #536220 final 2027 route price, pickup time, pickup point, 20KM rule, vehicle, luggage rules, waiting time, and cancellation policy
-- USJ Studio Pass purchase target: 2027/10/10 if official inventory is available
-- USJ Express Pass 7 purchase target: 2027/09/17 if official inventory is available
+- USJ VIP 8h purchase / reservation target: 2027/09/17
+- USJ Studio Pass purchase target: 2027/10/10 if official inventory is available and if VIP 8h does not include admission
+- Express Pass 7 is not the current active plan
 
 ## Day 3 formal route
 
@@ -125,11 +138,15 @@ Current sync version: V5.52.0 Website Visual Storytelling Refresh.
 
 ## Budget
 
-- V5.51.0 recommended budget: TWD 199,346 for two travelers
-- Controlled scenario: TWD 194,648 for two travelers
-- Safety version: TWD 250,000 for two travelers
+- V5.53.0 recommended budget: TWD 272,454 for two travelers
+- Controlled scenario: TWD 267,756 for two travelers
+- Safety version: TWD 280,000 for two travelers
 - Hard ceiling: TWD 280,000 for two travelers
+- Remaining buffer from recommended to hard ceiling: TWD 7,546
+- USJ VIP 8h reference: TWD 87,000
+- USJ budget total: TWD 94,108 including Studio Pass reference
+- Merged general and USJ shopping: TWD 14,000
 - InterContinental Ambassador renewal USD 250 tracked separately
 - Luxury handbags, jewelry, and watches tracked separately
 - Recalculate only from `database/budget_model.yml`
-- Do not revive older totals such as TWD 217,292, TWD 237,896, TWD 244,646, TWD 325,664, or TWD 380,000 as current active totals
+- Do not revive older totals such as TWD 199,346, TWD 217,292, TWD 237,896, TWD 244,646, TWD 325,664, or TWD 380,000 as current active totals
