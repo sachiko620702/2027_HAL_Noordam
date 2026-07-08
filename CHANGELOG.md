@@ -1,5 +1,29 @@
 # CHANGELOG
 
+# V5.51.0 - 2026-07-08
+
+### Changed
+
+- Completed repository consistency cleanup after V5.50.0.
+- Aligned master control files, database files, customer-facing docs, roadmap, watchlist, and daily sync status around V5.51.0.
+- Set the active recommended budget to NT$199,346 for two travelers, controlled scenario to NT$194,648, safety version to NT$250,000, and hard ceiling to NT$280,000.
+- Confirmed Day 3 dinner as 肉NOASATSU / KKday #268366.
+- Confirmed Day 4 formal dinner as NOKA Roast & Grill.
+- Marked PIERRE and Day 4 sushi as fallback-only.
+- Confirmed KKday #536220 hotel-USJ transfer purchase target as 2027/10/10.
+- Added version note `docs/13_版本與更新/V5.51.0_Repository_Consistency_Cleanup.md`.
+
+### Reason
+
+The repository still had inconsistent post-V5.50.0 references across DECISIONS, AI_CONTEXT, PROJECT_RULE, AGENTS, customer-facing tables, and budget summaries.
+
+### Impact
+
+- Future AI work should use V5.51.0 as the active baseline unless the user explicitly changes the plan.
+- The current active TWD planning budget is NT$199,346 for two travelers.
+- Day 4 PIERRE remains documented as history / fallback only, not the active formal dinner.
+- This update is a consistency cleanup only and does not add a new itinerary decision.
+
 # V5.50.0 - 2026-07-08
 
 ### Changed
