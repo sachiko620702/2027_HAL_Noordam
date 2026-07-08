@@ -2,7 +2,7 @@
 
 This file records fixed project decisions, active formal decisions, and superseded / fallback decisions.
 
-Current sync version: V5.51.0 Repository Consistency Cleanup.
+Current sync version: V5.53.0 USJ VIP 8h Budget Update.
 
 ## D001 Travel dates
 
@@ -169,16 +169,16 @@ Decision history: 2027-11-20 Day 4 dinner was previously recorded as Anniversary
 Status: superseded by D036.  
 Impact: PIERRE remains a documented fallback-only option if NOKA cannot be booked or if the user explicitly restores PIERRE. It is not the current formal dinner.
 
-## D032 Budget model V5.51.0
+## D032 Budget model V5.53.0
 
-Decision: Use V5.51.0 budget model as the current planning baseline.  
+Decision: Use V5.53.0 budget model as the current planning baseline.  
 Status: active budget baseline.  
-Recommended total: TWD 199,346 for two travelers.  
-Controlled total: TWD 194,648 for two travelers.  
-Safety version: TWD 250,000 for two travelers.  
+Recommended total: TWD 272,454 for two travelers.  
+Controlled total: TWD 267,756 for two travelers.  
+Safety version: TWD 280,000 for two travelers.  
 Hard ceiling: TWD 280,000 for two travelers.  
 Separate tracking: Ambassador renewal USD 250, luxury handbags, jewelry, and watches.  
-Reason: V5.51.0 reconciles V5.50.0 lodging net total NT$65,900, the corrected customer-facing budget summary, and the latest website budget model.
+Reason: V5.53.0 replaces the previous USJ Express Pass 7 budget with USJ VIP 8h TWD 87,000, removes the separate USJ park dining / shopping line, and merges USJ shopping with general shopping at TWD 14,000.
 
 ## D033 Day 3 Osaka city sushi formal route
 
@@ -188,7 +188,7 @@ Dinner source: KKday #268366.
 Reference price: TWD 1,541 per person; TWD 3,082 for two travelers.  
 Pending: final reservation rules, cancellation policy, exact location, route, and 2027 availability.
 
-## D034 Reservation and purchase timeline V5.51.0
+## D034 Reservation and purchase timeline V5.53.0
 
 Decision: Maintain a formal reservation and purchase timeline using `database/reservation_purchase_timeline.yml` as the source database and `docs/03_預約購買/2027大阪自由行_預約購買時間軸_V5.26.0.md` as the readable document.  
 Status: active.  
@@ -198,7 +198,7 @@ Timeline:
 |---|---|---:|
 | 2026/11 | 買機票 EVA Air BR178／BR129 | 36,000 TWD |
 | 2026/12 | 續約洲際酒店大使 | 250 USD |
-| 2027/09/17 | 搶購 USJ Express Pass 7 | 待官方公布 |
+| 2027/09/17 | 購買／預約 USJ VIP 8 小時 | 87,000 TWD |
 | 2027/09/17 | NOKA Roast & Grill 訂位 | 待確認 |
 | 2027/10/10 | 買 KKday 機場接送 | 待確認 |
 | 2027/10/10 | 買 KKday USJ 接送 | 待確認 |
@@ -214,8 +214,18 @@ Impact: Track USD 250 separately from the TWD main trip budget until exchange ra
 
 ## D036 V5.51.0 repository consistency cleanup
 
-Decision: V5.51.0 reconciles the repository around the current active plan: Day 3 dinner is 肉NOASATSU / KKday #268366, Day 4 dinner is NOKA Roast & Grill, PIERRE is fallback-only, and the active TWD recommended budget is NT$199,346 for two travelers.  
-Status: active consistency decision.  
+Decision: V5.51.0 reconciled the repository around the active plan at that time: Day 3 dinner was 肉NOASATSU / KKday #268366, Day 4 dinner was NOKA Roast & Grill, PIERRE was fallback-only, and the active TWD recommended budget was NT$199,346 for two travelers.  
+Status: historical consistency decision, superseded for budget by D037.  
+Changed: 2026-07-08.
+
+## D037 USJ VIP 8h budget update
+
+Decision: Replace USJ Express Pass 7 with USJ VIP 8h for Day 2.  
+Status: active USJ and budget decision.  
 Changed: 2026-07-08.  
-Reason: The repository had inconsistent post-V5.50.0 references across DECISIONS, AI context, project rules, customer-facing tables, and budget summaries.  
-Impact: Future AI work must use V5.51.0 values unless the user explicitly changes them.
+Reference amount: TWD 87,000, based on user-provided value.  
+Meal policy: VIP 8h is treated as including lunch, dinner, and in-park dining, so USJ park dining is not listed as a separate budget line.  
+Shopping policy: USJ shopping and ordinary Pokémon / anime / Nipponbashi / department-store small goods are merged into a TWD 14,000 shopping category.  
+Studio Pass policy: Studio Pass remains a 2027-10-10 purchase target and a TWD 7,108 two-person budget reference until official rules confirm whether VIP 8h includes admission.  
+Budget impact: recommended total is now TWD 272,454 for two travelers; safety version and hard ceiling are both TWD 280,000.  
+Pending: official 2027 availability, currency, final price, meal scope, whether Studio Pass is included, booking window, and cancellation policy.
