@@ -1,12 +1,12 @@
 metadata:
   id: reservation_purchase_timeline
   title: "2027 大阪自由行預約與購買時間軸"
-  version: "V5.26.2"
-  status: "active_reservation_purchase_baseline"
-  last_updated: "2026-07-07"
+  version: "V5.51.0"
+  status: "active_reservation_purchase_baseline_after_repository_consistency_cleanup"
+  last_updated: "2026-07-08"
   maintained_by: "ChatGPT"
   language: "zh-Hant"
-  source_instruction: "使用者指定以月份／日期排序，列出每一項需要購買、續約、搶票、訂位或申請的事項；V5.26.2 依住宿淨額修正與建議更新章節，將 KKday #536220 飯店 ↔ USJ 接送併入 2027/10/10 購買批次。"
+  source_instruction: "使用者指定以月份／日期排序，列出每一項需要購買、續約、搶票、訂位或申請的事項；V5.51.0 修正主控檔與顧客版殘留舊預算，並確認 KKday #536220 飯店 ↔ USJ 接送已併入 2027/10/10 購買批次。"
 
 scope:
   trip_dates: "2027/11/17（三）～2027/11/21（日）"
@@ -16,10 +16,13 @@ scope:
   note: "本時間軸只記錄使用者確認的購買／預約節點；2027 官方未公布票券、價格或訂位窗口者標示待官方公布或待確認。"
 
 budget_impact:
+  current_recommended_budget_twd_for_two: 199346
+  current_safety_budget_twd_for_two: 250000
+  current_hard_ceiling_twd_for_two: 280000
   flight_reference_twd_for_two:
     previous_amount_twd: 35000
     updated_amount_twd: 36000
-    impact: "交通預算 +TWD 1,000；主預算後續依住宿淨額、購物、其他預備金、Day 4 NOKA 參考價與 USJ 兩人計算確認調整，目前以 TWD 217,292 為基準。"
+    impact: "交通預算 +TWD 1,000；V5.51.0 主預算統一為 TWD 199,346／兩人。"
   ambassador_renewal:
     amount_usd: 250
     budget_policy: "以 USD 獨立追蹤；未指定匯率前不硬轉 TWD，不併入 TWD 主預算。"
@@ -35,11 +38,10 @@ budget_impact:
     - "KKday #536220 飯店 ↔ USJ 接送：V5.24.0 參考來回 TWD 3,464，2027 最終價格待確認。"
   unknown_amount_items:
     - "USJ Express Pass 7"
-    - "NOKA Roast & Grill"
+    - "NOKA Roast & Grill 2027 最終價格"
     - "KKday 機場接送最終價"
     - "KKday 飯店 ↔ USJ 接送最終價"
     - "USJ Studio Pass"
-    - "肉NOASATSU／KKday #268366 壽司晚餐"
 
 timeline:
   - sort_key: "2026-11-01"
@@ -106,6 +108,10 @@ timeline:
       - "Day 4｜2027/11/20"
     reconfirmation: "2027/11/20 營業、訂位開放日、套餐內容、主菜選擇、飲品、特價菜單日規則與取消政策待確認。"
     budget_category: "飲食"
+    reference_price:
+      total_for_two_jpy: 38500
+      exchange_rate_reference: 0.2
+      total_for_two_twd_reference: 7700
 
   - sort_key: "2027-10-10"
     display_date: "2027/10/10"
@@ -195,7 +201,8 @@ timeline:
     budget_category: "其他"
 
 maintenance_notes:
-  - "本檔為 V5.26.2 預約／購買主控時間軸。"
-  - "V5.26.2 已將 KKday #536220 飯店 ↔ USJ 接送併入 2027/10/10 購買批次。"
+  - "本檔為 V5.51.0 預約／購買主控時間軸。"
+  - "KKday #536220 飯店 ↔ USJ 接送已併入 2027/10/10 購買批次。"
+  - "主預算統一為 NT$199,346／兩人；安全版 NT$250,000；硬上限 NT$280,000。"
   - "USJ 預算參考已拆成 Express Pass 7、Studio Pass、園區餐飲與購物三段。"
   - "如未來使用者調整日期或金額，先更新本 database，再同步 docs、預算模型與 CHANGELOG。"
