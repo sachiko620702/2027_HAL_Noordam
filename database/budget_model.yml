@@ -1,23 +1,24 @@
 metadata:
   id: budget_model
   title: "2027 大阪自由行預算模型"
-  version: "V5.26.2"
-  status: "active_budget_baseline_with_reservation_purchase_timeline"
-  last_updated: "2026-07-07"
+  version: "V5.51.0"
+  status: "active_budget_baseline_after_repository_consistency_cleanup"
+  last_updated: "2026-07-08"
   maintained_by: "ChatGPT"
   currency: "TWD"
   travelers: 2
-  caveat: "本模型為 2026/07 依使用者提供價格與目前正式行程建立的暫估模型；2027 官方價格、航班票價、KKday 商品價格、USJ 票券、飯店房價與餐廳菜單仍需再次確認。V5.26.2 新增預約與購買時間軸，並將 EVA Air BR178 / BR129 兩人機票預算由 TWD 35,000 更新為 TWD 36,000。洲際酒店第二張住宿訂單會在退房時更新金額，低價那晚視為免費；Ambassador 續約 USD 250 先以外幣獨立追蹤，不硬轉 TWD。飯店回信已確認 1 King Premium Club Lounge Access 通常升等為 1 King Junior Suite with club lounge access，且同房型兩筆連住可盡量安排同房；12:00 提早入住可付費保證，但費用需完成訂房後再確認，尚未列入主預算。"
+  caveat: "本模型為 2026/07 依使用者提供價格與目前正式行程建立的暫估模型；2027 官方價格、航班票價、KKday 商品價格、USJ 票券、飯店房價與餐廳菜單仍需再次確認。V5.51.0 只做 repository consistency cleanup，不新增正式行程；主預算統一為 NT$199,346／兩人，安全版 NT$250,000／兩人，硬上限 NT$280,000／兩人。"
 
 trip_scope:
   dates: "2027/11/17（三）～2027/11/21（日）"
   duration: "五天四夜"
+  travelers: 2
   hotel: "InterContinental Osaka"
   style: "Luxury Slow Travel"
   included_scope:
     - "EVA Air BR178 / BR129 來回機票暫估"
-    - "KKday 機場接送來回"
-    - "KKday 飯店 ↔ USJ 接送來回"
+    - "KKday #129909 機場接送來回"
+    - "KKday #536220 飯店 ↔ USJ 接送來回"
     - "InterContinental Osaka 兩張住宿訂單，合計四晚"
     - "USJ 一天，含 Studio Pass / Express Pass / 園區餐飲與購物"
     - "Day 1 千房梅田周邊店"
@@ -29,6 +30,7 @@ trip_scope:
     - "USJ VIP Tour / Private VIP Tour"
     - "飯店付費提早入住加價與特殊加購費用（尚未報價）"
     - "已降為備案的京都版 Day 3：京 鰻和 本店、天ぷら 京星、京都甜點伴手禮路線"
+    - "PIERRE：Day 4 fallback-only，不列入目前主預算"
     - "InterContinental Ambassador 續約 USD 250 暫以外幣獨立追蹤，待匯率確認後再決定是否併入 TWD 主預算"
 
 user_provided_reference_prices:
@@ -38,7 +40,6 @@ user_provided_reference_prices:
     previous_amount_twd: 35000
     amount_twd: 36000
     scope: "兩人來回暫估"
-    status: "user_provided_reference_updated_v5_26"
     planned_purchase_time: "2026/11"
     reconfirmation: "2027/11 官方班表、票價、行李、機型與訂位狀態仍需確認"
   airport_transfer:
@@ -47,28 +48,42 @@ user_provided_reference_prices:
     hotel_to_kix_twd: 2600
     round_trip_total_twd: 5200
     planned_purchase_date: "2027/10/10"
-    status: "user_provided_reference"
     reconfirmation: "2027/11 商品價格、車型、行李限制、等待時間與可訂狀態仍需確認"
   usj_transfer:
     product: "KKday #536220"
     hotel_to_usj_twd: 1732
     usj_to_hotel_twd: 1732
     round_trip_total_twd: 3464
+    planned_purchase_date: "2027/10/10"
     source_note: "使用者提供截圖顯示單程 NT$1,732 起"
-    status: "user_provided_reference"
-    reconfirmation: "2027/11 商品價格、20KM 範圍、實際飯店與 USJ 路線、接送點、行李規則與可訂狀態仍需確認；V5.26.2 時間軸尚未指定購買日。"
+    reconfirmation: "2027/11 商品價格、20KM 範圍、實際飯店與 USJ 路線、接送點、行李規則與可訂狀態仍需確認。"
+  lodging:
+    booking_1_twd: 37400
+    booking_2_twd: 28500
+    net_total_twd: 65900
+    note: "InterContinental Osaka 兩張住宿訂單，低價那晚視為免費後的主控住宿淨額。"
+  day3_sushi:
+    product: "KKday #268366 / 肉NOASATSU"
+    unit_price_twd: 1541
+    total_for_two_twd: 3082
+    reconfirmation: "最終預約條件、取消政策、交通與 2027 可訂狀態需確認。"
+  day4_noka:
+    restaurant: "NOKA Roast & Grill"
+    reference_price_jpy_per_person: 17500
+    service_charge_percent: 10
+    reference_price_jpy_total_for_two: 38500
+    exchange_rate_used: 0.2
+    reference_price_twd_total_for_two: 7700
+    reconfirmation: "2027/11/20 菜單、價格、服務費、取消政策、紀念日加購與座位 request 規則需確認。"
   insurance:
     amount_twd: 6900
     planned_purchase_date: "2027/11/05"
-    status: "planned_payment_status_pending"
   roaming:
     amount_twd: 499
     planned_application_date: "2027/11/05"
-    status: "planned_payment_status_pending"
   ambassador_renewal:
     amount_usd: 250
     planned_renewal_time: "2026/12"
-    status: "planned_usd_payment_not_converted_to_twd"
     budget_policy: "以 USD 獨立追蹤；未指定匯率前不硬轉 TWD，不併入 TWD 主預算。"
 
 reservation_purchase_timeline:
@@ -80,16 +95,17 @@ reservation_purchase_timeline:
     - "2026/12 續約洲際酒店大使：USD 250"
     - "2027/09/17 搶購 USJ Express Pass 7：待官方公布"
     - "2027/09/17 NOKA Roast & Grill 訂位：待確認"
-    - "2027/10/10 買 KKday 機場接送：待確認"
+    - "2027/10/10 買 KKday #129909 機場接送：待確認"
+    - "2027/10/10 買 KKday #536220 USJ 接送：待確認"
     - "2027/10/10 買 USJ Studio Pass：待官方公布"
     - "2027/11/05 旅遊保險：TWD 6,900"
     - "2027/11/05 申請漫遊：TWD 499"
 
-  recommended_budget:
+recommended_budget:
   title: "建議版主預算"
   total_twd: 199346
   per_person_twd: 99673
-  note: "不含精品包、珠寶、手錶；不含尚未換算的 InterContinental Ambassador 續約 USD 250；購物預算已由 NT$40,000 下修為 NT$10,000；其他預算已由 NT$25,000 下修為 NT$15,000；住宿已按低價那晚免費後暫估為 NT$65,900（第一張單 NT$37,400，第二張單 NT$28,500）；飯店回信已確認 1 King Premium Club Lounge Access 通常升等為 1 King Junior Suite with club lounge access，且兩筆同房型連住可盡量安排同房；12:00 提早入住可付費保證，但費用需訂房後確認，未列入主預算；Day 4 NOKA 參考價以 JPY 38,500／兩人、匯率 0.2 換算為 NT$7,700（每人 NT$3,850）計；Day 3 壽司已指定 KKday #268366，單人 NT$1,541、兩人合計 NT$3,082；USJ Express Pass 7 與 Studio Pass 皆以單人價格估算後乘以兩人，USJ 類別合計 NT$25,000；園區餐飲與購物維持 NT$7,892；Day 3／Day 4 市區交通以西瓜卡搭地鐵為主，計程車僅作備援。"
+  note: "不含精品包、珠寶、手錶；不含尚未換算的 InterContinental Ambassador 續約 USD 250；住宿以 NT$65,900 淨額估算；Day 3 壽司為肉NOASATSU／KKday #268366，兩人 NT$3,082；Day 4 為 NOKA Roast & Grill，兩人 JPY 38,500 以匯率 0.2 換算為 NT$7,700；USJ 票券以兩人計算。"
   categories:
     - category: "交通"
       amount_twd: 55664
@@ -112,65 +128,64 @@ reservation_purchase_timeline:
           amount_twd: 6000
     - category: "住宿"
       amount_twd: 65900
-      note: "InterContinental Osaka 兩張住宿訂單，合計四晚；第一筆為 Preferred Partner Rate 20% Off，第二筆為 Ambassador Complimentary Weekend Night，飯店說退房時才會更新金額，低價那晚視為免費；目前兩筆金額分別為 NT$37,400 與 NT$28,500，住宿合計 NT$65,900。Ambassador 續約 USD 250 另以外幣追蹤。"
+      note: "InterContinental Osaka 兩張住宿訂單，合計四晚；住宿淨額 NT$65,900。Ambassador 續約 USD 250 另以外幣追蹤。"
     - category: "購物"
       amount_twd: 10000
       note: "寶可夢、動漫、模型、日本橋周邊、百貨小物；不含精品包。"
     - category: "飲食"
       amount_twd: 27782
-      note: "含千房（Day 1 由 NT$9,000 下修為 NT$4,000）、木津市場早午餐（上修為 NT$8,000）、Day 3 大阪市內午餐、Day 3 壽司晚餐（KKday #268366，單人 NT$1,541、兩人 NT$3,082）、Day 4 心齋橋午餐、Day 4 NOKA Roast & Grill 參考價 JPY 38,500／兩人，匯率 0.2 換算為 NT$7,700、Day 5 午餐與飲料緩衝。"
+      note: "含 Day 1 千房 NT$4,000、Day 3 木津市場 NT$8,000、Day 3 肉NOASATSU 兩人 NT$3,082、Day 4 NOKA 兩人 NT$7,700、Day 5 餐飲與飲料緩衝。"
     - category: "USJ"
       amount_twd: 25000
-      note: "Express Pass 7 以單人 NT$4,365 至 NT$5,754 估算，兩人為 NT$8,730 至 NT$11,508；Studio Pass 以單人 NT$1,840 至 NT$2,800 估算，兩人為 NT$3,680 至 NT$5,600；園區餐飲與購物 NT$7,892。"
+      note: "Express Pass 7 與 Studio Pass 皆以單人價格估算後乘以兩人；園區餐飲與購物 NT$7,892。"
     - category: "其他"
       amount_twd: 15000
       note: "含保險 TWD 6,900、漫遊 TWD 499、旅行用品、匯差／海外手續費與預備金。"
 
-  budget_scenarios:
+budget_scenarios:
   controlled:
     label: "節制版"
     total_twd: 194648
     per_person_twd: 97324
-    use_case: "購物克制、USJ 票券取區間下緣並以兩人計、住宿有優惠、Day 3 壽司餐廳價格中低時的低壓版本；NOKA 以雙人 JPY 38,500、匯率 0.2 換算為 NT$7,700。"
+    use_case: "購物克制、USJ 票券取區間下緣並以兩人計、住宿有優惠、Day 3 壽司餐廳價格中低時的低壓版本。"
   recommended:
     label: "建議版"
     total_twd: 199346
     per_person_twd: 99673
-    use_case: "目前正式行程最適合作為主控預算的版本；USJ 以使用者提供區間上緣並以兩人計算，NOKA 以雙人 JPY 38,500、匯率 0.2 換算為 NT$7,700，另需追蹤 Ambassador 續約 USD 250。"
+    use_case: "目前正式行程最適合作為主控預算的版本；Ambassador USD 250 另計。"
   safety:
     label: "安全版"
     total_twd: 250000
     per_person_twd: 125000
     use_case: "住宿、USJ Express、Day 3 壽司、NOKA、匯率或臨時加購偏高時的實務緩衝版；真正硬上限仍維持 280,000。"
+  hard_ceiling:
+    label: "硬上限"
+    total_twd: 280000
+    use_case: "除非使用者明確同意，主預算與安全版不應突破此上限。"
 
-  revision_notes:
-    previous_estimate_twd: 306274
-    corrected_to_recommended_twd: 199346
-    correction_reason:
-      - "V5.26.2 使用者提供預約與購買時間軸。"
-      - "機票預計 2026/11 購買，EVA Air BR178 / BR129 預算由 TWD 35,000 更新為 TWD 36,000。"
-      - "交通預算上調 TWD 1,000，主預算由 TWD 324,664 調整為 TWD 325,664。"
-      - "購物預算由 TWD 40,000 下修為 TWD 10,000，主預算由 TWD 325,664 調整為 TWD 295,664。"
-      - "第二張住宿訂單在退房時才會更新金額，低價那晚視為免費；住宿由 TWD 115,610 再調整為約 TWD 83,846，主預算由 TWD 306,274 調整為 TWD 274,510。"
-      - "其他預算由 TWD 25,000 下修為 TWD 15,000，主預算由 TWD 274,510 調整為 TWD 264,510。"
-      - "Day 4 NOKA Roast & Grill 以雙人 JPY 38,500、匯率 0.2 換算為 NT$7,700，主預算由 TWD 244,646 調整為 TWD 213,846。"
-      - "Day 3 壽司晚餐由暫估 TWD 20,000 改為 KKday #268366 單人 TWD 1,541、兩人 TWD 3,082，主預算由 TWD 276,260 調整為 TWD 259,342。"
-      - "USJ 票券與園區消費依使用者提供區間整理為 NT$18,554，主預算由 TWD 259,342 調整為 TWD 237,896。"
-      - "Day 4 NOKA 雙人 JPY 38,500 以匯率 0.2 換算後，主預算由 TWD 244,646 調整為 TWD 213,846。"
-      - "USJ 票券價格確認為單人報價，需以兩人計算後再加上園區餐飲與購物，主預算由 TWD 213,846 調整為 TWD 222,400。"
-      - "USJ 園區餐飲與購物由 TWD 10,000 調整為 TWD 7,892，USJ 類別由 TWD 27,108 調整為 TWD 25,000，主預算由 TWD 222,400 調整為 TWD 220,292。"
-      - "Day 1 千房 梅田周邊店晚餐由 NT$9,000 下修為 NT$4,000，Day 3 木津市場早午餐由 NT$6,000 上修為 NT$8,000，飲食預算由 TWD 30,782 調整為 TWD 27,782，主預算由 TWD 220,292 調整為 TWD 217,292。"
-      - "2026/12 續約 InterContinental Ambassador，金額 USD 250，先以外幣獨立追蹤。"
-      - "住宿兩筆金額更新為 NT$37,400 與 NT$28,500，住宿淨額由 TWD 83,846 調整為 TWD 65,900，主預算由 TWD 217,292 調整為 TWD 199,346。"
-  budget_positioning: "目前建議以 NT$199,346 作為 TWD 主預算記帳值，NT$280,000 作為安全上限；Ambassador USD 250 與精品購物另計。"
+revision_notes:
+  current_sync_version: V5.51.0
+  previous_inconsistent_totals:
+    - 217292
+    - 244646
+    - 237896
+    - 325664
+    - 380000
+  corrected_to_recommended_twd: 199346
+  correction_reason:
+    - "V5.50.0 已將住宿淨額改為 NT$65,900。"
+    - "V5.51.0 修正顧客版統計表與主控文件殘留的 NT$217,292、NT$244,646、NT$237,896、NT$380,000 舊值。"
+    - "Day 4 PIERRE 不再是主方案，NOKA Roast & Grill 為正式晚餐，PIERRE 僅備案。"
+    - "KKday #536220 USJ 接送購買日已排入 2027/10/10。"
+  budget_positioning: "目前建議以 NT$199,346 作為 TWD 主預算記帳值，NT$250,000 作為安全版，NT$280,000 作為硬上限；Ambassador USD 250 與精品購物另計。"
 
 pending_reconfirmation:
   - "EVA Air BR178 / BR129 2027/11 官方班表、票價、行李與訂位狀態。"
   - "InterContinental Ambassador 續約費、BOGO 使用規則與 2027 住宿方案；12:00 提早入住加價方案與實際費用。"
   - "KKday #129909 2027/11 機場接送價格、車型、行李限制與可訂狀態。"
-  - "KKday #536220 2027/11 飯店 ↔ USJ 接送價格、20KM 範圍、接送點與可訂狀態；購買日期待補。"
+  - "KKday #536220 2027/11 飯店 ↔ USJ 接送價格、20KM 範圍、接送點與可訂狀態。"
   - "InterContinental Osaka 2027/11 房價、BOGO、行政酒廊房型與提早入住費用。"
   - "USJ 2027 Studio Pass、Express Pass、VIP 與園區餐飲價格。"
   - "Day 3 日本橋、Den Den Town、Ota Road 2027/11/19 營業時間、活動與採買動線。"
-  - "Day 3 大阪市內壽司晚餐候選、價位、預約方式、取消政策與交通。"
+  - "肉NOASATSU／KKday #268366 壽司晚餐最終價格、預約方式、取消政策與交通。"
   - "NOKA Roast & Grill 2027/11/20 菜單、價格、服務費、取消政策與紀念日加購。"
