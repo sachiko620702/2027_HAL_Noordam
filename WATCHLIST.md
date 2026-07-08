@@ -2,6 +2,8 @@
 
 Track items that may change before departure.
 
+Current sync version: V5.51.0 Repository Consistency Cleanup.
+
 ## Reservation / Purchase Timeline
 
 - Active source: `database/reservation_purchase_timeline.yml`
@@ -32,23 +34,23 @@ Track items that may change before departure.
 - EVA Air BR178 TPE to KIX official 2027-11 schedule
 - EVA Air BR129 KIX to TPE official 2027-11 schedule
 - Current planning baseline stability: BR178 06:30 TPE to 10:10 KIX; BR129 18:30 KIX to 20:30 TPE
-- EVA Air pricing; V5.26.0 user-provided budget reference is TWD 36,000 for two travelers round trip
+- EVA Air pricing; current budget reference is TWD 36,000 for two travelers round trip
 - Planned purchase time: 2026/11
-- aircraft type
-- terminal and check-in rules
-- baggage policy
-- seat selection and ticket rules
-- airport services
+- Aircraft type
+- Terminal and check-in rules
+- Baggage policy
+- Seat selection and ticket rules
+- Airport services
 
 ## Hotel
 
 - InterContinental Osaka rates
 - InterContinental Ambassador renewal target: 2026/12; reference USD 250
 - Ambassador renewal fee, benefits, BOGO / Weekend Night rules, room upgrade implications, and expiration timing
-- lounge policy
-- breakfast policy
-- early check-in pricing
-- room upgrade options
+- Lounge policy
+- Breakfast policy
+- Early check-in pricing
+- Room upgrade options
 - Day 1 Executive Lounge afternoon tea 2027 hours, arrival-day access rules, room benefit eligibility, companion policy, and food / beverage offering for 2027-11-17
 - Executive Lounge afternoon tea 2027 hours, access rules, and food / beverage offering for 2027-11-19 and 2027-11-20
 - InterContinental Osaka 2027 restaurant lineup and NOKA Roast & Grill operating status
@@ -58,14 +60,15 @@ Track items that may change before departure.
 
 ## Dining
 
-- Day 1 dinner candidates near Pokémon Center OSAKA in Umeda
-- Day 3 Osaka city sushi dinner candidates near Umeda / Kitashinchi / Fukushima / Nakanoshima / north Namba
+- Day 1 dinner branch near Pokémon Center OSAKA in Umeda: 千房 梅田周邊店 branch confirmation pending
+- Day 3 肉NOASATSU / KKday #268366 final price, booking route, cancellation policy, exact location, and transportation
 - Day 3 Namba / Dotonbori / Shinsaibashi lunch candidates
 - Day 4 Shinsaibashi lunch candidates that allow returning to InterContinental Osaka after lunch
 - Day 4 NOKA Roast & Grill reservation readiness
 - Whether NOKA Roast & Grill can note an anniversary dinner, buffet package, and 90-minute drinks request
 - Whether NOKA Roast & Grill offers anniversary dessert messages, small celebration options, or photo support
 - Day 3 previous Kyoto restaurants, 京 鰻和 本店 and 天ぷら 京星, are fallback / historical only unless user restores Kyoto
+- Day 4 PIERRE and sushi are fallback-only unless user explicitly changes back
 - Taste-first Osaka restaurant candidates
 - Restaurant opening days and hours
 - Booking windows
@@ -84,7 +87,7 @@ Track items that may change before departure.
 - Arrival-day Executive Lounge afternoon tea feasibility
 - Hotel rest block after afternoon tea
 - Pokémon Center OSAKA 2027-11-17 hours, entry rules, events, and limited goods
-- Dinner candidates near Pokémon Center OSAKA in Umeda
+- Final 千房 branch near Pokémon Center OSAKA in Umeda
 
 ## Day 2 USJ formal route
 
@@ -103,7 +106,7 @@ Track items that may change before departure.
 - Namba / Dotonbori / Shinsaibashi lunch candidates that allow returning to InterContinental Osaka after lunch
 - Return route from Namba / Nipponbashi to InterContinental Osaka
 - Executive Lounge afternoon tea 2027-11-19 access rules, timing, and food / beverage offering
-- Osaka city sushi dinner candidates, price, booking window, cancellation policy, and transportation
+- 肉NOASATSU / KKday #268366 final price, booking window, cancellation policy, location, and transportation
 - Kyoto sweets route, Pokemon Center KYOTO, Kyoto International Manga Museum, 京 鰻和 本店, and 天ぷら 京星 are fallback-only after V5.25.0
 
 ## Day 4 formal route
@@ -119,6 +122,7 @@ Track items that may change before departure.
 - NOKA Roast & Grill package request rules and whether it can be noted at booking
 - NOKA Roast & Grill anniversary dessert message, small celebration option, and photo support availability
 - Sushi fallback-only status if the user later changes back to sushi dinner for Day 4
+- PIERRE fallback-only status if the user later changes back to PIERRE anniversary dinner
 - ADEE Lounge & Bar availability only if used as optional after-dinner drink / nightcap
 
 ## Shopping and anime interests
@@ -128,30 +132,32 @@ Track items that may change before departure.
 - Pokemon Center OSAKA DX 2027-11-20 hours, closure notices, events, and limited goods
 - Nipponbashi / Den Den Town / Ota Road 2027-11-19 anime, model, character goods, event, and limited item information
 - Detective Conan Osaka limited-time events, pop-up shops, cafe, exhibitions, and official announcements
-- department store tax refund rules
-- luxury boutique appointment policy
-- seasonal sale dates
+- Department store tax refund rules
+- Luxury boutique appointment policy
+- Seasonal sale dates
 - Shinsaibashi luxury shopping store hours, tax refund rules, and appointment needs
 
 ## Budget
 
 - JPY/TWD exchange rate
 - USD/TWD exchange rate for Ambassador renewal if the user later wants it included in TWD budget
-- credit card reward rules
-- hotel rate changes
+- Credit card reward rules
+- Hotel rate changes
 - USJ price changes
-- Active V5.26.2 recommended budget: TWD 244,646 for two travelers
-- Active V5.26.2 safety ceiling: TWD 380,000 for two travelers
+- Active V5.51.0 recommended budget: TWD 199,346 for two travelers
+- Active V5.51.0 controlled budget: TWD 194,648 for two travelers
+- Active V5.51.0 safety version: TWD 250,000 for two travelers
+- Active V5.51.0 hard ceiling: TWD 280,000 for two travelers
 - Luxury handbags, jewelry, and watches are excluded from the base budget and must be budgeted separately
 - InterContinental Ambassador renewal amount USD 250, tracked separately until conversion or actual card charge is known
-- EVA Air BR178 / BR129 fare and payment status; V5.26.0 reference TWD 36,000 for two travelers round trip
-- travel insurance amount TWD 6,900 and payment status; planned purchase date 2027/11/05
-- phone roaming amount TWD 499 for two people and carrier billing rules; planned application date 2027/11/05
-- KKday product #129909 airport transfer final price and booking rules; V5.24.0 reference TWD 2,600 each way, TWD 5,200 round trip; planned purchase date 2027/10/10
-- KKday product #536220 hotel-USJ transfer final price and booking rules; V5.24.0 reference TWD 1,732 each way, TWD 3,464 round trip; planned purchase date 2027/10/10
+- EVA Air BR178 / BR129 fare and payment status; reference TWD 36,000 for two travelers round trip
+- Travel insurance amount TWD 6,900 and payment status; planned purchase date 2027/11/05
+- Phone roaming amount TWD 499 for two people and carrier billing rules; planned application date 2027/11/05
+- KKday product #129909 airport transfer final price and booking rules; reference TWD 2,600 each way, TWD 5,200 round trip; planned purchase date 2027/10/10
+- KKday product #536220 hotel-USJ transfer final price and booking rules; reference TWD 1,732 each way, TWD 3,464 round trip; planned purchase date 2027/10/10
 - Day 1 dinner near Pokémon Center OSAKA budget
 - Day 3 Osaka city transportation actual cost
-- Day 3 sushi dinner budget after restaurant selection
+- Day 3 肉NOASATSU sushi dinner budget after final reservation confirmation
 - Day 3 lunch budget near Namba / Dotonbori / Shinsaibashi
 - Day 4 Shinsaibashi lunch budget
 - Day 4 Shinsaibashi to InterContinental Osaka return transport cost
