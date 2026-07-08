@@ -1,14 +1,19 @@
 project:
   name: 2027 Osaka Trip
-  version: V5.26.2
+  version: V5.51.0
   source_of_truth: GitHub main
   repository: sachiko620702/2027_OSAKA
+  current_sync_reason: Repository consistency cleanup after V5.50.0
   dates:
     start: 2027-11-17
     end: 2027-11-21
   duration: 5 days 4 nights
+  travelers: 2
   hotel: InterContinental Osaka
   positioning: Luxury Slow Travel
+  status: active
+  last_updated: 2026-07-08
+
   fixed_items:
     - USJ one day
     - Taste-first dining; Michelin status neutral
@@ -19,6 +24,8 @@ project:
     - KKday product 536220 for hotel USJ transfer
     - Breakfast normally at hotel Executive Lounge except Kizu Market day
     - Day 3 formal route is Osaka city route, not Kyoto
+    - Day 4 formal dinner is NOKA Roast & Grill; PIERRE is fallback-only
+
   user_confirmed_inputs:
     flights:
       airline: EVA Air
@@ -26,20 +33,24 @@ project:
         flight_number: BR178
         route: TPE to KIX
         date: 2027-11-17
+        planning_time: "06:30-10:10"
         status: needs_official_schedule_confirmation
       return:
         flight_number: BR129
         route: KIX to TPE
         date: 2027-11-21
+        planning_time: "18:30-20:30"
         status: needs_official_schedule_confirmation
       previous_budget_reference_twd_for_two: 35000
       budget_reference_twd_for_two: 36000
       planned_purchase_time: 2026/11
+
     ambassador:
       program: InterContinental Ambassador
       planned_renewal_time: 2026/12
       renewal_amount_usd: 250
       budget_policy: USD tracked separately; do not convert to TWD until an exchange rate or actual card charge is confirmed
+
     lodging:
       hotel: InterContinental Osaka
       booking_1:
@@ -60,12 +71,15 @@ project:
         consecutive_reservations: "同房型兩筆連住可盡量安排同一間房；若兩筆都訂含 Club Lounge Access 的房型，入住期間可持續使用 Club Lounge。"
         f_and_b_credit_policy: "兩筆連住的 Food & Beverage credit 只會提供一次。"
         early_check_in: "12:00 提早入住可視當天房況安排；若要保證，需在完成訂房後詢問付費方案與實際加價。"
+
     insurance_total_twd: 6900
     insurance_planned_purchase_date: 2027-11-05
+
     internet:
       type: phone_roaming
       total_for_two_people_twd: 499
       planned_application_date: 2027-11-05
+
     airport_transfer:
       platform: KKday
       selected_product_id: 129909
@@ -73,13 +87,16 @@ project:
       round_trip_total_twd: 5200
       planned_purchase_date: 2027-10-10
       price_status: user_provided_reference_needs_2027_confirmation
+
     usj_transfer:
       platform: KKday
       selected_product_id: 536220
       reference_price_each_way_twd: 1732
       round_trip_total_twd: 3464
+      planned_purchase_date: 2027-10-10
       price_status: user_screenshot_reference_needs_2027_confirmation
-      purchase_date_status: not_assigned_in_v5_26_timeline
+      purchase_date_status: assigned_in_v5_51_timeline
+
     usj_tickets:
       express_pass_7:
         planned_purchase_date: 2027-09-17
@@ -95,14 +112,28 @@ project:
           high: 2800
       park_dining_and_shopping_twd: 7892
       budget_reference_twd: 25000
-    noka_roast_grill:
-      planned_reservation_date: 2027-09-17
-      date: 2027-11-20
-      status: pending_booking_window
+
     breakfast_preference:
       normal_days: hotel_executive_lounge_breakfast
       exception_day: 2027-11-19
       exception_reason: Osaka Kizu Market brunch day
+
+    day1_formal_route:
+      date: 2027-11-17
+      status: formal_active
+      route:
+        - arrival at KIX by BR178 current timetable baseline
+        - KKday #129909 KIX to InterContinental Osaka transfer
+        - InterContinental Osaka Executive Lounge afternoon tea target
+        - hotel rest
+        - Pokemon Center OSAKA in Umeda
+        - Chibo Umeda-area dinner
+        - return to hotel
+      pending:
+        - exact Chibo branch
+        - arrival-day lounge access rules
+        - 2027 flight and hotel policy confirmation
+
     day3_formal_route:
       date: 2027-11-19
       status: formal_active
@@ -116,33 +147,65 @@ project:
         - 14:00-15:00 Return to InterContinental Osaka, rest, organize shopping items
         - 15:00-16:30 InterContinental Osaka Executive Lounge afternoon tea
         - 16:30-18:30 Hotel rest or light Umeda walk
-        - 19:00-20:30 Osaka city sushi dinner
+        - 19:00-20:30 肉NOASATSU sushi dinner
       dinner_direction: sushi
-      sushi_restaurant_status: selected_product_price_pending
+      sushi_restaurant_status: selected_price_reference_pending_final_terms
+      sushi_restaurant_name: 肉NOASATSU
       sushi_restaurant_selected_product_id: 268366
       sushi_restaurant_product_url: "https://www.kkday.com/zh-tw/product/268366?cid=5193&ud1=DSA02&ud2=product&ud3=sa&ud4=tw&ud5=23050718592"
+      sushi_unit_price_twd: 1541
+      sushi_estimated_total_twd_for_two: 3082
       supersedes:
         - Kyoto sweets route
         - 京 鰻和 本店 lunch
         - 天ぷら 京星 dinner
         - TABLEALL reservation task for Tempura Kyoboshi as formal Day 3 dinner
       charter_fallback: KKday product 133661 no longer needed for current Day 3 formal route; keep only as backup if the user restores Kyoto or requests comfort travel
-      sushi_fallback: Day 3 sushi is now tied to KKday product 268366; keep only as backup if the user later changes the formal dinner again
+
+    day4_formal_route:
+      date: 2027-11-20
+      status: formal_active
+      theme: Shinsaibashi, Pokemon Center OSAKA DX, post-lunch hotel return, Executive Lounge afternoon tea, NOKA Roast & Grill
+      dinner:
+        restaurant_japanese: ノカ ロースト & グリル
+        restaurant_english: NOKA Roast & Grill
+        role: primary_formal_anniversary_dinner
+        planned_reservation_date: 2027-09-17
+        price_status: needs_reconfirmation
+        reference_price_jpy_per_person: 17500
+        service_charge_percent: 10
+        reference_price_jpy_total_for_two: 38500
+        reference_price_twd_total_for_two_at_0_2: 7700
+        reservation_request:
+          - anniversary dinner
+          - buffet package
+          - 90-minute drinks
+          - optional anniversary dessert message or small celebration support if available
+        seating_status: request_only_not_guaranteed
+      fallbacks:
+        pierre: fallback_only
+        sushi: fallback_only
+        adee: optional_nightcap_only
+
     dining:
       principle: taste_first
       michelin_status: neutral
+
   reservation_purchase_timeline:
     active_database: database/reservation_purchase_timeline.yml
-    version: V5.26.2
+    version: V5.51.0
     known_scheduled_twd_payments_total: 43399
     known_scheduled_usd_payments_total: 250
+
   budget:
     active_model: database/budget_model.yml
-    version: V5.26.2
+    version: V5.51.0
+    controlled_total_twd_for_two: 194648
     recommended_total_twd_for_two: 199346
     recommended_per_person_twd: 99673
-    safety_ceiling_twd_for_two: 280000
+    safety_budget_twd_for_two: 250000
+    safety_per_person_twd: 125000
+    hard_ceiling_twd_for_two: 280000
+    lodging_net_total_twd: 65900
     luxury_shopping: separate
     ambassador_usd_250: tracked_separately_until_exchange_rate_or_actual_charge_confirmed
-  status: active
-  last_updated: 2026-07-07
