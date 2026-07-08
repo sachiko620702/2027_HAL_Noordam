@@ -1,7 +1,7 @@
 # AI_CONTEXT
 
 Project: 2027 Osaka Trip  
-Version: V5.51.0  
+Version: V5.52.0  
 Repository: sachiko620702/2027_OSAKA  
 Source of truth: GitHub main branch
 
@@ -23,6 +23,7 @@ Source of truth: GitHub main branch
 - Day 4 dinner decision: NOKA Roast & Grill is the active formal dinner. PIERRE and sushi are fallback-only unless the user explicitly changes back
 - Flight timing baseline: use the current BR178 / BR129 timetable for hourly planning: BR178 TPE 06:30 to KIX 10:10; BR129 KIX 18:30 to TPE 20:30. Official 2027-11 schedule, fare, aircraft, terminal, baggage, and booking status still require reconfirmation
 - Budget baseline V5.51.0: recommended total TWD 199,346 for two travelers; controlled total TWD 194,648; safety version TWD 250,000; hard ceiling TWD 280,000. InterContinental Ambassador renewal USD 250, luxury handbags, jewelry, and watches are excluded from the TWD base budget and tracked separately. Lodging uses the net amount TWD 65,900 after the lower-price complimentary night is treated as free
+- Website presentation V5.52.0: `web/index.html` and `web/styles.css` were refreshed into a travel-agency-style visual storytelling page. This is a presentation change only and does not alter itinerary, budget, or database decisions
 
 ## Current Priorities
 
@@ -42,11 +43,12 @@ Source of truth: GitHub main branch
 14. Confirm NOKA Roast & Grill 2027/11/20 dinner booking window, menu, price, service charge, dress code, cancellation policy, package rules, and anniversary request handling.
 15. Keep customer-facing travel planning tables aligned with `database/customer_facing_travel_plan.yml`.
 16. Recalculate budget only from `database/budget_model.yml` and avoid reviving older totals.
+17. Keep the public website under `web/` aligned with V5.52.0 visual storytelling while preserving the V5.51.0 data baseline.
 
 ## User-Provided Confirmed Planning Inputs
 
 - Flights: EVA Air BR178 outbound and BR129 return.
-- Flight timing baseline: per user instruction, use the current schedule directly for planning: BR178 06:30 TPE to 10:10 KIX; BR129 KIX 18:30 to TPE 20:30. Official 2027-11 schedule, fare, aircraft, terminal, baggage, and booking status need reconfirmation.
+- Flight timing baseline: per user instruction, use the current schedule directly for planning: BR178 06:30 TPE to 10:10 KIX; BR129 KIX 18:30 to 20:30 TPE. Official 2027-11 schedule, fare, aircraft, terminal, baggage, and booking status need reconfirmation.
 - Flight budget reference: TWD 36,000 for two travelers round trip; planned purchase time is 2026/11; reconfirm before ticketing.
 - InterContinental Ambassador renewal: planned for 2026/12 at USD 250; track separately from the TWD base budget until exchange rate or actual charge is confirmed.
 - Lodging: InterContinental Osaka planned room type is 1 King Premium Club Lounge Access. Hotel reply says this usually upgrades to 1 King Junior Suite with club lounge access, subject to availability. Current lodging net total is TWD 65,900.
@@ -78,25 +80,3 @@ Current timeline:
 - 2027/11/05: apply for phone roaming, TWD 499.
 
 ## Day 3 Formal Plan
-
-2027-11-19 is formally an Osaka city slow-travel day. The formal theme is Kizu Market, Namba / Nipponbashi anime models and merch, hotel rest, Executive Lounge afternoon tea, and 肉NOASATSU sushi dinner. Do not plan Kyoto as the main Day 3 route unless the user explicitly restores it.
-
-## Day 4 Formal Plan
-
-2027-11-20 is formally Shinsaibashi-centered until lunch: Pokémon Center OSAKA DX / Daimaru Shinsaibashi and nearby shopping. After lunch, the route returns to InterContinental Osaka. Afternoon activities should stay at the hotel or nearby Grand Front Osaka / Umeda area, with Executive Lounge afternoon tea retained. Dinner is Anniversary Dinner at NOKA Roast & Grill inside InterContinental Osaka. PIERRE and sushi are fallback-only.
-
-## Budget Model
-
-The active budget model is `database/budget_model.yml` and the customer-readable document is `docs/06_預算/2027大阪自由行_預算模型_V5.26.0.md`. The current recommended TWD budget is TWD 199,346 for two travelers, with a safety version of TWD 250,000 and a hard ceiling of TWD 280,000. Luxury handbags, jewelry, watches, USJ VIP Tour / Private VIP Tour, guaranteed early check-in, paid upgrades, and Ambassador renewal USD 250 are excluded unless explicitly added later. Use the lodging net amount TWD 65,900 after the lower-price complimentary night is treated as free.
-
-## Customer-Facing Output Rules
-
-- Use Traditional Chinese.
-- Audience is travelers/customers, not internal project maintainers.
-- Keep tables simple and use the fixed columns recorded in `database/customer_facing_travel_plan.yml`.
-- Mark uncertain items as 待確認, 待官方公布, or 參考價格.
-- Update existing customer-facing content instead of creating parallel versions.
-
-## Maintenance Rule
-
-Database first, docs second, changelog last.
