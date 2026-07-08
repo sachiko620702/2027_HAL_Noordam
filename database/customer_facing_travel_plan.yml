@@ -1,9 +1,9 @@
 metadata:
   id: customer_facing_travel_plan
   title: "顧客版旅遊規劃三表"
-  version: "V5.26.2"
-  status: "active_customer_facing_summary_with_reservation_purchase_timeline"
-  last_updated: "2026-07-07"
+  version: "V5.51.0"
+  status: "active_customer_facing_summary_after_repository_consistency_cleanup"
+  last_updated: "2026-07-08"
   maintained_by: "ChatGPT"
   audience: "旅客／顧客"
   language: "zh-Hant"
@@ -17,7 +17,7 @@ trip_overview:
   planned_room_type: "1 King Premium Club Lounge Access（預計升等為 1 King Junior Suite with club lounge access）"
   style: "Luxury Slow Travel"
   flight_baseline: "去程 EVA Air BR178 暫採現行班表 06:30 TPE → 10:10 KIX；回程 EVA Air BR129 暫採現行班表 18:30 KIX → 20:30 TPE。2027/11 官方班表、票價與訂位狀態仍需確認。"
-  budget_baseline: "V5.50.0 建議版主預算 NT$199,346／兩人；安全版 NT$250,000／兩人；安全上限 NT$280,000／兩人；Ambassador 續約 USD 250 與精品購物另計。住宿以低價那晚免費後的淨額估算，不用把臨時刷卡高峰值當主預算。Day 4 NOKA 以 JPY 38,500／兩人、匯率 0.2 換算成 NT$7,700／兩人。USJ 票券以兩人計算。"
+  budget_baseline: "V5.51.0 建議版主預算 NT$199,346／兩人；節制版 NT$194,648／兩人；安全版 NT$250,000／兩人；硬上限 NT$280,000／兩人；Ambassador 續約 USD 250 與精品購物另計。住宿以低價那晚免費後的淨額 NT$65,900 估算，不用把臨時刷卡高峰值當主預算。Day 4 NOKA 以 JPY 38,500／兩人、匯率 0.2 換算成 NT$7,700／兩人。USJ 票券以兩人計算。"
   confirmed_scope:
     - "USJ 一天"
     - "好吃優先餐飲"
@@ -27,8 +27,8 @@ trip_overview:
     - "Day 3 正式覆蓋：不去京都；木津市場早午餐＋難波／日本橋動漫模型周邊＋回飯店休息與行政酒廊下午茶＋肉NOASATSU 壽司晚餐"
     - "Day 3 京都版、京 鰻和 本店與天ぷら 京星降為備案／歷史版本"
     - "Day 4 正式確認：心齋橋為主；Pokémon Center OSAKA DX；午餐後回 InterContinental Osaka；下午在飯店附近活動；NOKA Roast & Grill"
-    - "V5.26.2 將 KKday #536220 飯店 ↔ USJ 接送補入 2027/10/10 購買批次"
-    - "機票預算為 TWD 36,000；建議版主預算為 TWD 199,346／兩人。"
+    - "Day 4 PIERRE 與壽司皆為 fallback-only，不是目前正式晚餐"
+    - "V5.51.0 將主控檔與顧客版統計表統一到 NT$199,346／兩人。"
 
 hotel_reply_summary:
   received_date: "2026-07-07"
@@ -59,19 +59,19 @@ itinerary_table:
     main_places: "Universal Studios Japan"
     transportation: "KKday #536220 飯店 ↔ USJ 來回接送；V5.24.0 暫估單程 NT$1,732、來回 NT$3,464"
     meals: "行政酒廊早餐；園區內用餐待確認"
-    notes: "V5.26.2 時間軸設定 2027/09/17 搶購 Express Pass 7，2027/10/10 買 Studio Pass 與 KKday #536220 飯店 ↔ USJ 接送。"
+    notes: "2027/09/17 搶購 Express Pass 7，2027/10/10 買 Studio Pass 與 KKday #536220 飯店 ↔ USJ 接送。"
   - date: "Day 3｜2027/11/19（五）"
     focus: "木津市場、日本橋動漫模型、飯店酒廊下午茶、肉NOASATSU 壽司晚餐"
     main_places: "木津市場、難波、日本橋、Den Den Town、Ota Road、InterContinental Osaka Executive Lounge、肉NOASATSU"
     transportation: "大阪市內地鐵（預計刷西瓜卡）、步行；保留少量短程計程車備援；不去京都；KKday #133661 不再作為 Day 3 主方案"
     meals: "木津市場早午餐；難波／道頓堀／心齋橋午餐待選；行政酒廊下午茶；晚餐：肉NOASATSU"
-    notes: "正式行程已覆蓋為大阪市內版。京都版、京 鰻和 本店、天ぷら 京星降為備案；Day 3 壽司晚餐正式店名為肉NOASATSU，來源為 KKday #268366，價格與取消政策待確認。"
+    notes: "正式行程已覆蓋為大阪市內版。京都版、京 鰻和 本店、天ぷら 京星降為備案；Day 3 壽司晚餐正式店名為肉NOASATSU，來源為 KKday #268366，單人 NT$1,541、兩人 NT$3,082，取消政策與交通待確認。"
   - date: "Day 4｜2027/11/20（六）"
     focus: "心齋橋 Pokémon Center、精品購物、午餐後回飯店、行政酒廊下午茶、NOKA Roast & Grill"
     main_places: "心齋橋、大丸心齋橋、Pokémon Center OSAKA DX、InterContinental Osaka Executive Lounge、Grand Front Osaka、NOKA Roast & Grill"
     transportation: "上午到心齋橋；午餐後以西瓜卡搭地鐵回 InterContinental Osaka；下午只在飯店或飯店附近活動；晚餐在飯店內 NOKA"
     meals: "行政酒廊早餐；心齋橋周邊午餐待確認；行政酒廊下午茶；晚餐：NOKA Roast & Grill"
-    notes: "V5.26.2 時間軸設定 2027/09/17 處理 NOKA 訂位；套餐包含開胃菜自助餐、主菜（選）、甜點自助餐與咖啡或茶，飲品 90 分鐘暢飲；特價菜單日不適用。"
+    notes: "NOKA 是目前正式 Day 4 晚餐。PIERRE 與壽司為備案。訂位時備註 anniversary dinner，並請求 buffet package 與 90 分鐘暢飲；座位不保證。"
   - date: "Day 5｜2027/11/21（日）"
     focus: "退房、返回台灣"
     main_places: "InterContinental Osaka、關西機場、台北桃園機場"
@@ -111,7 +111,7 @@ todo_table:
   - item: "2027/11/05 旅遊保險"
     suggested_time: "2027/11/05"
     status: "已排程"
-    reminder: "金額 TWD 6,900；確認投保內容、旅遊不便險、醫療保障、保單文件與付款狀態。"
+    reminder: "金額 TWD 6,900；確認投保內容、醫療保障、旅遊不便險、保單文件與付款狀態。"
   - item: "2027/11/05 申請漫遊"
     suggested_time: "2027/11/05"
     status: "已排程"
@@ -127,7 +127,7 @@ budget_table:
     description: "InterContinental Osaka 房費、行政酒廊早餐、Day 1／Day 3／Day 4 行政酒廊下午茶"
     estimated_cost: "NT$65,900"
     paid: "NT$0（付款未確認）"
-    notes: "兩張住宿訂單，合計四晚；第一筆為 Preferred Partner Rate 20% Off，第二筆為 Ambassador Complimentary Weekend Night；第二筆入住後退房時更新金額，低價那晚免費後，住宿淨額約 NT$65,900。Ambassador 續約 USD 250 另計。"
+    notes: "兩張住宿訂單，合計四晚；第一筆為 Preferred Partner Rate 20% Off，第二筆為 Ambassador Complimentary Weekend Night；住宿淨額約 NT$65,900。Ambassador 續約 USD 250 另計。"
   - category: "購物"
     description: "Pokémon Center OSAKA、Pokémon Center OSAKA DX、日本橋動漫模型周邊、百貨小物"
     estimated_cost: "NT$10,000"
@@ -137,12 +137,12 @@ budget_table:
     description: "Day 1 千房晚餐、木津市場早午餐、Day 3 大阪市內午餐、Day 3 壽司晚餐、Day 4 心齋橋午餐與 NOKA Roast & Grill"
     estimated_cost: "NT$27,782"
     paid: "NT$0（付款未確認）"
-    notes: "Day 1 千房已由 NT$9,000 下修為 NT$4,000；Day 3 木津市場早午餐上修為 NT$8,000；Day 3 壽司店名為肉NOASATSU，來源為 KKday #268366，頁面顯示單人 NT$1,541、兩人合計 NT$3,082；NOKA 以每人 JPY 17,500 + 10%（兩人 JPY 38,500）按匯率 0.2 換算為 NT$7,700；套餐、飲品與特價菜單日條件待確認。"
+    notes: "Day 1 千房 NT$4,000；Day 3 木津市場早午餐 NT$8,000；Day 3 肉NOASATSU／KKday #268366 兩人 NT$3,082；NOKA 兩人 JPY 38,500，按匯率 0.2 換算為 NT$7,700。"
   - category: "USJ"
     description: "Studio Pass、Express Pass、園區餐飲與購物"
     estimated_cost: "NT$25,000"
     paid: "NT$0"
-    notes: "Express Pass 7 以單人 NT$4,365 至 NT$5,754 估算，兩人為 NT$8,730 至 NT$11,508；Studio Pass 以單人 NT$1,840 至 NT$2,800 估算，兩人為 NT$3,680 至 NT$5,600；園區餐飲與購物 NT$7,892。2027/11 官方票券價格與活動仍需確認。"
+    notes: "Express Pass 7 以單人 NT$4,365 至 NT$5,754 估算；Studio Pass 以單人 NT$1,840 至 NT$2,800 估算；皆以兩人計。園區餐飲與購物 NT$7,892。"
   - category: "其他"
     description: "保險、漫遊、用品、匯差／海外手續費、預備金"
     estimated_cost: "NT$15,000"
@@ -151,10 +151,12 @@ budget_table:
 
 budget_summary:
   controlled_total_twd: 194648
+  controlled_per_person_twd: 97324
   recommended_total_twd: 199346
   recommended_per_person_twd: 99673
   safety_total_twd: 250000
   safety_per_person_twd: 125000
+  hard_ceiling_twd: 280000
   known_scheduled_twd_payments_total: 43399
   known_scheduled_usd_payments_total: 250
   reference_price_items:
@@ -173,5 +175,4 @@ pending_items:
   - "Day 3 難波／道頓堀／心齋橋午餐候選。"
   - "肉NOASATSU／KKday #268366 壽司晚餐價位、預約方式、取消政策與交通。"
   - "Day 4 NOKA 2027/11/20 晚餐營業、訂位開放、套餐、飲品、特價菜單日規則與取消政策。"
-  - "Day 4 NOKA 套餐與暢飲是否可備註，以及實際安排機率。"
   - "Day 4 心齋橋午餐候選與午餐後以西瓜卡搭地鐵回飯店交通。"
