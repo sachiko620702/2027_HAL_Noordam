@@ -474,11 +474,51 @@ code {
   background-position: center;
 }
 
+.day-image-1 {
+  background:
+    linear-gradient(135deg, rgba(4, 10, 18, 0.12), rgba(4, 10, 18, 0.28)),
+    url("./assets/day-1-arrival.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.day-image-2 {
+  background:
+    linear-gradient(135deg, rgba(4, 10, 18, 0.12), rgba(4, 10, 18, 0.28)),
+    url("./assets/day-2-usj.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.day-image-3 {
+  background:
+    linear-gradient(135deg, rgba(4, 10, 18, 0.12), rgba(4, 10, 18, 0.28)),
+    url("./assets/day-3-market-hobby.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.day-image-4 {
+  background:
+    linear-gradient(135deg, rgba(4, 10, 18, 0.12), rgba(4, 10, 18, 0.28)),
+    url("./assets/day-4-shopping.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.day-image-5 {
+  background:
+    linear-gradient(135deg, rgba(4, 10, 18, 0.12), rgba(4, 10, 18, 0.28)),
+    url("./assets/day-5-departure.png");
+  background-size: cover;
+  background-position: center;
+}
+
 .image-hobby {
   background:
     linear-gradient(135deg, rgba(4, 10, 18, 0.16), rgba(4, 10, 18, 0.3)),
     linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(0, 0, 0, 0.1)),
-    url("./assets/day-3-hobby-nipponbashi.png");
+    url("./assets/day-3-market-hobby.png");
   background-size: cover;
   background-position: center;
 }
@@ -706,31 +746,31 @@ code {
 .day-image-1 {
   background:
     linear-gradient(180deg, rgba(5, 12, 22, 0.15), rgba(5, 12, 22, 0.42)),
-    url("./assets/day-1-arrival-lounge.png") center center / cover no-repeat;
+    url("./assets/day-1-arrival.png") center center / cover no-repeat;
 }
 
 .day-image-2 {
   background:
     linear-gradient(180deg, rgba(6, 10, 24, 0.12), rgba(6, 10, 24, 0.44)),
-    url("./assets/day-2-usj-vip.png") center center / cover no-repeat;
+    url("./assets/day-2-usj.png") center center / cover no-repeat;
 }
 
 .day-image-3 {
   background:
     linear-gradient(180deg, rgba(12, 10, 4, 0.1), rgba(12, 10, 4, 0.42)),
-    url("./assets/day-3-kizu-market-sushi.png") center center / cover no-repeat;
+    url("./assets/day-3-market-hobby.png") center center / cover no-repeat;
 }
 
 .day-image-4 {
   background:
     linear-gradient(180deg, rgba(9, 11, 18, 0.14), rgba(9, 11, 18, 0.44)),
-    url("./assets/day-4-shinsaibashi-shopping.png") center center / cover no-repeat;
+    url("./assets/day-4-shopping.png") center center / cover no-repeat;
 }
 
 .day-image-5 {
   background:
     linear-gradient(180deg, rgba(8, 12, 20, 0.16), rgba(8, 12, 20, 0.46)),
-    url("./assets/day-5-departure-suite.png") center center / cover no-repeat;
+    url("./assets/day-5-departure.png") center center / cover no-repeat;
 }
 
 .day-body h3 {

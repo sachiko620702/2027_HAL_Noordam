@@ -135,9 +135,9 @@
   function updateBudgetText() {
     const textMap = {
       "hero-recommended-total": `${formatTwd(recommendedTotal)} / ${budgetData.travelers}人`,
-      "hero-recommended-note": `固定支出 ${formatTwd(scheduledTotal)} + USD ${budgetData.scheduled.usd} 已先整理好；高單價項目先鎖住，後面的節奏就能慢慢展開。`,
+      "hero-recommended-note": `固定支出 ${formatTwd(scheduledTotal)} + USD ${budgetData.scheduled.usd} 已先整理好；高單價項目也先納入規劃，整體節奏會更從容。`,
       "overview-recommended-total": `${formatTwd(recommendedTotal)} / ${budgetData.travelers}人`,
-      "overview-recommended-note": `精品購物與 Ambassador 續約另計；USJ VIP 5 小時、Hello Kitty HARUKA 到飯店、USJ 回程包車與大阪環狀線 + JR 夢咲線已納入，讓交通與體驗都維持在同一種從容感裡。`,
+      "overview-recommended-note": `精品購物與 Ambassador 續約另計；USJ VIP 5 小時、Hello Kitty HARUKA 到飯店、USJ 回程包車與大阪環狀線 + JR 夢咲線都已列入總預算。`,
     };
 
     elements.budgetTextNodes.forEach((node) => {
@@ -236,19 +236,19 @@
     elements.budgetApp.innerHTML = `
       <div class="budget-summaries">
         <article class="summary panel">
-          <span>建議版主預算</span>
+          <span>建議總預算</span>
           <strong>${formatTwd(recommendedTotal)}</strong>
-          <p>兩人基本旅費的主控值，已把這趟旅行最重要的節奏先排好。</p>
+          <p>這是兩位旅客的建議總額，已涵蓋主要交通、住宿、餐飲、USJ 與購物預算。</p>
         </article>
         <article class="summary panel">
-          <span>安全版／硬上限</span>
+          <span>預算上限</span>
           <strong>${formatTwd(budgetData.hardLimitTwd)}</strong>
-          <p>目前安全版等於硬上限，剩餘緩衝約 ${formatTwd(budgetData.hardLimitTwd - recommendedTotal)}。</p>
+          <p>目前以這個金額作為保守上限，仍保留約 ${formatTwd(budgetData.hardLimitTwd - recommendedTotal)} 的彈性。</p>
         </article>
         <article class="summary panel">
           <span>已確認支出</span>
           <strong>${formatTwd(scheduledTotal)} + USD ${budgetData.scheduled.usd}</strong>
-          <p>含機票、USJ VIP 5 小時、保險與漫遊；USD 250 先獨立保留，之後再和正式匯率對齊。</p>
+          <p>目前已確認的金額包含機票、USJ VIP 5 小時、保險與漫遊；USD 250 的 Ambassador 續約則另外追蹤。</p>
         </article>
       </div>
 
@@ -256,8 +256,8 @@
         <article class="budget-chart panel">
           <div class="chart-head">
             <div>
-              <p class="chart-kicker">Budget mix</p>
-              <h3>把花費分段看，旅行節奏也會更清楚</h3>
+              <p class="chart-kicker">預算比例</p>
+              <h3>把花費分段看，整體規劃也會更清楚</h3>
             </div>
             <strong>${formatTwd(recommendedTotal)}</strong>
           </div>
@@ -272,7 +272,7 @@
         <article class="budget-chart panel">
           <div class="chart-head">
             <div>
-              <p class="chart-kicker">Budget range</p>
+              <p class="chart-kicker">預算區間</p>
               <h3>主預算與安全上限的距離</h3>
             </div>
             <strong>上限 ${formatTwd(budgetData.hardLimitTwd)}</strong>
@@ -280,19 +280,19 @@
           <div class="scenario-bars" aria-label="節制版、建議版與安全版的預算比較">
             ${scenarioRows}
           </div>
-          <p class="chart-note">USJ VIP 5 小時後，建議版距離硬上限約 ${formatTwd(budgetData.hardLimitTwd - recommendedTotal)}；若 VIP 幣別、Studio Pass 或官方價格和目前假設不同，這份故事就要重新校正一次。</p>
+          <p class="chart-note">目前建議版距離上限約 ${formatTwd(budgetData.hardLimitTwd - recommendedTotal)}；若 VIP、Studio Pass 或官方價格與現行假設不同，總額仍可再調整。</p>
         </article>
       </div>
 
       <div class="budget-tree panel">
         <div class="tree-head">
           <div>
-            <p class="chart-kicker">Budget tree</p>
+            <p class="chart-kicker">預算明細</p>
             <h3>六大類花費，對應整趟旅程的不同段落</h3>
           </div>
           <strong>點開看細項</strong>
         </div>
-        <p class="tree-note">USD 250 的 InterContinental Ambassador 續約先獨立追蹤，不併入 TWD 主預算總額。USJ 園區餐飲不再單獨列出，已視為包含在 VIP 5 小時內，讓預算看起來更像旅程本身，而不是一串零碎帳目。</p>
+        <p class="tree-note">USD 250 的 InterContinental Ambassador 續約先獨立追蹤，不併入 TWD 主預算總額。USJ 園區餐飲也已包含在 VIP 5 小時估算內。</p>
         <div class="tree-list">
           ${treeNodes}
         </div>
