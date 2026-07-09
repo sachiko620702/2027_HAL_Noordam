@@ -432,26 +432,26 @@ code {
 .scene-okonomi {
   background:
     linear-gradient(180deg, rgba(4, 10, 18, 0.14), rgba(4, 10, 18, 0.34)),
-    url("./assets/day-1-okonomiyaki-umeda.png") center center / cover no-repeat;
+    url("./assets/day-1-okonomiyaki-umeda.3b66bcdfa2.png") center center / cover no-repeat;
 }
 
 .scene-sushi {
   background:
     linear-gradient(180deg, rgba(4, 10, 18, 0.14), rgba(4, 10, 18, 0.34)),
-    url("./assets/day-3-sushi-omakase.png") center center / cover no-repeat;
+    url("./assets/day-3-sushi-omakase.d58ae331dd.png") center center / cover no-repeat;
 }
 
 .scene-noka {
   background:
     linear-gradient(180deg, rgba(4, 10, 18, 0.14), rgba(4, 10, 18, 0.34)),
-    url("./assets/day-4-noka-dining.png") center center / cover no-repeat;
+    url("./assets/day-4-noka-dining.4d9cd2b899.png") center center / cover no-repeat;
 }
 
 .image-arrival {
   background:
     linear-gradient(135deg, rgba(4, 10, 18, 0.18), rgba(4, 10, 18, 0.28)),
     linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(0, 0, 0, 0.1)),
-    url("./assets/osaka-arrival-lounge.png");
+    url("./assets/osaka-arrival-lounge.3e9317e722.png");
   background-size: cover;
   background-position: center;
 }
@@ -460,7 +460,7 @@ code {
   background:
     linear-gradient(135deg, rgba(4, 10, 18, 0.16), rgba(4, 10, 18, 0.3)),
     linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(0, 0, 0, 0.1)),
-    url("./assets/osaka-dining-market.png");
+    url("./assets/osaka-dining-market.cb7c69254f.png");
   background-size: cover;
   background-position: center;
 }
@@ -469,7 +469,7 @@ code {
   background:
     linear-gradient(135deg, rgba(4, 10, 18, 0.18), rgba(4, 10, 18, 0.3)),
     linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(0, 0, 0, 0.12)),
-    url("./assets/osaka-shopping-night.png");
+    url("./assets/osaka-shopping-night.e919b0a74a.png");
   background-size: cover;
   background-position: center;
 }
@@ -477,7 +477,7 @@ code {
 .day-image-1 {
   background:
     linear-gradient(135deg, rgba(4, 10, 18, 0.12), rgba(4, 10, 18, 0.28)),
-    url("./assets/day-1-arrival.png");
+    url("./assets/day-1-arrival.2f5e6f5ef8.png");
   background-size: cover;
   background-position: center;
 }
@@ -485,7 +485,7 @@ code {
 .day-image-2 {
   background:
     linear-gradient(135deg, rgba(4, 10, 18, 0.12), rgba(4, 10, 18, 0.28)),
-    url("./assets/day-2-usj.png");
+    url("./assets/day-2-usj.2be406345a.png");
   background-size: cover;
   background-position: center;
 }
@@ -493,7 +493,7 @@ code {
 .day-image-3 {
   background:
     linear-gradient(135deg, rgba(4, 10, 18, 0.12), rgba(4, 10, 18, 0.28)),
-    url("./assets/day-3-market-hobby.png");
+    url("./assets/day-3-market-hobby.57289ab0da.png");
   background-size: cover;
   background-position: center;
 }
@@ -501,7 +501,7 @@ code {
 .day-image-4 {
   background:
     linear-gradient(135deg, rgba(4, 10, 18, 0.12), rgba(4, 10, 18, 0.28)),
-    url("./assets/day-4-shopping.png");
+    url("./assets/day-4-shopping.937baddaf2.png");
   background-size: cover;
   background-position: center;
 }
@@ -509,7 +509,7 @@ code {
 .day-image-5 {
   background:
     linear-gradient(135deg, rgba(4, 10, 18, 0.12), rgba(4, 10, 18, 0.28)),
-    url("./assets/day-5-departure.png");
+    url("./assets/day-5-departure.d59f04cd58.png");
   background-size: cover;
   background-position: center;
 }
@@ -518,7 +518,7 @@ code {
   background:
     linear-gradient(135deg, rgba(4, 10, 18, 0.16), rgba(4, 10, 18, 0.3)),
     linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(0, 0, 0, 0.1)),
-    url("./assets/day-3-market-hobby.png");
+    url("./assets/day-3-market-hobby.57289ab0da.png");
   background-size: cover;
   background-position: center;
 }
@@ -527,7 +527,7 @@ code {
   background:
     linear-gradient(135deg, rgba(4, 10, 18, 0.16), rgba(4, 10, 18, 0.3)),
     linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(0, 0, 0, 0.1)),
-    url("./assets/osaka-dining-market.png");
+    url("./assets/osaka-dining-market.cb7c69254f.png");
   background-size: cover;
   background-position: center;
 }
@@ -746,31 +746,31 @@ code {
 .day-image-1 {
   background:
     linear-gradient(180deg, rgba(5, 12, 22, 0.15), rgba(5, 12, 22, 0.42)),
-    url("./assets/day-1-arrival.png") center center / cover no-repeat;
+    url("./assets/day-1-arrival.2f5e6f5ef8.png") center center / cover no-repeat;
 }
 
 .day-image-2 {
   background:
     linear-gradient(180deg, rgba(6, 10, 24, 0.12), rgba(6, 10, 24, 0.44)),
-    url("./assets/day-2-usj.png") center center / cover no-repeat;
+    url("./assets/day-2-usj.2be406345a.png") center center / cover no-repeat;
 }
 
 .day-image-3 {
   background:
     linear-gradient(180deg, rgba(12, 10, 4, 0.1), rgba(12, 10, 4, 0.42)),
-    url("./assets/day-3-market-hobby.png") center center / cover no-repeat;
+    url("./assets/day-3-market-hobby.57289ab0da.png") center center / cover no-repeat;
 }
 
 .day-image-4 {
   background:
     linear-gradient(180deg, rgba(9, 11, 18, 0.14), rgba(9, 11, 18, 0.44)),
-    url("./assets/day-4-shopping.png") center center / cover no-repeat;
+    url("./assets/day-4-shopping.937baddaf2.png") center center / cover no-repeat;
 }
 
 .day-image-5 {
   background:
     linear-gradient(180deg, rgba(8, 12, 20, 0.16), rgba(8, 12, 20, 0.46)),
-    url("./assets/day-5-departure.png") center center / cover no-repeat;
+    url("./assets/day-5-departure.d59f04cd58.png") center center / cover no-repeat;
 }
 
 .day-body h3 {
