@@ -1,5 +1,30 @@
 # CHANGELOG
 
+# V5.54.0 - 2026-07-09
+
+### Changed
+
+- Replaced the Day 2 USJ Express Pass 7 plan with USJ VIP 5h.
+- Added the user-provided USJ VIP 5h reference amount of TWD 60,000 to the active budget model.
+- Treated USJ VIP 5h as including lunch, dinner, and in-park dining, so USJ park dining is no longer listed as a separate budget line.
+- Merged USJ shopping with ordinary Pokémon / anime / Nipponbashi / department-store small goods into a TWD 14,000 shopping category.
+- Kept USJ Studio Pass as a 2027/10/10 purchase target with a temporary two-person reference of TWD 7,108 until official VIP admission rules are confirmed.
+- Updated the active recommended budget to NT$245,454 for two travelers, controlled scenario to NT$240,756, safety version to NT$280,000, and hard ceiling to NT$280,000.
+- Added version note `docs/13_版本與更新/V5.54.0_USJ_VIP_5h_Budget_Update.md`.
+
+### Reason
+
+The user changed the USJ strategy from Express Pass 7 to USJ VIP 5h and clarified that VIP 5h includes lunch, dinner, and in-park dining. Therefore, USJ park dining and shopping should not remain as a separate budget line, and USJ shopping should be merged into the ordinary shopping category.
+
+### Impact
+
+- Day 2 USJ now uses USJ VIP 5h as the active planning strategy.
+- The active recommended TWD budget is now NT$245,454 for two travelers.
+- The safety version and hard ceiling are both NT$280,000.
+- The remaining buffer between the recommended budget and hard ceiling is about NT$34,546.
+- Studio Pass still requires reconfirmation because the project must verify whether USJ VIP 5h includes admission.
+- Ambassador renewal USD 250, luxury handbags, jewelry, and watches remain separate.
+
 # V5.53.0 - 2026-07-08
 
 ### Changed

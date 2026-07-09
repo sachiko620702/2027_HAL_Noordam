@@ -1,9 +1,9 @@
 project:
   name: 2027 Osaka Trip
-  version: V5.53.0
+  version: V5.54.0
   source_of_truth: GitHub main
   repository: sachiko620702/2027_OSAKA
-  current_sync_reason: USJ VIP 8h budget update and USJ shopping merge
+  current_sync_reason: USJ VIP 5h budget update and USJ shopping merge
   dates:
     start: 2027-11-17
     end: 2027-11-21
@@ -12,7 +12,7 @@ project:
   hotel: InterContinental Osaka
   positioning: Luxury Slow Travel
   status: active
-  last_updated: 2026-07-08
+  last_updated: 2026-07-09
 
   fixed_items:
     - USJ one day
@@ -25,7 +25,7 @@ project:
     - Breakfast normally at hotel Executive Lounge except Kizu Market day
     - Day 3 formal route is Osaka city route, not Kyoto
     - Day 4 formal dinner is NOKA Roast & Grill; PIERRE is fallback-only
-    - USJ Express Pass 7 is superseded by USJ VIP 8h in V5.53.0
+    - USJ Express Pass 7 is superseded by USJ VIP 5h in V5.54.0
 
   user_confirmed_inputs:
     flights:
@@ -100,13 +100,13 @@ project:
 
     usj_tickets:
       express_pass_7:
-        status: superseded_by_usj_vip_8h
+        status: superseded_by_usj_vip_5h
         previous_planned_purchase_date: 2027-09-17
-        note: "V5.53.0 依使用者指示改為 USJ VIP 8 小時。"
-      vip_8h:
+        note: "V5.54.0 依使用者指示改為 USJ VIP 5 小時。"
+      vip_5h:
         planned_purchase_or_reservation_date: 2027-09-17
-        reference_amount_twd: 87000
-        amount_source: "使用者提供 87,000；本版先以 TWD 估算。"
+        reference_amount_twd: 60000
+        amount_source: "使用者提供 60000；本版先以 TWD 估算。"
         status: selected_user_confirmed_reference_needs_official_reconfirmation
         includes:
           - lunch
@@ -125,7 +125,7 @@ project:
           low: 1840
           high: 2800
         budget_reference_twd_for_two: 7108
-        reconfirmation: "需確認 VIP 8 小時是否仍須另購 Studio Pass。"
+        reconfirmation: "需確認 VIP 5 小時是否仍須另購 Studio Pass。"
       park_dining_and_shopping_twd: 0
       park_dining_and_shopping_status: removed_as_separate_budget_line
       general_and_usj_shopping_merged_budget_twd: 14000
@@ -159,14 +159,14 @@ project:
         - hotel Executive Lounge breakfast
         - KKday #536220 InterContinental Osaka to USJ transfer
         - Universal Studios Japan one day
-        - USJ VIP 8h instead of Express Pass 7
+        - USJ VIP 5h instead of Express Pass 7
         - USJ Studio Pass still pending official purchase
         - KKday #536220 USJ to InterContinental Osaka transfer
-      meal_policy: "VIP 8 小時視為包含午餐、晚餐與園內餐飲；不再另列 USJ 園區餐飲預算。"
+      meal_policy: "VIP 5 小時視為包含午餐、晚餐與園內餐飲；不再另列 USJ 園區餐飲預算。"
       shopping_policy: "USJ 周邊購物與一般 Pokémon / 動漫 / 日本橋 / 百貨小物合併為 TWD 14,000。"
       pending:
-        - VIP 8h official 2027 terms, currency, final price, and meal scope
-        - whether Studio Pass is included in VIP 8h
+        - VIP 5h official 2027 terms, currency, final price, and meal scope
+        - whether Studio Pass is included in VIP 5h
         - Studio Pass official price and purchase route
 
     day3_formal_route:
@@ -228,22 +228,22 @@ project:
 
   reservation_purchase_timeline:
     active_database: database/reservation_purchase_timeline.yml
-    version: V5.53.0
-    known_scheduled_twd_payments_total: 130399
+    version: V5.54.0
+    known_scheduled_twd_payments_total: 103399
     known_scheduled_usd_payments_total: 250
 
   budget:
     active_model: database/budget_model.yml
-    version: V5.53.0
-    controlled_total_twd_for_two: 267756
-    recommended_total_twd_for_two: 272454
-    recommended_per_person_twd: 136227
+    version: V5.54.0
+    controlled_total_twd_for_two: 240756
+    recommended_total_twd_for_two: 245454
+    recommended_per_person_twd: 122727
     safety_budget_twd_for_two: 280000
     safety_per_person_twd: 140000
     hard_ceiling_twd_for_two: 280000
     lodging_net_total_twd: 65900
-    usj_vip_8h_twd: 87000
-    usj_budget_twd: 94108
+    usj_vip_5h_twd: 60000
+    usj_budget_twd: 67108
     merged_general_and_usj_shopping_twd: 14000
     luxury_shopping: separate
     ambassador_usd_250: tracked_separately_until_exchange_rate_or_actual_charge_confirmed

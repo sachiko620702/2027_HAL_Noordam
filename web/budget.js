@@ -3,12 +3,12 @@
     travelers: 2,
     hardLimitTwd: 280000,
     scenarios: {
-      controlled: 267756,
-      recommended: 272454,
+      controlled: 240756,
+      recommended: 245454,
       safety: 280000,
     },
     scheduled: {
-      twd: 130399,
+      twd: 103399,
       usd: 250,
     },
     categories: [
@@ -51,7 +51,7 @@
         key: "dining",
         label: "飲食",
         description: "千房、木津市場、壽司、NOKA",
-        note: "Day 2 USJ 午餐、晚餐與園內餐飲視為包含在 VIP 8 小時內，不再單獨列。",
+        note: "Day 2 USJ 午餐、晚餐與園內餐飲視為包含在 VIP 5 小時內，不再單獨列。",
         items: [
           { label: "Day 1 千房 梅田周邊店", amount: 4000 },
           { label: "Day 3 木津市場早午餐", amount: 8000 },
@@ -63,9 +63,9 @@
       {
         key: "usj",
         label: "USJ",
-        description: "VIP 8 小時與 Studio Pass",
+        description: "VIP 5 小時與 Studio Pass",
         items: [
-          { label: "USJ VIP 8 小時", amount: 87000, detail: "使用者提供；幣別與官方條件待確認" },
+          { label: "USJ VIP 5 小時", amount: 60000, detail: "使用者提供；幣別與官方條件待確認" },
           { label: "USJ Studio Pass", amount: 7108, detail: "兩人暫估，待官方公布；需確認 VIP 是否包含" },
         ],
       },
@@ -137,7 +137,7 @@
       "hero-recommended-total": `${formatTwd(recommendedTotal)} / ${budgetData.travelers}人`,
       "hero-recommended-note": `已排程固定支出 ${formatTwd(scheduledTotal)} + USD ${budgetData.scheduled.usd}；硬上限 ${formatTwd(budgetData.hardLimitTwd)}。`,
       "overview-recommended-total": `${formatTwd(recommendedTotal)} / ${budgetData.travelers}人`,
-      "overview-recommended-note": `精品購物與 Ambassador 續約另計；USJ VIP 8 小時已納入，已排程固定支出 ${formatTwd(scheduledTotal)} + USD ${budgetData.scheduled.usd}。`,
+      "overview-recommended-note": `精品購物與 Ambassador 續約另計；USJ VIP 5 小時已納入，已排程固定支出 ${formatTwd(scheduledTotal)} + USD ${budgetData.scheduled.usd}。`,
     };
 
     elements.budgetTextNodes.forEach((node) => {
@@ -238,7 +238,7 @@
         <article class="summary panel">
           <span>建議版主預算</span>
           <strong>${formatTwd(recommendedTotal)}</strong>
-          <p>兩人基本旅費的主控值，已納入 USJ VIP 8 小時。</p>
+          <p>兩人基本旅費的主控值，已納入 USJ VIP 5 小時。</p>
         </article>
         <article class="summary panel">
           <span>安全版／硬上限</span>
@@ -248,7 +248,7 @@
         <article class="summary panel">
           <span>已排程且已有確定金額</span>
           <strong>${formatTwd(scheduledTotal)} + USD ${budgetData.scheduled.usd}</strong>
-          <p>含機票、USJ VIP 8 小時、保險與漫遊；USD 250 另追蹤。</p>
+          <p>含機票、USJ VIP 5 小時、保險與漫遊；USD 250 另追蹤。</p>
         </article>
       </div>
 
@@ -280,7 +280,7 @@
           <div class="scenario-bars" aria-label="節制版、建議版與安全版的預算比較">
             ${scenarioRows}
           </div>
-          <p class="chart-note">USJ VIP 8 小時後，建議版距離硬上限只剩約 ${formatTwd(budgetData.hardLimitTwd - recommendedTotal)}；若 VIP 幣別、Studio Pass 或官方價格與目前假設不同，需再次重算。</p>
+          <p class="chart-note">USJ VIP 5 小時後，建議版距離硬上限約 ${formatTwd(budgetData.hardLimitTwd - recommendedTotal)}；若 VIP 幣別、Studio Pass 或官方價格與目前假設不同，需再次重算。</p>
         </article>
       </div>
 
@@ -292,7 +292,7 @@
           </div>
           <strong>點開看細項</strong>
         </div>
-        <p class="tree-note">USD 250 的 InterContinental Ambassador 續約先獨立追蹤，不併入 TWD 主預算總額。USJ 園區餐飲不再單獨列出，已視為包含在 VIP 8 小時內。</p>
+        <p class="tree-note">USD 250 的 InterContinental Ambassador 續約先獨立追蹤，不併入 TWD 主預算總額。USJ 園區餐飲不再單獨列出，已視為包含在 VIP 5 小時內。</p>
         <div class="tree-list">
           ${treeNodes}
         </div>

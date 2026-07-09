@@ -1,13 +1,13 @@
 metadata:
   id: budget_model
   title: "2027 大阪自由行預算模型"
-  version: "V5.53.0"
-  status: "active_budget_baseline_after_usj_vip_8h_update"
-  last_updated: "2026-07-08"
+  version: "V5.54.0"
+  status: "active_budget_baseline_after_usj_vip_5h_update"
+  last_updated: "2026-07-09"
   maintained_by: "ChatGPT"
   currency: "TWD"
   travelers: 2
-  caveat: "本模型為 2026/07 依使用者提供價格與目前正式行程建立的暫估模型；2027 官方價格、航班票價、KKday 商品價格、USJ 票券、飯店房價與餐廳菜單仍需再次確認。V5.53.0 依使用者指示將 USJ Express Pass 7 改為 USJ VIP 8 小時，暫以 TWD 87,000 納入主預算；因 VIP 8 小時包含午餐、晚餐與園內餐飲，不再單獨列 USJ 園區餐飲與購物。"
+  caveat: "本模型為 2026/07 依使用者提供價格與目前正式行程建立的暫估模型；2027 官方價格、航班票價、KKday 商品價格、USJ 票券、飯店房價與餐廳菜單仍需再次確認。V5.54.0 依使用者指示將 USJ Express Pass 7 改為 USJ VIP 5 小時，暫以 TWD 60,000 納入主預算；因 VIP 方案包含午餐、晚餐與園內餐飲，不再單獨列 USJ 園區餐飲與購物。"
 
 trip_scope:
   dates: "2027/11/17（三）～2027/11/21（日）"
@@ -20,8 +20,8 @@ trip_scope:
     - "KKday #129909 機場接送來回"
     - "KKday #536220 飯店 ↔ USJ 接送來回"
     - "InterContinental Osaka 兩張住宿訂單，合計四晚"
-    - "USJ 一天，改採 USJ VIP 8 小時；Studio Pass 仍需另購並待官方公布"
-    - "USJ VIP 8 小時暫以使用者提供 TWD 87,000 估算，並視為包含午餐、晚餐與園內餐飲"
+    - "USJ 一天，改採 USJ VIP 5 小時；Studio Pass 仍需另購並待官方公布"
+    - "USJ VIP 5 小時暫以使用者提供 TWD 60,000 估算，並視為包含午餐、晚餐與園內餐飲"
     - "USJ 周邊購物與一般 Pokémon / 動漫 / 日本橋 / 百貨小物合併為購物預算 TWD 14,000"
     - "Day 1 千房梅田周邊店"
     - "Day 3 木津市場、日本橋動漫模型周邊、飯店酒廊下午茶、肉NOASATSU 壽司晚餐"
@@ -63,16 +63,16 @@ user_provided_reference_prices:
     booking_2_twd: 28500
     net_total_twd: 65900
     note: "InterContinental Osaka 兩張住宿訂單，低價那晚視為免費後的主控住宿淨額。"
-  usj_vip_8h:
+  usj_vip_5h:
     replaces: "USJ Express Pass 7"
-    amount_twd: 87000
-    amount_source: "使用者提供 87,000；本版先按 TWD 納入主預算。"
+    amount_twd: 60000
+    amount_source: "使用者提供 60000；本版先按 TWD 納入主預算。"
     planned_purchase_date: "2027/09/17"
     includes:
       - "午餐"
       - "晚餐"
       - "園內餐飲"
-    reconfirmation: "2027/11 USJ VIP 8 小時實際商品名稱、幣別、包含內容、是否含 Studio Pass、可訂日期、取消政策與官方庫存仍需確認。"
+    reconfirmation: "2027/11 USJ VIP 5 小時實際商品名稱、幣別、包含內容、是否含 Studio Pass、可訂日期、取消政策與官方庫存仍需確認。"
   usj_studio_pass:
     planned_purchase_date: "2027/10/10"
     reference_total_for_two_twd: 7108
@@ -106,12 +106,12 @@ user_provided_reference_prices:
 
 reservation_purchase_timeline:
   source_database: "database/reservation_purchase_timeline.yml"
-  known_twd_scheduled_payments_total: 130399
+  known_twd_scheduled_payments_total: 103399
   known_usd_scheduled_payments_total: 250
   items:
     - "2026/11 買機票 EVA Air BR178／BR129：TWD 36,000"
     - "2026/12 續約洲際酒店大使：USD 250"
-    - "2027/09/17 購買／預約 USJ VIP 8 小時：TWD 87,000（使用者提供；幣別與官方條件需確認）"
+    - "2027/09/17 購買／預約 USJ VIP 5 小時：TWD 60,000（使用者提供；幣別與官方條件需確認）"
     - "2027/09/17 NOKA Roast & Grill 訂位：待確認"
     - "2027/10/10 買 KKday #129909 機場接送：待確認"
     - "2027/10/10 買 KKday #536220 USJ 接送：待確認"
@@ -121,9 +121,9 @@ reservation_purchase_timeline:
 
 recommended_budget:
   title: "建議版主預算"
-  total_twd: 272454
-  per_person_twd: 136227
-  note: "不含精品包、珠寶、手錶；不含尚未換算的 InterContinental Ambassador 續約 USD 250；住宿以 NT$65,900 淨額估算；USJ Express Pass 7 已改為 USJ VIP 8 小時 TWD 87,000；USJ VIP 8 小時視為包含午餐、晚餐與園內餐飲；Studio Pass 仍保留兩人暫估 NT$7,108；USJ 周邊購物與一般購物合併為 NT$14,000。"
+  total_twd: 245454
+  per_person_twd: 122727
+  note: "不含精品包、珠寶、手錶；不含尚未換算的 InterContinental Ambassador 續約 USD 250；住宿以 NT$65,900 淨額估算；USJ Express Pass 7 已改為 USJ VIP 5 小時 TWD 60,000；USJ VIP 方案視為包含午餐、晚餐與園內餐飲；Studio Pass 仍保留兩人暫估 NT$7,108；USJ 周邊購物與一般購物合併為 NT$14,000。"
   categories:
     - category: "交通"
       amount_twd: 55664
@@ -152,10 +152,10 @@ recommended_budget:
       note: "USJ 周邊購物與一般 Pokémon、動漫、模型、日本橋周邊、百貨小物合併；不含精品包、珠寶、手錶。"
     - category: "飲食"
       amount_twd: 27782
-      note: "含 Day 1 千房 NT$4,000、Day 3 木津市場 NT$8,000、Day 3 肉NOASATSU 兩人 NT$3,082、Day 4 NOKA 兩人 NT$7,700、Day 5 餐飲與飲料緩衝。Day 2 USJ 午餐、晚餐與園內餐飲已視為包含在 VIP 8 小時，不另列。"
+      note: "含 Day 1 千房 NT$4,000、Day 3 木津市場 NT$8,000、Day 3 肉NOASATSU 兩人 NT$3,082、Day 4 NOKA 兩人 NT$7,700、Day 5 餐飲與飲料緩衝。Day 2 USJ 午餐、晚餐與園內餐飲已視為包含在 VIP 5 小時，不另列。"
     - category: "USJ"
       amount_twd: 94108
-      note: "USJ VIP 8 小時 TWD 87,000 + Studio Pass 兩人暫估 TWD 7,108。Express Pass 7 已移除；不再單獨列園區餐飲與購物。"
+      note: "USJ VIP 5 小時 TWD 60,000 + Studio Pass 兩人暫估 TWD 7,108。Express Pass 7 已移除；不再單獨列園區餐飲與購物。"
     - category: "其他"
       amount_twd: 15000
       note: "含保險 TWD 6,900、漫遊 TWD 499、旅行用品、匯差／海外手續費與預備金。"
@@ -165,43 +165,43 @@ budget_scenarios:
     label: "節制版"
     total_twd: 267756
     per_person_twd: 133878
-    use_case: "沿用原節制版與建議版差額，反映 USJ VIP 8 小時後的較緊版本；可用於壓低一般購物與備援費。"
+    use_case: "沿用原節制版與建議版差額，反映 USJ VIP 5 小時後的較緊版本；可用於壓低一般購物與備援費。"
   recommended:
     label: "建議版"
     total_twd: 272454
     per_person_twd: 136227
-    use_case: "目前正式行程與 USJ VIP 8 小時方案的主控預算；Ambassador USD 250 另計。"
+    use_case: "目前正式行程與 USJ VIP 5 小時方案的主控預算；Ambassador USD 250 另計。"
   safety:
     label: "安全版"
     total_twd: 280000
     per_person_twd: 140000
-    use_case: "在不突破既有硬上限 NT$280,000 的前提下，保留約 NT$7,546 緩衝；因 USJ VIP 8 小時後緩衝變薄，後續若官方價格提高需重新決策是否調整硬上限。"
+    use_case: "在不突破既有硬上限 NT$280,000 的前提下，保留約 NT$34,546 緩衝；因 USJ VIP 5 小時後緩衝變厚，後續若官方價格提高仍需重新決策是否調整硬上限。"
   hard_ceiling:
     label: "硬上限"
     total_twd: 280000
-    use_case: "除非使用者明確同意，主預算與安全版不應突破此上限；V5.53.0 後安全版等於硬上限。"
+    use_case: "除非使用者明確同意，主預算與安全版不應突破此上限；V5.54.0 後安全版等於硬上限。"
 
 revision_notes:
-  current_sync_version: V5.53.0
+  current_sync_version: V5.54.0
   previous_active_totals:
     recommended_twd: 199346
     controlled_twd: 194648
     safety_twd: 250000
     hard_ceiling_twd: 280000
   updated_active_totals:
-    recommended_twd: 272454
-    controlled_twd: 267756
+    recommended_twd: 245454
+    controlled_twd: 240756
     safety_twd: 280000
     hard_ceiling_twd: 280000
   change_reason:
-    - "使用者指定將 USJ Express Pass 7 改為 USJ VIP 8 小時，金額 87,000；本版先以 TWD 87,000 納入主預算。"
-    - "使用者指出 VIP 8 小時包含午餐、晚餐與園內餐飲，因此不再單獨列 USJ 園區餐飲與購物。"
+    - "使用者指定將 USJ Express Pass 7 改為 USJ VIP 5 小時，金額 60,000；本版先以 TWD 60,000 納入主預算。"
+    - "使用者指出 VIP 方案包含午餐、晚餐與園內餐飲，因此不再單獨列 USJ 園區餐飲與購物。"
     - "使用者指定 USJ 周邊購物與普通購物合併為 NT$14,000。"
     - "Studio Pass 仍保留為 2027/10/10 待官方公布的入園票項目，暫沿用兩人 NT$7,108 估算。"
-  budget_positioning: "目前建議以 NT$272,454 作為 TWD 主預算記帳值，NT$280,000 作為安全版與硬上限；Ambassador USD 250 與精品購物另計。"
+  budget_positioning: "目前建議以 NT$245,454 作為 TWD 主預算記帳值，NT$280,000 作為安全版與硬上限；Ambassador USD 250 與精品購物另計。"
 
 pending_reconfirmation:
-  - "USJ VIP 8 小時 2027/11 實際商品名稱、幣別、是否含 Studio Pass、午餐晚餐與園內餐飲包含範圍、可訂日、取消政策與官方庫存。"
+  - "USJ VIP 5 小時 2027/11 實際商品名稱、幣別、是否含 Studio Pass、午餐晚餐與園內餐飲包含範圍、可訂日、取消政策與官方庫存。"
   - "USJ Studio Pass 2027/11 票價、入園規則、平台庫存與取消政策。"
   - "EVA Air BR178 / BR129 2027/11 官方班表、票價、機型、行李與訂位狀態。"
   - "InterContinental Ambassador 續約費、BOGO 使用規則與 2027 住宿方案；12:00 提早入住加價方案與實際費用。"
