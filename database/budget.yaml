@@ -1,6 +1,6 @@
 budget:
   status: active
-  version: V5.15.0
+  version: V5.57.0
   last_updated: 2026-07-09
   currency_assumptions:
     primary_currency: TWD
@@ -109,38 +109,10 @@ budget:
       price_type: user_provided_amount
       recommendation: recommended_for_return_transfer
       note: User requested USJ → InterContinental Osaka to change to charter.
-    - id: kkday_day3_charter_133661_luxury_7_seater
-      category: transportation
-      item: KKday product 133661 10-hour Osaka Kyoto private charter luxury 7-seater candidate
-      amount: NEEDS_MANUAL_KKDAY_DATE_ROUTE_PRICE
-      currency: NEEDS_RECONFIRMATION
-      people: 2
-      quantity: 1
-      subtotal_twd: NEEDS_RECONFIRMATION
-      payment_status: NOT_PAID_OR_NEEDS_CONFIRMATION
-      paid: NEEDS_RECONFIRMATION
-      payment_method: KKday_checkout_NEEDS_RECONFIRMATION
-      price_type: dynamic_query_price_pending
-      recommendation: recommended_for_relaxed_day3_food_photo_pokemon_anime_route
-      note: Candidate only. Route is customized for Kizu Market, Pokemon Center KYOTO, Kyoto International Manga Museum, Higashiyama/Gion photo walk, and Osaka drop-off.
-    - id: kkday_day3_charter_133661_comfort_10_seater_backup
-      category: transportation
-      item: KKday product 133661 10-hour Osaka Kyoto private charter comfort 10-seater backup
-      amount: NEEDS_MANUAL_KKDAY_DATE_ROUTE_PRICE
-      currency: NEEDS_RECONFIRMATION
-      people: 2
-      quantity: 1
-      subtotal_twd: NEEDS_RECONFIRMATION
-      payment_status: NOT_PAID_OR_NEEDS_CONFIRMATION
-      paid: NEEDS_RECONFIRMATION
-      payment_method: KKday_checkout_NEEDS_RECONFIRMATION
-      price_type: dynamic_query_price_pending
-      recommendation: backup_if_more_space_or_shopping_luggage_needed
-      note: Backup only. Do not select unless comfort or shopping load justifies larger vehicle.
   budget_model_notes:
-    transportation: Includes flights, Hello Kitty HARUKA arrival transfer, KKday airport product 129909 return transfer, Osaka Loop Line + JR Yumesaki Line outbound to USJ, USJ return private charter, Day 3 KKday product 133661 charter candidate, taxi, and luggage-related movement.
+    transportation: Includes flights, Hello Kitty HARUKA arrival transfer, KKday airport product 129909 return transfer, Osaka Loop Line + JR Yumesaki Line outbound to USJ, USJ return private charter, taxi, and luggage-related movement. Day 3 Kyoto charter candidates are fallback-only and excluded from the active budget.
     lodging: Includes InterContinental Osaka room cost, taxes, breakfast or lounge add-ons, early check-in, late check-out, and upgrade fees.
     shopping: Includes department stores, luxury boutiques, drugstores, apparel, electronics, character goods, souvenirs, and tax-free shopping.
     dining: Taste-first planning. Michelin status is neutral and should not be used as the budget label.
-    usj: Includes Studio Pass, Express Pass, Nintendo-area-related access if applicable, park dining, park shopping, lockers, and special experiences.
+    usj: Includes USJ VIP 5h, Studio Pass if still needed, Nintendo-area-related access if applicable, lockers, and special experiences. Park dining and park shopping are not separate budget lines.
     other: Includes insurance, phone roaming, travel goods, fees, emergency reserve, medicine, laundry, and temporary spending.

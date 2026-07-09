@@ -47,18 +47,19 @@
 ## Quick access
 
 - [旅遊網站首頁](web/index.html)
+- [專案首頁](index.md)
+- [文件索引](docs/index.md)
+- [行程規劃入口](docs/01_行程規劃/README.md)
+- [餐廳美食入口](docs/02_餐廳美食/README.md)
+- [預約與購買入口](docs/03_預約購買/README.md)
+- [預算入口](docs/06_預算/README.md)
+- [版本更新入口](docs/13_版本與更新/README.md)
 - [顧客版旅遊規劃三表](docs/15_顧客版資料/旅遊規劃三表.md)
-- [旅遊常用表格總覽](docs/15_顧客版資料/旅遊常用表格總覽.md)
-- [預約與購買時間軸 V5.57.0](docs/03_預約購買/2027大阪自由行_預約購買時間軸_V5.26.0.md)
-- [預約與購買時間軸資料庫](database/reservation_purchase_timeline.yml)
-- [小時制時間表](docs/01_行程規劃/2027大阪自由行_小時制時間表_V5.25.0.md)
-- [Day 3 大阪市內壽司資料庫](database/day3_osaka_city_sushi_formal.yml)
-- [預算模型 V5.57.0](docs/06_預算/2027大阪自由行_預算模型_V5.26.0.md)
-- [預算模型資料庫](database/budget_model.yml)
+- [主控設定](database/project.yaml)
+- [預算模型](database/budget_model.yml)
+- [預約與購買時間軸](database/reservation_purchase_timeline.yml)
 - [USJ 資料庫](database/usj.yaml)
-- [Day 4 NOKA Roast & Grill 資料庫](database/day4_shinsaibashi_hotel_dinner.yml)
 - [每日同步狀態](docs/14_自動同步狀態/每日同步狀態.md)
-- [V5.57.0 USJ Return Charter Update](docs/13_版本與更新/V5.57.0_USJ_Return_Charter_Update.md)
 
 ## 維護原則
 
