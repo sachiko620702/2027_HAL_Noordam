@@ -1,4 +1,4 @@
-# 2027 大阪自由行 V5.57.0
+# 2027 大阪自由行 V5.59.0
 
 本 repository 是 2027 大阪自由行專案的唯一主資料源，供 ChatGPT、Codex 與 Claude Code 共同維護。
 
@@ -12,9 +12,9 @@
 
 ## 目前主控版本
 
-- Version：V5.57.0 USJ Return Charter Update
+- Version：V5.59.0 Web Packing Documents Weather Refresh
 - 主控資料源：GitHub main branch
-- 更新目的：依使用者指示將 USJ Express Pass 7 改為 USJ VIP 5 小時，將 KIX→飯店改為 Hello Kitty HARUKA、飯店→KIX 保留 KKday #129909，並把 USJ 回程改為包車、去程維持大阪環狀線 + JR 夢咲線，同步重算主預算。
+- 更新目的：在不變動資料庫與主預算基準的前提下，將公開網站再補上行李清單、文件清單與季節天氣，讓首頁更像完整的旅行小冊子。
 - 最新主預算：建議版 NT$242,070／兩人，節制版 NT$237,372／兩人，安全版 NT$280,000／兩人，硬上限 NT$280,000／兩人。
 - USJ VIP 5 小時：暫以使用者提供金額 NT$60,000 納入主預算；VIP 方案包含 1 餐，預訂時選定午餐或晚餐，並於 Luminant 用餐；Studio Pass 確認需另外購買，官方商品名稱、幣別、可訂日與取消政策仍需再次確認。
 - USJ Studio Pass：仍保留 2027/10/10 購買目標，暫估兩人 NT$7,108；確認需另外購買。
@@ -42,7 +42,7 @@
 - 早餐原則：平常早餐以飯店行政酒廊為主；Day 3 木津市場日例外，不吃飯店早餐，改吃木津市場早段輕食／早午餐。
 - 餐飲方向：好吃優先，是否米其林不重要。
 - 顧客版輸出：固定維護「行程表、行前提醒／TODO LIST、預算表」三表。
-- 公開網站：`web/` 已於 V5.57.0 同步 USJ VIP 5 小時、Hello Kitty HARUKA 到飯店、USJ 回程包車與預算更新；網站視覺沿用 V5.52.0 旅行社宣傳頁風格。
+- 公開網站：`web/` 已於 V5.59.0 保留 Threads 封面／目錄式視覺，並新增行李清單、文件清單與季節天氣區塊。
 
 ## Quick access
 

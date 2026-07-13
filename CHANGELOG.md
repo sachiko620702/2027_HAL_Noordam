@@ -1,5 +1,43 @@
 # CHANGELOG
 
+# V5.59.0 - 2026-07-13
+
+### Changed
+
+- Added a new travel-prep block to the public website covering packing list, document list, and seasonal weather.
+- Kept the Threads-inspired cover and index layout, while extending the page into a fuller travel booklet.
+- Updated the cover footer version marker and kept the itinerary, budget baseline, and database decisions unchanged.
+- Added version note `docs/13_版本與更新/V5.59.0_Web_Packing_Doc_Weather_Update.md`.
+
+### Reason
+
+The user asked for the exported website to also include luggage, documents, and seasonal weather. The site needed a content refresh that preserved the existing visual language and did not branch into a parallel plan.
+
+### Impact
+
+- The website now gives travelers a clearer pre-departure checklist.
+- Seasonal weather is shown as a planning note, not a live forecast.
+- No database values or budget totals changed.
+
+# V5.58.0 - 2026-07-13
+
+### Changed
+
+- Reworked the public website into a Threads-inspired cover and index layout, with a dark editorial hero, a white table-of-contents section, and softer paper-like content panels.
+- Added a live countdown to the travel start date on the cover.
+- Kept the itinerary, budget baseline, and database decisions unchanged.
+- Added version note `docs/13_版本與更新/V5.58.0_Web_Threads_Cover_Refresh.md`.
+
+### Reason
+
+The user wanted the exported website to reference the look and pacing of a Threads video. The repo needed a visual refresh that matched that mood without creating a parallel itinerary or budget plan.
+
+### Impact
+
+- The website now reads more like a small travel booklet than an internal memo.
+- The overview area now begins with a chapter-style index that mirrors the reference video.
+- No database values or budget totals changed.
+
 # V5.57.0 - 2026-07-09
 
 ### Changed

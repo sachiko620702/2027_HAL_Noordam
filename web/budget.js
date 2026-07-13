@@ -86,6 +86,7 @@
   const elements = {
     budgetApp: document.getElementById("budget-app"),
     budgetTextNodes: document.querySelectorAll("[data-budget-text]"),
+    countdownNodes: document.querySelectorAll("[data-countdown-days]"),
   };
 
   const twdFormatter = new Intl.NumberFormat("zh-TW", {
@@ -146,6 +147,21 @@
       if (textMap[key]) {
         node.textContent = textMap[key];
       }
+    });
+  }
+
+  function updateCountdown() {
+    if (!elements.countdownNodes.length) {
+      return;
+    }
+
+    const tripStart = new Date("2027-11-17T00:00:00+08:00");
+    const now = new Date();
+    const dayMs = 24 * 60 * 60 * 1000;
+    const daysUntilTrip = Math.max(0, Math.ceil((tripStart.getTime() - now.getTime()) / dayMs));
+
+    elements.countdownNodes.forEach((node) => {
+      node.textContent = `距出發 ${daysUntilTrip} 天`;
     });
   }
 
@@ -303,5 +319,6 @@
   }
 
   updateBudgetText();
+  updateCountdown();
   renderBudgetSection();
 })();
